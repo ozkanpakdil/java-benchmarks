@@ -26,12 +26,12 @@ jobs:
           architecture: x64
       - run: |
           mvn clean install
-          java -jar target/benchmarks.jar IntegerListFilter -rf json > IntegerListFilter.json 
-          java -jar target/benchmarks.jar IntegerListSum -rf json > IntegerListSum.json 
+          java -jar target/benchmarks.jar IntegerListFilter -rf json > IntegerListFilter.${{ matrix.java }}.json 
+          java -jar target/benchmarks.jar IntegerListSum -rf json > IntegerListSum.${{ matrix.java }}.json 
       - name: Upload results
         uses: actions/upload-artifact@v2
         with:
           name: test results
           path: |
-            IntegerListSum.json
-            IntegerListFilter.json
+            IntegerListSum.${{ matrix.java }}.json
+            IntegerListFilter.${{ matrix.java }}.json
