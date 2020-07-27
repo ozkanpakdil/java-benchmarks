@@ -24,11 +24,10 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
           architecture: x64
-      - run: mvn clean install
-      - name: run the test 1
-      - run: java -jar target/benchmarks.jar IntegerListFilter -rf json > IntegerListFilter.json 
-      - name: run the test 2
-      - run: java -jar target/benchmarks.jar IntegerListSum -rf json > IntegerListSum.json 
+      - run: |
+          mvn clean install
+          java -jar target/benchmarks.jar IntegerListFilter -rf json > IntegerListFilter.json 
+          java -jar target/benchmarks.jar IntegerListSum -rf json > IntegerListSum.json 
       - name: Upload results
         uses: actions/upload-artifact@v2
         with:
