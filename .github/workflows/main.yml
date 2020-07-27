@@ -6,16 +6,16 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ '8', '11', '13', '14' ]
+        java: ["8", "11", "13", "14"]
     name: Java ${{ matrix.java }} sample
     steps:
       - uses: actions/checkout@v2
@@ -24,4 +24,15 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
           architecture: x64
-      - run: mvn clean install 
+      - run: mvn clean install
+      - name: run the test 1
+      - run: java -jar target/benchmarks.jar IntegerListFilter -rf json > IntegerListFilter.json 
+      - name: run the test 2
+      - run: java -jar target/benchmarks.jar IntegerListSum -rf json > IntegerListSum.json 
+      - name: Upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test results
+          path: |
+            IntegerListSum.json
+            IntegerListFilter.json
