@@ -8,11 +8,6 @@
 
     <name>JMH benchmark sample: Java</name>
 
-    <!--
-       This is the demo/sample template build script for building Java benchmarks with JMH.
-       Edit as needed.
-    -->
-
     <dependencies>
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
@@ -40,20 +35,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <!--
-            JMH version to use with this project.
-          -->
         <jmh.version>1.33</jmh.version>
-
-        <!--
-            Java source/target to use for compilation.
-          -->
         <javac.target>1.8</javac.target>
-
-        <!--
-            Name of the benchmark Uber-JAR to generate.
-          -->
         <uberjar.name>benchmarks</uberjar.name>
     </properties>
 
@@ -101,6 +84,54 @@
                                     </excludes>
                                 </filter>
                             </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.baidu.maven</groupId>
+                <artifactId>jmh-maven-plugin</artifactId>
+                <version>1.0.3</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>jmh</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <forks>1</forks>
+                    <warmupForks>1</warmupForks>
+                    <threads>1</threads>
+                    <mode>ss</mode>
+                    <timeUnit>ns</timeUnit>
+                    <measurementTime>4s</measurementTime>
+                    <warmupTime>4s</warmupTime>
+                    <measurementIterations>2</measurementIterations>
+                    <resultFormat>json</resultFormat>
+                    <resultFile>jmh-result-${java.version}.json</resultFile>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-resource-one</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/results/</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/target/benchmark/</directory>
+                                    <includes>
+                                        <include>jmh-result-${java.version}.json</include>
+                                    </includes>
+                                </resource>
+                            </resources>
                         </configuration>
                     </execution>
                 </executions>

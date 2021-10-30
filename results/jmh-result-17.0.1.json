@@ -1,0 +1,676 @@
+[
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecMutableList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 9668200.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9445500.0,
+                "50.0" : 9668200.0,
+                "90.0" : 9890900.0,
+                "95.0" : 9890900.0,
+                "99.0" : 9890900.0,
+                "99.9" : 9890900.0,
+                "99.99" : 9890900.0,
+                "99.999" : 9890900.0,
+                "99.9999" : 9890900.0,
+                "100.0" : 9890900.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    9890900.0,
+                    9445500.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecMutableListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4099350.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2370900.0,
+                "50.0" : 4099350.0,
+                "90.0" : 5827800.0,
+                "95.0" : 5827800.0,
+                "99.0" : 5827800.0,
+                "99.9" : 5827800.0,
+                "99.99" : 5827800.0,
+                "99.999" : 5827800.0,
+                "99.9999" : 5827800.0,
+                "100.0" : 5827800.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2370900.0,
+                    5827800.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecPrimitive",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 6426550.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4681200.0,
+                "50.0" : 6426550.0,
+                "90.0" : 8171900.0,
+                "95.0" : 8171900.0,
+                "99.0" : 8171900.0,
+                "99.9" : 8171900.0,
+                "99.99" : 8171900.0,
+                "99.999" : 8171900.0,
+                "99.9999" : 8171900.0,
+                "100.0" : 8171900.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4681200.0,
+                    8171900.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecPrimitiveParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 2835750.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2589800.0,
+                "50.0" : 2835750.0,
+                "90.0" : 3081700.0,
+                "95.0" : 3081700.0,
+                "99.0" : 3081700.0,
+                "99.9" : 3081700.0,
+                "99.99" : 3081700.0,
+                "99.999" : 3081700.0,
+                "99.9999" : 3081700.0,
+                "100.0" : 3081700.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3081700.0,
+                    2589800.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.jdkList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 9416200.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6816900.0,
+                "50.0" : 9416200.0,
+                "90.0" : 1.20155E7,
+                "95.0" : 1.20155E7,
+                "99.0" : 1.20155E7,
+                "99.9" : 1.20155E7,
+                "99.99" : 1.20155E7,
+                "99.999" : 1.20155E7,
+                "99.9999" : 1.20155E7,
+                "100.0" : 1.20155E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6816900.0,
+                    1.20155E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.jdkListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 5079350.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4080100.0,
+                "50.0" : 5079350.0,
+                "90.0" : 6078600.0,
+                "95.0" : 6078600.0,
+                "99.0" : 6078600.0,
+                "99.9" : 6078600.0,
+                "99.99" : 6078600.0,
+                "99.999" : 6078600.0,
+                "99.9999" : 6078600.0,
+                "100.0" : 6078600.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4080100.0,
+                    6078600.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecMutableList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4543200.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2055600.0,
+                "50.0" : 4543200.0,
+                "90.0" : 7030800.0,
+                "95.0" : 7030800.0,
+                "99.0" : 7030800.0,
+                "99.9" : 7030800.0,
+                "99.99" : 7030800.0,
+                "99.999" : 7030800.0,
+                "99.9999" : 7030800.0,
+                "100.0" : 7030800.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    7030800.0,
+                    2055600.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecMutableListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 933200.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 893900.0,
+                "50.0" : 933200.0,
+                "90.0" : 972500.0,
+                "95.0" : 972500.0,
+                "99.0" : 972500.0,
+                "99.9" : 972500.0,
+                "99.99" : 972500.0,
+                "99.999" : 972500.0,
+                "99.9999" : 972500.0,
+                "100.0" : 972500.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    972500.0,
+                    893900.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecPrimitive",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 535900.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 430700.0,
+                "50.0" : 535900.0,
+                "90.0" : 641100.0,
+                "95.0" : 641100.0,
+                "99.0" : 641100.0,
+                "99.9" : 641100.0,
+                "99.99" : 641100.0,
+                "99.999" : 641100.0,
+                "99.9999" : 641100.0,
+                "100.0" : 641100.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    641100.0,
+                    430700.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecPrimitiveParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 446100.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 434800.0,
+                "50.0" : 446100.0,
+                "90.0" : 457400.0,
+                "95.0" : 457400.0,
+                "99.0" : 457400.0,
+                "99.9" : 457400.0,
+                "99.99" : 457400.0,
+                "99.999" : 457400.0,
+                "99.9999" : 457400.0,
+                "100.0" : 457400.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    457400.0,
+                    434800.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.jdkList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1569100.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1174800.0,
+                "50.0" : 1569100.0,
+                "90.0" : 1963400.0,
+                "95.0" : 1963400.0,
+                "99.0" : 1963400.0,
+                "99.9" : 1963400.0,
+                "99.99" : 1963400.0,
+                "99.999" : 1963400.0,
+                "99.9999" : 1963400.0,
+                "100.0" : 1963400.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1963400.0,
+                    1174800.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.jdkListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Program Files\\GraalVM\\graalvm-ce-java17-21.3.0\\bin\\java.exe",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\bin\\m2.conf",
+            "-Dmaven.home=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3",
+            "-Dlibrary.jansi.path=C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.8.3\\lib\\jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=C:\\Users\\ozkan\\projects\\java-benchmarks"
+        ],
+        "jdkVersion" : "17.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.1+12-jvmci-21.3-b05",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 878800.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 791600.0,
+                "50.0" : 878800.0,
+                "90.0" : 966000.0,
+                "95.0" : 966000.0,
+                "99.0" : 966000.0,
+                "99.9" : 966000.0,
+                "99.99" : 966000.0,
+                "99.999" : 966000.0,
+                "99.9999" : 966000.0,
+                "100.0" : 966000.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    791600.0,
+                    966000.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

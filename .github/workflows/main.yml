@@ -1,12 +1,8 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Running Benchmarks JMH
 
 on:
   push:
-    branches: [master]
   pull_request:
-    branches: [master]
 
 jobs:
   build:
@@ -22,13 +18,11 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - run: |
-          mvn -ntp clean install
-          java -jar target/benchmarks.jar IntegerListFilter -rf json > IntegerListFilter.${{ matrix.java }}.json 
-          java -jar target/benchmarks.jar IntegerListSum -rf json > IntegerListSum.${{ matrix.java }}.json 
-      - name: Upload results
-        uses: actions/upload-artifact@v2
-        with:
-          name: test results
-          path: |
-            IntegerListSum.${{ matrix.java }}.json
-            IntegerListFilter.${{ matrix.java }}.json
+          mvn -ntp clean package
+      - name: Commit report
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
