@@ -5,16 +5,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -22,29 +27,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 7868953.0,
+            "score" : 7.99728565E7,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7587747.0,
-                "50.0" : 7868953.0,
-                "90.0" : 8150159.0,
-                "95.0" : 8150159.0,
-                "99.0" : 8150159.0,
-                "99.9" : 8150159.0,
-                "99.99" : 8150159.0,
-                "99.999" : 8150159.0,
-                "99.9999" : 8150159.0,
-                "100.0" : 8150159.0
+                "0.0" : 1.5913374E7,
+                "50.0" : 7.99728565E7,
+                "90.0" : 1.44032339E8,
+                "95.0" : 1.44032339E8,
+                "99.0" : 1.44032339E8,
+                "99.9" : 1.44032339E8,
+                "99.99" : 1.44032339E8,
+                "99.999" : 1.44032339E8,
+                "99.9999" : 1.44032339E8,
+                "100.0" : 1.44032339E8
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    8150159.0,
-                    7587747.0
+                    1.44032339E8,
+                    1.5913374E7
                 ]
             ]
         },
@@ -57,16 +62,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -74,29 +84,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1.73807875E7,
+            "score" : 7085966.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7516946.0,
-                "50.0" : 1.73807875E7,
-                "90.0" : 2.7244629E7,
-                "95.0" : 2.7244629E7,
-                "99.0" : 2.7244629E7,
-                "99.9" : 2.7244629E7,
-                "99.99" : 2.7244629E7,
-                "99.999" : 2.7244629E7,
-                "99.9999" : 2.7244629E7,
-                "100.0" : 2.7244629E7
+                "0.0" : 5966485.0,
+                "50.0" : 7085966.5,
+                "90.0" : 8205448.0,
+                "95.0" : 8205448.0,
+                "99.0" : 8205448.0,
+                "99.9" : 8205448.0,
+                "99.99" : 8205448.0,
+                "99.999" : 8205448.0,
+                "99.9999" : 8205448.0,
+                "100.0" : 8205448.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    2.7244629E7,
-                    7516946.0
+                    8205448.0,
+                    5966485.0
                 ]
             ]
         },
@@ -109,16 +119,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -126,29 +141,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 6242221.5,
+            "score" : 4.07880425E7,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 5859314.0,
-                "50.0" : 6242221.5,
-                "90.0" : 6625129.0,
-                "95.0" : 6625129.0,
-                "99.0" : 6625129.0,
-                "99.9" : 6625129.0,
-                "99.99" : 6625129.0,
-                "99.999" : 6625129.0,
-                "99.9999" : 6625129.0,
-                "100.0" : 6625129.0
+                "0.0" : 7057493.0,
+                "50.0" : 4.07880425E7,
+                "90.0" : 7.4518592E7,
+                "95.0" : 7.4518592E7,
+                "99.0" : 7.4518592E7,
+                "99.9" : 7.4518592E7,
+                "99.99" : 7.4518592E7,
+                "99.999" : 7.4518592E7,
+                "99.9999" : 7.4518592E7,
+                "100.0" : 7.4518592E7
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    5859314.0,
-                    6625129.0
+                    7.4518592E7,
+                    7057493.0
                 ]
             ]
         },
@@ -161,16 +176,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -178,29 +198,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 4972846.5,
+            "score" : 5855633.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 3908976.0,
-                "50.0" : 4972846.5,
-                "90.0" : 6036717.0,
-                "95.0" : 6036717.0,
-                "99.0" : 6036717.0,
-                "99.9" : 6036717.0,
-                "99.99" : 6036717.0,
-                "99.999" : 6036717.0,
-                "99.9999" : 6036717.0,
-                "100.0" : 6036717.0
+                "0.0" : 3049183.0,
+                "50.0" : 5855633.5,
+                "90.0" : 8662084.0,
+                "95.0" : 8662084.0,
+                "99.0" : 8662084.0,
+                "99.9" : 8662084.0,
+                "99.99" : 8662084.0,
+                "99.999" : 8662084.0,
+                "99.9999" : 8662084.0,
+                "100.0" : 8662084.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    3908976.0,
-                    6036717.0
+                    8662084.0,
+                    3049183.0
                 ]
             ]
         },
@@ -213,16 +233,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -230,29 +255,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 9506684.0,
+            "score" : 5.54473395E7,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 9341381.0,
-                "50.0" : 9506684.0,
-                "90.0" : 9671987.0,
-                "95.0" : 9671987.0,
-                "99.0" : 9671987.0,
-                "99.9" : 9671987.0,
-                "99.99" : 9671987.0,
-                "99.999" : 9671987.0,
-                "99.9999" : 9671987.0,
-                "100.0" : 9671987.0
+                "0.0" : 1.8975615E7,
+                "50.0" : 5.54473395E7,
+                "90.0" : 9.1919064E7,
+                "95.0" : 9.1919064E7,
+                "99.0" : 9.1919064E7,
+                "99.9" : 9.1919064E7,
+                "99.99" : 9.1919064E7,
+                "99.999" : 9.1919064E7,
+                "99.9999" : 9.1919064E7,
+                "100.0" : 9.1919064E7
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    9341381.0,
-                    9671987.0
+                    9.1919064E7,
+                    1.8975615E7
                 ]
             ]
         },
@@ -265,16 +290,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -282,29 +312,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1.10118155E7,
+            "score" : 1.23284115E7,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 1.0567807E7,
-                "50.0" : 1.10118155E7,
-                "90.0" : 1.1455824E7,
-                "95.0" : 1.1455824E7,
-                "99.0" : 1.1455824E7,
-                "99.9" : 1.1455824E7,
-                "99.99" : 1.1455824E7,
-                "99.999" : 1.1455824E7,
-                "99.9999" : 1.1455824E7,
-                "100.0" : 1.1455824E7
+                "0.0" : 1.0882891E7,
+                "50.0" : 1.23284115E7,
+                "90.0" : 1.3773932E7,
+                "95.0" : 1.3773932E7,
+                "99.0" : 1.3773932E7,
+                "99.9" : 1.3773932E7,
+                "99.99" : 1.3773932E7,
+                "99.999" : 1.3773932E7,
+                "99.9999" : 1.3773932E7,
+                "100.0" : 1.3773932E7
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    1.0567807E7,
-                    1.1455824E7
+                    1.0882891E7,
+                    1.3773932E7
                 ]
             ]
         },
@@ -317,16 +347,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -334,29 +369,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1768684.5,
+            "score" : 3717065.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 1719133.0,
-                "50.0" : 1768684.5,
-                "90.0" : 1818236.0,
-                "95.0" : 1818236.0,
-                "99.0" : 1818236.0,
-                "99.9" : 1818236.0,
-                "99.99" : 1818236.0,
-                "99.999" : 1818236.0,
-                "99.9999" : 1818236.0,
-                "100.0" : 1818236.0
+                "0.0" : 2514672.0,
+                "50.0" : 3717065.5,
+                "90.0" : 4919459.0,
+                "95.0" : 4919459.0,
+                "99.0" : 4919459.0,
+                "99.9" : 4919459.0,
+                "99.99" : 4919459.0,
+                "99.999" : 4919459.0,
+                "99.9999" : 4919459.0,
+                "100.0" : 4919459.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    1818236.0,
-                    1719133.0
+                    4919459.0,
+                    2514672.0
                 ]
             ]
         },
@@ -369,16 +404,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -386,29 +426,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1655432.0,
+            "score" : 3046520.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 1543130.0,
-                "50.0" : 1655432.0,
-                "90.0" : 1767734.0,
-                "95.0" : 1767734.0,
-                "99.0" : 1767734.0,
-                "99.9" : 1767734.0,
-                "99.99" : 1767734.0,
-                "99.999" : 1767734.0,
-                "99.9999" : 1767734.0,
-                "100.0" : 1767734.0
+                "0.0" : 2903512.0,
+                "50.0" : 3046520.0,
+                "90.0" : 3189528.0,
+                "95.0" : 3189528.0,
+                "99.0" : 3189528.0,
+                "99.9" : 3189528.0,
+                "99.99" : 3189528.0,
+                "99.999" : 3189528.0,
+                "99.9999" : 3189528.0,
+                "100.0" : 3189528.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    1543130.0,
-                    1767734.0
+                    2903512.0,
+                    3189528.0
                 ]
             ]
         },
@@ -421,16 +461,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -438,29 +483,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 361057.5,
+            "score" : 601012.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 350007.0,
-                "50.0" : 361057.5,
-                "90.0" : 372108.0,
-                "95.0" : 372108.0,
-                "99.0" : 372108.0,
-                "99.9" : 372108.0,
-                "99.99" : 372108.0,
-                "99.999" : 372108.0,
-                "99.9999" : 372108.0,
-                "100.0" : 372108.0
+                "0.0" : 554132.0,
+                "50.0" : 601012.5,
+                "90.0" : 647893.0,
+                "95.0" : 647893.0,
+                "99.0" : 647893.0,
+                "99.9" : 647893.0,
+                "99.99" : 647893.0,
+                "99.999" : 647893.0,
+                "99.9999" : 647893.0,
+                "100.0" : 647893.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    372108.0,
-                    350007.0
+                    647893.0,
+                    554132.0
                 ]
             ]
         },
@@ -473,16 +518,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -490,29 +540,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1585131.5,
+            "score" : 838151.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 524811.0,
-                "50.0" : 1585131.5,
-                "90.0" : 2645452.0,
-                "95.0" : 2645452.0,
-                "99.0" : 2645452.0,
-                "99.9" : 2645452.0,
-                "99.99" : 2645452.0,
-                "99.999" : 2645452.0,
-                "99.9999" : 2645452.0,
-                "100.0" : 2645452.0
+                "0.0" : 759327.0,
+                "50.0" : 838151.0,
+                "90.0" : 916975.0,
+                "95.0" : 916975.0,
+                "99.0" : 916975.0,
+                "99.9" : 916975.0,
+                "99.99" : 916975.0,
+                "99.999" : 916975.0,
+                "99.9999" : 916975.0,
+                "100.0" : 916975.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    524811.0,
-                    2645452.0
+                    916975.0,
+                    759327.0
                 ]
             ]
         },
@@ -525,16 +575,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -542,29 +597,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 2088992.0,
+            "score" : 3536882.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 1893338.0,
-                "50.0" : 2088992.0,
-                "90.0" : 2284646.0,
-                "95.0" : 2284646.0,
-                "99.0" : 2284646.0,
-                "99.9" : 2284646.0,
-                "99.99" : 2284646.0,
-                "99.999" : 2284646.0,
-                "99.9999" : 2284646.0,
-                "100.0" : 2284646.0
+                "0.0" : 3444366.0,
+                "50.0" : 3536882.0,
+                "90.0" : 3629398.0,
+                "95.0" : 3629398.0,
+                "99.0" : 3629398.0,
+                "99.9" : 3629398.0,
+                "99.99" : 3629398.0,
+                "99.999" : 3629398.0,
+                "99.9999" : 3629398.0,
+                "100.0" : 3629398.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    2284646.0,
-                    1893338.0
+                    3444366.0,
+                    3629398.0
                 ]
             ]
         },
@@ -577,16 +632,21 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/opt/hostedtoolcache/jdk/17.0.5/x64/bin/java",
+        "jvm" : "/home/mintozzy/.sdkman/candidates/java/graalvm-ee-java17-22.3.0/bin/java",
         "jvmArgs" : [
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:JVMCIThreadsPerNativeLibraryRuntime=1",
+            "-XX:-UnlockExperimentalVMOptions",
+            "-Dclassworlds.conf=/home/mintozzy/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/home/mintozzy/.sdkman/candidates/maven/current",
+            "-Dlibrary.jansi.path=/home/mintozzy/.sdkman/candidates/maven/current/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/mintozzy/projects/java-benchmarks"
         ],
         "jdkVersion" : "17.0.5",
-        "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "17.0.5+8-LTS",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "17.0.5+9-LTS-jvmci-22.3-b07",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -594,29 +654,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1837236.5,
+            "score" : 1750936.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 1661733.0,
-                "50.0" : 1837236.5,
-                "90.0" : 2012740.0,
-                "95.0" : 2012740.0,
-                "99.0" : 2012740.0,
-                "99.9" : 2012740.0,
-                "99.99" : 2012740.0,
-                "99.999" : 2012740.0,
-                "99.9999" : 2012740.0,
-                "100.0" : 2012740.0
+                "0.0" : 1392046.0,
+                "50.0" : 1750936.5,
+                "90.0" : 2109827.0,
+                "95.0" : 2109827.0,
+                "99.0" : 2109827.0,
+                "99.9" : 2109827.0,
+                "99.99" : 2109827.0,
+                "99.999" : 2109827.0,
+                "99.9999" : 2109827.0,
+                "100.0" : 2109827.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    2012740.0,
-                    1661733.0
+                    1392046.0,
+                    2109827.0
                 ]
             ]
         },
