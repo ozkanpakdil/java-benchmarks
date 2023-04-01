@@ -23,6 +23,7 @@ jobs:
           java-version: ${{ matrix.java }}
       - run: |
           mvn -ntp clean package
+          rm -rf target
           git add -f .          
           git pull
 #          mvn -ntp -Dtest=PrintSome test
