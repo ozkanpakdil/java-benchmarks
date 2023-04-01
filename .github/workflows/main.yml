@@ -23,7 +23,6 @@ jobs:
           java-version: ${{ matrix.java }}
       - run: |
           mvn -ntp clean package
-          git pull
           git add .
 #          mvn -ntp -Dtest=PrintSome test
       - uses: stefanzweifel/git-auto-commit-action@v4
