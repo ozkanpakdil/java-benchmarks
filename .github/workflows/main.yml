@@ -23,9 +23,9 @@ jobs:
           java-version: ${{ matrix.java }}
       - run: |
           mvn -ntp clean package
+          git add -f .          
           git pull
-          git add .
 #          mvn -ntp -Dtest=PrintSome test
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: csv adding back to repo [skip ci] another test
+          commit_message: adding back to repo [skip ci] another test
