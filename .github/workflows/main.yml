@@ -17,10 +17,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java }}
-      - run: |
-          mvn -ntp clean package
-          git pull
-          git add .
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: csv adding back to repo [skip ci] another test
+            - run: |
+                mvn -ntp clean package
+                git pull
+                git add .
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                commit_message: csv adding back to repo [skip ci] another test
