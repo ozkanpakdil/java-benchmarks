@@ -24,8 +24,8 @@ jobs:
       - run: |
           mvn -ntp clean package
           rm -rf target
-          git add -f .          
-          git pull
+          git add -f .
+          git pull --rebase --autostash
 #          mvn -ntp -Dtest=PrintSome test
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
