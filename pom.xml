@@ -121,7 +121,7 @@
                     <warmupTime>4s</warmupTime>
                     <measurementIterations>2</measurementIterations>
                     <resultFormat>json</resultFormat>
-                    <resultFile>jmh-result-${java.vm.name}-${java.vm.vendor}-${java.version}.json</resultFile>
+                    <resultFile>${java.vm.name}-${java.vm.vendor}-${java.version}.json</resultFile>
                 </configuration>
             </plugin>
             <plugin>
@@ -139,7 +139,7 @@
                                 <resource>
                                     <directory>${basedir}/target/benchmark/</directory>
                                     <includes>
-                                        <include>${java.version}-${java.vm.name}-${java.vm.vendor}.json</include>
+                                        <include>*.json</include>
                                     </includes>
                                 </resource>
                             </resources>
