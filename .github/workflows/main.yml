@@ -25,7 +25,7 @@ jobs:
           mvn -ntp clean package
           rm -rf target
           git add -f .
-          git pull          
+          git pull -f
 #          mvn -ntp -Dtest=PrintSome test
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
