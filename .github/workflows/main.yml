@@ -8,7 +8,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        distribution: [ 'adopt', 'zulu', 'temurin', 'microsoft', 'corretto','oracle' ]
+        distribution: [ 'semeru', 'adopt', 'zulu', 'temurin', 'microsoft', 'corretto','oracle' ]
         java: [ 8, 11, 17 ]
     name: Java ${{ matrix.java }} ${{ matrix.distribution }} sample
     steps:
@@ -19,7 +19,7 @@ jobs:
           distribution: ${{ matrix.distribution }}
           java-version: ${{ matrix.java }}
       - run: |
-          mvn -ntp -Dtest=PrintSome test
+#          mvn -ntp -Dtest=PrintSome test
           mvn -ntp clean package
           git pull
           git add .
