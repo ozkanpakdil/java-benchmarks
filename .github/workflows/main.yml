@@ -8,19 +8,20 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        distributions: [ 'zulu', 'temurin', 'microsoft', 'corretto','oracle' ]
+        distributions: [ 'adopt', 'zulu', 'temurin', 'microsoft', 'corretto','oracle' ]
         java: [ 8, 11, 17 ]
     name: Java ${{ matrix.java }} ${{ matrix.distributions }} sample
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with:
           java-version: ${{ matrix.java }}
-            - run: |
-                mvn -ntp clean package
-                git pull
-                git add .
-            - uses: stefanzweifel/git-auto-commit-action@v4
-              with:
-                commit_message: csv adding back to repo [skip ci] another test
+      - run: |
+          mvn -Dtest=PrintSome test
+          mvn -ntp clean package
+          git pull
+          git add .
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: csv adding back to repo [skip ci] another test
