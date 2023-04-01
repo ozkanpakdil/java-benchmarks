@@ -31,6 +31,12 @@
             <artifactId>eclipse-collections</artifactId>
             <version>11.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -110,7 +116,7 @@
                     <warmupTime>4s</warmupTime>
                     <measurementIterations>2</measurementIterations>
                     <resultFormat>json</resultFormat>
-                    <resultFile>jmh-result-${java.version}.json</resultFile>
+                    <resultFile>jmh-result-${java.version}-${java.vm.vendor}.json</resultFile>
                 </configuration>
             </plugin>
             <plugin>

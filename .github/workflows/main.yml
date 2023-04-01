@@ -8,8 +8,9 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        java: [8, 11, 17]
-    name: Java ${{ matrix.java }} sample
+        distributions: [ 'zulu', 'temurin', 'microsoft', 'corretto','oracle' ]
+        java: [ 8, 11, 17 ]
+    name: Java ${{ matrix.java }} ${{ matrix.distributions }} sample
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK
