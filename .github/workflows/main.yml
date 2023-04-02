@@ -25,9 +25,10 @@ jobs:
           mvn -ntp clean package
           set -x
           rm -rf target
-          git add -f .
-          git pull -f
+          git add
+          git pull
 #          mvn -ntp -Dtest=PrintSome test
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: adding back to repo [skip ci] another test
+          push_options: '--force'
