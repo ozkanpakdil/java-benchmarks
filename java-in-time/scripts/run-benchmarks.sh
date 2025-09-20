@@ -12,7 +12,7 @@ set -euo pipefail
 # Results are stored under results/<label>.json and results/<label>.txt (under project root)
 
 # Default JMH options (overridable via env). Keep CI fast but results less stable.
-JMH_OPTS="${JMH_OPTS:-"-wi 1 -i 1 -f 1 -r 1s -w 1s -bm avgt -tu ns"}"
+JMH_OPTS="${JMH_OPTS:-"-wi 2 -i 2 -f 2 -r 1s -w 1s -bm avgt -tu ns"}"
 
 
 # Resolve script dir and project root so the script can be run from anywhere
