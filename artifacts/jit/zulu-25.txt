@@ -8,20 +8,21 @@
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.biginteger_mul
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.count_bits
+# Parameters: (size = 1024)
 
-# Run progress: 0.00% complete, ETA 00:00:58
+# Run progress: 0.00% complete, ETA 00:03:42
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 25.598 ns/op
-Iteration   1: 22.072 ns/op
+# Warmup Iteration   1: 11.707 ns/op
+Iteration   1: 11.652 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.biginteger_mul":
-  22.072 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.count_bits":
+  11.652 ns/op
 
 
 # JMH version: 1.37
@@ -34,20 +35,21 @@ Result "io.github.benchjava.bench.NumericsBenchmark.biginteger_mul":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.bit_ops
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.count_bits
+# Parameters: (size = 16384)
 
-# Run progress: 3.45% complete, ETA 00:01:03
+# Run progress: 0.90% complete, ETA 00:04:08
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.783 ns/op
-Iteration   1: 0.782 ns/op
+# Warmup Iteration   1: 100.958 ns/op
+Iteration   1: 98.747 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.bit_ops":
-  0.782 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.count_bits":
+  98.747 ns/op
 
 
 # JMH version: 1.37
@@ -60,20 +62,21 @@ Result "io.github.benchjava.bench.NumericsBenchmark.bit_ops":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.double_fma
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.get_flip
+# Parameters: (size = 1024)
 
-# Run progress: 6.90% complete, ETA 00:01:00
+# Run progress: 1.80% complete, ETA 00:04:04
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.628 ns/op
-Iteration   1: 0.627 ns/op
+# Warmup Iteration   1: 5.797 ns/op
+Iteration   1: 5.545 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.double_fma":
-  0.627 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.get_flip":
+  5.545 ns/op
 
 
 # JMH version: 1.37
@@ -86,20 +89,21 @@ Result "io.github.benchjava.bench.NumericsBenchmark.double_fma":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.int_add
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.get_flip
+# Parameters: (size = 16384)
 
-# Run progress: 10.34% complete, ETA 00:00:58
+# Run progress: 2.70% complete, ETA 00:04:01
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.600 ns/op
-Iteration   1: 0.626 ns/op
+# Warmup Iteration   1: 5.748 ns/op
+Iteration   1: 5.580 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.int_add":
-  0.626 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.get_flip":
+  5.580 ns/op
 
 
 # JMH version: 1.37
@@ -112,47 +116,21 @@ Result "io.github.benchjava.bench.NumericsBenchmark.int_add":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.long_mul
-
-# Run progress: 13.79% complete, ETA 00:00:55
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.627 ns/op
-Iteration   1: 0.627 ns/op
-
-
-Result "io.github.benchjava.bench.NumericsBenchmark.long_mul":
-  0.627 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails
+# Benchmark: io.github.benchjava.bench.CloningBenchmark.array_clone
 # Parameters: (len = 128)
 
-# Run progress: 17.24% complete, ETA 00:00:53
+# Run progress: 3.60% complete, ETA 00:03:58
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 86220.678 ns/op
-Iteration   1: 84989.080 ns/op
+# Warmup Iteration   1: 31.949 ns/op
+Iteration   1: 28.683 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  84989.080 ns/op
+Result "io.github.benchjava.bench.CloningBenchmark.array_clone":
+  28.683 ns/op
 
 
 # JMH version: 1.37
@@ -165,21 +143,21 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails
-# Parameters: (len = 1024)
+# Benchmark: io.github.benchjava.bench.CloningBenchmark.array_clone
+# Parameters: (len = 4096)
 
-# Run progress: 20.69% complete, ETA 00:00:51
+# Run progress: 4.50% complete, ETA 00:03:56
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4420941.366 ns/op
-Iteration   1: 4355429.291 ns/op
+# Warmup Iteration   1: 986.667 ns/op
+Iteration   1: 912.547 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  4355429.291 ns/op
+Result "io.github.benchjava.bench.CloningBenchmark.array_clone":
+  912.547 ns/op
 
 
 # JMH version: 1.37
@@ -192,48 +170,21 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails
-# Parameters: (len = 8192)
-
-# Run progress: 24.14% complete, ETA 00:00:49
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 261644954.250 ns/op
-Iteration   1: 261613188.750 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  261613188.750 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8
+# Benchmark: io.github.benchjava.bench.CloningBenchmark.array_copyOf
 # Parameters: (len = 128)
 
-# Run progress: 27.59% complete, ETA 00:00:47
+# Run progress: 5.41% complete, ETA 00:03:54
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 13.556 ns/op
-Iteration   1: 12.285 ns/op
+# Warmup Iteration   1: 31.948 ns/op
+Iteration   1: 28.455 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  12.285 ns/op
+Result "io.github.benchjava.bench.CloningBenchmark.array_copyOf":
+  28.455 ns/op
 
 
 # JMH version: 1.37
@@ -246,21 +197,21 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8
-# Parameters: (len = 1024)
+# Benchmark: io.github.benchjava.bench.CloningBenchmark.array_copyOf
+# Parameters: (len = 4096)
 
-# Run progress: 31.03% complete, ETA 00:00:44
+# Run progress: 6.31% complete, ETA 00:03:52
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 75.380 ns/op
-Iteration   1: 67.355 ns/op
+# Warmup Iteration   1: 988.133 ns/op
+Iteration   1: 905.971 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  67.355 ns/op
+Result "io.github.benchjava.bench.CloningBenchmark.array_copyOf":
+  905.971 ns/op
 
 
 # JMH version: 1.37
@@ -273,48 +224,21 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8
-# Parameters: (len = 8192)
-
-# Run progress: 34.48% complete, ETA 00:00:42
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 605.340 ns/op
-Iteration   1: 547.263 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  547.263 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder
+# Benchmark: io.github.benchjava.bench.CloningBenchmark.array_manual_copy
 # Parameters: (len = 128)
 
-# Run progress: 37.93% complete, ETA 00:00:40
+# Run progress: 7.21% complete, ETA 00:03:49
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.635 ns/op
-Iteration   1: 0.626 ns/op
+# Warmup Iteration   1: 30.415 ns/op
+Iteration   1: 27.401 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.626 ns/op
+Result "io.github.benchjava.bench.CloningBenchmark.array_manual_copy":
+  27.401 ns/op
 
 
 # JMH version: 1.37
@@ -327,21 +251,21 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder"
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder
-# Parameters: (len = 1024)
+# Benchmark: io.github.benchjava.bench.CloningBenchmark.array_manual_copy
+# Parameters: (len = 4096)
 
-# Run progress: 41.38% complete, ETA 00:00:38
+# Run progress: 8.11% complete, ETA 00:03:47
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.644 ns/op
-Iteration   1: 0.641 ns/op
+# Warmup Iteration   1: 1004.634 ns/op
+Iteration   1: 958.987 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.641 ns/op
+Result "io.github.benchjava.bench.CloningBenchmark.array_manual_copy":
+  958.987 ns/op
 
 
 # JMH version: 1.37
@@ -354,21 +278,20 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder"
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder
-# Parameters: (len = 8192)
+# Benchmark: io.github.benchjava.bench.CodeLayoutBenchmark.predictable_branch
 
-# Run progress: 44.83% complete, ETA 00:00:35
+# Run progress: 9.01% complete, ETA 00:03:45
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.632 ns/op
-Iteration   1: 0.627 ns/op
+# Warmup Iteration   1: 0.666 ns/op
+Iteration   1: 0.661 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.627 ns/op
+Result "io.github.benchjava.bench.CodeLayoutBenchmark.predictable_branch":
+  0.661 ns/op
 
 
 # JMH version: 1.37
@@ -381,21 +304,20 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder"
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus
-# Parameters: (len = 128)
+# Benchmark: io.github.benchjava.bench.CodeLayoutBenchmark.unpredictable_branch
 
-# Run progress: 48.28% complete, ETA 00:00:33
+# Run progress: 9.91% complete, ETA 00:03:43
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 129.966 ns/op
-Iteration   1: 123.458 ns/op
+# Warmup Iteration   1: 643.157 ns/op
+Iteration   1: 633.067 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  123.458 ns/op
+Result "io.github.benchjava.bench.CodeLayoutBenchmark.unpredictable_branch":
+  633.067 ns/op
 
 
 # JMH version: 1.37
@@ -408,75 +330,21 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus
-# Parameters: (len = 1024)
-
-# Run progress: 51.72% complete, ETA 00:00:31
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 130.055 ns/op
-Iteration   1: 121.151 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  121.151 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus
-# Parameters: (len = 8192)
-
-# Run progress: 55.17% complete, ETA 00:00:29
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 128.854 ns/op
-Iteration   1: 123.237 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  123.237 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_for_each
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.array_sum
 # Parameters: (size = 100)
 
-# Run progress: 58.62% complete, ETA 00:00:26
+# Run progress: 10.81% complete, ETA 00:03:40
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 56.036 ns/op
-Iteration   1: 54.665 ns/op
+# Warmup Iteration   1: 22.001 ns/op
+Iteration   1: 21.947 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  54.665 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.array_sum":
+  21.947 ns/op
 
 
 # JMH version: 1.37
@@ -489,21 +357,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_for_each
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.array_sum
 # Parameters: (size = 1000)
 
-# Run progress: 62.07% complete, ETA 00:00:24
+# Run progress: 11.71% complete, ETA 00:03:38
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 490.710 ns/op
-Iteration   1: 481.022 ns/op
+# Warmup Iteration   1: 304.625 ns/op
+Iteration   1: 301.634 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  481.022 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.array_sum":
+  301.634 ns/op
 
 
 # JMH version: 1.37
@@ -516,21 +384,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_for_each
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.array_sum
 # Parameters: (size = 10000)
 
-# Run progress: 65.52% complete, ETA 00:00:22
+# Run progress: 12.61% complete, ETA 00:03:36
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4924.235 ns/op
-Iteration   1: 4903.740 ns/op
+# Warmup Iteration   1: 3155.697 ns/op
+Iteration   1: 3107.443 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  4903.740 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.array_sum":
+  3107.443 ns/op
 
 
 # JMH version: 1.37
@@ -543,21 +411,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_loop
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_hit
 # Parameters: (size = 100)
 
-# Run progress: 68.97% complete, ETA 00:00:20
+# Run progress: 13.51% complete, ETA 00:03:34
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 51.478 ns/op
-Iteration   1: 51.818 ns/op
+# Warmup Iteration   1: 294.560 ns/op
+Iteration   1: 290.701 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  51.818 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_hit":
+  290.701 ns/op
 
 
 # JMH version: 1.37
@@ -570,21 +438,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_loop
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_hit
 # Parameters: (size = 1000)
 
-# Run progress: 72.41% complete, ETA 00:00:17
+# Run progress: 14.41% complete, ETA 00:03:31
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 469.198 ns/op
-Iteration   1: 459.568 ns/op
+# Warmup Iteration   1: 4576.344 ns/op
+Iteration   1: 4762.531 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  459.568 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_hit":
+  4762.531 ns/op
 
 
 # JMH version: 1.37
@@ -597,21 +465,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_loop
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_hit
 # Parameters: (size = 10000)
 
-# Run progress: 75.86% complete, ETA 00:00:15
+# Run progress: 15.32% complete, ETA 00:03:29
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4629.055 ns/op
-Iteration   1: 4554.843 ns/op
+# Warmup Iteration   1: 46727.354 ns/op
+Iteration   1: 43228.546 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  4554.843 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_hit":
+  43228.546 ns/op
 
 
 # JMH version: 1.37
@@ -624,21 +492,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_miss
 # Parameters: (size = 100)
 
-# Run progress: 79.31% complete, ETA 00:00:13
+# Run progress: 16.22% complete, ETA 00:03:27
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 2832.740 ns/op
-Iteration   1: 2280.102 ns/op
+# Warmup Iteration   1: 237.297 ns/op
+Iteration   1: 219.685 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  2280.102 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_miss":
+  219.685 ns/op
 
 
 # JMH version: 1.37
@@ -651,21 +519,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_miss
 # Parameters: (size = 1000)
 
-# Run progress: 82.76% complete, ETA 00:00:11
+# Run progress: 17.12% complete, ETA 00:03:25
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3580.988 ns/op
-Iteration   1: 2934.662 ns/op
+# Warmup Iteration   1: 2462.840 ns/op
+Iteration   1: 2272.817 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  2934.662 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_miss":
+  2272.817 ns/op
 
 
 # JMH version: 1.37
@@ -678,21 +546,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_miss
 # Parameters: (size = 10000)
 
-# Run progress: 86.21% complete, ETA 00:00:08
+# Run progress: 18.02% complete, ETA 00:03:22
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 14810.237 ns/op
-Iteration   1: 13302.285 ns/op
+# Warmup Iteration   1: 25154.120 ns/op
+Iteration   1: 22563.975 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  13302.285 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.hashmap_get_miss":
+  22563.975 ns/op
 
 
 # JMH version: 1.37
@@ -705,21 +573,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_stream
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sort_copy
 # Parameters: (size = 100)
 
-# Run progress: 89.66% complete, ETA 00:00:06
+# Run progress: 18.92% complete, ETA 00:03:20
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 86.171 ns/op
-Iteration   1: 92.477 ns/op
+# Warmup Iteration   1: 2619.809 ns/op
+Iteration   1: 2673.320 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  92.477 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sort_copy":
+  2673.320 ns/op
 
 
 # JMH version: 1.37
@@ -732,21 +600,21 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_stream
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sort_copy
 # Parameters: (size = 1000)
 
-# Run progress: 93.10% complete, ETA 00:00:04
+# Run progress: 19.82% complete, ETA 00:03:18
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 649.130 ns/op
-Iteration   1: 641.758 ns/op
+# Warmup Iteration   1: 45741.526 ns/op
+Iteration   1: 44331.050 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  641.758 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sort_copy":
+  44331.050 ns/op
 
 
 # JMH version: 1.37
@@ -759,70 +627,478 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_stream
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sort_copy
 # Parameters: (size = 10000)
 
-# Run progress: 96.55% complete, ETA 00:00:02
+# Run progress: 20.72% complete, ETA 00:03:15
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6803.376 ns/op
-Iteration   1: 6862.686 ns/op
+# Warmup Iteration   1: 1328689.736 ns/op
+Iteration   1: 1301289.100 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  6862.686 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sort_copy":
+  1301289.100 ns/op
 
 
-# Run complete. Total time: 00:01:04
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sum_forEach
+# Parameters: (size = 100)
 
-REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
-why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
-experiments, perform baseline and negative tests that provide experimental control, make sure
-the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
-Do not assume the numbers tell you what you want them to tell.
+# Run progress: 21.62% complete, ETA 00:03:13
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 55.384 ns/op
+Iteration   1: 54.338 ns/op
 
-NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
-extra caution when trusting the results, look into the generated code to check the benchmark still
-works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
-different JVMs are already problematic, the performance difference caused by different Blackhole
-modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                                      (len)  (size)  Mode  Cnt          Score   Error  Units
-NumericsBenchmark.biginteger_mul                 N/A     N/A  avgt              22.072          ns/op
-NumericsBenchmark.bit_ops                        N/A     N/A  avgt               0.782          ns/op
-NumericsBenchmark.double_fma                     N/A     N/A  avgt               0.627          ns/op
-NumericsBenchmark.int_add                        N/A     N/A  avgt               0.626          ns/op
-NumericsBenchmark.long_mul                       N/A     N/A  avgt               0.627          ns/op
-RegexAndStringBenchmark.regex_find_emails        128     N/A  avgt           84989.080          ns/op
-RegexAndStringBenchmark.regex_find_emails       1024     N/A  avgt         4355429.291          ns/op
-RegexAndStringBenchmark.regex_find_emails       8192     N/A  avgt       261613188.750          ns/op
-RegexAndStringBenchmark.string_bytes_utf8        128     N/A  avgt              12.285          ns/op
-RegexAndStringBenchmark.string_bytes_utf8       1024     N/A  avgt              67.355          ns/op
-RegexAndStringBenchmark.string_bytes_utf8       8192     N/A  avgt             547.263          ns/op
-RegexAndStringBenchmark.string_concat_builder    128     N/A  avgt               0.626          ns/op
-RegexAndStringBenchmark.string_concat_builder   1024     N/A  avgt               0.641          ns/op
-RegexAndStringBenchmark.string_concat_builder   8192     N/A  avgt               0.627          ns/op
-RegexAndStringBenchmark.string_concat_plus       128     N/A  avgt             123.458          ns/op
-RegexAndStringBenchmark.string_concat_plus      1024     N/A  avgt             121.151          ns/op
-RegexAndStringBenchmark.string_concat_plus      8192     N/A  avgt             123.237          ns/op
-StreamsBenchmark.sum_for_each                    N/A     100  avgt              54.665          ns/op
-StreamsBenchmark.sum_for_each                    N/A    1000  avgt             481.022          ns/op
-StreamsBenchmark.sum_for_each                    N/A   10000  avgt            4903.740          ns/op
-StreamsBenchmark.sum_loop                        N/A     100  avgt              51.818          ns/op
-StreamsBenchmark.sum_loop                        N/A    1000  avgt             459.568          ns/op
-StreamsBenchmark.sum_loop                        N/A   10000  avgt            4554.843          ns/op
-StreamsBenchmark.sum_parallel_stream             N/A     100  avgt            2280.102          ns/op
-StreamsBenchmark.sum_parallel_stream             N/A    1000  avgt            2934.662          ns/op
-StreamsBenchmark.sum_parallel_stream             N/A   10000  avgt           13302.285          ns/op
-StreamsBenchmark.sum_stream                      N/A     100  avgt              92.477          ns/op
-StreamsBenchmark.sum_stream                      N/A    1000  avgt             641.758          ns/op
-StreamsBenchmark.sum_stream                      N/A   10000  avgt            6862.686          ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sum_forEach":
+  54.338 ns/op
 
-Benchmark result is saved to /home/runner/work/java-benchmarks/java-benchmarks/java-in-time/results/zulu-25.json
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            /25.0.0-36/x64/bin/java
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sum_forEach
+# Parameters: (size = 1000)
+
+# Run progress: 22.52% complete, ETA 00:03:11
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 832.669 ns/op
+Iteration   1: 814.340 ns/op
+
+
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sum_forEach":
+  814.340 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sum_forEach
+# Parameters: (size = 10000)
+
+# Run progress: 23.42% complete, ETA 00:03:09
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 10360.278 ns/op
+Iteration   1: 10001.747 ns/op
+
+
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sum_forEach":
+  10001.747 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sum_stream
+# Parameters: (size = 100)
+
+# Run progress: 24.32% complete, ETA 00:03:07
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 86.152 ns/op
+Iteration   1: 93.049 ns/op
+
+
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sum_stream":
+  93.049 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sum_stream
+# Parameters: (size = 1000)
+
+# Run progress: 25.23% complete, ETA 00:03:04
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 657.791 ns/op
+Iteration   1: 651.559 ns/op
+
+
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sum_stream":
+  651.559 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.list_sum_stream
+# Parameters: (size = 10000)
+
+# Run progress: 26.13% complete, ETA 00:03:02
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 10236.291 ns/op
+Iteration   1: 6854.035 ns/op
+
+
+Result "io.github.benchjava.bench.CollectionsBenchmark.list_sum_stream":
+  6854.035 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.ConcurrencyBenchmark.completableFuture_allOf
+# Parameters: (tasks = 100)
+
+# Run progress: 27.03% complete, ETA 00:03:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 50486.619 ns/op
+Iteration   1: 45282.745 ns/op
+
+
+Result "io.github.benchjava.bench.ConcurrencyBenchmark.completableFuture_allOf":
+  45282.745 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.ConcurrencyBenchmark.completableFuture_allOf
+# Parameters: (tasks = 1000)
+
+# Run progress: 27.93% complete, ETA 00:02:58
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 211922.359 ns/op
+Iteration   1: 183047.916 ns/op
+
+
+Result "io.github.benchjava.bench.ConcurrencyBenchmark.completableFuture_allOf":
+  183047.916 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.ConcurrencyBenchmark.forkJoin_tasks
+# Parameters: (tasks = 100)
+
+# Run progress: 28.83% complete, ETA 00:02:55
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 41734.452 ns/op
+Iteration   1: 39162.315 ns/op
+
+
+Result "io.github.benchjava.bench.ConcurrencyBenchmark.forkJoin_tasks":
+  39162.315 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.ConcurrencyBenchmark.forkJoin_tasks
+# Parameters: (tasks = 1000)
+
+# Run progress: 29.73% complete, ETA 00:02:53
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 184519.076 ns/op
+Iteration   1: 169022.133 ns/op
+
+
+Result "io.github.benchjava.bench.ConcurrencyBenchmark.forkJoin_tasks":
+  169022.133 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CryptoBenchmark.aes_encrypt
+
+# Run progress: 30.63% complete, ETA 00:02:51
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 542.065 ns/op
+Iteration   1: 498.212 ns/op
+
+
+Result "io.github.benchjava.bench.CryptoBenchmark.aes_encrypt":
+  498.212 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CryptoBenchmark.sha256_digest
+
+# Run progress: 31.53% complete, ETA 00:02:49
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 759.837 ns/op
+Iteration   1: 718.488 ns/op
+
+
+Result "io.github.benchjava.bench.CryptoBenchmark.sha256_digest":
+  718.488 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DeabstractionBenchmark.via_concrete
+
+# Run progress: 32.43% complete, ETA 00:02:47
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 0.706 ns/op
+Iteration   1: 0.704 ns/op
+
+
+Result "io.github.benchjava.bench.DeabstractionBenchmark.via_concrete":
+  0.704 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DeabstractionBenchmark.via_interface
+
+# Run progress: 33.33% complete, ETA 00:02:44
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 0.857 ns/op
+Iteration   1: 0.847 ns/op
+
+
+Result "io.github.benchjava.bench.DeabstractionBenchmark.via_interface":
+  0.847 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.capture_stacktrace_elements
+
+# Run progress: 34.23% complete, ETA 00:02:42
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 5585.673 ns/op
+Iteration   1: 5424.944 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.capture_stacktrace_elements":
+  5424.944 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.throwable_fillInStackTrace
+
+# Run progress: 35.14% complete, ETA 00:02:40
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1792.308 ns/op
+Iteration   1: 1739.754 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.throwable_fillInStackTrace":
+  1739.754 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.EnumerationBenchmark.enumset_iterate_ordinals
+
+# Run progress: 36.04% complete, ETA 00:02:38
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 5.069 ns/op
+Iteration   1: 4.808 ns/op
+
+
+Result "io.github.benchjava.bench.EnumerationBenchmark.enumset_iterate_ordinals":
+  4.808 ns/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25, OpenJDK 64-Bit Server VM, 25+36-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Zulu_jdk/25.0.0-36/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 1 iterations, 1 s each
@@ -838,12 +1114,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6.777 ns/op
-Iteration   1: 8.594 ns/op
+# Warmup Iteration   1: 6.953 ns/op
+Iteration   1: 8.349 ns/op
 
 
 Result "io.github.benchjava.bench.EnumerationBenchmark.switch_on_enum":
-  8.594 ns/op
+  8.349 ns/op
 
 
 # JMH version: 1.37
@@ -864,12 +1140,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 61.843 ns/op
-Iteration   1: 60.789 ns/op
+# Warmup Iteration   1: 61.927 ns/op
+Iteration   1: 61.358 ns/op
 
 
 Result "io.github.benchjava.bench.GCWriteBarriersBenchmark.array_writes":
-  60.789 ns/op
+  61.358 ns/op
 
 
 # JMH version: 1.37
@@ -890,12 +1166,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3668.620 ns/op
-Iteration   1: 3642.172 ns/op
+# Warmup Iteration   1: 3658.085 ns/op
+Iteration   1: 3619.345 ns/op
 
 
 Result "io.github.benchjava.bench.GCWriteBarriersBenchmark.field_writes":
-  3642.172 ns/op
+  3619.345 ns/op
 
 
 # JMH version: 1.37
@@ -917,12 +1193,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 544.636 ns/op
-Iteration   1: 501.645 ns/op
+# Warmup Iteration   1: 563.885 ns/op
+Iteration   1: 512.685 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.bytearray_stream_copy":
-  501.645 ns/op
+  512.685 ns/op
 
 
 # JMH version: 1.37
@@ -944,12 +1220,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6108.677 ns/op
-Iteration   1: 5485.718 ns/op
+# Warmup Iteration   1: 6365.669 ns/op
+Iteration   1: 5735.902 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.bytearray_stream_copy":
-  5485.718 ns/op
+  5735.902 ns/op
 
 
 # JMH version: 1.37
@@ -971,12 +1247,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1341.823 ns/op
-Iteration   1: 1268.069 ns/op
+# Warmup Iteration   1: 1352.945 ns/op
+Iteration   1: 1290.062 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.string_roundtrip_utf8":
-  1268.069 ns/op
+  1290.062 ns/op
 
 
 # JMH version: 1.37
@@ -998,12 +1274,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 91586.215 ns/op
-Iteration   1: 83471.183 ns/op
+# Warmup Iteration   1: 92323.897 ns/op
+Iteration   1: 83875.217 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.string_roundtrip_utf8":
-  83471.183 ns/op
+  83875.217 ns/op
 
 
 # JMH version: 1.37
@@ -1025,12 +1301,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 56.786 ns/op
-Iteration   1: 52.311 ns/op
+# Warmup Iteration   1: 59.627 ns/op
+Iteration   1: 54.841 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.system_arraycopy":
-  52.311 ns/op
+  54.841 ns/op
 
 
 # JMH version: 1.37
@@ -1052,12 +1328,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4298.405 ns/op
-Iteration   1: 3895.828 ns/op
+# Warmup Iteration   1: 4403.661 ns/op
+Iteration   1: 4064.473 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.system_arraycopy":
-  3895.828 ns/op
+  4064.473 ns/op
 
 
 # JMH version: 1.37
@@ -1078,12 +1354,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 70.703 ns/op
-Iteration   1: 70.999 ns/op
+# Warmup Iteration   1: 70.650 ns/op
+Iteration   1: 69.649 ns/op
 
 
 Result "io.github.benchjava.bench.JitInliningBenchmark.bounds_checked_loop":
-  70.999 ns/op
+  69.649 ns/op
 
 
 # JMH version: 1.37
@@ -1104,12 +1380,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.625 ns/op
-Iteration   1: 0.627 ns/op
+# Warmup Iteration   1: 0.627 ns/op
+Iteration   1: 0.625 ns/op
 
 
 Result "io.github.benchjava.bench.JitInliningBenchmark.constant_folding_math":
-  0.627 ns/op
+  0.625 ns/op
 
 
 # JMH version: 1.37
@@ -1130,12 +1406,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.476 ns/op
-Iteration   1: 0.624 ns/op
+# Warmup Iteration   1: 0.474 ns/op
+Iteration   1: 0.625 ns/op
 
 
 Result "io.github.benchjava.bench.JitInliningBenchmark.direct_call":
-  0.624 ns/op
+  0.625 ns/op
 
 
 # JMH version: 1.37
@@ -1156,12 +1432,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.716 ns/op
-Iteration   1: 0.712 ns/op
+# Warmup Iteration   1: 0.726 ns/op
+Iteration   1: 0.721 ns/op
 
 
 Result "io.github.benchjava.bench.JitInliningBenchmark.virtual_call":
-  0.712 ns/op
+  0.721 ns/op
 
 
 # JMH version: 1.37
@@ -1183,12 +1459,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 2797.251 ns/op
-Iteration   1: 2021.896 ns/op
+# Warmup Iteration   1: 2873.672 ns/op
+Iteration   1: 2062.759 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.deserialize_jackson":
-  2021.896 ns/op
+  2062.759 ns/op
 
 
 # JMH version: 1.37
@@ -1210,12 +1486,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 8605.994 ns/op
-Iteration   1: 6739.393 ns/op
+# Warmup Iteration   1: 8705.652 ns/op
+Iteration   1: 6370.626 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.deserialize_jackson":
-  6739.393 ns/op
+  6370.626 ns/op
 
 
 # JMH version: 1.37
@@ -1237,12 +1513,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 43321.559 ns/op
-Iteration   1: 32263.799 ns/op
+# Warmup Iteration   1: 38573.428 ns/op
+Iteration   1: 30418.845 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.deserialize_jackson":
-  32263.799 ns/op
+  30418.845 ns/op
 
 
 # JMH version: 1.37
@@ -1264,12 +1540,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1271.058 ns/op
-Iteration   1: 1050.083 ns/op
+# Warmup Iteration   1: 1371.025 ns/op
+Iteration   1: 1107.032 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.serialize_jackson":
-  1050.083 ns/op
+  1107.032 ns/op
 
 
 # JMH version: 1.37
@@ -1291,12 +1567,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4387.075 ns/op
-Iteration   1: 3648.188 ns/op
+# Warmup Iteration   1: 4541.534 ns/op
+Iteration   1: 3713.607 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.serialize_jackson":
-  3648.188 ns/op
+  3713.607 ns/op
 
 
 # JMH version: 1.37
@@ -1318,12 +1594,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 20410.162 ns/op
-Iteration   1: 17171.252 ns/op
+# Warmup Iteration   1: 20054.512 ns/op
+Iteration   1: 16657.762 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.serialize_jackson":
-  17171.252 ns/op
+  16657.762 ns/op
 
 
 # JMH version: 1.37
@@ -1345,12 +1621,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 9.479 ns/op
-Iteration   1: 9.619 ns/op
+# Warmup Iteration   1: 9.455 ns/op
+Iteration   1: 9.471 ns/op
 
 
 Result "io.github.benchjava.bench.MemoryExtensionsBenchmark.arrays_mismatch":
-  9.619 ns/op
+  9.471 ns/op
 
 
 # JMH version: 1.37
@@ -1372,12 +1648,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 88.853 ns/op
-Iteration   1: 87.285 ns/op
+# Warmup Iteration   1: 88.741 ns/op
+Iteration   1: 87.435 ns/op
 
 
 Result "io.github.benchjava.bench.MemoryExtensionsBenchmark.arrays_mismatch":
-  87.285 ns/op
+  87.435 ns/op
 
 
 # JMH version: 1.37
@@ -1399,12 +1675,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 139.979 ns/op
-Iteration   1: 134.373 ns/op
+# Warmup Iteration   1: 139.920 ns/op
+Iteration   1: 133.873 ns/op
 
 
 Result "io.github.benchjava.bench.MemoryExtensionsBenchmark.bytebuffer_put_get":
-  134.373 ns/op
+  133.873 ns/op
 
 
 # JMH version: 1.37
@@ -1426,12 +1702,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1627.369 ns/op
-Iteration   1: 1555.420 ns/op
+# Warmup Iteration   1: 1648.657 ns/op
+Iteration   1: 1575.498 ns/op
 
 
 Result "io.github.benchjava.bench.MemoryExtensionsBenchmark.bytebuffer_put_get":
-  1555.420 ns/op
+  1575.498 ns/op
 
 
 # JMH version: 1.37
@@ -1453,12 +1729,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 101.384 ns/op
-Iteration   1: 96.683 ns/op
+# Warmup Iteration   1: 101.409 ns/op
+Iteration   1: 96.978 ns/op
 
 
 Result "io.github.benchjava.bench.MemoryExtensionsBenchmark.system_arraycopy_sum":
-  96.683 ns/op
+  96.978 ns/op
 
 
 # JMH version: 1.37
@@ -1480,12 +1756,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1613.290 ns/op
-Iteration   1: 1531.027 ns/op
+# Warmup Iteration   1: 1631.514 ns/op
+Iteration   1: 1541.505 ns/op
 
 
 Result "io.github.benchjava.bench.MemoryExtensionsBenchmark.system_arraycopy_sum":
-  1531.027 ns/op
+  1541.505 ns/op
 
 
 # JMH version: 1.37
@@ -1506,12 +1782,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 61065.009 ns/op
-Iteration   1: 53082.401 ns/op
+# Warmup Iteration   1: 58146.266 ns/op
+Iteration   1: 49226.745 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.udp_echo_roundtrip":
-  53082.401 ns/op
+  49226.745 ns/op
 
 
 # JMH version: 1.37
@@ -1532,12 +1808,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 24.300 ns/op
-Iteration   1: 21.792 ns/op
+# Warmup Iteration   1: 24.149 ns/op
+Iteration   1: 21.924 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.biginteger_mul":
-  21.792 ns/op
+  21.924 ns/op
 
 
 # JMH version: 1.37
@@ -1559,11 +1835,11 @@ WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.u
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # Warmup Iteration   1: 0.783 ns/op
-Iteration   1: 0.780 ns/op
+Iteration   1: 0.781 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.bit_ops":
-  0.780 ns/op
+  0.781 ns/op
 
 
 # JMH version: 1.37
@@ -1584,12 +1860,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.628 ns/op
-Iteration   1: 0.624 ns/op
+# Warmup Iteration   1: 0.633 ns/op
+Iteration   1: 0.627 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.double_fma":
-  0.624 ns/op
+  0.627 ns/op
 
 
 # JMH version: 1.37
@@ -1610,7 +1886,7 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.606 ns/op
+# Warmup Iteration   1: 0.610 ns/op
 Iteration   1: 0.627 ns/op
 
 
@@ -1636,12 +1912,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.626 ns/op
-Iteration   1: 0.624 ns/op
+# Warmup Iteration   1: 0.627 ns/op
+Iteration   1: 0.626 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.long_mul":
-  0.624 ns/op
+  0.626 ns/op
 
 
 # JMH version: 1.37
@@ -1662,12 +1938,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 5922.528 ns/op
-Iteration   1: 5887.006 ns/op
+# Warmup Iteration   1: 5759.784 ns/op
+Iteration   1: 5196.709 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.arraydeque_push_pop":
-  5887.006 ns/op
+  5196.709 ns/op
 
 
 # JMH version: 1.37
@@ -1688,12 +1964,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 5891.181 ns/op
-Iteration   1: 5521.199 ns/op
+# Warmup Iteration   1: 5844.535 ns/op
+Iteration   1: 5531.417 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.linkedlist_push_pop":
-  5521.199 ns/op
+  5531.417 ns/op
 
 
 # JMH version: 1.37
@@ -1714,12 +1990,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 564.463 ns/op
-Iteration   1: 501.674 ns/op
+# Warmup Iteration   1: 578.315 ns/op
+Iteration   1: 512.710 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.base64_decode":
-  501.674 ns/op
+  512.710 ns/op
 
 
 # JMH version: 1.37
@@ -1740,12 +2016,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 297.924 ns/op
-Iteration   1: 272.762 ns/op
+# Warmup Iteration   1: 307.051 ns/op
+Iteration   1: 283.182 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.base64_encode":
-  272.762 ns/op
+  283.182 ns/op
 
 
 # JMH version: 1.37
@@ -1766,12 +2042,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.596 ns/op
-Iteration   1: 0.624 ns/op
+# Warmup Iteration   1: 0.594 ns/op
+Iteration   1: 0.627 ns/op
 
 
 Result "io.github.benchjava.bench.ReflectionBenchmark.direct_call":
-  0.624 ns/op
+  0.627 ns/op
 
 
 # JMH version: 1.37
@@ -1792,12 +2068,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3.770 ns/op
-Iteration   1: 3.768 ns/op
+# Warmup Iteration   1: 3.772 ns/op
+Iteration   1: 3.761 ns/op
 
 
 Result "io.github.benchjava.bench.ReflectionBenchmark.methodhandle_invokeExact":
-  3.768 ns/op
+  3.761 ns/op
 
 
 # JMH version: 1.37
@@ -1818,12 +2094,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 8.390 ns/op
-Iteration   1: 8.280 ns/op
+# Warmup Iteration   1: 8.376 ns/op
+Iteration   1: 8.373 ns/op
 
 
 Result "io.github.benchjava.bench.ReflectionBenchmark.reflection_invoke":
-  8.280 ns/op
+  8.373 ns/op
 
 
 # JMH version: 1.37
@@ -1845,12 +2121,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 86843.526 ns/op
-Iteration   1: 85917.061 ns/op
+# Warmup Iteration   1: 85532.336 ns/op
+Iteration   1: 84678.168 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  85917.061 ns/op
+  84678.168 ns/op
 
 
 # JMH version: 1.37
@@ -1872,12 +2148,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4434856.748 ns/op
-Iteration   1: 4344138.403 ns/op
+# Warmup Iteration   1: 4395174.167 ns/op
+Iteration   1: 4346002.519 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  4344138.403 ns/op
+  4346002.519 ns/op
 
 
 # JMH version: 1.37
@@ -1899,12 +2175,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 254824517.750 ns/op
-Iteration   1: 260988064.750 ns/op
+# Warmup Iteration   1: 252977447.000 ns/op
+Iteration   1: 260699931.500 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  260988064.750 ns/op
+  260699931.500 ns/op
 
 
 # JMH version: 1.37
@@ -1926,12 +2202,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 14.781 ns/op
-Iteration   1: 12.411 ns/op
+# Warmup Iteration   1: 14.773 ns/op
+Iteration   1: 13.348 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  12.411 ns/op
+  13.348 ns/op
 
 
 # JMH version: 1.37
@@ -1953,12 +2229,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 73.676 ns/op
-Iteration   1: 68.186 ns/op
+# Warmup Iteration   1: 75.934 ns/op
+Iteration   1: 68.646 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  68.186 ns/op
+  68.646 ns/op
 
 
 # JMH version: 1.37
@@ -1980,12 +2256,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 590.225 ns/op
-Iteration   1: 536.936 ns/op
+# Warmup Iteration   1: 610.699 ns/op
+Iteration   1: 558.010 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  536.936 ns/op
+  558.010 ns/op
 
 
 # JMH version: 1.37
@@ -2007,12 +2283,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.633 ns/op
-Iteration   1: 0.627 ns/op
+# Warmup Iteration   1: 0.642 ns/op
+Iteration   1: 0.626 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.627 ns/op
+  0.626 ns/op
 
 
 # JMH version: 1.37
@@ -2035,11 +2311,11 @@ WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.u
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # Warmup Iteration   1: 0.634 ns/op
-Iteration   1: 0.630 ns/op
+Iteration   1: 0.626 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.630 ns/op
+  0.626 ns/op
 
 
 # JMH version: 1.37
@@ -2061,12 +2337,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.634 ns/op
-Iteration   1: 0.630 ns/op
+# Warmup Iteration   1: 0.633 ns/op
+Iteration   1: 0.626 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.630 ns/op
+  0.626 ns/op
 
 
 # JMH version: 1.37
@@ -2088,12 +2364,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 129.748 ns/op
-Iteration   1: 120.133 ns/op
+# Warmup Iteration   1: 129.269 ns/op
+Iteration   1: 123.158 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  120.133 ns/op
+  123.158 ns/op
 
 
 # JMH version: 1.37
@@ -2115,12 +2391,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 130.352 ns/op
-Iteration   1: 123.029 ns/op
+# Warmup Iteration   1: 130.331 ns/op
+Iteration   1: 122.500 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  123.029 ns/op
+  122.500 ns/op
 
 
 # JMH version: 1.37
@@ -2142,12 +2418,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 129.630 ns/op
-Iteration   1: 123.424 ns/op
+# Warmup Iteration   1: 129.517 ns/op
+Iteration   1: 122.241 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  123.424 ns/op
+  122.241 ns/op
 
 
 # JMH version: 1.37
@@ -2169,11 +2445,11 @@ WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.u
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # Warmup Iteration   1: 16.748 ns/op
-Iteration   1: 15.924 ns/op
+Iteration   1: 15.897 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.index_of_any_chain":
-  15.924 ns/op
+  15.897 ns/op
 
 
 # JMH version: 1.37
@@ -2194,12 +2470,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3.483 ns/op
-Iteration   1: 3.147 ns/op
+# Warmup Iteration   1: 3.474 ns/op
+Iteration   1: 3.157 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.index_of_any_table":
-  3.147 ns/op
+  3.157 ns/op
 
 
 # JMH version: 1.37
@@ -2220,12 +2496,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 12.373 ns/op
-Iteration   1: 10.443 ns/op
+# Warmup Iteration   1: 12.379 ns/op
+Iteration   1: 10.445 ns/op
 
 
 Result "io.github.benchjava.bench.SearchingBenchmark.arrays_binary_search":
-  10.443 ns/op
+  10.445 ns/op
 
 
 # JMH version: 1.37
@@ -2240,18 +2516,18 @@ Result "io.github.benchjava.bench.SearchingBenchmark.arrays_binary_search":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.SearchingBenchmark.string_indexOf_hit
 
-# Run progress: 84.68% complete, ETA 00:00:38
+# Run progress: 84.68% complete, ETA 00:00:37
 # Fork: 1 of 1
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # Warmup Iteration   1: 2.510 ns/op
-Iteration   1: 2.536 ns/op
+Iteration   1: 2.508 ns/op
 
 
 Result "io.github.benchjava.bench.SearchingBenchmark.string_indexOf_hit":
-  2.536 ns/op
+  2.508 ns/op
 
 
 # JMH version: 1.37
@@ -2272,12 +2548,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 422.307 ns/op
-Iteration   1: 410.248 ns/op
+# Warmup Iteration   1: 422.268 ns/op
+Iteration   1: 410.128 ns/op
 
 
 Result "io.github.benchjava.bench.SearchingBenchmark.string_indexOf_miss":
-  410.248 ns/op
+  410.128 ns/op
 
 
 # JMH version: 1.37
@@ -2299,12 +2575,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 57.963 ns/op
-Iteration   1: 55.181 ns/op
+# Warmup Iteration   1: 56.388 ns/op
+Iteration   1: 54.662 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  55.181 ns/op
+  54.662 ns/op
 
 
 # JMH version: 1.37
@@ -2326,12 +2602,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 494.544 ns/op
-Iteration   1: 480.805 ns/op
+# Warmup Iteration   1: 490.753 ns/op
+Iteration   1: 488.138 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  480.805 ns/op
+  488.138 ns/op
 
 
 # JMH version: 1.37
@@ -2353,12 +2629,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4960.269 ns/op
-Iteration   1: 4935.216 ns/op
+# Warmup Iteration   1: 4937.678 ns/op
+Iteration   1: 4922.781 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  4935.216 ns/op
+  4922.781 ns/op
 
 
 # JMH version: 1.37
@@ -2380,12 +2656,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 51.379 ns/op
-Iteration   1: 51.882 ns/op
+# Warmup Iteration   1: 51.424 ns/op
+Iteration   1: 51.637 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  51.882 ns/op
+  51.637 ns/op
 
 
 # JMH version: 1.37
@@ -2407,12 +2683,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 468.702 ns/op
-Iteration   1: 458.746 ns/op
+# Warmup Iteration   1: 467.970 ns/op
+Iteration   1: 458.846 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  458.746 ns/op
+  458.846 ns/op
 
 
 # JMH version: 1.37
@@ -2434,12 +2710,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4617.198 ns/op
-Iteration   1: 4566.124 ns/op
+# Warmup Iteration   1: 4621.489 ns/op
+Iteration   1: 4548.109 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  4566.124 ns/op
+  4548.109 ns/op
 
 
 # JMH version: 1.37
@@ -2461,12 +2737,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 2614.273 ns/op
-Iteration   1: 2135.245 ns/op
+# Warmup Iteration   1: 2594.666 ns/op
+Iteration   1: 2150.594 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  2135.245 ns/op
+  2150.594 ns/op
 
 
 # JMH version: 1.37
@@ -2488,12 +2764,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3236.249 ns/op
-Iteration   1: 2737.553 ns/op
+# Warmup Iteration   1: 3090.471 ns/op
+Iteration   1: 2810.163 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  2737.553 ns/op
+  2810.163 ns/op
 
 
 # JMH version: 1.37
@@ -2515,12 +2791,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 14367.570 ns/op
-Iteration   1: 12745.672 ns/op
+# Warmup Iteration   1: 10884.857 ns/op
+Iteration   1: 8841.340 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  12745.672 ns/op
+  8841.340 ns/op
 
 
 # JMH version: 1.37
@@ -2542,12 +2818,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 89.656 ns/op
-Iteration   1: 91.555 ns/op
+# Warmup Iteration   1: 85.258 ns/op
+Iteration   1: 93.150 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  91.555 ns/op
+  93.150 ns/op
 
 
 # JMH version: 1.37
@@ -2569,12 +2845,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 638.370 ns/op
-Iteration   1: 662.113 ns/op
+# Warmup Iteration   1: 639.096 ns/op
+Iteration   1: 649.673 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  662.113 ns/op
+  649.673 ns/op
 
 
 # JMH version: 1.37
@@ -2596,12 +2872,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6718.041 ns/op
-Iteration   1: 6824.160 ns/op
+# Warmup Iteration   1: 6784.767 ns/op
+Iteration   1: 7026.567 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  6824.160 ns/op
+  7026.567 ns/op
 
 
 # JMH version: 1.37
@@ -2622,12 +2898,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 5.007 ns/op
-Iteration   1: 5.046 ns/op
+# Warmup Iteration   1: 5.012 ns/op
+Iteration   1: 5.073 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.reentrantlock_inc":
-  5.046 ns/op
+  5.073 ns/op
 
 
 # JMH version: 1.37
@@ -2648,12 +2924,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6.262 ns/op
-Iteration   1: 6.113 ns/op
+# Warmup Iteration   1: 6.252 ns/op
+Iteration   1: 6.093 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.synchronized_inc":
-  6.113 ns/op
+  6.093 ns/op
 
 
 # JMH version: 1.37
@@ -2674,12 +2950,12 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 9.139 ns/op
-Iteration   1: 9.066 ns/op
+# Warmup Iteration   1: 9.190 ns/op
+Iteration   1: 9.019 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.thread_local_get_set":
-  9.066 ns/op
+  9.019 ns/op
 
 
 # Run complete. Total time: 00:04:07
@@ -2697,116 +2973,116 @@ different JVMs are already problematic, the performance difference caused by dif
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
 Benchmark                                         (itemsCount)  (len)  (size)  (tasks)  Mode  Cnt          Score   Error  Units
-BitArrayBenchmark.count_bits                               N/A    N/A    1024      N/A  avgt              11.655          ns/op
-BitArrayBenchmark.count_bits                               N/A    N/A   16384      N/A  avgt             100.007          ns/op
-BitArrayBenchmark.get_flip                                 N/A    N/A    1024      N/A  avgt               5.517          ns/op
-BitArrayBenchmark.get_flip                                 N/A    N/A   16384      N/A  avgt               5.488          ns/op
-CloningBenchmark.array_clone                               N/A    128     N/A      N/A  avgt              28.275          ns/op
-CloningBenchmark.array_clone                               N/A   4096     N/A      N/A  avgt             868.806          ns/op
-CloningBenchmark.array_copyOf                              N/A    128     N/A      N/A  avgt              27.882          ns/op
-CloningBenchmark.array_copyOf                              N/A   4096     N/A      N/A  avgt             870.562          ns/op
-CloningBenchmark.array_manual_copy                         N/A    128     N/A      N/A  avgt              26.765          ns/op
-CloningBenchmark.array_manual_copy                         N/A   4096     N/A      N/A  avgt             908.583          ns/op
-CodeLayoutBenchmark.predictable_branch                     N/A    N/A     N/A      N/A  avgt               0.658          ns/op
-CodeLayoutBenchmark.unpredictable_branch                   N/A    N/A     N/A      N/A  avgt             633.546          ns/op
-CollectionsBenchmark.array_sum                             N/A    N/A     100      N/A  avgt              21.943          ns/op
-CollectionsBenchmark.array_sum                             N/A    N/A    1000      N/A  avgt             301.620          ns/op
-CollectionsBenchmark.array_sum                             N/A    N/A   10000      N/A  avgt            3109.843          ns/op
-CollectionsBenchmark.hashmap_get_hit                       N/A    N/A     100      N/A  avgt             292.650          ns/op
-CollectionsBenchmark.hashmap_get_hit                       N/A    N/A    1000      N/A  avgt            4801.819          ns/op
-CollectionsBenchmark.hashmap_get_hit                       N/A    N/A   10000      N/A  avgt           40897.764          ns/op
-CollectionsBenchmark.hashmap_get_miss                      N/A    N/A     100      N/A  avgt             221.589          ns/op
-CollectionsBenchmark.hashmap_get_miss                      N/A    N/A    1000      N/A  avgt            2274.727          ns/op
-CollectionsBenchmark.hashmap_get_miss                      N/A    N/A   10000      N/A  avgt           22639.333          ns/op
-CollectionsBenchmark.list_sort_copy                        N/A    N/A     100      N/A  avgt            2634.029          ns/op
-CollectionsBenchmark.list_sort_copy                        N/A    N/A    1000      N/A  avgt           44235.288          ns/op
-CollectionsBenchmark.list_sort_copy                        N/A    N/A   10000      N/A  avgt         1229107.780          ns/op
-CollectionsBenchmark.list_sum_forEach                      N/A    N/A     100      N/A  avgt              54.270          ns/op
-CollectionsBenchmark.list_sum_forEach                      N/A    N/A    1000      N/A  avgt             812.986          ns/op
-CollectionsBenchmark.list_sum_forEach                      N/A    N/A   10000      N/A  avgt           10009.628          ns/op
-CollectionsBenchmark.list_sum_stream                       N/A    N/A     100      N/A  avgt              91.915          ns/op
-CollectionsBenchmark.list_sum_stream                       N/A    N/A    1000      N/A  avgt             639.686          ns/op
-CollectionsBenchmark.list_sum_stream                       N/A    N/A   10000      N/A  avgt            6860.727          ns/op
-ConcurrencyBenchmark.completableFuture_allOf               N/A    N/A     N/A      100  avgt           46012.397          ns/op
-ConcurrencyBenchmark.completableFuture_allOf               N/A    N/A     N/A     1000  avgt          170858.113          ns/op
-ConcurrencyBenchmark.forkJoin_tasks                        N/A    N/A     N/A      100  avgt           38705.973          ns/op
-ConcurrencyBenchmark.forkJoin_tasks                        N/A    N/A     N/A     1000  avgt          173882.888          ns/op
-CryptoBenchmark.aes_encrypt                                N/A    N/A     N/A      N/A  avgt             493.431          ns/op
-CryptoBenchmark.sha256_digest                              N/A    N/A     N/A      N/A  avgt             717.708          ns/op
-DeabstractionBenchmark.via_concrete                        N/A    N/A     N/A      N/A  avgt               0.705          ns/op
-DeabstractionBenchmark.via_interface                       N/A    N/A     N/A      N/A  avgt               0.843          ns/op
-DiagnosticsBenchmark.capture_stacktrace_elements           N/A    N/A     N/A      N/A  avgt            5439.498          ns/op
-DiagnosticsBenchmark.throwable_fillInStackTrace            N/A    N/A     N/A      N/A  avgt            1776.759          ns/op
-EnumerationBenchmark.enumset_iterate_ordinals              N/A    N/A     N/A      N/A  avgt               4.780          ns/op
-EnumerationBenchmark.switch_on_enum                        N/A    N/A     N/A      N/A  avgt               8.594          ns/op
-GCWriteBarriersBenchmark.array_writes                      N/A    N/A     N/A      N/A  avgt              60.789          ns/op
-GCWriteBarriersBenchmark.field_writes                      N/A    N/A     N/A      N/A  avgt            3642.172          ns/op
-IOBenchmark.bytearray_stream_copy                          N/A    N/A    1024      N/A  avgt             501.645          ns/op
-IOBenchmark.bytearray_stream_copy                          N/A    N/A   65536      N/A  avgt            5485.718          ns/op
-IOBenchmark.string_roundtrip_utf8                          N/A    N/A    1024      N/A  avgt            1268.069          ns/op
-IOBenchmark.string_roundtrip_utf8                          N/A    N/A   65536      N/A  avgt           83471.183          ns/op
-IOBenchmark.system_arraycopy                               N/A    N/A    1024      N/A  avgt              52.311          ns/op
-IOBenchmark.system_arraycopy                               N/A    N/A   65536      N/A  avgt            3895.828          ns/op
-JitInliningBenchmark.bounds_checked_loop                   N/A    N/A     N/A      N/A  avgt              70.999          ns/op
-JitInliningBenchmark.constant_folding_math                 N/A    N/A     N/A      N/A  avgt               0.627          ns/op
-JitInliningBenchmark.direct_call                           N/A    N/A     N/A      N/A  avgt               0.624          ns/op
-JitInliningBenchmark.virtual_call                          N/A    N/A     N/A      N/A  avgt               0.712          ns/op
-JsonBenchmark.deserialize_jackson                            5    N/A     N/A      N/A  avgt            2021.896          ns/op
-JsonBenchmark.deserialize_jackson                           20    N/A     N/A      N/A  avgt            6739.393          ns/op
-JsonBenchmark.deserialize_jackson                          100    N/A     N/A      N/A  avgt           32263.799          ns/op
-JsonBenchmark.serialize_jackson                              5    N/A     N/A      N/A  avgt            1050.083          ns/op
-JsonBenchmark.serialize_jackson                             20    N/A     N/A      N/A  avgt            3648.188          ns/op
-JsonBenchmark.serialize_jackson                            100    N/A     N/A      N/A  avgt           17171.252          ns/op
-MemoryExtensionsBenchmark.arrays_mismatch                  N/A    256     N/A      N/A  avgt               9.619          ns/op
-MemoryExtensionsBenchmark.arrays_mismatch                  N/A   4096     N/A      N/A  avgt              87.285          ns/op
-MemoryExtensionsBenchmark.bytebuffer_put_get               N/A    256     N/A      N/A  avgt             134.373          ns/op
-MemoryExtensionsBenchmark.bytebuffer_put_get               N/A   4096     N/A      N/A  avgt            1555.420          ns/op
-MemoryExtensionsBenchmark.system_arraycopy_sum             N/A    256     N/A      N/A  avgt              96.683          ns/op
-MemoryExtensionsBenchmark.system_arraycopy_sum             N/A   4096     N/A      N/A  avgt            1531.027          ns/op
-NetworkingBenchmark.udp_echo_roundtrip                     N/A    N/A     N/A      N/A  avgt           53082.401          ns/op
-NumericsBenchmark.biginteger_mul                           N/A    N/A     N/A      N/A  avgt              21.792          ns/op
-NumericsBenchmark.bit_ops                                  N/A    N/A     N/A      N/A  avgt               0.780          ns/op
-NumericsBenchmark.double_fma                               N/A    N/A     N/A      N/A  avgt               0.624          ns/op
+BitArrayBenchmark.count_bits                               N/A    N/A    1024      N/A  avgt              11.652          ns/op
+BitArrayBenchmark.count_bits                               N/A    N/A   16384      N/A  avgt              98.747          ns/op
+BitArrayBenchmark.get_flip                                 N/A    N/A    1024      N/A  avgt               5.545          ns/op
+BitArrayBenchmark.get_flip                                 N/A    N/A   16384      N/A  avgt               5.580          ns/op
+CloningBenchmark.array_clone                               N/A    128     N/A      N/A  avgt              28.683          ns/op
+CloningBenchmark.array_clone                               N/A   4096     N/A      N/A  avgt             912.547          ns/op
+CloningBenchmark.array_copyOf                              N/A    128     N/A      N/A  avgt              28.455          ns/op
+CloningBenchmark.array_copyOf                              N/A   4096     N/A      N/A  avgt             905.971          ns/op
+CloningBenchmark.array_manual_copy                         N/A    128     N/A      N/A  avgt              27.401          ns/op
+CloningBenchmark.array_manual_copy                         N/A   4096     N/A      N/A  avgt             958.987          ns/op
+CodeLayoutBenchmark.predictable_branch                     N/A    N/A     N/A      N/A  avgt               0.661          ns/op
+CodeLayoutBenchmark.unpredictable_branch                   N/A    N/A     N/A      N/A  avgt             633.067          ns/op
+CollectionsBenchmark.array_sum                             N/A    N/A     100      N/A  avgt              21.947          ns/op
+CollectionsBenchmark.array_sum                             N/A    N/A    1000      N/A  avgt             301.634          ns/op
+CollectionsBenchmark.array_sum                             N/A    N/A   10000      N/A  avgt            3107.443          ns/op
+CollectionsBenchmark.hashmap_get_hit                       N/A    N/A     100      N/A  avgt             290.701          ns/op
+CollectionsBenchmark.hashmap_get_hit                       N/A    N/A    1000      N/A  avgt            4762.531          ns/op
+CollectionsBenchmark.hashmap_get_hit                       N/A    N/A   10000      N/A  avgt           43228.546          ns/op
+CollectionsBenchmark.hashmap_get_miss                      N/A    N/A     100      N/A  avgt             219.685          ns/op
+CollectionsBenchmark.hashmap_get_miss                      N/A    N/A    1000      N/A  avgt            2272.817          ns/op
+CollectionsBenchmark.hashmap_get_miss                      N/A    N/A   10000      N/A  avgt           22563.975          ns/op
+CollectionsBenchmark.list_sort_copy                        N/A    N/A     100      N/A  avgt            2673.320          ns/op
+CollectionsBenchmark.list_sort_copy                        N/A    N/A    1000      N/A  avgt           44331.050          ns/op
+CollectionsBenchmark.list_sort_copy                        N/A    N/A   10000      N/A  avgt         1301289.100          ns/op
+CollectionsBenchmark.list_sum_forEach                      N/A    N/A     100      N/A  avgt              54.338          ns/op
+CollectionsBenchmark.list_sum_forEach                      N/A    N/A    1000      N/A  avgt             814.340          ns/op
+CollectionsBenchmark.list_sum_forEach                      N/A    N/A   10000      N/A  avgt           10001.747          ns/op
+CollectionsBenchmark.list_sum_stream                       N/A    N/A     100      N/A  avgt              93.049          ns/op
+CollectionsBenchmark.list_sum_stream                       N/A    N/A    1000      N/A  avgt             651.559          ns/op
+CollectionsBenchmark.list_sum_stream                       N/A    N/A   10000      N/A  avgt            6854.035          ns/op
+ConcurrencyBenchmark.completableFuture_allOf               N/A    N/A     N/A      100  avgt           45282.745          ns/op
+ConcurrencyBenchmark.completableFuture_allOf               N/A    N/A     N/A     1000  avgt          183047.916          ns/op
+ConcurrencyBenchmark.forkJoin_tasks                        N/A    N/A     N/A      100  avgt           39162.315          ns/op
+ConcurrencyBenchmark.forkJoin_tasks                        N/A    N/A     N/A     1000  avgt          169022.133          ns/op
+CryptoBenchmark.aes_encrypt                                N/A    N/A     N/A      N/A  avgt             498.212          ns/op
+CryptoBenchmark.sha256_digest                              N/A    N/A     N/A      N/A  avgt             718.488          ns/op
+DeabstractionBenchmark.via_concrete                        N/A    N/A     N/A      N/A  avgt               0.704          ns/op
+DeabstractionBenchmark.via_interface                       N/A    N/A     N/A      N/A  avgt               0.847          ns/op
+DiagnosticsBenchmark.capture_stacktrace_elements           N/A    N/A     N/A      N/A  avgt            5424.944          ns/op
+DiagnosticsBenchmark.throwable_fillInStackTrace            N/A    N/A     N/A      N/A  avgt            1739.754          ns/op
+EnumerationBenchmark.enumset_iterate_ordinals              N/A    N/A     N/A      N/A  avgt               4.808          ns/op
+EnumerationBenchmark.switch_on_enum                        N/A    N/A     N/A      N/A  avgt               8.349          ns/op
+GCWriteBarriersBenchmark.array_writes                      N/A    N/A     N/A      N/A  avgt              61.358          ns/op
+GCWriteBarriersBenchmark.field_writes                      N/A    N/A     N/A      N/A  avgt            3619.345          ns/op
+IOBenchmark.bytearray_stream_copy                          N/A    N/A    1024      N/A  avgt             512.685          ns/op
+IOBenchmark.bytearray_stream_copy                          N/A    N/A   65536      N/A  avgt            5735.902          ns/op
+IOBenchmark.string_roundtrip_utf8                          N/A    N/A    1024      N/A  avgt            1290.062          ns/op
+IOBenchmark.string_roundtrip_utf8                          N/A    N/A   65536      N/A  avgt           83875.217          ns/op
+IOBenchmark.system_arraycopy                               N/A    N/A    1024      N/A  avgt              54.841          ns/op
+IOBenchmark.system_arraycopy                               N/A    N/A   65536      N/A  avgt            4064.473          ns/op
+JitInliningBenchmark.bounds_checked_loop                   N/A    N/A     N/A      N/A  avgt              69.649          ns/op
+JitInliningBenchmark.constant_folding_math                 N/A    N/A     N/A      N/A  avgt               0.625          ns/op
+JitInliningBenchmark.direct_call                           N/A    N/A     N/A      N/A  avgt               0.625          ns/op
+JitInliningBenchmark.virtual_call                          N/A    N/A     N/A      N/A  avgt               0.721          ns/op
+JsonBenchmark.deserialize_jackson                            5    N/A     N/A      N/A  avgt            2062.759          ns/op
+JsonBenchmark.deserialize_jackson                           20    N/A     N/A      N/A  avgt            6370.626          ns/op
+JsonBenchmark.deserialize_jackson                          100    N/A     N/A      N/A  avgt           30418.845          ns/op
+JsonBenchmark.serialize_jackson                              5    N/A     N/A      N/A  avgt            1107.032          ns/op
+JsonBenchmark.serialize_jackson                             20    N/A     N/A      N/A  avgt            3713.607          ns/op
+JsonBenchmark.serialize_jackson                            100    N/A     N/A      N/A  avgt           16657.762          ns/op
+MemoryExtensionsBenchmark.arrays_mismatch                  N/A    256     N/A      N/A  avgt               9.471          ns/op
+MemoryExtensionsBenchmark.arrays_mismatch                  N/A   4096     N/A      N/A  avgt              87.435          ns/op
+MemoryExtensionsBenchmark.bytebuffer_put_get               N/A    256     N/A      N/A  avgt             133.873          ns/op
+MemoryExtensionsBenchmark.bytebuffer_put_get               N/A   4096     N/A      N/A  avgt            1575.498          ns/op
+MemoryExtensionsBenchmark.system_arraycopy_sum             N/A    256     N/A      N/A  avgt              96.978          ns/op
+MemoryExtensionsBenchmark.system_arraycopy_sum             N/A   4096     N/A      N/A  avgt            1541.505          ns/op
+NetworkingBenchmark.udp_echo_roundtrip                     N/A    N/A     N/A      N/A  avgt           49226.745          ns/op
+NumericsBenchmark.biginteger_mul                           N/A    N/A     N/A      N/A  avgt              21.924          ns/op
+NumericsBenchmark.bit_ops                                  N/A    N/A     N/A      N/A  avgt               0.781          ns/op
+NumericsBenchmark.double_fma                               N/A    N/A     N/A      N/A  avgt               0.627          ns/op
 NumericsBenchmark.int_add                                  N/A    N/A     N/A      N/A  avgt               0.627          ns/op
-NumericsBenchmark.long_mul                                 N/A    N/A     N/A      N/A  avgt               0.624          ns/op
-OtherCollectionsBenchmark.arraydeque_push_pop              N/A    N/A     N/A      N/A  avgt            5887.006          ns/op
-OtherCollectionsBenchmark.linkedlist_push_pop              N/A    N/A     N/A      N/A  avgt            5521.199          ns/op
-PeanutButterBenchmark.base64_decode                        N/A    N/A     N/A      N/A  avgt             501.674          ns/op
-PeanutButterBenchmark.base64_encode                        N/A    N/A     N/A      N/A  avgt             272.762          ns/op
-ReflectionBenchmark.direct_call                            N/A    N/A     N/A      N/A  avgt               0.624          ns/op
-ReflectionBenchmark.methodhandle_invokeExact               N/A    N/A     N/A      N/A  avgt               3.768          ns/op
-ReflectionBenchmark.reflection_invoke                      N/A    N/A     N/A      N/A  avgt               8.280          ns/op
-RegexAndStringBenchmark.regex_find_emails                  N/A    128     N/A      N/A  avgt           85917.061          ns/op
-RegexAndStringBenchmark.regex_find_emails                  N/A   1024     N/A      N/A  avgt         4344138.403          ns/op
-RegexAndStringBenchmark.regex_find_emails                  N/A   8192     N/A      N/A  avgt       260988064.750          ns/op
-RegexAndStringBenchmark.string_bytes_utf8                  N/A    128     N/A      N/A  avgt              12.411          ns/op
-RegexAndStringBenchmark.string_bytes_utf8                  N/A   1024     N/A      N/A  avgt              68.186          ns/op
-RegexAndStringBenchmark.string_bytes_utf8                  N/A   8192     N/A      N/A  avgt             536.936          ns/op
-RegexAndStringBenchmark.string_concat_builder              N/A    128     N/A      N/A  avgt               0.627          ns/op
-RegexAndStringBenchmark.string_concat_builder              N/A   1024     N/A      N/A  avgt               0.630          ns/op
-RegexAndStringBenchmark.string_concat_builder              N/A   8192     N/A      N/A  avgt               0.630          ns/op
-RegexAndStringBenchmark.string_concat_plus                 N/A    128     N/A      N/A  avgt             120.133          ns/op
-RegexAndStringBenchmark.string_concat_plus                 N/A   1024     N/A      N/A  avgt             123.029          ns/op
-RegexAndStringBenchmark.string_concat_plus                 N/A   8192     N/A      N/A  avgt             123.424          ns/op
-SearchValuesBenchmark.index_of_any_chain                   N/A    N/A     N/A      N/A  avgt              15.924          ns/op
-SearchValuesBenchmark.index_of_any_table                   N/A    N/A     N/A      N/A  avgt               3.147          ns/op
-SearchingBenchmark.arrays_binary_search                    N/A    N/A     N/A      N/A  avgt              10.443          ns/op
-SearchingBenchmark.string_indexOf_hit                      N/A    N/A     N/A      N/A  avgt               2.536          ns/op
-SearchingBenchmark.string_indexOf_miss                     N/A    N/A     N/A      N/A  avgt             410.248          ns/op
-StreamsBenchmark.sum_for_each                              N/A    N/A     100      N/A  avgt              55.181          ns/op
-StreamsBenchmark.sum_for_each                              N/A    N/A    1000      N/A  avgt             480.805          ns/op
-StreamsBenchmark.sum_for_each                              N/A    N/A   10000      N/A  avgt            4935.216          ns/op
-StreamsBenchmark.sum_loop                                  N/A    N/A     100      N/A  avgt              51.882          ns/op
-StreamsBenchmark.sum_loop                                  N/A    N/A    1000      N/A  avgt             458.746          ns/op
-StreamsBenchmark.sum_loop                                  N/A    N/A   10000      N/A  avgt            4566.124          ns/op
-StreamsBenchmark.sum_parallel_stream                       N/A    N/A     100      N/A  avgt            2135.245          ns/op
-StreamsBenchmark.sum_parallel_stream                       N/A    N/A    1000      N/A  avgt            2737.553          ns/op
-StreamsBenchmark.sum_parallel_stream                       N/A    N/A   10000      N/A  avgt           12745.672          ns/op
-StreamsBenchmark.sum_stream                                N/A    N/A     100      N/A  avgt              91.555          ns/op
-StreamsBenchmark.sum_stream                                N/A    N/A    1000      N/A  avgt             662.113          ns/op
-StreamsBenchmark.sum_stream                                N/A    N/A   10000      N/A  avgt            6824.160          ns/op
-ThreadingBenchmark.reentrantlock_inc                       N/A    N/A     N/A      N/A  avgt               5.046          ns/op
-ThreadingBenchmark.synchronized_inc                        N/A    N/A     N/A      N/A  avgt               6.113          ns/op
-ThreadingBenchmark.thread_local_get_set                    N/A    N/A     N/A      N/A  avgt               9.066          ns/op
+NumericsBenchmark.long_mul                                 N/A    N/A     N/A      N/A  avgt               0.626          ns/op
+OtherCollectionsBenchmark.arraydeque_push_pop              N/A    N/A     N/A      N/A  avgt            5196.709          ns/op
+OtherCollectionsBenchmark.linkedlist_push_pop              N/A    N/A     N/A      N/A  avgt            5531.417          ns/op
+PeanutButterBenchmark.base64_decode                        N/A    N/A     N/A      N/A  avgt             512.710          ns/op
+PeanutButterBenchmark.base64_encode                        N/A    N/A     N/A      N/A  avgt             283.182          ns/op
+ReflectionBenchmark.direct_call                            N/A    N/A     N/A      N/A  avgt               0.627          ns/op
+ReflectionBenchmark.methodhandle_invokeExact               N/A    N/A     N/A      N/A  avgt               3.761          ns/op
+ReflectionBenchmark.reflection_invoke                      N/A    N/A     N/A      N/A  avgt               8.373          ns/op
+RegexAndStringBenchmark.regex_find_emails                  N/A    128     N/A      N/A  avgt           84678.168          ns/op
+RegexAndStringBenchmark.regex_find_emails                  N/A   1024     N/A      N/A  avgt         4346002.519          ns/op
+RegexAndStringBenchmark.regex_find_emails                  N/A   8192     N/A      N/A  avgt       260699931.500          ns/op
+RegexAndStringBenchmark.string_bytes_utf8                  N/A    128     N/A      N/A  avgt              13.348          ns/op
+RegexAndStringBenchmark.string_bytes_utf8                  N/A   1024     N/A      N/A  avgt              68.646          ns/op
+RegexAndStringBenchmark.string_bytes_utf8                  N/A   8192     N/A      N/A  avgt             558.010          ns/op
+RegexAndStringBenchmark.string_concat_builder              N/A    128     N/A      N/A  avgt               0.626          ns/op
+RegexAndStringBenchmark.string_concat_builder              N/A   1024     N/A      N/A  avgt               0.626          ns/op
+RegexAndStringBenchmark.string_concat_builder              N/A   8192     N/A      N/A  avgt               0.626          ns/op
+RegexAndStringBenchmark.string_concat_plus                 N/A    128     N/A      N/A  avgt             123.158          ns/op
+RegexAndStringBenchmark.string_concat_plus                 N/A   1024     N/A      N/A  avgt             122.500          ns/op
+RegexAndStringBenchmark.string_concat_plus                 N/A   8192     N/A      N/A  avgt             122.241          ns/op
+SearchValuesBenchmark.index_of_any_chain                   N/A    N/A     N/A      N/A  avgt              15.897          ns/op
+SearchValuesBenchmark.index_of_any_table                   N/A    N/A     N/A      N/A  avgt               3.157          ns/op
+SearchingBenchmark.arrays_binary_search                    N/A    N/A     N/A      N/A  avgt              10.445          ns/op
+SearchingBenchmark.string_indexOf_hit                      N/A    N/A     N/A      N/A  avgt               2.508          ns/op
+SearchingBenchmark.string_indexOf_miss                     N/A    N/A     N/A      N/A  avgt             410.128          ns/op
+StreamsBenchmark.sum_for_each                              N/A    N/A     100      N/A  avgt              54.662          ns/op
+StreamsBenchmark.sum_for_each                              N/A    N/A    1000      N/A  avgt             488.138          ns/op
+StreamsBenchmark.sum_for_each                              N/A    N/A   10000      N/A  avgt            4922.781          ns/op
+StreamsBenchmark.sum_loop                                  N/A    N/A     100      N/A  avgt              51.637          ns/op
+StreamsBenchmark.sum_loop                                  N/A    N/A    1000      N/A  avgt             458.846          ns/op
+StreamsBenchmark.sum_loop                                  N/A    N/A   10000      N/A  avgt            4548.109          ns/op
+StreamsBenchmark.sum_parallel_stream                       N/A    N/A     100      N/A  avgt            2150.594          ns/op
+StreamsBenchmark.sum_parallel_stream                       N/A    N/A    1000      N/A  avgt            2810.163          ns/op
+StreamsBenchmark.sum_parallel_stream                       N/A    N/A   10000      N/A  avgt            8841.340          ns/op
+StreamsBenchmark.sum_stream                                N/A    N/A     100      N/A  avgt              93.150          ns/op
+StreamsBenchmark.sum_stream                                N/A    N/A    1000      N/A  avgt             649.673          ns/op
+StreamsBenchmark.sum_stream                                N/A    N/A   10000      N/A  avgt            7026.567          ns/op
+ThreadingBenchmark.reentrantlock_inc                       N/A    N/A     N/A      N/A  avgt               5.073          ns/op
+ThreadingBenchmark.synchronized_inc                        N/A    N/A     N/A      N/A  avgt               6.093          ns/op
+ThreadingBenchmark.thread_local_get_set                    N/A    N/A     N/A      N/A  avgt               9.019          ns/op
 
 Benchmark result is saved to /home/runner/work/java-benchmarks/java-benchmarks/java-in-time/results/zulu-25.json
