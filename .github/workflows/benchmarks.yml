@@ -1,0 +1,341 @@
+name: Java Benchmarks CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      baseline_label:
+        description: Label to use as baseline for comparison (e.g., temurin-24)
+        required: false
+        type: string
+      candidate_label:
+        description: Label to use as candidate for comparison (e.g., temurin-25)
+        required: false
+        type: string
+      bench_include:
+        description: JMH regex to include specific benchmarks (e.g., "Regex.*|Json.*")
+        required: false
+        type: string
+      jmh_opts:
+        description: Extra JMH options (e.g., "-wi 5 -i 10 -bm avgt -tu ns")
+        required: false
+        type: string
+  workflow_call:
+    inputs:
+      baseline_label:
+        description: Label to use as baseline for comparison (e.g., temurin-24)
+        required: false
+        type: string
+      candidate_label:
+        description: Label to use as candidate for comparison (e.g., temurin-25)
+        required: false
+        type: string
+      bench_include:
+        description: JMH regex to include specific benchmarks (e.g., "Regex.*|Json.*")
+        required: false
+        type: string
+      jmh_opts:
+        description: Extra JMH options (e.g., "-wi 5 -i 10 -bm avgt -tu ns")
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-and-run:
+    name: Run JMH (${{ matrix.distribution }}-${{ matrix.java }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [25, 24, 17, 11]
+        distribution: [temurin, zulu, microsoft, graalvm-community, oracle]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Git for commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # Setup JDK depending on distribution
+      - name: Setup Java (non-GraalVM)
+        if: matrix.distribution != 'graalvm-community'
+        uses: actions/setup-java@v4
+        with:
+          distribution: ${{ matrix.distribution }}
+          java-version: ${{ matrix.java }}
+          cache: maven
+
+      - name: Setup GraalVM
+        if: matrix.distribution == 'graalvm-community'
+        uses: graalvm/setup-graalvm@v1
+        with:
+          distribution: 'graalvm-community'
+          java-version: ${{ matrix.java }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          native-image-job-reports: 'false'
+
+      - name: Print Java version
+        run: |
+          echo "JAVA_HOME=$JAVA_HOME"
+          java -version
+          mvn -v
+
+      - name: Run benchmarks for this JDK
+        working-directory: java-in-time
+        env:
+          BENCH_INCLUDE: ${{ inputs.bench_include }}
+          JMH_OPTS: ${{ inputs.jmh_opts }}
+        run: |
+          label="${{ matrix.distribution }}-${{ matrix.java }}"
+          bash scripts/run-benchmarks.sh "$label:$JAVA_HOME"
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.distribution }}-${{ matrix.java }}
+          path: java-in-time/results/
+          if-no-files-found: error
+
+  ec-build:
+    name: Eclipse Collections (${{ matrix.distribution }}-${{ matrix.java }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [21, 17]
+        distribution: [temurin, oracle]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: ${{ matrix.distribution }}
+          java-version: ${{ matrix.java }}
+          cache: maven
+
+      - name: Build eclipse-collections benchmarks
+        working-directory: eclipse-collections
+        run: mvn -ntp clean package
+
+      - name: Upload EC results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-ec-${{ matrix.distribution }}-${{ matrix.java }}
+          path: eclipse-collections/results/*.json
+          if-no-files-found: warn
+
+  compare:
+    name: Compare Results
+    needs: build-and-run
+    runs-on: ubuntu-latest
+    if: >-
+      ${{ (inputs.baseline_label != '' && inputs.candidate_label != '') ||
+           (github.event_name == 'workflow_dispatch' && inputs.baseline_label != '' && inputs.candidate_label != '') }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java for comparator (Temurin 17)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+
+      - name: Download baseline artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: results-${{ inputs.baseline_label }}
+          path: results-baseline
+
+      - name: Download candidate artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: results-${{ inputs.candidate_label }}
+          path: results-candidate
+
+      - name: Build shaded jar (for comparator tool)
+        working-directory: java-in-time
+        run: mvn -q -DskipTests clean package
+
+      - name: Find JSON files
+        id: findjson
+        shell: bash
+        run: |
+          base_json=$(ls results-baseline/*.json | head -n1)
+          cand_json=$(ls results-candidate/*.json | head -n1)
+          echo "baseline_json=$base_json" >> $GITHUB_OUTPUT
+          echo "candidate_json=$cand_json" >> $GITHUB_OUTPUT
+          echo "Found baseline: $base_json"
+          echo "Found candidate: $cand_json"
+
+      - name: Compare baseline vs candidate
+        run: |
+          mkdir -p docs
+          out="docs/compare-${{ inputs.baseline_label }}-vs-${{ inputs.candidate_label }}.md"
+          java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "${{ steps.findjson.outputs.baseline_json }}" "${{ steps.findjson.outputs.candidate_json }}" > "$out"
+          echo "Wrote $out"
+
+      - name: Upload comparison markdown
+        uses: actions/upload-artifact@v4
+        with:
+          name: compare-${{ inputs.baseline_label }}-vs-${{ inputs.candidate_label }}
+          path: docs/compare-${{ inputs.baseline_label }}-vs-${{ inputs.candidate_label }}.md
+          if-no-files-found: error
+
+      - name: Comment comparison on PR
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          recreate: true
+          header: benchmark-compare
+          message: |
+            Benchmark comparison for `${{ inputs.baseline_label }}` vs `${{ inputs.candidate_label }}`:
+
+            <details>
+            <summary>Open results</summary>
+
+            ```
+            $(cat docs/compare-${{ inputs.baseline_label }}-vs-${{ inputs.candidate_label }}.md)
+            ```
+
+            </details>
+
+  publish:
+    name: Publish results to Pages content
+    needs: [build-and-run, ec-build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download all java-in-time results artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: results-*
+          merge-multiple: true
+          path: java-in-time/results
+
+      - name: Download all eclipse-collections results artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: results-ec-*
+          merge-multiple: true
+          path: eclipse-collections/results
+
+      - name: Build comparator tool (for auto-comparisons)
+        working-directory: java-in-time
+        run: mvn -q -DskipTests clean package
+
+      - name: Generate docs pages and update index.md
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p docs
+          repo="${GITHUB_REPOSITORY}"
+          branch="${GITHUB_REF_NAME}"
+
+          # 1) Java-in-time page
+          JIT_DOC=docs/java-in-time.md
+          echo "# Java-in-time Results" > "$JIT_DOC"
+          echo >> "$JIT_DOC"
+          echo "This page lists raw JSON outputs produced by the java-in-time JMH suite and provides a combined viewer link." >> "$JIT_DOC"
+          echo >> "$JIT_DOC"
+          jsons=(java-in-time/results/*.json)
+          if [ ${#jsons[@]} -gt 0 ]; then
+            echo "## Raw JSON files" >> "$JIT_DOC"
+            for f in "${jsons[@]}"; do
+              base=$(basename "$f")
+              echo "- $base" >> "$JIT_DOC"
+            done
+            url_list=""
+            for f in "${jsons[@]}"; do
+              raw="https://raw.githubusercontent.com/${repo}/${branch}/${f}"
+              if [ -z "$url_list" ]; then url_list="$raw"; else url_list="$url_list,$raw"; fi
+            done
+            echo >> "$JIT_DOC"
+            echo "## View in JMH viewer" >> "$JIT_DOC"
+            echo "[Open all in jmh.morethan.io](https://jmh.morethan.io/?sources=${url_list})" >> "$JIT_DOC"
+          else
+            echo "No JSON results found yet." >> "$JIT_DOC"
+          fi
+
+          # 2) Eclipse Collections page
+          EC_DOC=docs/eclipse-collections.md
+          echo "# Eclipse Collections Results" > "$EC_DOC"
+          echo >> "$EC_DOC"
+          echo "This page lists raw JSON outputs produced by the Eclipse Collections benchmark module and provides a combined viewer link." >> "$EC_DOC"
+          echo >> "$EC_DOC"
+          ec_jsons=(eclipse-collections/results/*.json)
+          if [ ${#ec_jsons[@]} -gt 0 ]; then
+            echo "## Raw JSON files" >> "$EC_DOC"
+            for f in "${ec_jsons[@]}"; do
+              base=$(basename "$f")
+              echo "- $base" >> "$EC_DOC"
+            done
+            ec_url_list=""
+            for f in "${ec_jsons[@]}"; do
+              raw="https://raw.githubusercontent.com/${repo}/${branch}/${f}"
+              if [ -z "$ec_url_list" ]; then ec_url_list="$raw"; else ec_url_list="$ec_url_list,$raw"; fi
+            done
+            echo >> "$EC_DOC"
+            echo "## View in JMH viewer" >> "$EC_DOC"
+            echo "[Open all in jmh.morethan.io](https://jmh.morethan.io/?sources=${ec_url_list})" >> "$EC_DOC"
+          else
+            echo "No JSON results found yet." >> "$EC_DOC"
+          fi
+
+          # 3) Auto-generate comparisons for selected distributions
+          echo >> "$JIT_DOC"
+          echo "## Auto-comparisons" >> "$JIT_DOC"
+          echo "Automatically generated comparisons for available adjacent Java versions per distribution (only when both JSON files exist)." >> "$JIT_DOC"
+          compare_links=()
+          dists=(oracle zulu graalvm-community)
+          vers=(11 17 24 25)
+          for d in "${dists[@]}"; do
+            for ((i=0; i<${#vers[@]}-1; i++)); do
+              a=${vers[$i]}
+              b=${vers[$((i+1))]}
+              base="java-in-time/results/${d}-${a}.json"
+              cand="java-in-time/results/${d}-${b}.json"
+              if [[ -f "$base" && -f "$cand" ]]; then
+                out="docs/compare-${d}-${a}-vs-${b}.md"
+                echo "Generating $out from $base vs $cand"
+                java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$base" "$cand" > "$out"
+                rel="./compare-${d}-${a}-vs-${b}.md"
+                echo "- ${d}: ${a} vs ${b} → [view](${rel})" >> "$JIT_DOC"
+                compare_links+=("$rel")
+              else
+                echo "Skipping ${d} ${a} vs ${b} (missing files)"
+              fi
+            done
+          done
+
+          # Ensure index.md links to the pages
+          touch index.md
+          if ! grep -q "Java-in-time Results" index.md 2>/dev/null; then
+            {
+              echo ""
+              echo "## Java-in-time"
+              echo "See the Java-in-time benchmark outputs: [java-in-time results](./docs/java-in-time.md)"
+            } >> index.md
+          fi
+          if ! grep -q "Eclipse Collections Results" index.md 2>/dev/null; then
+            {
+              echo ""
+              echo "## Eclipse Collections"
+              echo "See the Eclipse Collections benchmark outputs: [eclipse-collections results](./docs/eclipse-collections.md)"
+            } >> index.md
+          fi
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Publish java-in-time results and docs [skip ci]"

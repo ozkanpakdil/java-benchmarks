@@ -3,32 +3,32 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-on: push
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      baseline_label:
+        description: Label to use as baseline for comparison (e.g., temurin-24)
+        required: false
+        type: string
+      candidate_label:
+        description: Label to use as candidate for comparison (e.g., temurin-25)
+        required: false
+        type: string
+      bench_include:
+        description: JMH regex to include specific benchmarks (e.g., "Regex.*|Json.*")
+        required: false
+        type: string
+      jmh_opts:
+        description: Extra JMH options (e.g., "-wi 5 -i 10 -bm avgt -tu ns")
+        required: false
+        type: string
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
-      matrix:
-        distribution: [ 'semeru', 'adopt', 'zulu', 'temurin', 'microsoft', 'corretto','oracle' ]
-        java: [ 17, 21 ]
-    name: Java ${{ matrix.java }} ${{ matrix.distribution }} sample
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK
-        uses: actions/setup-java@v3
-        with:
-          distribution: ${{ matrix.distribution }}
-          java-version: ${{ matrix.java }}
-      - run: |
-          mvn -ntp clean package
-          set -x
-          rm -rf target
-          git add
-          # git pull
-#          mvn -ntp -Dtest=PrintSome test
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: adding back to repo [skip ci] another test
-          push_options: '--force'
+  run-benchmarks:
+    uses: ./.github/workflows/benchmarks.yml
+    with:
+      baseline_label: ${{ inputs.baseline_label }}
+      candidate_label: ${{ inputs.candidate_label }}
+      bench_include: ${{ inputs.bench_include }}
+      jmh_opts: ${{ inputs.jmh_opts }}
