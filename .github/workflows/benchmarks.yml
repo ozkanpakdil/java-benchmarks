@@ -63,16 +63,20 @@ jobs:
 
       # Setup JDK depending on distribution
       - name: Setup Java (non-GraalVM)
+        id: setupjava
         if: matrix.distribution != 'graalvm-community'
         uses: actions/setup-java@v4
+        continue-on-error: true
         with:
           distribution: ${{ matrix.distribution }}
           java-version: ${{ matrix.java }}
           cache: maven
 
       - name: Setup GraalVM
+        id: setupgraal
         if: matrix.distribution == 'graalvm-community'
         uses: graalvm/setup-graalvm@v1
+        continue-on-error: true
         with:
           distribution: 'graalvm-community'
           java-version: ${{ matrix.java }}
@@ -80,12 +84,14 @@ jobs:
           native-image-job-reports: 'false'
 
       - name: Print Java version
+        if: steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success'
         run: |
           echo "JAVA_HOME=$JAVA_HOME"
           java -version
           mvn -v
 
       - name: Run benchmarks for this JDK
+        if: steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success'
         working-directory: java-in-time
         env:
           # Default to a small smoke subset unless explicitly overridden via workflow input
@@ -97,6 +103,7 @@ jobs:
           bash scripts/run-benchmarks.sh "$label:$JAVA_HOME"
 
       - name: Upload results artifact
+        if: steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: results-${{ matrix.distribution }}-${{ matrix.java }}
