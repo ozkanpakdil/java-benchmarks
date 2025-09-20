@@ -39,6 +39,11 @@ Automatically generated comparisons across versions (within a distribution) and 
 - graalvm-community: 24 vs 25 → [view](./compare-graalvm-community-24-vs-25.md)
 - temurin: 17 vs 24 → [view](./compare-temurin-17-vs-24.md)
 
+### Blog-style summaries (24 vs 25)
+- oracle: 24 vs 25 → [read blog](./blog-oracle-24-vs-25.md)
+- zulu: 24 vs 25 → [read blog](./blog-zulu-24-vs-25.md)
+- graalvm-community: 24 vs 25 → [read blog](./blog-graalvm-community-24-vs-25.md)
+
 ### Cross-distribution (same Java version)
 - Java 17: oracle vs zulu → [view](./compare-oracle-vs-zulu-17.md)
 - Java 17: oracle vs graalvm-community → [view](./compare-oracle-vs-graalvm-community-17.md)
