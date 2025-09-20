@@ -255,13 +255,19 @@ jobs:
 
           # Ensure only java-in-time JSONs end up under java-in-time/results
           mkdir -p java-in-time/results
-          # Remove any previously mixed-in EC JSONs (which start with a digit)
-          rm -f java-in-time/results/[0-9]*.json || true
-          # Move freshly downloaded artifacts: keep only files starting with a letter
+          # Remove any previously mixed-in non-JIT JSONs (anything not matching allowed distro-version pattern)
           shopt -s nullglob
+          for f in java-in-time/results/*.json; do
+            base=$(basename "$f")
+            if [[ ! "$base" =~ ^(temurin|zulu|microsoft|graalvm-community|oracle)-[0-9]+\.json$ ]]; then
+              echo "Removing non-JIT JSON from java-in-time/results: $base"
+              rm -f "$f"
+            fi
+          done
+          # Move freshly downloaded artifacts: keep only files matching allowed distro-version pattern
           for f in artifacts/jit/*.json; do
             base=$(basename "$f")
-            if [[ "$base" =~ ^[A-Za-z] ]]; then
+            if [[ "$base" =~ ^(temurin|zulu|microsoft|graalvm-community|oracle)-[0-9]+\.json$ ]]; then
               mv "$f" java-in-time/results/
             else
               echo "Skipping non-JIT JSON in artifacts/jit: $base"
@@ -274,8 +280,15 @@ jobs:
           echo >> "$JIT_DOC"
           echo "This page lists raw JSON outputs produced by the java-in-time JMH suite and provides a combined viewer link." >> "$JIT_DOC"
           echo >> "$JIT_DOC"
-          # Only include JIT JSONs: they are named like <distribution>-<version>.json and start with a letter.
-          jsons=(java-in-time/results/[A-Za-z]*.json)
+          # Build filtered list of JIT JSONs matching allowed distro-version pattern
+          all_jsons=(java-in-time/results/*.json)
+          jsons=()
+          for f in "${all_jsons[@]}"; do
+            base=$(basename "$f")
+            if [[ "$base" =~ ^(temurin|zulu|microsoft|graalvm-community|oracle)-[0-9]+\.json$ ]]; then
+              jsons+=("$f")
+            fi
+          done
           if [ ${#jsons[@]} -gt 0 ]; then
             echo "## Raw JSON files" >> "$JIT_DOC"
             for f in "${jsons[@]}"; do
@@ -326,42 +339,85 @@ jobs:
             echo "No JSON results found yet." >> "$EC_DOC"
           fi
 
-          # 3) Auto-generate comparisons for selected distributions
+          # 3) Auto-generate comparisons for multiple scenarios
           echo >> "$JIT_DOC"
           echo "## Auto-comparisons" >> "$JIT_DOC"
-          echo "Automatically generated comparisons for available adjacent Java versions per distribution (only when both JSON files exist)." >> "$JIT_DOC"
-          compare_links=()
-          dists=(oracle zulu graalvm-community)
-          vers=(11 17 24 25)
+          echo "Automatically generated comparisons across versions (within a distribution) and across distributions (same Java version), only when both JSON files exist." >> "$JIT_DOC"
+
+          # Distributions we support in JIT
+          dists=(oracle zulu graalvm-community temurin microsoft)
+
+          # Discover available versions from filenames, prefer known order 11 17 24 25
+          declare -A seen_versions=()
+          for f in java-in-time/results/*.json; do
+            base=$(basename "$f")
+            if [[ "$base" =~ ^(temurin|zulu|microsoft|graalvm-community|oracle)-([0-9]+)\.json$ ]]; then
+              seen_versions["${BASH_REMATCH[2]}"]=1
+            fi
+          done
+          vers=()
+          for v in 11 17 24 25; do
+            if [[ -n "${seen_versions[$v]:-}" ]]; then vers+=("$v"); fi
+          done
+
+          # 3a) Cross-version comparisons (ALL pairs, not just adjacent) per distribution
+          echo >> "$JIT_DOC"
+          echo "### Cross-version (within same distribution)" >> "$JIT_DOC"
           for d in "${dists[@]}"; do
-            for ((i=0; i<${#vers[@]}-1; i++)); do
-              a=${vers[$i]}
-              b=${vers[$((i+1))]}
-              base="java-in-time/results/${d}-${a}.json"
-              cand="java-in-time/results/${d}-${b}.json"
-              if [[ -f "$base" && -f "$cand" ]]; then
-                out="docs/compare-${d}-${a}-vs-${b}.md"
-                echo "Generating $out from $base vs $cand"
-                java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$base" "$cand" > "$out"
-                rel="./compare-${d}-${a}-vs-${b}.md"
-                echo "- ${d}: ${a} vs ${b} → [view](${rel})" >> "$JIT_DOC"
-                compare_links+=("$rel")
-              else
-                echo "Skipping ${d} ${a} vs ${b} (missing files)"
-              fi
+            # Generate all i<j pairs among available versions
+            for ((i=0; i<${#vers[@]}; i++)); do
+              for ((j=i+1; j<${#vers[@]}; j++)); do
+                a=${vers[$i]}
+                b=${vers[$j]}
+                base="java-in-time/results/${d}-${a}.json"
+                cand="java-in-time/results/${d}-${b}.json"
+                if [[ -f "$base" && -f "$cand" ]]; then
+                  out="docs/compare-${d}-${a}-vs-${b}.md"
+                  echo "Generating $out from $base vs $cand"
+                  java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$base" "$cand" > "$out"
+                  rel="./compare-${d}-${a}-vs-${b}.md"
+                  echo "- ${d}: ${a} vs ${b} → [view](${rel})" >> "$JIT_DOC"
+                else
+                  echo "Skipping ${d} ${a} vs ${b} (missing files)"
+                fi
+              done
+            done
+          done
+
+          # 3b) Cross-distribution comparisons for the same Java version
+          echo >> "$JIT_DOC"
+          echo "### Cross-distribution (same Java version)" >> "$JIT_DOC"
+          # Pairwise compare distributions for each available version
+          for v in "${vers[@]}"; do
+            for ((i=0; i<${#dists[@]}; i++)); do
+              for ((j=i+1; j<${#dists[@]}; j++)); do
+                d1=${dists[$i]}
+                d2=${dists[$j]}
+                f1="java-in-time/results/${d1}-${v}.json"
+                f2="java-in-time/results/${d2}-${v}.json"
+                if [[ -f "$f1" && -f "$f2" ]]; then
+                  out="docs/compare-${d1}-vs-${d2}-${v}.md"
+                  echo "Generating $out from $f1 vs $f2"
+                  java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$f1" "$f2" > "$out"
+                  rel="./compare-${d1}-vs-${d2}-${v}.md"
+                  echo "- Java ${v}: ${d1} vs ${d2} → [view](${rel})" >> "$JIT_DOC"
+                else
+                  echo "Skipping cross-distribution ${d1} vs ${d2} on Java ${v} (missing files)"
+                fi
+              done
             done
           done
 
           # Ensure index.md links to the pages
           touch index.md
-          if ! grep -q "Java-in-time Results" index.md 2>/dev/null; then
+          if ! grep -q "^## Java-in-time$" index.md 2>/dev/null; then
             {
               echo ""
               echo "## Java-in-time"
               echo "See the Java-in-time benchmark outputs: [java-in-time results](./docs/java-in-time.md)"
             } >> index.md
           fi
-          if ! grep -q "Eclipse Collections Results" index.md 2>/dev/null; then
+          if ! grep -q "^## Eclipse Collections$" index.md 2>/dev/null; then
             {
               echo ""
               echo "## Eclipse Collections"

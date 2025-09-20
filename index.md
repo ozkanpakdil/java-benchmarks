@@ -12,9 +12,3 @@ See the Java-in-time benchmark outputs: [java-in-time results](./docs/java-in-ti
 
 ## Eclipse Collections
 See the Eclipse Collections benchmark outputs: [eclipse-collections results](./docs/eclipse-collections.md)
-
-## Java-in-time
-See the Java-in-time benchmark outputs: [java-in-time results](./docs/java-in-time.md)
-
-## Eclipse Collections
-See the Eclipse Collections benchmark outputs: [eclipse-collections results](./docs/eclipse-collections.md)

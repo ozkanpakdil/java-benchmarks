@@ -66,7 +66,8 @@ public class CompareResults {
             } else {
                 ratio = DF3.format(eb.score / ea.score);
             }
-            System.out.println("| " + name + " | " + aStr + " | " + bStr + " | " + ratio + " | " + unit + " |");
+            String link = linkify(name);
+            System.out.println("| " + link + " | " + aStr + " | " + bStr + " | " + ratio + " | " + unit + " |");
         }
     }
 
@@ -105,7 +106,7 @@ public class CompareResults {
         // Rows
         for (String name : allNames) {
             StringBuilder row = new StringBuilder();
-            row.append("| ").append(name).append(" ");
+            row.append("| ").append(linkify(name)).append(" ");
             String unit = "-";
             for (Map<String, Entry> m : indexed) {
                 Entry e = m.get(name);
@@ -133,6 +134,31 @@ public class CompareResults {
             }
         }
         return m;
+    }
+
+    private static String linkify(String benchmarkName) {
+        // Extract class name (strip method at the end if present)
+        String className = benchmarkName;
+        int lastDot = benchmarkName.lastIndexOf('.')
+                ;
+        if (lastDot > 0) {
+            className = benchmarkName.substring(0, lastDot);
+        }
+        String repo = Optional.ofNullable(System.getenv("GITHUB_REPOSITORY")).orElse("ozkanpakdil/java-benchmarks");
+        String branch = Optional.ofNullable(System.getenv("GITHUB_REF_NAME")).orElse("main");
+
+        String moduleBase;
+        if (className.startsWith("io.github.benchjava.bench")) {
+            moduleBase = "java-in-time/src/main/java/";
+        } else if (className.startsWith("com.mascix")) {
+            moduleBase = "eclipse-collections/src/main/java/";
+        } else {
+            // Fallback to java-in-time module
+            moduleBase = "java-in-time/src/main/java/";
+        }
+        String path = moduleBase + className.replace('.', '/') + ".java";
+        String url = "https://github.com/" + repo + "/blob/" + branch + "/" + path;
+        return "[" + benchmarkName + "](" + url + ")";
     }
 
     private record Entry(double score, String unit) {}
