@@ -55,6 +55,42 @@ public class CompareResults {
             addAll(cand.keySet());
         }}).size() - common.size();
 
+        // Compute overall summary using geometric mean of ratios over common benchmarks
+        int n = 0;
+        double sumLog = 0.0;
+        int aWinCount = 0;
+        int bWinCount = 0;
+        for (String name : common) {
+            Entry ea = base.get(name);
+            Entry eb = cand.get(name);
+            if (ea != null && eb != null && ea.score > 0.0 && eb.score > 0.0) {
+                double ratio = eb.score / ea.score; // B/A
+                if (ratio > 0.0 && Double.isFinite(ratio)) {
+                    sumLog += Math.log(ratio);
+                    n++;
+                    if (ratio > 1.0) aWinCount++; // lower is better
+                    else if (ratio < 1.0) bWinCount++;
+                }
+            }
+        }
+        if (n > 0) {
+            double geo = Math.exp(sumLog / n); // geometric mean of B/A
+            String faster;
+            String percent;
+            if (geo < 1.0) {
+                faster = "B (" + bFile.getName() + ") is faster overall";
+                percent = DF3.format((1.0 - geo) * 100.0) + "% faster";
+            } else if (geo > 1.0) {
+                faster = "A (" + aFile.getName() + ") is faster overall";
+                percent = DF3.format((geo - 1.0) * 100.0) + "% faster";
+            } else {
+                faster = "A and B are tied overall";
+                percent = "0.000%";
+            }
+            System.out.println("**Overall result:** " + faster + " (geometric mean ratio B/A = " + DF3.format(geo) + ", " + percent + ", " + n + " benchmark(s)).");
+            System.out.println();
+        }
+
         System.out.println("| Benchmark | A (" + aFile.getName() + ") | B (" + bFile.getName() + ") | Ratio B/A | Winner | Unit |");
         System.out.println("|---|---:|---:|---:|:---:|---|");
 
