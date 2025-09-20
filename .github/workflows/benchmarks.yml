@@ -172,7 +172,7 @@ jobs:
 
       - name: Build shaded jar (for comparator tool)
         working-directory: java-in-time
-        run: mvn -q -DskipTests clean package
+        run: mvn -qntp -DskipTests clean package
 
       - name: Find JSON files
         id: findjson
@@ -241,7 +241,7 @@ jobs:
 
       - name: Build comparator tool (for auto-comparisons)
         working-directory: java-in-time
-        run: mvn -q -DskipTests clean package
+        run: mvn -qntp -DskipTests clean package
 
       - name: Generate docs pages and update index.md
         shell: bash

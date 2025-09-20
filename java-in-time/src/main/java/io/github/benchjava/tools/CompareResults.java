@@ -47,28 +47,60 @@ public class CompareResults {
         Map<String, Entry> base = index(a);
         Map<String, Entry> cand = index(b);
 
-        Set<String> names = new TreeSet<>();
-        names.addAll(base.keySet());
-        names.addAll(cand.keySet());
+        // Determine common benchmarks to avoid rows with missing values ("-")
+        Set<String> common = new TreeSet<>(base.keySet());
+        common.retainAll(cand.keySet());
+        int omitted = (new TreeSet<String>() {{
+            addAll(base.keySet());
+            addAll(cand.keySet());
+        }}).size() - common.size();
 
-        System.out.println("| Benchmark | A (" + aFile.getName() + ") | B (" + bFile.getName() + ") | Ratio B/A | Unit |");
-        System.out.println("|---|---:|---:|---:|---|");
+        System.out.println("| Benchmark | A (" + aFile.getName() + ") | B (" + bFile.getName() + ") | Ratio B/A | Winner | Unit |");
+        System.out.println("|---|---:|---:|---:|:---:|---|");
 
-        for (String name : names) {
+        for (String name : common) {
             Entry ea = base.get(name);
             Entry eb = cand.get(name);
-            String aStr = ea == null ? "-" : DF3.format(ea.score);
-            String bStr = eb == null ? "-" : DF3.format(eb.score);
             String unit = eb != null ? eb.unit : (ea != null ? ea.unit : "-");
-            String ratio;
-            if (ea == null || eb == null || ea.score == 0.0) {
-                ratio = "-";
-            } else {
-                ratio = DF3.format(eb.score / ea.score);
-            }
+
+            double ratioVal = (ea == null || eb == null || ea.score == 0.0) ? Double.NaN : (eb.score / ea.score);
+            boolean aWins = (!Double.isNaN(ratioVal) && ratioVal > 1.0); // lower is better → B/A > 1 means A is faster
+            boolean bWins = (!Double.isNaN(ratioVal) && ratioVal < 1.0);
+
+            String aStr = formatCell(ea.score, aWins, bWins);
+            String bStr = formatCell(eb.score, bWins, aWins);
+            String ratio = Double.isNaN(ratioVal) ? "-" : formatRatio(ratioVal, aWins || bWins);
+            String winner = aWins ? "A" : (bWins ? "B" : "-");
+
             String link = linkify(name);
-            System.out.println("| " + link + " | " + aStr + " | " + bStr + " | " + ratio + " | " + unit + " |");
+            System.out.println("| " + link + " | " + aStr + " | " + bStr + " | " + ratio + " | " + winner + " | " + unit + " |");
         }
+
+        if (omitted > 0) {
+            System.out.println();
+            System.out.println("_Note: " + omitted + " benchmark(s) present in only one file were omitted from this table._");
+        }
+    }
+
+    private static String formatCell(double value, boolean highlightWin, boolean highlightLose) {
+        String v = DF3.format(value);
+        if (highlightWin) {
+            return "<span style=\"color:#137333;font-weight:600\">" + v + "</span>"; // green
+        }
+        if (highlightLose) {
+            return "<span style=\"color:#c5221f\">" + v + "</span>"; // red
+        }
+        return v;
+    }
+
+    private static String formatRatio(double ratio, boolean highlight) {
+        String v = DF3.format(ratio);
+        if (highlight) {
+            // Green if <1 (B faster), Red if >1 (A faster) – make it bold for emphasis
+            String color = ratio < 1.0 ? "#137333" : "#c5221f";
+            return "<span style=\"color:" + color + ";font-weight:600\">" + v + "</span>";
+        }
+        return v;
     }
 
     private static void compareMany(String[] paths) throws IOException {
