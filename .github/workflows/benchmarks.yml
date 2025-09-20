@@ -259,7 +259,8 @@ jobs:
           echo >> "$JIT_DOC"
           echo "This page lists raw JSON outputs produced by the java-in-time JMH suite and provides a combined viewer link." >> "$JIT_DOC"
           echo >> "$JIT_DOC"
-          jsons=(java-in-time/results/*.json)
+          # Only include JIT JSONs: they are named like <distribution>-<version>.json and start with a letter.
+          jsons=(java-in-time/results/[A-Za-z]*.json)
           if [ ${#jsons[@]} -gt 0 ]; then
             echo "## Raw JSON files" >> "$JIT_DOC"
             for f in "${jsons[@]}"; do
@@ -279,7 +280,7 @@ jobs:
             echo "A single Markdown table with all available result files as columns:" >> "$JIT_DOC"
             echo "" >> "$JIT_DOC"
             # Generate a big table with all JSONs using CompareResults (multi-file mode)
-            java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults ${jsons[@]} > docs/java-in-time-all.md
+            java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "${jsons[@]}" > docs/java-in-time-all.md
             echo "[Open the big table](./java-in-time-all.md)" >> "$JIT_DOC"
           else
             echo "No JSON results found yet." >> "$JIT_DOC"
