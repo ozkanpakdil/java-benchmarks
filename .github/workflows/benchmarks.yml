@@ -88,7 +88,9 @@ jobs:
       - name: Run benchmarks for this JDK
         working-directory: java-in-time
         env:
-          BENCH_INCLUDE: ${{ inputs.bench_include }}
+          # Default to a small smoke subset unless explicitly overridden via workflow input
+          BENCH_INCLUDE: ${{ inputs.bench_include != '' && inputs.bench_include || '.*(NumericsBenchmark|StreamsBenchmark|RegexAndStringBenchmark).*' }}
+          # JMH_OPTS may be empty here; run-benchmarks.sh supplies fast defaults
           JMH_OPTS: ${{ inputs.jmh_opts }}
         run: |
           label="${{ matrix.distribution }}-${{ matrix.java }}"
