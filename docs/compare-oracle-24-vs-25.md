@@ -1,0 +1,15 @@
+| Benchmark | A (oracle-24.json) | B (oracle-25.json) | Ratio B/A | Unit |
+|---|---:|---:|---:|---|
+| io.github.benchjava.bench.NumericsBenchmark.biginteger_mul | 22.460 | 21.893 | 0.975 | ns/op |
+| io.github.benchjava.bench.NumericsBenchmark.bit_ops | 0.941 | 0.780 | 0.829 | ns/op |
+| io.github.benchjava.bench.NumericsBenchmark.double_fma | 0.635 | 0.626 | 0.987 | ns/op |
+| io.github.benchjava.bench.NumericsBenchmark.int_add | 0.596 | 0.626 | 1.049 | ns/op |
+| io.github.benchjava.bench.NumericsBenchmark.long_mul | 0.625 | 0.627 | 1.003 | ns/op |
+| io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails | 259414042.750 | 260897142.250 | 1.006 | ns/op |
+| io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8 | 572.275 | 542.868 | 0.949 | ns/op |
+| io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder | 0.388 | 0.626 | 1.615 | ns/op |
+| io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus | 113.338 | 122.084 | 1.077 | ns/op |
+| io.github.benchjava.bench.StreamsBenchmark.sum_for_each | 4976.348 | 4968.625 | 0.998 | ns/op |
+| io.github.benchjava.bench.StreamsBenchmark.sum_loop | 4911.796 | 4552.423 | 0.927 | ns/op |
+| io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream | 14064.775 | 12968.794 | 0.922 | ns/op |
+| io.github.benchjava.bench.StreamsBenchmark.sum_stream | 7248.577 | 6858.735 | 0.946 | ns/op |

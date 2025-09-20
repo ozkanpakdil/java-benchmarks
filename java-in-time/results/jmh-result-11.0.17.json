@@ -1,0 +1,628 @@
+[
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecMutableList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.191898E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8516357.0,
+                "50.0" : 1.191898E7,
+                "90.0" : 1.5321603E7,
+                "95.0" : 1.5321603E7,
+                "99.0" : 1.5321603E7,
+                "99.9" : 1.5321603E7,
+                "99.99" : 1.5321603E7,
+                "99.999" : 1.5321603E7,
+                "99.9999" : 1.5321603E7,
+                "100.0" : 1.5321603E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.5321603E7,
+                    8516357.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecMutableListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.2981137E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6625444.0,
+                "50.0" : 1.2981137E7,
+                "90.0" : 1.933683E7,
+                "95.0" : 1.933683E7,
+                "99.0" : 1.933683E7,
+                "99.9" : 1.933683E7,
+                "99.99" : 1.933683E7,
+                "99.999" : 1.933683E7,
+                "99.9999" : 1.933683E7,
+                "100.0" : 1.933683E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6625444.0,
+                    1.933683E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecPrimitive",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 5984390.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5706938.0,
+                "50.0" : 5984390.0,
+                "90.0" : 6261842.0,
+                "95.0" : 6261842.0,
+                "99.0" : 6261842.0,
+                "99.9" : 6261842.0,
+                "99.99" : 6261842.0,
+                "99.999" : 6261842.0,
+                "99.9999" : 6261842.0,
+                "100.0" : 6261842.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    5706938.0,
+                    6261842.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecPrimitiveParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4571082.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4500132.0,
+                "50.0" : 4571082.5,
+                "90.0" : 4642033.0,
+                "95.0" : 4642033.0,
+                "99.0" : 4642033.0,
+                "99.9" : 4642033.0,
+                "99.99" : 4642033.0,
+                "99.999" : 4642033.0,
+                "99.9999" : 4642033.0,
+                "100.0" : 4642033.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4500132.0,
+                    4642033.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.jdkList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.06104745E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.0394473E7,
+                "50.0" : 1.06104745E7,
+                "90.0" : 1.0826476E7,
+                "95.0" : 1.0826476E7,
+                "99.0" : 1.0826476E7,
+                "99.9" : 1.0826476E7,
+                "99.99" : 1.0826476E7,
+                "99.999" : 1.0826476E7,
+                "99.9999" : 1.0826476E7,
+                "100.0" : 1.0826476E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.0394473E7,
+                    1.0826476E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.jdkListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.0740425E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9651168.0,
+                "50.0" : 1.0740425E7,
+                "90.0" : 1.1829682E7,
+                "95.0" : 1.1829682E7,
+                "99.0" : 1.1829682E7,
+                "99.9" : 1.1829682E7,
+                "99.99" : 1.1829682E7,
+                "99.999" : 1.1829682E7,
+                "99.9999" : 1.1829682E7,
+                "100.0" : 1.1829682E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.1829682E7,
+                    9651168.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecMutableList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 5254636.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2371616.0,
+                "50.0" : 5254636.5,
+                "90.0" : 8137657.0,
+                "95.0" : 8137657.0,
+                "99.0" : 8137657.0,
+                "99.9" : 8137657.0,
+                "99.99" : 8137657.0,
+                "99.999" : 8137657.0,
+                "99.9999" : 8137657.0,
+                "100.0" : 8137657.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    8137657.0,
+                    2371616.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecMutableListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3793127.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2882021.0,
+                "50.0" : 3793127.0,
+                "90.0" : 4704233.0,
+                "95.0" : 4704233.0,
+                "99.0" : 4704233.0,
+                "99.9" : 4704233.0,
+                "99.99" : 4704233.0,
+                "99.999" : 4704233.0,
+                "99.9999" : 4704233.0,
+                "100.0" : 4704233.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4704233.0,
+                    2882021.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecPrimitive",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3424224.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3410724.0,
+                "50.0" : 3424224.5,
+                "90.0" : 3437725.0,
+                "95.0" : 3437725.0,
+                "99.0" : 3437725.0,
+                "99.9" : 3437725.0,
+                "99.99" : 3437725.0,
+                "99.999" : 3437725.0,
+                "99.9999" : 3437725.0,
+                "100.0" : 3437725.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3437725.0,
+                    3410724.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecPrimitiveParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 481054.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 451904.0,
+                "50.0" : 481054.0,
+                "90.0" : 510204.0,
+                "95.0" : 510204.0,
+                "99.0" : 510204.0,
+                "99.9" : 510204.0,
+                "99.99" : 510204.0,
+                "99.999" : 510204.0,
+                "99.9999" : 510204.0,
+                "100.0" : 510204.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    510204.0,
+                    451904.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.jdkList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1864713.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1826713.0,
+                "50.0" : 1864713.5,
+                "90.0" : 1902714.0,
+                "95.0" : 1902714.0,
+                "99.0" : 1902714.0,
+                "99.9" : 1902714.0,
+                "99.99" : 1902714.0,
+                "99.999" : 1902714.0,
+                "99.9999" : 1902714.0,
+                "100.0" : 1902714.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1902714.0,
+                    1826713.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.jdkListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/jdk/11.0.17/x64/bin/java",
+        "jvmArgs" : [
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.6/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.6",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.6/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks"
+        ],
+        "jdkVersion" : "11.0.17",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.17+8-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1603511.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1541611.0,
+                "50.0" : 1603511.5,
+                "90.0" : 1665412.0,
+                "95.0" : 1665412.0,
+                "99.0" : 1665412.0,
+                "99.9" : 1665412.0,
+                "99.99" : 1665412.0,
+                "99.999" : 1665412.0,
+                "99.9999" : 1665412.0,
+                "100.0" : 1665412.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1665412.0,
+                    1541611.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

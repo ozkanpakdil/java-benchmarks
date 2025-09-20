@@ -1,0 +1,772 @@
+[
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecMutableList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.0831875E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.0630424E7,
+                "50.0" : 1.0831875E7,
+                "90.0" : 1.1033326E7,
+                "95.0" : 1.1033326E7,
+                "99.0" : 1.1033326E7,
+                "99.9" : 1.1033326E7,
+                "99.99" : 1.1033326E7,
+                "99.999" : 1.1033326E7,
+                "99.9999" : 1.1033326E7,
+                "100.0" : 1.1033326E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.1033326E7,
+                    1.0630424E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecMutableListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 8696820.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8652421.0,
+                "50.0" : 8696820.5,
+                "90.0" : 8741220.0,
+                "95.0" : 8741220.0,
+                "99.0" : 8741220.0,
+                "99.9" : 8741220.0,
+                "99.99" : 8741220.0,
+                "99.999" : 8741220.0,
+                "99.9999" : 8741220.0,
+                "100.0" : 8741220.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    8652421.0,
+                    8741220.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecPrimitive",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.1635043E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9190476.0,
+                "50.0" : 1.1635043E7,
+                "90.0" : 1.407961E7,
+                "95.0" : 1.407961E7,
+                "99.0" : 1.407961E7,
+                "99.9" : 1.407961E7,
+                "99.99" : 1.407961E7,
+                "99.999" : 1.407961E7,
+                "99.9999" : 1.407961E7,
+                "100.0" : 1.407961E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.407961E7,
+                    9190476.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.ecPrimitiveParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.1240324E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.0617523E7,
+                "50.0" : 1.1240324E7,
+                "90.0" : 1.1863125E7,
+                "95.0" : 1.1863125E7,
+                "99.0" : 1.1863125E7,
+                "99.9" : 1.1863125E7,
+                "99.99" : 1.1863125E7,
+                "99.999" : 1.1863125E7,
+                "99.9999" : 1.1863125E7,
+                "100.0" : 1.1863125E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.1863125E7,
+                    1.0617523E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.jdkList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.9756242E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.7818638E7,
+                "50.0" : 1.9756242E7,
+                "90.0" : 2.1693846E7,
+                "95.0" : 2.1693846E7,
+                "99.0" : 2.1693846E7,
+                "99.9" : 2.1693846E7,
+                "99.99" : 2.1693846E7,
+                "99.999" : 2.1693846E7,
+                "99.9999" : 2.1693846E7,
+                "100.0" : 2.1693846E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2.1693846E7,
+                    1.7818638E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListFilter.jdkListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.55736955E7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.3533596E7,
+                "50.0" : 1.55736955E7,
+                "90.0" : 1.7613795E7,
+                "95.0" : 1.7613795E7,
+                "99.0" : 1.7613795E7,
+                "99.9" : 1.7613795E7,
+                "99.99" : 1.7613795E7,
+                "99.999" : 1.7613795E7,
+                "99.9999" : 1.7613795E7,
+                "100.0" : 1.7613795E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1.3533596E7,
+                    1.7613795E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecMutableList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3050555.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3033905.0,
+                "50.0" : 3050555.0,
+                "90.0" : 3067205.0,
+                "95.0" : 3067205.0,
+                "99.0" : 3067205.0,
+                "99.9" : 3067205.0,
+                "99.99" : 3067205.0,
+                "99.999" : 3067205.0,
+                "99.9999" : 3067205.0,
+                "100.0" : 3067205.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3067205.0,
+                    3033905.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecMutableListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 5984111.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5454710.0,
+                "50.0" : 5984111.0,
+                "90.0" : 6513512.0,
+                "95.0" : 6513512.0,
+                "99.0" : 6513512.0,
+                "99.9" : 6513512.0,
+                "99.99" : 6513512.0,
+                "99.999" : 6513512.0,
+                "99.9999" : 6513512.0,
+                "100.0" : 6513512.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6513512.0,
+                    5454710.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecPrimitive",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 2763405.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2761505.0,
+                "50.0" : 2763405.0,
+                "90.0" : 2765305.0,
+                "95.0" : 2765305.0,
+                "99.0" : 2765305.0,
+                "99.9" : 2765305.0,
+                "99.99" : 2765305.0,
+                "99.999" : 2765305.0,
+                "99.9999" : 2765305.0,
+                "100.0" : 2765305.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2761505.0,
+                    2765305.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.ecPrimitiveParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4778212.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4596712.0,
+                "50.0" : 4778212.5,
+                "90.0" : 4959713.0,
+                "95.0" : 4959713.0,
+                "99.0" : 4959713.0,
+                "99.9" : 4959713.0,
+                "99.99" : 4959713.0,
+                "99.999" : 4959713.0,
+                "99.9999" : 4959713.0,
+                "100.0" : 4959713.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4596712.0,
+                    4959713.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.jdkList",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 7841020.0,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7663819.0,
+                "50.0" : 7841020.0,
+                "90.0" : 8018221.0,
+                "95.0" : 8018221.0,
+                "99.0" : 8018221.0,
+                "99.9" : 8018221.0,
+                "99.99" : 8018221.0,
+                "99.999" : 8018221.0,
+                "99.9999" : 8018221.0,
+                "100.0" : 8018221.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    8018221.0,
+                    7663819.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.22",
+        "benchmark" : "com.mascix.IntegerListSum.jdkListParallel",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/bin/java",
+        "jvmArgs" : [
+            "-Xoptionsfile=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/options.default",
+            "-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple",
+            "-XX:+EnsureHashed:java/lang/Class,java/lang/Thread",
+            "-Xjcl:jclse29",
+            "-Dcom.ibm.oti.vm.bootstrap.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Dsun.boot.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib",
+            "-Djava.library.path=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib/default:/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64/lib:/usr/lib64:/usr/lib",
+            "-Djava.home=/opt/hostedtoolcache/Java_IBM_Semeru_jdk/17.0.6-10/x64",
+            "-Duser.dir=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Djava.class.path=/usr/share/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar",
+            "-Dclassworlds.conf=/usr/share/apache-maven-3.8.8/bin/m2.conf",
+            "-Dmaven.home=/usr/share/apache-maven-3.8.8",
+            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.8.8/lib/jansi-native",
+            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks",
+            "-Dsun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -ntp clean package",
+            "-Dsun.java.launcher=SUN_STANDARD"
+        ],
+        "jdkVersion" : "17.0.6",
+        "vmName" : "Eclipse OpenJ9 VM",
+        "vmVersion" : "openj9-0.36.0",
+        "warmupIterations" : 3,
+        "warmupTime" : "4 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "4 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 6590512.5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5899011.0,
+                "50.0" : 6590512.5,
+                "90.0" : 7282014.0,
+                "95.0" : 7282014.0,
+                "99.0" : 7282014.0,
+                "99.9" : 7282014.0,
+                "99.99" : 7282014.0,
+                "99.999" : 7282014.0,
+                "99.9999" : 7282014.0,
+                "100.0" : 7282014.0
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    5899011.0,
+                    7282014.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
