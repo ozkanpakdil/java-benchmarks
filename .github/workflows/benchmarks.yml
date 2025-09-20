@@ -50,7 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [25, 24, 17, 11]
+        java: [25, 24, 17]
         distribution: [temurin, zulu, microsoft, graalvm-community, oracle]
     steps:
       - name: Checkout
@@ -247,6 +247,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # Ensure filename globs that match nothing expand to empty (not literal patterns)
+          shopt -s nullglob
           mkdir -p docs
           repo="${GITHUB_REPOSITORY}"
           branch="${GITHUB_REF_NAME}"
