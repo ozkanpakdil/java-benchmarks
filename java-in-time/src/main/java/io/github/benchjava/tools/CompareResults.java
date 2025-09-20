@@ -10,21 +10,35 @@ import java.text.DecimalFormat;
 import java.util.*;
 
 /**
- * Compare two JMH JSON result files and print a Markdown table with per-benchmark ratios.
+ * Compare JMH JSON result files and print Markdown tables.
+ *
  * Usage:
- *   java -cp target/benchmarks.jar io.github.benchjava.tools.CompareResults path/to/A.json path/to/B.json
- * Notes: Lower is better for AverageTime benchmarks. Ratio = B / A.
+ *   - Two files (baseline vs candidate with ratio):
+ *       java -cp target/benchmarks.jar io.github.benchjava.tools.CompareResults A.json B.json
+ *   - Many files (big table with all JSONs, no ratios):
+ *       java -cp target/benchmarks.jar io.github.benchjava.tools.CompareResults A.json B.json C.json ...
+ *
+ * Notes: Lower is better for AverageTime benchmarks. Ratio = B / A for the two-file mode.
  */
 public class CompareResults {
     private static final DecimalFormat DF3 = new DecimalFormat("0.000");
 
     public static void main(String[] args) throws IOException {
         if (args.length < 2) {
-            System.err.println("Usage: CompareResults <baseline.json> <candidate.json>");
+            System.err.println("Usage: CompareResults <A.json> <B.json> [<C.json> ...]");
             System.exit(2);
         }
-        File aFile = new File(args[0]);
-        File bFile = new File(args[1]);
+
+        if (args.length == 2) {
+            compareTwo(args[0], args[1]);
+        } else {
+            compareMany(args);
+        }
+    }
+
+    private static void compareTwo(String aPath, String bPath) throws IOException {
+        File aFile = new File(aPath);
+        File bFile = new File(bPath);
 
         ObjectMapper om = new ObjectMapper();
         List<JsonNode> a = om.readValue(aFile, new TypeReference<List<JsonNode>>(){});
@@ -53,6 +67,57 @@ public class CompareResults {
                 ratio = DF3.format(eb.score / ea.score);
             }
             System.out.println("| " + name + " | " + aStr + " | " + bStr + " | " + ratio + " | " + unit + " |");
+        }
+    }
+
+    private static void compareMany(String[] paths) throws IOException {
+        ObjectMapper om = new ObjectMapper();
+
+        // Read and index each file
+        List<File> files = new ArrayList<>();
+        List<Map<String, Entry>> indexed = new ArrayList<>();
+        Set<String> allNames = new TreeSet<>();
+        for (String p : paths) {
+            File f = new File(p);
+            files.add(f);
+            List<JsonNode> nodes = om.readValue(f, new TypeReference<List<JsonNode>>(){});
+            Map<String, Entry> m = index(nodes);
+            indexed.add(m);
+            allNames.addAll(m.keySet());
+        }
+
+        // Header
+        StringBuilder hdr = new StringBuilder("| Benchmark ");
+        for (File f : files) {
+            hdr.append("| ").append(f.getName()).append(" ");
+        }
+        hdr.append("| Unit |");
+        System.out.println(hdr);
+
+        // Separator
+        StringBuilder sep = new StringBuilder("|---");
+        for (int i = 0; i < files.size(); i++) {
+            sep.append("|---:");
+        }
+        sep.append("|---|");
+        System.out.println(sep);
+
+        // Rows
+        for (String name : allNames) {
+            StringBuilder row = new StringBuilder();
+            row.append("| ").append(name).append(" ");
+            String unit = "-";
+            for (Map<String, Entry> m : indexed) {
+                Entry e = m.get(name);
+                if (e == null) {
+                    row.append("| - ");
+                } else {
+                    row.append("| ").append(DF3.format(e.score)).append(" ");
+                    unit = e.unit != null ? e.unit : unit;
+                }
+            }
+            row.append("| ").append(unit).append(" |");
+            System.out.println(row);
         }
     }
 

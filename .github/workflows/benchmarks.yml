@@ -263,6 +263,13 @@ jobs:
             echo >> "$JIT_DOC"
             echo "## View in JMH viewer" >> "$JIT_DOC"
             echo "[Open all in jmh.morethan.io](https://jmh.morethan.io/?sources=${url_list})" >> "$JIT_DOC"
+            echo >> "$JIT_DOC"
+            echo "## Big table (all JSONs)" >> "$JIT_DOC"
+            echo "A single Markdown table with all available result files as columns:" >> "$JIT_DOC"
+            echo "" >> "$JIT_DOC"
+            # Generate a big table with all JSONs using CompareResults (multi-file mode)
+            java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults ${jsons[@]} > docs/java-in-time-all.md
+            echo "[Open the big table](./java-in-time-all.md)" >> "$JIT_DOC"
           else
             echo "No JSON results found yet." >> "$JIT_DOC"
           fi
