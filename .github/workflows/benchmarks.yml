@@ -95,7 +95,7 @@ jobs:
         working-directory: java-in-time
         env:
           # Default to a small smoke subset unless explicitly overridden via workflow input
-          BENCH_INCLUDE: ${{ inputs.bench_include != '' && inputs.bench_include || '.*(NumericsBenchmark|StreamsBenchmark|RegexAndStringBenchmark).*' }}
+          BENCH_INCLUDE: ${{ inputs.bench_include }}
           # JMH_OPTS may be empty here; run-benchmarks.sh supplies fast defaults
           JMH_OPTS: ${{ inputs.jmh_opts }}
         run: |
@@ -230,7 +230,7 @@ jobs:
         with:
           pattern: results-*
           merge-multiple: true
-          path: java-in-time/results
+          path: artifacts/jit
 
       - name: Download all eclipse-collections results artifacts
         uses: actions/download-artifact@v4
@@ -252,6 +252,21 @@ jobs:
           mkdir -p docs
           repo="${GITHUB_REPOSITORY}"
           branch="${GITHUB_REF_NAME}"
+
+          # Ensure only java-in-time JSONs end up under java-in-time/results
+          mkdir -p java-in-time/results
+          # Remove any previously mixed-in EC JSONs (which start with a digit)
+          rm -f java-in-time/results/[0-9]*.json || true
+          # Move freshly downloaded artifacts: keep only files starting with a letter
+          shopt -s nullglob
+          for f in artifacts/jit/*.json; do
+            base=$(basename "$f")
+            if [[ "$base" =~ ^[A-Za-z] ]]; then
+              mv "$f" java-in-time/results/
+            else
+              echo "Skipping non-JIT JSON in artifacts/jit: $base"
+            fi
+          done
 
           # 1) Java-in-time page
           JIT_DOC=docs/java-in-time.md
