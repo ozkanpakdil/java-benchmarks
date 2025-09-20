@@ -1,3 +1,5 @@
+**Overall result:** B (zulu-25.json) is faster overall (geometric mean ratio B/A = 0.671, 32.885% faster, 13 benchmark(s)).
+
 | Benchmark | A (zulu-17.json) | B (zulu-25.json) | Ratio B/A | Winner | Unit |
 |---|---:|---:|---:|:---:|---|
 | [io.github.benchjava.bench.NumericsBenchmark.biginteger_mul](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/NumericsBenchmark.java) | <span style="color:#c5221f">22.583</span> | <span style="color:#137333;font-weight:600">21.924</span> | <span style="color:#137333;font-weight:600">0.971</span> | B | ns/op |

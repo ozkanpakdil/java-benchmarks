@@ -1,3 +1,5 @@
+**Overall result:** B (microsoft-17.json) is faster overall (geometric mean ratio B/A = 0.908, 9.217% faster, 13 benchmark(s)).
+
 | Benchmark | A (graalvm-community-17.json) | B (microsoft-17.json) | Ratio B/A | Winner | Unit |
 |---|---:|---:|---:|:---:|---|
 | [io.github.benchjava.bench.NumericsBenchmark.biginteger_mul](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/NumericsBenchmark.java) | <span style="color:#137333;font-weight:600">21.167</span> | <span style="color:#c5221f">22.895</span> | <span style="color:#c5221f;font-weight:600">1.082</span> | A | ns/op |

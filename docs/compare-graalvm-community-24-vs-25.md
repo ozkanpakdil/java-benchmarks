@@ -1,3 +1,5 @@
+**Overall result:** B (graalvm-community-25.json) is faster overall (geometric mean ratio B/A = 0.818, 18.161% faster, 13 benchmark(s)).
+
 | Benchmark | A (graalvm-community-24.json) | B (graalvm-community-25.json) | Ratio B/A | Winner | Unit |
 |---|---:|---:|---:|:---:|---|
 | [io.github.benchjava.bench.NumericsBenchmark.biginteger_mul](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/NumericsBenchmark.java) | <span style="color:#c5221f">21.032</span> | <span style="color:#137333;font-weight:600">20.357</span> | <span style="color:#137333;font-weight:600">0.968</span> | B | ns/op |

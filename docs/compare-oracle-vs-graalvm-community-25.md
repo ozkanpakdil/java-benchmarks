@@ -1,3 +1,5 @@
+**Overall result:** A (oracle-25.json) is faster overall (geometric mean ratio B/A = 1.047, 4.688% faster, 13 benchmark(s)).
+
 | Benchmark | A (oracle-25.json) | B (graalvm-community-25.json) | Ratio B/A | Winner | Unit |
 |---|---:|---:|---:|:---:|---|
 | [io.github.benchjava.bench.NumericsBenchmark.biginteger_mul](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/NumericsBenchmark.java) | <span style="color:#c5221f">21.893</span> | <span style="color:#137333;font-weight:600">20.357</span> | <span style="color:#137333;font-weight:600">0.930</span> | B | ns/op |

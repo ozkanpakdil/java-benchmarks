@@ -1,3 +1,5 @@
+**Overall result:** B (temurin-17.json) is faster overall (geometric mean ratio B/A = 0.917, 8.264% faster, 13 benchmark(s)).
+
 | Benchmark | A (graalvm-community-17.json) | B (temurin-17.json) | Ratio B/A | Winner | Unit |
 |---|---:|---:|---:|:---:|---|
 | [io.github.benchjava.bench.NumericsBenchmark.biginteger_mul](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/NumericsBenchmark.java) | <span style="color:#137333;font-weight:600">21.167</span> | <span style="color:#c5221f">22.769</span> | <span style="color:#c5221f;font-weight:600">1.076</span> | A | ns/op |
