@@ -18,27 +18,9 @@ public class JsonBenchmark {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
-    public static class OrderItem {
-        public String sku;
-        public int qty;
-        public double price;
+    public record OrderItem(String sku, int qty, double price) {}
 
-        public OrderItem(String sku, int qty, double price) {
-            this.sku = sku; this.qty = qty; this.price = price;
-        }
-    }
-
-    public static class Order {
-        public String id;
-        public String customer;
-        public List<OrderItem> items;
-        public long createdAt;
-
-        public Order() {}
-        public Order(String id, String customer, List<OrderItem> items, long createdAt) {
-            this.id = id; this.customer = customer; this.items = items; this.createdAt = createdAt;
-        }
-    }
+    public record Order(String id, String customer, List<OrderItem> items, long createdAt) {}
 
     @Param({"5", "20", "100"})
     public int itemsCount;
