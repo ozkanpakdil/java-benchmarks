@@ -74,13 +74,19 @@ public class NumericsBenchmark {
             int a = rnd.nextInt(10);
             int b = rnd.nextInt(20);
             int c = rnd.nextInt(50);
-            if (rnd.nextBoolean()) {
-                int d = rnd.nextInt(100);
-                versionStrings[i] = a + "." + b + "." + c + "." + d;
+            // Java Runtime.Version supports major[.minor][.security], not 4-part versions.
+            // Randomly choose 1–3 components.
+            int parts = 1 + rnd.nextInt(3);
+            String vs;
+            if (parts == 1) {
+                vs = Integer.toString(a);
+            } else if (parts == 2) {
+                vs = a + "." + b;
             } else {
-                versionStrings[i] = a + "." + b + "." + c;
+                vs = a + "." + b + "." + c;
             }
-            versionUtf8[i] = versionStrings[i].getBytes(StandardCharsets.US_ASCII);
+            versionStrings[i] = vs;
+            versionUtf8[i] = vs.getBytes(StandardCharsets.US_ASCII);
         }
     }
 
