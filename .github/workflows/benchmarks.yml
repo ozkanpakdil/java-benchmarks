@@ -255,6 +255,8 @@ jobs:
 
           # Ensure only java-in-time JSONs end up under java-in-time/results
           mkdir -p java-in-time/results
+          # Purge any existing JSONs to avoid mixing results across commits
+          rm -f java-in-time/results/*.json || true
           # Remove any previously mixed-in non-JIT JSONs (anything not matching allowed distro-version pattern)
           shopt -s nullglob
           for f in java-in-time/results/*.json; do
@@ -374,9 +376,13 @@ jobs:
                 if [[ -f "$base" && -f "$cand" ]]; then
                   out="docs/compare-${d}-${a}-vs-${b}.md"
                   echo "Generating $out from $base vs $cand"
-                  java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$base" "$cand" > "$out"
-                  rel="./compare-${d}-${a}-vs-${b}.md"
-                  echo "- ${d}: ${a} vs ${b} → [view](${rel})" >> "$JIT_DOC"
+                  if java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$base" "$cand" > "$out"; then
+                    rel="./compare-${d}-${a}-vs-${b}.md"
+                    echo "- ${d}: ${a} vs ${b} → [view](${rel})" >> "$JIT_DOC"
+                  else
+                    echo "Skipping ${d} ${a} vs ${b} due to benchmark set mismatch (CompareResults non-zero)."
+                    rm -f "$out" || true
+                  fi
                 else
                   echo "Skipping ${d} ${a} vs ${b} (missing files)"
                 fi
@@ -416,9 +422,13 @@ jobs:
                 if [[ -f "$f1" && -f "$f2" ]]; then
                   out="docs/compare-${d1}-vs-${d2}-${v}.md"
                   echo "Generating $out from $f1 vs $f2"
-                  java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$f1" "$f2" > "$out"
-                  rel="./compare-${d1}-vs-${d2}-${v}.md"
-                  echo "- Java ${v}: ${d1} vs ${d2} → [view](${rel})" >> "$JIT_DOC"
+                  if java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.CompareResults "$f1" "$f2" > "$out"; then
+                    rel="./compare-${d1}-vs-${d2}-${v}.md"
+                    echo "- Java ${v}: ${d1} vs ${d2} → [view](${rel})" >> "$JIT_DOC"
+                  else
+                    echo "Skipping cross-distribution ${d1} vs ${d2} on Java ${v} due to benchmark set mismatch (CompareResults non-zero)."
+                    rm -f "$out" || true
+                  fi
                 else
                   echo "Skipping cross-distribution ${d1} vs ${d2} on Java ${v} (missing files)"
                 fi
