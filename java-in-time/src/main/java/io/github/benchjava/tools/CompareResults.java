@@ -47,13 +47,12 @@ public class CompareResults {
         Map<String, Entry> base = index(a);
         Map<String, Entry> cand = index(b);
 
-        // Determine common benchmarks to avoid rows with missing values ("-")
+        // Determine common and union of benchmarks
         Set<String> common = new TreeSet<>(base.keySet());
         common.retainAll(cand.keySet());
-        int omitted = (new TreeSet<String>() {{
-            addAll(base.keySet());
-            addAll(cand.keySet());
-        }}).size() - common.size();
+        Set<String> all = new TreeSet<>();
+        all.addAll(base.keySet());
+        all.addAll(cand.keySet());
 
         // Compute overall summary using geometric mean of ratios over common benchmarks
         int n = 0;
@@ -94,28 +93,28 @@ public class CompareResults {
         System.out.println("| Benchmark | A (" + aFile.getName() + ") | B (" + bFile.getName() + ") | Ratio B/A | Winner | Unit |");
         System.out.println("|---|---:|---:|---:|:---:|---|");
 
-        for (String name : common) {
+        for (String name : all) {
             Entry ea = base.get(name);
             Entry eb = cand.get(name);
             String unit = eb != null ? eb.unit : (ea != null ? ea.unit : "-");
 
-            double ratioVal = (ea == null || eb == null || ea.score == 0.0) ? Double.NaN : (eb.score / ea.score);
+            Double aScore = (ea != null) ? ea.score : null;
+            Double bScore = (eb != null) ? eb.score : null;
+            double ratioVal = (aScore == null || bScore == null || aScore == 0.0) ? Double.NaN : (bScore / aScore);
             boolean aWins = (!Double.isNaN(ratioVal) && ratioVal > 1.0); // lower is better → B/A > 1 means A is faster
             boolean bWins = (!Double.isNaN(ratioVal) && ratioVal < 1.0);
 
-            String aStr = formatCell(ea.score, aWins, bWins);
-            String bStr = formatCell(eb.score, bWins, aWins);
+            String aStr = (aScore == null) ? "-" : formatCell(aScore, aWins, bWins);
+            String bStr = (bScore == null) ? "-" : formatCell(bScore, bWins, aWins);
             String ratio = Double.isNaN(ratioVal) ? "-" : formatRatio(ratioVal, aWins || bWins);
-            String winner = aWins ? "A" : (bWins ? "B" : "-");
+            String winner = (aScore == null || bScore == null) ? "-" : (aWins ? "A" : (bWins ? "B" : "-"));
 
             String link = linkify(name);
             System.out.println("| " + link + " | " + aStr + " | " + bStr + " | " + ratio + " | " + winner + " | " + unit + " |");
         }
 
-        if (omitted > 0) {
-            System.out.println();
-            System.out.println("_Note: " + omitted + " benchmark(s) present in only one file were omitted from this table._");
-        }
+        System.out.println();
+        System.out.println("_Note: Benchmarks present in only one file are included with '-' on the missing side._");
     }
 
     private static String formatCell(double value, boolean highlightWin, boolean highlightLose) {

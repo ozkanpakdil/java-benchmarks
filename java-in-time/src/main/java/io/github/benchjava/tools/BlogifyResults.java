@@ -117,6 +117,25 @@ public class BlogifyResults {
                     " (A=" + aVal + ", B=" + bVal + " " + r.unit + ")");
         }
 
+        // Additionally include a full table with ALL benchmarks (including those present in only one run)
+        System.out.println();
+        System.out.println("## All benchmarks (including single-sided)\n");
+        System.out.println("| Benchmark | A (" + aName + ") | B (" + bName + ") | Unit |");
+        System.out.println("|---|---:|---:|---|");
+        // Build union of names
+        Set<String> all = new TreeSet<>();
+        all.addAll(base.keySet());
+        all.addAll(cand.keySet());
+        for (String name : all) {
+            Entry ea = base.get(name);
+            Entry eb = cand.get(name);
+            String aVal = (ea == null) ? "-" : DF3.format(ea.score);
+            String bVal = (eb == null) ? "-" : DF3.format(eb.score);
+            String unit = (eb != null) ? eb.unit : (ea != null ? ea.unit : "-");
+            String link = linkify(name);
+            System.out.println("| " + link + " | " + aVal + " | " + bVal + " | " + unit + " |");
+        }
+
         System.out.println();
         System.out.println("_Legend: A = " + aName + (aVer != null ? " (Java " + aVer + ")" : "") + ", B = " + bName + (bVer != null ? " (Java " + bVer + ")" : "") + ". _");
     }
