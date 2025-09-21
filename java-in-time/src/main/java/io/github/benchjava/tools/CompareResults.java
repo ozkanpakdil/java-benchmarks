@@ -90,8 +90,8 @@ public class CompareResults {
             System.out.println();
         }
 
-        System.out.println("| Benchmark | A (" + aFile.getName() + ") | B (" + bFile.getName() + ") | Ratio B/A | Winner | Unit |");
-        System.out.println("|---|---:|---:|---:|:---:|---|");
+        System.out.println("| Benchmark | A (" + aFile.getName() + ") | B (" + bFile.getName() + ") | Ratio B/A | Δ% (B vs A) | Winner (lower is better) | Unit |");
+        System.out.println("|---|---:|---:|---:|---:|:---:|---|");
 
         for (String name : all) {
             Entry ea = base.get(name);
@@ -107,10 +107,27 @@ public class CompareResults {
             String aStr = (aScore == null) ? "-" : formatCell(aScore, aWins, bWins);
             String bStr = (bScore == null) ? "-" : formatCell(bScore, bWins, aWins);
             String ratio = Double.isNaN(ratioVal) ? "-" : formatRatio(ratioVal, aWins || bWins);
+            String delta;
+            if (Double.isNaN(ratioVal)) {
+                delta = "-";
+            } else {
+                double pct = (ratioVal - 1.0) * 100.0; // B vs A
+                String v = DF3.format(Math.abs(pct)) + "%";
+                String color;
+                if (pct == 0.0) {
+                    delta = v;
+                } else if (pct > 0.0) { // B slower
+                    color = "#c5221f";
+                    delta = "<span style=\"color:" + color + ";font-weight:600\">+" + v + "</span>";
+                } else { // B faster
+                    color = "#137333";
+                    delta = "<span style=\"color:" + color + ";font-weight:600\">-" + v + "</span>";
+                }
+            }
             String winner = (aScore == null || bScore == null) ? "-" : (aWins ? "A" : (bWins ? "B" : "-"));
 
             String link = linkify(name);
-            System.out.println("| " + link + " | " + aStr + " | " + bStr + " | " + ratio + " | " + winner + " | " + unit + " |");
+            System.out.println("| " + link + " | " + aStr + " | " + bStr + " | " + ratio + " | " + delta + " | " + winner + " | " + unit + " |");
         }
 
         System.out.println();

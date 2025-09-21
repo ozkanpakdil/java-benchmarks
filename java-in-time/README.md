@@ -36,6 +36,17 @@ How to run (typical flow)
    Or directly via the Java tool:
    java -cp target/benchmarks.jar io.github.benchjava.tools.CompareResults results/A.json results/B.json > results/compare.md
 
+Interpreting A vs B and the table
+- A is the baseline (first JSON you pass), B is the candidate (second JSON you pass).
+- For AverageTime benchmarks, lower is better.
+- The Ratio column is B/A. If Ratio > 1.0, then A is faster. If Ratio < 1.0, then B is faster.
+- The Δ% (B vs A) column shows the percent change of B relative to A: positive (red) means B is slower than A; negative (green) means B is faster than A.
+- Winner column explicitly states which side is faster.
+
+Example
+- Suppose A=16.625 ns/op and B=70.907 ns/op. Ratio B/A = 4.262 → Δ% = +326.2% → A is the winner. In words: B is 326% slower than A.
+- If A is “Java 24” and B is “Java 25”, then the example above means: Java 25 is 326% slower than Java 24 for that benchmark. Always check which JSON you passed as A and B.
+
 Environment variables (optional)
 - PROFILES: Maven profile for release level (default inferred from active JDK)
   Example: PROFILES=java-17
