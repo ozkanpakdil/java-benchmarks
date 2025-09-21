@@ -71,7 +71,7 @@ public class NumericsBenchmark {
         versionStrings = new String[DATA_SIZE];
         versionUtf8 = new byte[DATA_SIZE][];
         for (int i = 0; i < DATA_SIZE; i++) {
-            int a = rnd.nextInt(10);
+            int a = 1 + rnd.nextInt(10);
             int b = rnd.nextInt(20);
             int c = rnd.nextInt(50);
             // Java Runtime.Version supports major[.minor][.security], not 4-part versions.
