@@ -1,0 +1,4109 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 87.52140023021211,
+            "scoreError" : 4.670588380159828,
+            "scoreConfidence" : [
+                82.85081185005228,
+                92.19198861037194
+            ],
+            "scorePercentiles" : {
+                "0.0" : 86.86357024250663,
+                "50.0" : 87.36025868548901,
+                "90.0" : 88.5015133073638,
+                "95.0" : 88.5015133073638,
+                "99.0" : 88.5015133073638,
+                "99.9" : 88.5015133073638,
+                "99.99" : 88.5015133073638,
+                "99.999" : 88.5015133073638,
+                "99.9999" : 88.5015133073638,
+                "100.0" : 88.5015133073638
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    87.60717173769848,
+                    87.11334563327956
+                ],
+                [
+                    88.5015133073638,
+                    86.86357024250663
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1593.963352199708,
+            "scoreError" : 3.4600405759584425,
+            "scoreConfidence" : [
+                1590.5033116237496,
+                1597.4233927756663
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1593.2722382315505,
+                "50.0" : 1594.012219655283,
+                "90.0" : 1594.556731256716,
+                "95.0" : 1594.556731256716,
+                "99.0" : 1594.556731256716,
+                "99.9" : 1594.556731256716,
+                "99.99" : 1594.556731256716,
+                "99.999" : 1594.556731256716,
+                "99.9999" : 1594.556731256716,
+                "100.0" : 1594.556731256716
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1594.556731256716,
+                    1594.125337107664
+                ],
+                [
+                    1593.2722382315505,
+                    1593.8991022029015
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 24.027740009169687,
+            "scoreError" : 2.8175107055261686,
+            "scoreConfidence" : [
+                21.21022930364352,
+                26.845250714695855
+            ],
+            "scorePercentiles" : {
+                "0.0" : 23.545443504089494,
+                "50.0" : 24.039120160245155,
+                "90.0" : 24.48727621209895,
+                "95.0" : 24.48727621209895,
+                "99.0" : 24.48727621209895,
+                "99.9" : 24.48727621209895,
+                "99.99" : 24.48727621209895,
+                "99.999" : 24.48727621209895,
+                "99.9999" : 24.48727621209895,
+                "100.0" : 24.48727621209895
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    23.545443504089494,
+                    24.29039619556086
+                ],
+                [
+                    23.787844124929446,
+                    24.48727621209895
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.CollectionsBenchmark.InsertRange",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "4"
+        },
+        "primaryMetric" : {
+            "score" : 44872.921912820704,
+            "scoreError" : 23189.371136436785,
+            "scoreConfidence" : [
+                21683.55077638392,
+                68062.29304925748
+            ],
+            "scorePercentiles" : {
+                "0.0" : 41751.94255896473,
+                "50.0" : 44787.28304890393,
+                "90.0" : 48165.17899451026,
+                "95.0" : 48165.17899451026,
+                "99.0" : 48165.17899451026,
+                "99.9" : 48165.17899451026,
+                "99.99" : 48165.17899451026,
+                "99.999" : 48165.17899451026,
+                "99.9999" : 48165.17899451026,
+                "100.0" : 48165.17899451026
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    41751.94255896473,
+                    48165.17899451026
+                ],
+                [
+                    41783.98479913138,
+                    47790.58129867648
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.CollectionsBenchmark.InsertRange",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "16"
+        },
+        "primaryMetric" : {
+            "score" : 73073.6084935834,
+            "scoreError" : 47190.90281810392,
+            "scoreConfidence" : [
+                25882.705675479476,
+                120264.51131168731
+            ],
+            "scorePercentiles" : {
+                "0.0" : 66458.42828672026,
+                "50.0" : 73025.4496014042,
+                "90.0" : 79785.10648480497,
+                "95.0" : 79785.10648480497,
+                "99.0" : 79785.10648480497,
+                "99.9" : 79785.10648480497,
+                "99.99" : 79785.10648480497,
+                "99.999" : 79785.10648480497,
+                "99.9999" : 79785.10648480497,
+                "100.0" : 79785.10648480497
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    66458.42828672026,
+                    78991.4012477296
+                ],
+                [
+                    67059.49795507878,
+                    79785.10648480497
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.CollectionsBenchmark.InsertRange",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 146538.94689625845,
+            "scoreError" : 101342.38473924068,
+            "scoreConfidence" : [
+                45196.562157017775,
+                247881.33163549914
+            ],
+            "scorePercentiles" : {
+                "0.0" : 132818.48479617582,
+                "50.0" : 146567.71961992548,
+                "90.0" : 160201.86354900704,
+                "95.0" : 160201.86354900704,
+                "99.0" : 160201.86354900704,
+                "99.9" : 160201.86354900704,
+                "99.99" : 160201.86354900704,
+                "99.999" : 160201.86354900704,
+                "99.9999" : 160201.86354900704,
+                "100.0" : 160201.86354900704
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    132818.48479617582,
+                    160038.55792
+                ],
+                [
+                    133096.88131985097,
+                    160201.86354900704
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.CryptoBenchmark.Hash",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 737.6303068208006,
+            "scoreError" : 25.73010348898081,
+            "scoreConfidence" : [
+                711.9002033318197,
+                763.3604103097814
+            ],
+            "scorePercentiles" : {
+                "0.0" : 733.1528281140043,
+                "50.0" : 737.6956863036712,
+                "90.0" : 741.9770265618555,
+                "95.0" : 741.9770265618555,
+                "99.0" : 741.9770265618555,
+                "99.9" : 741.9770265618555,
+                "99.99" : 741.9770265618555,
+                "99.999" : 741.9770265618555,
+                "99.9999" : 741.9770265618555,
+                "100.0" : 741.9770265618555
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    741.9770265618555,
+                    739.7708909631515
+                ],
+                [
+                    735.620481644191,
+                    733.1528281140043
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 0.48535900978090596,
+            "scoreError" : 0.021365076444901817,
+            "scoreConfidence" : [
+                0.46399393333600414,
+                0.5067240862258078
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.48228299097450494,
+                "50.0" : 0.4848992363463727,
+                "90.0" : 0.4893545754563736,
+                "95.0" : 0.4893545754563736,
+                "99.0" : 0.4893545754563736,
+                "99.9" : 0.4893545754563736,
+                "99.99" : 0.4893545754563736,
+                "99.999" : 0.4893545754563736,
+                "99.9999" : 0.4893545754563736,
+                "100.0" : 0.4893545754563736
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    0.48303576798492714,
+                    0.48228299097450494
+                ],
+                [
+                    0.4867627047078183,
+                    0.4893545754563736
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 0.41374040472100143,
+            "scoreError" : 0.0184129149229443,
+            "scoreConfidence" : [
+                0.39532748979805715,
+                0.4321533196439457
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.4095740655295063,
+                "50.0" : 0.4146989657886771,
+                "90.0" : 0.41598962177714527,
+                "95.0" : 0.41598962177714527,
+                "99.0" : 0.41598962177714527,
+                "99.9" : 0.41598962177714527,
+                "99.99" : 0.41598962177714527,
+                "99.999" : 0.41598962177714527,
+                "99.9999" : 0.41598962177714527,
+                "100.0" : 0.41598962177714527
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    0.4095740655295063,
+                    0.41447255126914573
+                ],
+                [
+                    0.41492538030820847,
+                    0.41598962177714527
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.DiagnosticsBenchmark.Oops",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 61.040176753364925,
+            "scoreError" : 1.4797954207975306,
+            "scoreConfidence" : [
+                59.560381332567395,
+                62.519972174162454
+            ],
+            "scorePercentiles" : {
+                "0.0" : 60.76769454948785,
+                "50.0" : 61.03691046397499,
+                "90.0" : 61.31919153602185,
+                "95.0" : 61.31919153602185,
+                "99.0" : 61.31919153602185,
+                "99.9" : 61.31919153602185,
+                "99.99" : 61.31919153602185,
+                "99.999" : 61.31919153602185,
+                "99.9999" : 61.31919153602185,
+                "100.0" : 61.31919153602185
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    61.31919153602185,
+                    61.087929254801935
+                ],
+                [
+                    60.985891673148046,
+                    60.76769454948785
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 57.82640599384868,
+            "scoreError" : 0.291213132164343,
+            "scoreConfidence" : [
+                57.53519286168434,
+                58.117619126013025
+            ],
+            "scorePercentiles" : {
+                "0.0" : 57.799063204322486,
+                "50.0" : 57.80639341058179,
+                "90.0" : 57.893773949908656,
+                "95.0" : 57.893773949908656,
+                "99.0" : 57.893773949908656,
+                "99.9" : 57.893773949908656,
+                "99.99" : 57.893773949908656,
+                "99.999" : 57.893773949908656,
+                "99.9999" : 57.893773949908656,
+                "100.0" : 57.893773949908656
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    57.80807210076186,
+                    57.799063204322486
+                ],
+                [
+                    57.893773949908656,
+                    57.804714720401726
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 57.79938650048477,
+            "scoreError" : 0.0558173224228977,
+            "scoreConfidence" : [
+                57.743569178061875,
+                57.85520382290767
+            ],
+            "scorePercentiles" : {
+                "0.0" : 57.7909162095049,
+                "50.0" : 57.79863299358472,
+                "90.0" : 57.80936380526474,
+                "95.0" : 57.80936380526474,
+                "99.0" : 57.80936380526474,
+                "99.9" : 57.80936380526474,
+                "99.99" : 57.80936380526474,
+                "99.999" : 57.80936380526474,
+                "99.9999" : 57.80936380526474,
+                "100.0" : 57.80936380526474
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    57.79356316178338,
+                    57.7909162095049
+                ],
+                [
+                    57.80370282538606,
+                    57.80936380526474
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.IOBenchmark.FSW",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3827806.134907852,
+            "scoreError" : 1846626.4236469027,
+            "scoreConfidence" : [
+                1981179.7112609493,
+                5674432.558554755
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3492501.6968641113,
+                "50.0" : 3815078.4797169813,
+                "90.0" : 4188565.8833333333,
+                "95.0" : 4188565.8833333333,
+                "99.0" : 4188565.8833333333,
+                "99.9" : 4188565.8833333333,
+                "99.99" : 4188565.8833333333,
+                "99.999" : 4188565.8833333333,
+                "99.9999" : 4188565.8833333333,
+                "100.0" : 4188565.8833333333
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3782763.5094339624,
+                    3847393.45
+                ],
+                [
+                    4188565.8833333333,
+                    3492501.6968641113
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.IOBenchmark.MMF",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 2675389.386301248,
+            "scoreError" : 29820.199176240778,
+            "scoreConfidence" : [
+                2645569.187125007,
+                2705209.5854774886
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2669719.648,
+                "50.0" : 2675641.9018110516,
+                "90.0" : 2680554.0935828877,
+                "95.0" : 2680554.0935828877,
+                "99.0" : 2680554.0935828877,
+                "99.9" : 2680554.0935828877,
+                "99.99" : 2680554.0935828877,
+                "99.999" : 2680554.0935828877,
+                "99.9999" : 2680554.0935828877,
+                "100.0" : 2680554.0935828877
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2669719.648,
+                    2677213.35828877
+                ],
+                [
+                    2680554.0935828877,
+                    2674070.445333333
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.IOBenchmark.WriteByte",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3.0111419573529407E7,
+            "scoreError" : 1117028.0709773223,
+            "scoreConfidence" : [
+                2.8994391502552085E7,
+                3.122844764450673E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.986658561764706E7,
+                "50.0" : 3.0157069779411763E7,
+                "90.0" : 3.026495311764706E7,
+                "95.0" : 3.026495311764706E7,
+                "99.0" : 3.026495311764706E7,
+                "99.9" : 3.026495311764706E7,
+                "99.99" : 3.026495311764706E7,
+                "99.999" : 3.026495311764706E7,
+                "99.9999" : 3.026495311764706E7,
+                "100.0" : 3.026495311764706E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.0188366911764707E7,
+                    3.0125772647058822E7
+                ],
+                [
+                    3.026495311764706E7,
+                    2.986658561764706E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.JsonBenchmark.Serialize",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "itemsCount" : "5"
+        },
+        "primaryMetric" : {
+            "score" : 1022.5814147466851,
+            "scoreError" : 24.2457716937476,
+            "scoreConfidence" : [
+                998.3356430529375,
+                1046.8271864404328
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1018.7660016874682,
+                "50.0" : 1022.2276401095494,
+                "90.0" : 1027.1043770801734,
+                "95.0" : 1027.1043770801734,
+                "99.0" : 1027.1043770801734,
+                "99.9" : 1027.1043770801734,
+                "99.99" : 1027.1043770801734,
+                "99.999" : 1027.1043770801734,
+                "99.9999" : 1027.1043770801734,
+                "100.0" : 1027.1043770801734
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1024.0943196269607,
+                    1020.360960592138
+                ],
+                [
+                    1027.1043770801734,
+                    1018.7660016874682
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.JsonBenchmark.Serialize",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "itemsCount" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 3393.4987087704767,
+            "scoreError" : 419.5764077538595,
+            "scoreConfidence" : [
+                2973.922301016617,
+                3813.0751165243364
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3323.376151361697,
+                "50.0" : 3398.438469190091,
+                "90.0" : 3453.7417453400276,
+                "95.0" : 3453.7417453400276,
+                "99.0" : 3453.7417453400276,
+                "99.9" : 3453.7417453400276,
+                "99.99" : 3453.7417453400276,
+                "99.999" : 3453.7417453400276,
+                "99.9999" : 3453.7417453400276,
+                "100.0" : 3453.7417453400276
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3453.7417453400276,
+                    3443.452256185315
+                ],
+                [
+                    3353.424682194867,
+                    3323.376151361697
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.JsonBenchmark.Serialize",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "itemsCount" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 16144.778983461003,
+            "scoreError" : 867.2297481512021,
+            "scoreConfidence" : [
+                15277.549235309802,
+                17012.008731612204
+            ],
+            "scorePercentiles" : {
+                "0.0" : 16012.34005731393,
+                "50.0" : 16118.044104079992,
+                "90.0" : 16330.687668370096,
+                "95.0" : 16330.687668370096,
+                "99.0" : 16330.687668370096,
+                "99.9" : 16330.687668370096,
+                "99.99" : 16330.687668370096,
+                "99.999" : 16330.687668370096,
+                "99.9999" : 16330.687668370096,
+                "100.0" : 16330.687668370096
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    16102.214704272514,
+                    16012.34005731393
+                ],
+                [
+                    16330.687668370096,
+                    16133.873503887473
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.JsonBenchmark.WithDeserialize",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "itemsCount" : "5"
+        },
+        "primaryMetric" : {
+            "score" : 1744.6992671210983,
+            "scoreError" : 261.7023447933473,
+            "scoreConfidence" : [
+                1482.996922327751,
+                2006.4016119144455
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1701.1444112769486,
+                "50.0" : 1746.3608901330958,
+                "90.0" : 1784.9308769412528,
+                "95.0" : 1784.9308769412528,
+                "99.0" : 1784.9308769412528,
+                "99.9" : 1784.9308769412528,
+                "99.99" : 1784.9308769412528,
+                "99.999" : 1784.9308769412528,
+                "99.9999" : 1784.9308769412528,
+                "100.0" : 1784.9308769412528
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1784.9308769412528,
+                    1772.811891244197
+                ],
+                [
+                    1719.9098890219946,
+                    1701.1444112769486
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.JsonBenchmark.WithDeserialize",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "itemsCount" : "20"
+        },
+        "primaryMetric" : {
+            "score" : 5758.000365811139,
+            "scoreError" : 137.26450201007054,
+            "scoreConfidence" : [
+                5620.735863801068,
+                5895.26486782121
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5741.566105217232,
+                "50.0" : 5751.971779460879,
+                "90.0" : 5786.491799105567,
+                "95.0" : 5786.491799105567,
+                "99.0" : 5786.491799105567,
+                "99.9" : 5786.491799105567,
+                "99.99" : 5786.491799105567,
+                "99.999" : 5786.491799105567,
+                "99.9999" : 5786.491799105567,
+                "100.0" : 5786.491799105567
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    5741.994001940042,
+                    5741.566105217232
+                ],
+                [
+                    5786.491799105567,
+                    5761.9495569817145
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.JsonBenchmark.WithDeserialize",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "itemsCount" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 25842.582471677553,
+            "scoreError" : 5879.741682309448,
+            "scoreConfidence" : [
+                19962.840789368107,
+                31722.324153987
+            ],
+            "scorePercentiles" : {
+                "0.0" : 25000.07651352297,
+                "50.0" : 25846.895576786454,
+                "90.0" : 26676.46221961433,
+                "95.0" : 26676.46221961433,
+                "99.0" : 26676.46221961433,
+                "99.9" : 26676.46221961433,
+                "99.99" : 26676.46221961433,
+                "99.999" : 26676.46221961433,
+                "99.9999" : 26676.46221961433,
+                "100.0" : 26676.46221961433
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    26676.46221961433,
+                    26581.240923829268
+                ],
+                [
+                    25112.55022974364,
+                    25000.07651352297
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.Add",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 495.98116566763366,
+            "scoreError" : 12.096956927125529,
+            "scoreConfidence" : [
+                483.88420874050814,
+                508.0781225947592
+            ],
+            "scorePercentiles" : {
+                "0.0" : 493.903192894692,
+                "50.0" : 495.8083766749646,
+                "90.0" : 498.40471642591353,
+                "95.0" : 498.40471642591353,
+                "99.0" : 498.40471642591353,
+                "99.9" : 498.40471642591353,
+                "99.99" : 498.40471642591353,
+                "99.999" : 498.40471642591353,
+                "99.9999" : 498.40471642591353,
+                "100.0" : 498.40471642591353
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    493.903192894692,
+                    498.40471642591353
+                ],
+                [
+                    495.4463911193449,
+                    496.1703622305843
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.Ctor",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 530.970490491911,
+            "scoreError" : 3.332046697887271,
+            "scoreConfidence" : [
+                527.6384437940238,
+                534.3025371897983
+            ],
+            "scorePercentiles" : {
+                "0.0" : 530.3882647035896,
+                "50.0" : 530.9450851817259,
+                "90.0" : 531.6035269006028,
+                "95.0" : 531.6035269006028,
+                "99.0" : 531.6035269006028,
+                "99.9" : 531.6035269006028,
+                "99.99" : 531.6035269006028,
+                "99.999" : 531.6035269006028,
+                "99.9999" : 531.6035269006028,
+                "100.0" : 531.6035269006028
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    531.1133625640473,
+                    530.7768077994044
+                ],
+                [
+                    531.6035269006028,
+                    530.3882647035896
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.CtorHost",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 749.4128135734599,
+            "scoreError" : 124.3048542915487,
+            "scoreConfidence" : [
+                625.1079592819111,
+                873.7176678650086
+            ],
+            "scorePercentiles" : {
+                "0.0" : 730.0485521437732,
+                "50.0" : 750.5984511583279,
+                "90.0" : 766.4057998334104,
+                "95.0" : 766.4057998334104,
+                "99.0" : 766.4057998334104,
+                "99.9" : 766.4057998334104,
+                "99.99" : 766.4057998334104,
+                "99.999" : 766.4057998334104,
+                "99.9999" : 766.4057998334104,
+                "100.0" : 766.4057998334104
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    765.4907248257844,
+                    766.4057998334104
+                ],
+                [
+                    730.0485521437732,
+                    735.7061774908715
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.GetValues",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 508.0426901486792,
+            "scoreError" : 83.36168354248113,
+            "scoreConfidence" : [
+                424.681006606198,
+                591.4043736911603
+            ],
+            "scorePercentiles" : {
+                "0.0" : 496.697163433676,
+                "50.0" : 507.86743237272736,
+                "90.0" : 519.738732415586,
+                "95.0" : 519.738732415586,
+                "99.0" : 519.738732415586,
+                "99.9" : 519.738732415586,
+                "99.99" : 519.738732415586,
+                "99.999" : 519.738732415586,
+                "99.9999" : 519.738732415586,
+                "100.0" : 519.738732415586
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    519.738732415586,
+                    518.6765581374123
+                ],
+                [
+                    496.697163433676,
+                    497.05830660804247
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 6.547820972422969E7,
+            "scoreError" : 3.157430739397272E7,
+            "scoreConfidence" : [
+                3.390390233025697E7,
+                9.705251711820242E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.106546652941176E7,
+                "50.0" : 6.4588668898039214E7,
+                "90.0" : 7.167003457142857E7,
+                "95.0" : 7.167003457142857E7,
+                "99.0" : 7.167003457142857E7,
+                "99.9" : 7.167003457142857E7,
+                "99.99" : 7.167003457142857E7,
+                "99.999" : 7.167003457142857E7,
+                "99.9999" : 7.167003457142857E7,
+                "100.0" : 7.167003457142857E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6.7061530266666666E7,
+                    7.167003457142857E7
+                ],
+                [
+                    6.211580752941176E7,
+                    6.106546652941176E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 4.7206397941131756E7,
+            "scoreError" : 1.4444009205310488E8,
+            "scoreConfidence" : [
+                -9.723369411197312E7,
+                1.9164648999423665E8
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.7700418783783782E7,
+                "50.0" : 4.713686059037162E7,
+                "90.0" : 6.68514518E7,
+                "95.0" : 6.68514518E7,
+                "99.0" : 6.68514518E7,
+                "99.9" : 6.68514518E7,
+                "99.99" : 6.68514518E7,
+                "99.999" : 6.68514518E7,
+                "99.9999" : 6.68514518E7,
+                "100.0" : 6.68514518E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    6.62738679375E7,
+                    6.68514518E7
+                ],
+                [
+                    2.7999853243243244E7,
+                    2.7700418783783782E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "url" : "https://example.com/"
+        },
+        "primaryMetric" : {
+            "score" : 5.133397546421405E7,
+            "scoreError" : 2.0820210882328597E8,
+            "scoreConfidence" : [
+                -1.568681333590719E8,
+                2.5953608428750002E8
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.1957695826086957E7,
+                "50.0" : 5.11114135923077E7,
+                "90.0" : 8.115537884615384E7,
+                "95.0" : 8.115537884615384E7,
+                "99.0" : 8.115537884615384E7,
+                "99.9" : 8.115537884615384E7,
+                "99.99" : 8.115537884615384E7,
+                "99.999" : 8.115537884615384E7,
+                "99.9999" : 8.115537884615384E7,
+                "100.0" : 8.115537884615384E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    8.115537884615384E7,
+                    7.720651738461539E7
+                ],
+                [
+                    2.50163098E7,
+                    2.1957695826086957E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.DecrementManual",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 312.6454494335603,
+            "scoreError" : 0.7951966330339032,
+            "scoreConfidence" : [
+                311.8502528005264,
+                313.44064606659424
+            ],
+            "scorePercentiles" : {
+                "0.0" : 312.5100823762762,
+                "50.0" : 312.64985577828713,
+                "90.0" : 312.7720038013908,
+                "95.0" : 312.7720038013908,
+                "99.0" : 312.7720038013908,
+                "99.9" : 312.7720038013908,
+                "99.99" : 312.7720038013908,
+                "99.999" : 312.7720038013908,
+                "99.9999" : 312.7720038013908,
+                "100.0" : 312.7720038013908
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    312.5100823762762,
+                    312.7720038013908
+                ],
+                [
+                    312.5755240600919,
+                    312.72418749648233
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.DecrementTP",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 314.4397971506242,
+            "scoreError" : 14.169508023592652,
+            "scoreConfidence" : [
+                300.27028912703156,
+                328.60930517421684
+            ],
+            "scorePercentiles" : {
+                "0.0" : 312.76337032510816,
+                "50.0" : 313.66470968513977,
+                "90.0" : 317.66639890710906,
+                "95.0" : 317.66639890710906,
+                "99.0" : 317.66639890710906,
+                "99.9" : 317.66639890710906,
+                "99.99" : 317.66639890710906,
+                "99.999" : 317.66639890710906,
+                "99.9999" : 317.66639890710906,
+                "100.0" : 317.66639890710906
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    317.66639890710906,
+                    312.76337032510816
+                ],
+                [
+                    313.69238583838643,
+                    313.6370335318931
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.Divide",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 16.624757535619036,
+            "scoreError" : 0.3653491912755437,
+            "scoreConfidence" : [
+                16.25940834434349,
+                16.99010672689458
+            ],
+            "scorePercentiles" : {
+                "0.0" : 16.570844851059498,
+                "50.0" : 16.612097461741612,
+                "90.0" : 16.703990367933425,
+                "95.0" : 16.703990367933425,
+                "99.0" : 16.703990367933425,
+                "99.9" : 16.703990367933425,
+                "99.99" : 16.703990367933425,
+                "99.999" : 16.703990367933425,
+                "99.9999" : 16.703990367933425,
+                "100.0" : 16.703990367933425
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    16.570844851059498,
+                    16.703990367933425
+                ],
+                [
+                    16.618606193209157,
+                    16.605588730274064
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 38.553754775859666,
+            "scoreError" : 0.06212779573709094,
+            "scoreConfidence" : [
+                38.491626980122575,
+                38.61588257159676
+            ],
+            "scorePercentiles" : {
+                "0.0" : 38.54416753497811,
+                "50.0" : 38.55208380670697,
+                "90.0" : 38.566683955046614,
+                "95.0" : 38.566683955046614,
+                "99.0" : 38.566683955046614,
+                "99.9" : 38.566683955046614,
+                "99.99" : 38.566683955046614,
+                "99.999" : 38.566683955046614,
+                "99.9999" : 38.566683955046614,
+                "100.0" : 38.566683955046614
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    38.549569471738145,
+                    38.54416753497811
+                ],
+                [
+                    38.566683955046614,
+                    38.55459814167579
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.GuidParse",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 20.609075417633804,
+            "scoreError" : 0.047551104933772625,
+            "scoreConfidence" : [
+                20.56152431270003,
+                20.656626522567578
+            ],
+            "scorePercentiles" : {
+                "0.0" : 20.598464318664874,
+                "50.0" : 20.61188519241442,
+                "90.0" : 20.614066967041506,
+                "95.0" : 20.614066967041506,
+                "99.0" : 20.614066967041506,
+                "99.9" : 20.614066967041506,
+                "99.99" : 20.614066967041506,
+                "99.999" : 20.614066967041506,
+                "99.9999" : 20.614066967041506,
+                "100.0" : 20.614066967041506
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    20.614066967041506,
+                    20.609746768485966
+                ],
+                [
+                    20.614023616342873,
+                    20.598464318664874
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 56.6744328415049,
+            "scoreError" : 1.1015115477103625,
+            "scoreConfidence" : [
+                55.57292129379454,
+                57.77594438921526
+            ],
+            "scorePercentiles" : {
+                "0.0" : 56.5307958012426,
+                "50.0" : 56.643517931191354,
+                "90.0" : 56.879899702394326,
+                "95.0" : 56.879899702394326,
+                "99.0" : 56.879899702394326,
+                "99.9" : 56.879899702394326,
+                "99.99" : 56.879899702394326,
+                "99.999" : 56.879899702394326,
+                "99.9999" : 56.879899702394326,
+                "100.0" : 56.879899702394326
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    56.879899702394326,
+                    56.74937225438426
+                ],
+                [
+                    56.53766360799845,
+                    56.5307958012426
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 30.84621753082964,
+            "scoreError" : 1.4930734651784734,
+            "scoreConfidence" : [
+                29.35314406565117,
+                32.33929099600812
+            ],
+            "scorePercentiles" : {
+                "0.0" : 30.62167330531889,
+                "50.0" : 30.84934286787,
+                "90.0" : 31.06451108225969,
+                "95.0" : 31.06451108225969,
+                "99.0" : 31.06451108225969,
+                "99.9" : 31.06451108225969,
+                "99.99" : 31.06451108225969,
+                "99.999" : 31.06451108225969,
+                "99.9999" : 31.06451108225969,
+                "100.0" : 31.06451108225969
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    30.62167330531889,
+                    30.673179303270395
+                ],
+                [
+                    31.06451108225969,
+                    31.0255064324696
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 677.2726109140949,
+            "scoreError" : 11.091277977566278,
+            "scoreConfidence" : [
+                666.1813329365286,
+                688.3638888916612
+            ],
+            "scorePercentiles" : {
+                "0.0" : 675.2459166140624,
+                "50.0" : 677.3296000420103,
+                "90.0" : 679.1853269582967,
+                "95.0" : 679.1853269582967,
+                "99.0" : 679.1853269582967,
+                "99.9" : 679.1853269582967,
+                "99.99" : 679.1853269582967,
+                "99.999" : 679.1853269582967,
+                "99.9999" : 679.1853269582967,
+                "100.0" : 679.1853269582967
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    678.059494087062,
+                    676.5997059969585
+                ],
+                [
+                    679.1853269582967,
+                    675.2459166140624
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 75.46313212773163,
+            "scoreError" : 4.7625592458125885,
+            "scoreConfidence" : [
+                70.70057288191904,
+                80.22569137354421
+            ],
+            "scorePercentiles" : {
+                "0.0" : 74.60445519061153,
+                "50.0" : 75.51678279613903,
+                "90.0" : 76.21450772803692,
+                "95.0" : 76.21450772803692,
+                "99.0" : 76.21450772803692,
+                "99.9" : 76.21450772803692,
+                "99.99" : 76.21450772803692,
+                "99.999" : 76.21450772803692,
+                "99.9999" : 76.21450772803692,
+                "100.0" : 76.21450772803692
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    74.60445519061153,
+                    75.11559152484034
+                ],
+                [
+                    75.91797406743771,
+                    76.21450772803692
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 32.057656542508965,
+            "scoreError" : 5.2180848529214785,
+            "scoreConfidence" : [
+                26.839571689587487,
+                37.275741395430444
+            ],
+            "scorePercentiles" : {
+                "0.0" : 30.98898899615346,
+                "50.0" : 32.25653916973437,
+                "90.0" : 32.72855883441367,
+                "95.0" : 32.72855883441367,
+                "99.0" : 32.72855883441367,
+                "99.9" : 32.72855883441367,
+                "99.99" : 32.72855883441367,
+                "99.999" : 32.72855883441367,
+                "99.9999" : 32.72855883441367,
+                "100.0" : 32.72855883441367
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    31.879099576216152,
+                    30.98898899615346
+                ],
+                [
+                    32.63397876325258,
+                    32.72855883441367
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.NumericsBenchmark.VersionParse",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 669.2661179035942,
+            "scoreError" : 14.68853819827864,
+            "scoreConfidence" : [
+                654.5775797053157,
+                683.9546561018728
+            ],
+            "scorePercentiles" : {
+                "0.0" : 666.7084709585514,
+                "50.0" : 669.36729849683,
+                "90.0" : 671.6214036621653,
+                "95.0" : 671.6214036621653,
+                "99.0" : 671.6214036621653,
+                "99.9" : 671.6214036621653,
+                "99.99" : 671.6214036621653,
+                "99.999" : 671.6214036621653,
+                "99.9999" : 671.6214036621653,
+                "100.0" : 671.6214036621653
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    671.6214036621653,
+                    668.0651648107216
+                ],
+                [
+                    670.6694321829385,
+                    666.7084709585514
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.OtherCollectionsBenchmark.Get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "count" : "16"
+        },
+        "primaryMetric" : {
+            "score" : 325.53160987184253,
+            "scoreError" : 2.0718874317481064,
+            "scoreConfidence" : [
+                323.4597224400944,
+                327.60349730359064
+            ],
+            "scorePercentiles" : {
+                "0.0" : 325.1919148797815,
+                "50.0" : 325.50703008001585,
+                "90.0" : 325.9204644475569,
+                "95.0" : 325.9204644475569,
+                "99.0" : 325.9204644475569,
+                "99.9" : 325.9204644475569,
+                "99.99" : 325.9204644475569,
+                "99.999" : 325.9204644475569,
+                "99.9999" : 325.9204644475569,
+                "100.0" : 325.9204644475569
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    325.9204644475569,
+                    325.6495009103957
+                ],
+                [
+                    325.36455924963605,
+                    325.1919148797815
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.OtherCollectionsBenchmark.Get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "count" : "128"
+        },
+        "primaryMetric" : {
+            "score" : 2931.146882043039,
+            "scoreError" : 65.59773051029602,
+            "scoreConfidence" : [
+                2865.549151532743,
+                2996.744612553335
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2922.3315023184737,
+                "50.0" : 2930.4980978841863,
+                "90.0" : 2941.25983008531,
+                "95.0" : 2941.25983008531,
+                "99.0" : 2941.25983008531,
+                "99.9" : 2941.25983008531,
+                "99.99" : 2941.25983008531,
+                "99.999" : 2941.25983008531,
+                "99.9999" : 2941.25983008531,
+                "100.0" : 2941.25983008531
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2922.4879949052474,
+                    2922.3315023184737
+                ],
+                [
+                    2938.5082008631252,
+                    2941.25983008531
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.OtherCollectionsBenchmark.Get",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "count" : "1024"
+        },
+        "primaryMetric" : {
+            "score" : 22292.17010929587,
+            "scoreError" : 3066.2239538914287,
+            "scoreConfidence" : [
+                19225.94615540444,
+                25358.394063187297
+            ],
+            "scorePercentiles" : {
+                "0.0" : 21698.726785559316,
+                "50.0" : 22374.395044803445,
+                "90.0" : 22721.163562017264,
+                "95.0" : 22721.163562017264,
+                "99.0" : 22721.163562017264,
+                "99.9" : 22721.163562017264,
+                "99.99" : 22721.163562017264,
+                "99.999" : 22721.163562017264,
+                "99.9999" : 22721.163562017264,
+                "100.0" : 22721.163562017264
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    21698.726785559316,
+                    22123.673162423413
+                ],
+                [
+                    22721.163562017264,
+                    22625.116927183477
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "16"
+        },
+        "primaryMetric" : {
+            "score" : 24.86122601440722,
+            "scoreError" : 0.4295646687118527,
+            "scoreConfidence" : [
+                24.431661345695368,
+                25.29079068311907
+            ],
+            "scorePercentiles" : {
+                "0.0" : 24.775981916029217,
+                "50.0" : 24.873164993242234,
+                "90.0" : 24.922592155115197,
+                "95.0" : 24.922592155115197,
+                "99.0" : 24.922592155115197,
+                "99.9" : 24.922592155115197,
+                "99.99" : 24.922592155115197,
+                "99.999" : 24.922592155115197,
+                "99.9999" : 24.922592155115197,
+                "100.0" : 24.922592155115197
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    24.775981916029217,
+                    24.842023530488255
+                ],
+                [
+                    24.904306455996213,
+                    24.922592155115197
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "32"
+        },
+        "primaryMetric" : {
+            "score" : 47.42000418206432,
+            "scoreError" : 0.7351895461311958,
+            "scoreConfidence" : [
+                46.68481463593312,
+                48.15519372819551
+            ],
+            "scorePercentiles" : {
+                "0.0" : 47.3383742062975,
+                "50.0" : 47.37689286005339,
+                "90.0" : 47.587856801852986,
+                "95.0" : 47.587856801852986,
+                "99.0" : 47.587856801852986,
+                "99.9" : 47.587856801852986,
+                "99.99" : 47.587856801852986,
+                "99.999" : 47.587856801852986,
+                "99.9999" : 47.587856801852986,
+                "100.0" : 47.587856801852986
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    47.365131384682456,
+                    47.587856801852986
+                ],
+                [
+                    47.38865433542431,
+                    47.3383742062975
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 92.31675511822515,
+            "scoreError" : 2.8401830864006326,
+            "scoreConfidence" : [
+                89.47657203182452,
+                95.15693820462577
+            ],
+            "scorePercentiles" : {
+                "0.0" : 91.8675362857444,
+                "50.0" : 92.24379282168786,
+                "90.0" : 92.9118985437805,
+                "95.0" : 92.9118985437805,
+                "99.0" : 92.9118985437805,
+                "99.9" : 92.9118985437805,
+                "99.99" : 92.9118985437805,
+                "99.999" : 92.9118985437805,
+                "99.9999" : 92.9118985437805,
+                "100.0" : 92.9118985437805
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    92.32409579509283,
+                    92.1634898482829
+                ],
+                [
+                    92.9118985437805,
+                    91.8675362857444
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.New",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "16"
+        },
+        "primaryMetric" : {
+            "score" : 253.84860917906045,
+            "scoreError" : 192.3598191541598,
+            "scoreConfidence" : [
+                61.48879002490065,
+                446.20842833322024
+            ],
+            "scorePercentiles" : {
+                "0.0" : 219.68609898862277,
+                "50.0" : 251.87398449031016,
+                "90.0" : 291.96036874699877,
+                "95.0" : 291.96036874699877,
+                "99.0" : 291.96036874699877,
+                "99.9" : 291.96036874699877,
+                "99.99" : 291.96036874699877,
+                "99.999" : 291.96036874699877,
+                "99.9999" : 291.96036874699877,
+                "100.0" : 291.96036874699877
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    219.68609898862277,
+                    291.96036874699877
+                ],
+                [
+                    247.9369105201811,
+                    255.81105846043923
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.New",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "32"
+        },
+        "primaryMetric" : {
+            "score" : 256.55311718512445,
+            "scoreError" : 149.20119524610925,
+            "scoreConfidence" : [
+                107.3519219390152,
+                405.7543124312337
+            ],
+            "scorePercentiles" : {
+                "0.0" : 238.67629670072165,
+                "50.0" : 248.85846322945898,
+                "90.0" : 289.81924558085825,
+                "95.0" : 289.81924558085825,
+                "99.0" : 289.81924558085825,
+                "99.9" : 289.81924558085825,
+                "99.99" : 289.81924558085825,
+                "99.999" : 289.81924558085825,
+                "99.9999" : 289.81924558085825,
+                "100.0" : 289.81924558085825
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    238.67629670072165,
+                    254.08729188710618
+                ],
+                [
+                    289.81924558085825,
+                    243.62963457181178
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.New",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 240.8127773659495,
+            "scoreError" : 62.706460827030746,
+            "scoreConfidence" : [
+                178.10631653891875,
+                303.51923819298025
+            ],
+            "scorePercentiles" : {
+                "0.0" : 232.3917841235088,
+                "50.0" : 239.17280218961747,
+                "90.0" : 252.51372096105422,
+                "95.0" : 252.51372096105422,
+                "99.0" : 252.51372096105422,
+                "99.9" : 252.51372096105422,
+                "99.99" : 252.51372096105422,
+                "99.999" : 252.51372096105422,
+                "99.9999" : 252.51372096105422,
+                "100.0" : 252.51372096105422
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    245.05890633478225,
+                    233.2866980444527
+                ],
+                [
+                    232.3917841235088,
+                    252.51372096105422
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.Old",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "16"
+        },
+        "primaryMetric" : {
+            "score" : 3.532443955181799,
+            "scoreError" : 0.04810439320972477,
+            "scoreConfidence" : [
+                3.4843395619720745,
+                3.580548348391524
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.5264239240043214,
+                "50.0" : 3.530611152030178,
+                "90.0" : 3.5421295926625196,
+                "95.0" : 3.5421295926625196,
+                "99.0" : 3.5421295926625196,
+                "99.9" : 3.5421295926625196,
+                "99.99" : 3.5421295926625196,
+                "99.999" : 3.5421295926625196,
+                "99.9999" : 3.5421295926625196,
+                "100.0" : 3.5421295926625196
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.5267720102623685,
+                    3.5421295926625196
+                ],
+                [
+                    3.534450293797988,
+                    3.5264239240043214
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.Old",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "32"
+        },
+        "primaryMetric" : {
+            "score" : 3.5386540492308005,
+            "scoreError" : 0.1222234944390141,
+            "scoreConfidence" : [
+                3.4164305547917864,
+                3.6608775436698147
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.5196723158870973,
+                "50.0" : 3.536764193760421,
+                "90.0" : 3.561415493515263,
+                "95.0" : 3.561415493515263,
+                "99.0" : 3.561415493515263,
+                "99.9" : 3.561415493515263,
+                "99.99" : 3.561415493515263,
+                "99.999" : 3.561415493515263,
+                "99.9999" : 3.561415493515263,
+                "100.0" : 3.561415493515263
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.561415493515263,
+                    3.5196723158870973
+                ],
+                [
+                    3.546452088800182,
+                    3.5270762987206603
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.Old",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 3.511870102173801,
+            "scoreError" : 0.0661841935952198,
+            "scoreConfidence" : [
+                3.4456859085785814,
+                3.5780542957690207
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.4997003124495483,
+                "50.0" : 3.5117222109121737,
+                "90.0" : 3.524335674421308,
+                "95.0" : 3.524335674421308,
+                "99.0" : 3.524335674421308,
+                "99.9" : 3.524335674421308,
+                "99.99" : 3.524335674421308,
+                "99.999" : 3.524335674421308,
+                "99.9999" : 3.524335674421308,
+                "100.0" : 3.524335674421308
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.4997003124495483,
+                    3.524335674421308
+                ],
+                [
+                    3.5140846694111327,
+                    3.5093597524132147
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "16"
+        },
+        "primaryMetric" : {
+            "score" : 21.015368904800322,
+            "scoreError" : 0.4724708693569294,
+            "scoreConfidence" : [
+                20.542898035443393,
+                21.48783977415725
+            ],
+            "scorePercentiles" : {
+                "0.0" : 20.917340617265207,
+                "50.0" : 21.033331213019295,
+                "90.0" : 21.07747257589749,
+                "95.0" : 21.07747257589749,
+                "99.0" : 21.07747257589749,
+                "99.9" : 21.07747257589749,
+                "99.99" : 21.07747257589749,
+                "99.999" : 21.07747257589749,
+                "99.9999" : 21.07747257589749,
+                "100.0" : 21.07747257589749
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    21.00229993345983,
+                    21.07747257589749
+                ],
+                [
+                    21.06436249257876,
+                    20.917340617265207
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "32"
+        },
+        "primaryMetric" : {
+            "score" : 39.39987068515663,
+            "scoreError" : 0.43869260132274746,
+            "scoreConfidence" : [
+                38.96117808383388,
+                39.83856328647938
+            ],
+            "scorePercentiles" : {
+                "0.0" : 39.310156678277764,
+                "50.0" : 39.41754300580224,
+                "90.0" : 39.45424005074428,
+                "95.0" : 39.45424005074428,
+                "99.0" : 39.45424005074428,
+                "99.9" : 39.45424005074428,
+                "99.99" : 39.45424005074428,
+                "99.999" : 39.45424005074428,
+                "99.9999" : 39.45424005074428,
+                "100.0" : 39.45424005074428
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    39.384398199795314,
+                    39.45068781180916
+                ],
+                [
+                    39.45424005074428,
+                    39.310156678277764
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "bytesLen" : "64"
+        },
+        "primaryMetric" : {
+            "score" : 76.50946910292866,
+            "scoreError" : 0.6266141669939054,
+            "scoreConfidence" : [
+                75.88285493593476,
+                77.13608326992257
+            ],
+            "scorePercentiles" : {
+                "0.0" : 76.40509114698816,
+                "50.0" : 76.51678210218736,
+                "90.0" : 76.59922106035174,
+                "95.0" : 76.59922106035174,
+                "99.0" : 76.59922106035174,
+                "99.9" : 76.59922106035174,
+                "99.99" : 76.59922106035174,
+                "99.999" : 76.59922106035174,
+                "99.9999" : 76.59922106035174,
+                "100.0" : 76.59922106035174
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    76.5844281172407,
+                    76.40509114698816
+                ],
+                [
+                    76.44913608713402,
+                    76.59922106035174
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 15.581783201798864,
+            "scoreError" : 0.2660133268134358,
+            "scoreConfidence" : [
+                15.315769874985428,
+                15.8477965286123
+            ],
+            "scorePercentiles" : {
+                "0.0" : 15.525422238105081,
+                "50.0" : 15.593743059314248,
+                "90.0" : 15.614224450461876,
+                "95.0" : 15.614224450461876,
+                "99.0" : 15.614224450461876,
+                "99.9" : 15.614224450461876,
+                "99.99" : 15.614224450461876,
+                "99.999" : 15.614224450461876,
+                "99.9999" : 15.614224450461876,
+                "100.0" : 15.614224450461876
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    15.610607431036836,
+                    15.614224450461876
+                ],
+                [
+                    15.525422238105081,
+                    15.576878687591659
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.RegexAndStringBenchmark.Count",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "len" : "128"
+        },
+        "primaryMetric" : {
+            "score" : 302.37227032730476,
+            "scoreError" : 8.407933420774361,
+            "scoreConfidence" : [
+                293.9643369065304,
+                310.78020374807915
+            ],
+            "scorePercentiles" : {
+                "0.0" : 301.0130750092318,
+                "50.0" : 302.44806179445993,
+                "90.0" : 303.5798827110674,
+                "95.0" : 303.5798827110674,
+                "99.0" : 303.5798827110674,
+                "99.9" : 303.5798827110674,
+                "99.99" : 303.5798827110674,
+                "99.999" : 303.5798827110674,
+                "99.9999" : 303.5798827110674,
+                "100.0" : 303.5798827110674
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    301.5095405550841,
+                    303.5798827110674
+                ],
+                [
+                    301.0130750092318,
+                    303.38658303383573
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.RegexAndStringBenchmark.Count",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "len" : "1024"
+        },
+        "primaryMetric" : {
+            "score" : 1420.336968233626,
+            "scoreError" : 20.824801706709785,
+            "scoreConfidence" : [
+                1399.5121665269162,
+                1441.161769940336
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1415.7760243479493,
+                "50.0" : 1421.113364879587,
+                "90.0" : 1423.34511882738,
+                "95.0" : 1423.34511882738,
+                "99.0" : 1423.34511882738,
+                "99.9" : 1423.34511882738,
+                "99.99" : 1423.34511882738,
+                "99.999" : 1423.34511882738,
+                "99.9999" : 1423.34511882738,
+                "100.0" : 1423.34511882738
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1420.8899019358541,
+                    1423.34511882738
+                ],
+                [
+                    1421.3368278233197,
+                    1415.7760243479493
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.RegexAndStringBenchmark.Count",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "len" : "8192"
+        },
+        "primaryMetric" : {
+            "score" : 10354.600853704,
+            "scoreError" : 179.1608393710338,
+            "scoreConfidence" : [
+                10175.440014332966,
+                10533.761693075034
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10337.431822644825,
+                "50.0" : 10342.46978893434,
+                "90.0" : 10396.032014302493,
+                "95.0" : 10396.032014302493,
+                "99.0" : 10396.032014302493,
+                "99.9" : 10396.032014302493,
+                "99.99" : 10396.032014302493,
+                "99.999" : 10396.032014302493,
+                "99.9999" : 10396.032014302493,
+                "100.0" : 10396.032014302493
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    10337.431822644825,
+                    10342.000227486584
+                ],
+                [
+                    10342.939350382097,
+                    10396.032014302493
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3.5216346641494045,
+            "scoreError" : 0.014107410158259335,
+            "scoreConfidence" : [
+                3.507527253991145,
+                3.535742074307664
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.519784380749151,
+                "50.0" : 3.520979780491734,
+                "90.0" : 3.524794714865,
+                "95.0" : 3.524794714865,
+                "99.0" : 3.524794714865,
+                "99.9" : 3.524794714865,
+                "99.99" : 3.524794714865,
+                "99.999" : 3.524794714865,
+                "99.9999" : 3.524794714865,
+                "100.0" : 3.524794714865
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.521104382884136,
+                    3.519784380749151
+                ],
+                [
+                    3.524794714865,
+                    3.520855178099332
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3.564405560178722,
+            "scoreError" : 0.0491240898988281,
+            "scoreConfidence" : [
+                3.515281470279894,
+                3.61352965007755
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.559089574528937,
+                "50.0" : 3.561422653499683,
+                "90.0" : 3.575687359186586,
+                "95.0" : 3.575687359186586,
+                "99.0" : 3.575687359186586,
+                "99.9" : 3.575687359186586,
+                "99.99" : 3.575687359186586,
+                "99.999" : 3.575687359186586,
+                "99.9999" : 3.575687359186586,
+                "100.0" : 3.575687359186586
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    3.559089574528937,
+                    3.575687359186586
+                ],
+                [
+                    3.561559378894155,
+                    3.561285928105211
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 1264.1255704061443,
+            "scoreError" : 481.04193533184394,
+            "scoreConfidence" : [
+                783.0836350743004,
+                1745.1675057379882
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1194.6409691656265,
+                "50.0" : 1266.654802702796,
+                "90.0" : 1328.5517070533588,
+                "95.0" : 1328.5517070533588,
+                "99.0" : 1328.5517070533588,
+                "99.9" : 1328.5517070533588,
+                "99.99" : 1328.5517070533588,
+                "99.999" : 1328.5517070533588,
+                "99.9999" : 1328.5517070533588,
+                "100.0" : 1328.5517070533588
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1328.5517070533588,
+                    1328.4330404521395
+                ],
+                [
+                    1204.8765649534523,
+                    1194.6409691656265
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 11362.889828453635,
+            "scoreError" : 551.6588109100684,
+            "scoreConfidence" : [
+                10811.231017543567,
+                11914.548639363704
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11236.003752007999,
+                "50.0" : 11398.36901486226,
+                "90.0" : 11418.817532082021,
+                "95.0" : 11418.817532082021,
+                "99.0" : 11418.817532082021,
+                "99.9" : 11418.817532082021,
+                "99.99" : 11418.817532082021,
+                "99.999" : 11418.817532082021,
+                "99.9999" : 11418.817532082021,
+                "100.0" : 11418.817532082021
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    11390.672117706008,
+                    11406.065912018514
+                ],
+                [
+                    11236.003752007999,
+                    11418.817532082021
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 117268.5263249207,
+            "scoreError" : 98702.75169353359,
+            "scoreConfidence" : [
+                18565.774631387118,
+                215971.2780184543
+            ],
+            "scorePercentiles" : {
+                "0.0" : 103632.52927157808,
+                "50.0" : 117257.902084733,
+                "90.0" : 130925.77185863875,
+                "95.0" : 130925.77185863875,
+                "99.0" : 130925.77185863875,
+                "99.9" : 130925.77185863875,
+                "99.99" : 130925.77185863875,
+                "99.999" : 130925.77185863875,
+                "99.9999" : 130925.77185863875,
+                "100.0" : 130925.77185863875
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    130053.5503835652,
+                    130925.77185863875
+                ],
+                [
+                    103632.52927157808,
+                    104462.25378590079
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 893.7631550792931,
+            "scoreError" : 35.39475181179088,
+            "scoreConfidence" : [
+                858.3684032675022,
+                929.157906891084
+            ],
+            "scorePercentiles" : {
+                "0.0" : 887.9901437637842,
+                "50.0" : 892.958410459931,
+                "90.0" : 901.1456556335264,
+                "95.0" : 901.1456556335264,
+                "99.0" : 901.1456556335264,
+                "99.9" : 901.1456556335264,
+                "99.99" : 901.1456556335264,
+                "99.999" : 901.1456556335264,
+                "99.9999" : 901.1456556335264,
+                "100.0" : 901.1456556335264
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    893.6220275377729,
+                    901.1456556335264
+                ],
+                [
+                    892.2947933820892,
+                    887.9901437637842
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 8543.957055548659,
+            "scoreError" : 33.367165261013966,
+            "scoreConfidence" : [
+                8510.589890287645,
+                8577.324220809673
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8539.379703388746,
+                "50.0" : 8543.56027396879,
+                "90.0" : 8549.32797086831,
+                "95.0" : 8549.32797086831,
+                "99.0" : 8549.32797086831,
+                "99.9" : 8549.32797086831,
+                "99.99" : 8549.32797086831,
+                "99.999" : 8549.32797086831,
+                "99.9999" : 8549.32797086831,
+                "100.0" : 8549.32797086831
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    8547.425161929828,
+                    8549.32797086831
+                ],
+                [
+                    8539.379703388746,
+                    8539.695386007752
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 88873.73429523919,
+            "scoreError" : 804.3641031890658,
+            "scoreConfidence" : [
+                88069.37019205012,
+                89678.09839842826
+            ],
+            "scorePercentiles" : {
+                "0.0" : 88716.27137282725,
+                "50.0" : 88892.05387568145,
+                "90.0" : 88994.55805676662,
+                "95.0" : 88994.55805676662,
+                "99.0" : 88994.55805676662,
+                "99.9" : 88994.55805676662,
+                "99.99" : 88994.55805676662,
+                "99.999" : 88994.55805676662,
+                "99.9999" : 88994.55805676662,
+                "100.0" : 88994.55805676662
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    88716.27137282725,
+                    88994.55805676662
+                ],
+                [
+                    88948.70558420772,
+                    88835.40216715516
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "100"
+        },
+        "primaryMetric" : {
+            "score" : 925.2961352138171,
+            "scoreError" : 31.8793637398334,
+            "scoreConfidence" : [
+                893.4167714739838,
+                957.1754989536505
+            ],
+            "scorePercentiles" : {
+                "0.0" : 919.5048606705832,
+                "50.0" : 925.4786467819383,
+                "90.0" : 930.7223866208087,
+                "95.0" : 930.7223866208087,
+                "99.0" : 930.7223866208087,
+                "99.9" : 930.7223866208087,
+                "99.99" : 930.7223866208087,
+                "99.999" : 930.7223866208087,
+                "99.9999" : 930.7223866208087,
+                "100.0" : 930.7223866208087
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    919.5048606705832,
+                    930.7223866208087
+                ],
+                [
+                    923.24653582608,
+                    927.7107577377966
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 8558.802306218235,
+            "scoreError" : 226.32752622762848,
+            "scoreConfidence" : [
+                8332.474779990605,
+                8785.129832445864
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8527.767821972118,
+                "50.0" : 8555.166737999089,
+                "90.0" : 8597.107926902645,
+                "95.0" : 8597.107926902645,
+                "99.0" : 8597.107926902645,
+                "99.9" : 8597.107926902645,
+                "99.99" : 8597.107926902645,
+                "99.999" : 8597.107926902645,
+                "99.9999" : 8597.107926902645,
+                "100.0" : 8597.107926902645
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    8579.897676972172,
+                    8597.107926902645
+                ],
+                [
+                    8530.435799026005,
+                    8527.767821972118
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 88720.80669152984,
+            "scoreError" : 1843.1692370207052,
+            "scoreConfidence" : [
+                86877.63745450914,
+                90563.97592855054
+            ],
+            "scorePercentiles" : {
+                "0.0" : 88550.93625498009,
+                "50.0" : 88592.89788480315,
+                "90.0" : 89146.49474153298,
+                "95.0" : 89146.49474153298,
+                "99.0" : 89146.49474153298,
+                "99.9" : 89146.49474153298,
+                "99.99" : 89146.49474153298,
+                "99.999" : 89146.49474153298,
+                "99.9999" : 89146.49474153298,
+                "100.0" : 89146.49474153298
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    88567.54935812307,
+                    88550.93625498009
+                ],
+                [
+                    88618.24641148325,
+                    89146.49474153298
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 23.090245783433588,
+            "scoreError" : 0.1113626304554296,
+            "scoreConfidence" : [
+                22.97888315297816,
+                23.201608413889016
+            ],
+            "scorePercentiles" : {
+                "0.0" : 23.07408823823505,
+                "50.0" : 23.086634704841018,
+                "90.0" : 23.113625485817266,
+                "95.0" : 23.113625485817266,
+                "99.0" : 23.113625485817266,
+                "99.9" : 23.113625485817266,
+                "99.99" : 23.113625485817266,
+                "99.999" : 23.113625485817266,
+                "99.9999" : 23.113625485817266,
+                "100.0" : 23.113625485817266
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    23.07408823823505,
+                    23.09198367855892
+                ],
+                [
+                    23.113625485817266,
+                    23.08128573112312
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "/opt/hostedtoolcache/graalvm-community-jdk-24.0.2_linux-x64_bin/24.0.2/x64/graalvm-community-openjdk-24.0.2+11.1/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "24.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "24.0.2+11-jvmci-b01",
+        "warmupIterations" : 2,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 26.190285255040713,
+            "scoreError" : 0.5999827605558781,
+            "scoreConfidence" : [
+                25.590302494484835,
+                26.79026801559659
+            ],
+            "scorePercentiles" : {
+                "0.0" : 26.09535204121277,
+                "50.0" : 26.175359161949647,
+                "90.0" : 26.315070655050775,
+                "95.0" : 26.315070655050775,
+                "99.0" : 26.315070655050775,
+                "99.9" : 26.315070655050775,
+                "99.99" : 26.315070655050775,
+                "99.999" : 26.315070655050775,
+                "99.9999" : 26.315070655050775,
+                "100.0" : 26.315070655050775
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    26.195767047898173,
+                    26.315070655050775
+                ],
+                [
+                    26.15495127600112,
+                    26.09535204121277
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
