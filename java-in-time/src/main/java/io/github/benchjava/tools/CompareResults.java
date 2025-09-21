@@ -115,6 +115,34 @@ public class CompareResults {
 
         System.out.println();
         System.out.println("_Note: Benchmarks present in only one file are included with '-' on the missing side._");
+
+        // Show counts and lists of benchmarks present only in A or only in B to make mismatches obvious
+        Set<String> onlyA = new TreeSet<>(base.keySet());
+        onlyA.removeAll(cand.keySet());
+        Set<String> onlyB = new TreeSet<>(cand.keySet());
+        onlyB.removeAll(base.keySet());
+        System.out.println();
+        System.out.println("Only in A (" + aFile.getName() + "): " + onlyA.size());
+        if (!onlyA.isEmpty()) {
+            for (String name : onlyA) {
+                System.out.println("- " + name);
+            }
+        }
+        System.out.println();
+        System.out.println("Only in B (" + bFile.getName() + "): " + onlyB.size());
+        if (!onlyB.isEmpty()) {
+            for (String name : onlyB) {
+                System.out.println("- " + name);
+            }
+        }
+
+        // Enforce strict matching: if any benchmark exists only on one side, fail the process
+        if (!onlyA.isEmpty() || !onlyB.isEmpty()) {
+            System.out.println();
+            System.err.println("ERROR: Benchmark set mismatch between files. All benchmarks should be present in both A and B.");
+            System.err.println("Failing the build. Re-run benchmarks ensuring both JSONs are produced from the same commit and include filters.");
+            System.exit(5);
+        }
     }
 
     private static String formatCell(double value, boolean highlightWin, boolean highlightLose) {
