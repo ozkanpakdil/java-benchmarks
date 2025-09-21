@@ -1,6 +1,6 @@
 # Java 25 vs 24 performance
 
-_Generated on 2025-09-20 from `graalvm-community-24.json` (A) and `graalvm-community-25.json` (B)._
+_Generated on 2025-09-21 from `graalvm-community-24.json` (A) and `graalvm-community-25.json` (B)._
 
 **Overall:** Java 25 is faster overall (geomean B/A = 0.818, across 13 benchmarks; 4 A faster, 9 B faster).
 

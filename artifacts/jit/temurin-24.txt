@@ -3,25 +3,40 @@
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.biginteger_mul
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.ByteCtor
 
-# Run progress: 0.00% complete, ETA 00:00:58
-# Fork: 1 of 1
+# Run progress: 0.00% complete, ETA 00:09:28
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 25.457 ns/op
-Iteration   1: 22.302 ns/op
+# Warmup Iteration   1: 111.907 ns/op
+# Warmup Iteration   2: 103.980 ns/op
+Iteration   1: 156.691 ns/op
+Iteration   2: 156.667 ns/op
+
+# Run progress: 0.70% complete, ETA 00:10:05
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 112.458 ns/op
+# Warmup Iteration   2: 103.499 ns/op
+Iteration   1: 156.512 ns/op
+Iteration   2: 156.802 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.biginteger_mul":
-  22.302 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
+  156.668 ±(99.9%) 0.772 ns/op [Average]
+  (min, avg, max) = (156.512, 156.668, 156.802), stdev = 0.120
+  CI (99.9%): [155.895, 157.440] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -29,25 +44,40 @@ Result "io.github.benchjava.bench.NumericsBenchmark.biginteger_mul":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.bit_ops
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual
 
-# Run progress: 3.45% complete, ETA 00:01:04
-# Fork: 1 of 1
+# Run progress: 1.41% complete, ETA 00:09:58
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.947 ns/op
-Iteration   1: 0.939 ns/op
+# Warmup Iteration   1: 1840.893 ns/op
+# Warmup Iteration   2: 2039.366 ns/op
+Iteration   1: 1785.427 ns/op
+Iteration   2: 1784.965 ns/op
+
+# Run progress: 2.11% complete, ETA 00:09:53
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1918.483 ns/op
+# Warmup Iteration   2: 2017.765 ns/op
+Iteration   1: 1848.884 ns/op
+Iteration   2: 1847.733 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.bit_ops":
-  0.939 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
+  1816.752 ±(99.9%) 235.484 ns/op [Average]
+  (min, avg, max) = (1784.965, 1816.752, 1848.884), stdev = 36.441
+  CI (99.9%): [1581.268, 2052.236] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -55,25 +85,40 @@ Result "io.github.benchjava.bench.NumericsBenchmark.bit_ops":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.double_fma
+# Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives
 
-# Run progress: 6.90% complete, ETA 00:01:01
-# Fork: 1 of 1
+# Run progress: 2.82% complete, ETA 00:09:48
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.640 ns/op
-Iteration   1: 0.638 ns/op
+# Warmup Iteration   1: 30.085 ns/op
+# Warmup Iteration   2: 27.056 ns/op
+Iteration   1: 26.092 ns/op
+Iteration   2: 26.432 ns/op
+
+# Run progress: 3.52% complete, ETA 00:09:43
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 29.313 ns/op
+# Warmup Iteration   2: 27.051 ns/op
+Iteration   1: 25.962 ns/op
+Iteration   2: 26.044 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.double_fma":
-  0.638 ns/op
+Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives":
+  26.132 ±(99.9%) 1.337 ns/op [Average]
+  (min, avg, max) = (25.962, 26.132, 26.432), stdev = 0.207
+  CI (99.9%): [24.796, 27.469] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -81,25 +126,41 @@ Result "io.github.benchjava.bench.NumericsBenchmark.double_fma":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.int_add
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
+# Parameters: (size = 4)
 
-# Run progress: 10.34% complete, ETA 00:00:59
-# Fork: 1 of 1
+# Run progress: 4.23% complete, ETA 00:09:39
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.594 ns/op
-Iteration   1: 0.598 ns/op
+# Warmup Iteration   1: 12767.314 ns/op
+# Warmup Iteration   2: 31676.097 ns/op
+Iteration   1: 41026.810 ns/op
+Iteration   2: 48681.953 ns/op
+
+# Run progress: 4.93% complete, ETA 00:09:35
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 12771.762 ns/op
+# Warmup Iteration   2: 31770.144 ns/op
+Iteration   1: 41113.897 ns/op
+Iteration   2: 48678.184 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.int_add":
-  0.598 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
+  44875.211 ±(99.9%) 28391.495 ns/op [Average]
+  (min, avg, max) = (41026.810, 44875.211, 48681.953), stdev = 4393.615
+  CI (99.9%): [16483.716, 73266.707] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -107,25 +168,41 @@ Result "io.github.benchjava.bench.NumericsBenchmark.int_add":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.NumericsBenchmark.long_mul
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
+# Parameters: (size = 16)
 
-# Run progress: 13.79% complete, ETA 00:00:56
-# Fork: 1 of 1
+# Run progress: 5.63% complete, ETA 00:09:30
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.629 ns/op
-Iteration   1: 0.625 ns/op
+# Warmup Iteration   1: 24136.341 ns/op
+# Warmup Iteration   2: 57511.763 ns/op
+Iteration   1: 74919.701 ns/op
+Iteration   2: 88903.576 ns/op
+
+# Run progress: 6.34% complete, ETA 00:09:26
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 24130.226 ns/op
+# Warmup Iteration   2: 57757.098 ns/op
+Iteration   1: 75009.630 ns/op
+Iteration   2: 88827.974 ns/op
 
 
-Result "io.github.benchjava.bench.NumericsBenchmark.long_mul":
-  0.625 ns/op
+Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
+  81915.220 ±(99.9%) 51863.620 ns/op [Average]
+  (min, avg, max) = (74919.701, 81915.220, 88903.576), stdev = 8025.953
+  CI (99.9%): [30051.601, 133778.840] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -133,26 +210,2120 @@ Result "io.github.benchjava.bench.NumericsBenchmark.long_mul":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails
+# Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
+# Parameters: (size = 64)
+
+# Run progress: 7.04% complete, ETA 00:09:22
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 48096.748 ns/op
+# Warmup Iteration   2: 115915.271 ns/op
+Iteration   1: 151420.845 ns/op
+Iteration   2: 179825.630 ns/op
+
+# Run progress: 7.75% complete, ETA 00:09:17
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 48226.047 ns/op
+# Warmup Iteration   2: 116168.468 ns/op
+Iteration   1: 149474.054 ns/op
+Iteration   2: 178697.444 ns/op
+
+
+Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
+  164854.493 ±(99.9%) 107664.255 ns/op [Average]
+  (min, avg, max) = (149474.054, 164854.493, 179825.630), stdev = 16661.163
+  CI (99.9%): [57190.238, 272518.748] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.CryptoBenchmark.Hash
+
+# Run progress: 8.45% complete, ETA 00:09:13
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 760.671 ns/op
+# Warmup Iteration   2: 716.705 ns/op
+Iteration   1: 712.597 ns/op
+Iteration   2: 714.837 ns/op
+
+# Run progress: 9.15% complete, ETA 00:09:08
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 760.391 ns/op
+# Warmup Iteration   2: 717.820 ns/op
+Iteration   1: 717.748 ns/op
+Iteration   2: 721.152 ns/op
+
+
+Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
+  716.583 ±(99.9%) 23.936 ns/op [Average]
+  (min, avg, max) = (712.597, 716.583, 721.152), stdev = 3.704
+  CI (99.9%): [692.647, 740.520] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName
+
+# Run progress: 9.86% complete, ETA 00:09:04
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 0.625 ns/op
+# Warmup Iteration   2: 0.484 ns/op
+Iteration   1: 0.622 ns/op
+Iteration   2: 0.623 ns/op
+
+# Run progress: 10.56% complete, ETA 00:09:00
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 0.626 ns/op
+# Warmup Iteration   2: 0.489 ns/op
+Iteration   1: 0.622 ns/op
+Iteration   2: 0.622 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
+  0.622 ±(99.9%) 0.002 ns/op [Average]
+  (min, avg, max) = (0.622, 0.622, 0.623), stdev = 0.001
+  CI (99.9%): [0.620, 0.625] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate
+
+# Run progress: 11.27% complete, ETA 00:08:56
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 3.143 ns/op
+# Warmup Iteration   2: 2.825 ns/op
+Iteration   1: 2.891 ns/op
+Iteration   2: 2.891 ns/op
+
+# Run progress: 11.97% complete, ETA 00:08:51
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 3.199 ns/op
+# Warmup Iteration   2: 2.875 ns/op
+Iteration   1: 2.896 ns/op
+Iteration   2: 2.892 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
+  2.892 ±(99.9%) 0.015 ns/op [Average]
+  (min, avg, max) = (2.891, 2.892, 2.896), stdev = 0.002
+  CI (99.9%): [2.877, 2.908] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Oops
+
+# Run progress: 12.68% complete, ETA 00:08:47
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 62.958 ns/op
+# Warmup Iteration   2: 60.884 ns/op
+Iteration   1: 60.255 ns/op
+Iteration   2: 60.395 ns/op
+
+# Run progress: 13.38% complete, ETA 00:08:43
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 62.778 ns/op
+# Warmup Iteration   2: 60.252 ns/op
+Iteration   1: 61.025 ns/op
+Iteration   2: 62.880 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
+  61.139 ±(99.9%) 7.808 ns/op [Average]
+  (min, avg, max) = (60.255, 61.139, 62.880), stdev = 1.208
+  CI (99.9%): [53.331, 68.947] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp
+
+# Run progress: 14.08% complete, ETA 00:08:39
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 58.000 ns/op
+# Warmup Iteration   2: 57.860 ns/op
+Iteration   1: 57.798 ns/op
+Iteration   2: 57.793 ns/op
+
+# Run progress: 14.79% complete, ETA 00:08:34
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 57.975 ns/op
+# Warmup Iteration   2: 57.821 ns/op
+Iteration   1: 57.810 ns/op
+Iteration   2: 57.830 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
+  57.808 ±(99.9%) 0.107 ns/op [Average]
+  (min, avg, max) = (57.793, 57.808, 57.830), stdev = 0.016
+  CI (99.9%): [57.701, 57.914] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew
+
+# Run progress: 15.49% complete, ETA 00:08:30
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 57.994 ns/op
+# Warmup Iteration   2: 57.866 ns/op
+Iteration   1: 57.798 ns/op
+Iteration   2: 57.792 ns/op
+
+# Run progress: 16.20% complete, ETA 00:08:26
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 58.015 ns/op
+# Warmup Iteration   2: 57.842 ns/op
+Iteration   1: 57.821 ns/op
+Iteration   2: 57.806 ns/op
+
+
+Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
+  57.804 ±(99.9%) 0.082 ns/op [Average]
+  (min, avg, max) = (57.792, 57.804, 57.821), stdev = 0.013
+  CI (99.9%): [57.723, 57.886] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.IOBenchmark.FSW
+
+# Run progress: 16.90% complete, ETA 00:08:21
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4036202.290 ns/op
+# Warmup Iteration   2: 4277262.299 ns/op
+Iteration   1: 4216221.357 ns/op
+Iteration   2: 3424707.669 ns/op
+
+# Run progress: 17.61% complete, ETA 00:08:17
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4111133.426 ns/op
+# Warmup Iteration   2: 4106444.070 ns/op
+Iteration   1: 4017895.129 ns/op
+Iteration   2: 3985944.016 ns/op
+
+
+Result "io.github.benchjava.bench.IOBenchmark.FSW":
+  3911192.043 ±(99.9%) 2196706.783 ns/op [Average]
+  (min, avg, max) = (3424707.669, 3911192.043, 4216221.357), stdev = 339942.806
+  CI (99.9%): [1714485.260, 6107898.826] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.IOBenchmark.MMF
+
+# Run progress: 18.31% complete, ETA 00:08:13
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 390755.032 ns/op
+# Warmup Iteration   2: 368361.889 ns/op
+Iteration   1: 365942.068 ns/op
+Iteration   2: 364640.955 ns/op
+
+# Run progress: 19.01% complete, ETA 00:08:10
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 390889.125 ns/op
+# Warmup Iteration   2: 369659.576 ns/op
+Iteration   1: 366288.779 ns/op
+Iteration   2: 365466.271 ns/op
+
+
+Result "io.github.benchjava.bench.IOBenchmark.MMF":
+  365584.518 ±(99.9%) 4611.945 ns/op [Average]
+  (min, avg, max) = (364640.955, 365584.518, 366288.779), stdev = 713.704
+  CI (99.9%): [360972.573, 370196.464] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.IOBenchmark.WriteByte
+
+# Run progress: 19.72% complete, ETA 00:08:06
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 27775391.459 ns/op
+# Warmup Iteration   2: 27334537.649 ns/op
+Iteration   1: 27305718.865 ns/op
+Iteration   2: 27380398.081 ns/op
+
+# Run progress: 20.42% complete, ETA 00:08:02
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 27822740.389 ns/op
+# Warmup Iteration   2: 27400760.919 ns/op
+Iteration   1: 27451005.189 ns/op
+Iteration   2: 27346005.973 ns/op
+
+
+Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
+  27370782.027 ±(99.9%) 397911.864 ns/op [Average]
+  (min, avg, max) = (27305718.865, 27370782.027, 27451005.189), stdev = 61577.301
+  CI (99.9%): [26972870.163, 27768693.891] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
+# Parameters: (itemsCount = 5)
+
+# Run progress: 21.13% complete, ETA 00:07:58
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1203.776 ns/op
+# Warmup Iteration   2: 1004.069 ns/op
+Iteration   1: 984.797 ns/op
+Iteration   2: 981.380 ns/op
+
+# Run progress: 21.83% complete, ETA 00:07:54
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1225.235 ns/op
+# Warmup Iteration   2: 1015.561 ns/op
+Iteration   1: 995.292 ns/op
+Iteration   2: 991.726 ns/op
+
+
+Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
+  988.299 ±(99.9%) 41.003 ns/op [Average]
+  (min, avg, max) = (981.380, 988.299, 995.292), stdev = 6.345
+  CI (99.9%): [947.296, 1029.301] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
+# Parameters: (itemsCount = 20)
+
+# Run progress: 22.54% complete, ETA 00:07:51
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4140.152 ns/op
+# Warmup Iteration   2: 3445.652 ns/op
+Iteration   1: 3438.757 ns/op
+Iteration   2: 3441.778 ns/op
+
+# Run progress: 23.24% complete, ETA 00:07:47
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4108.818 ns/op
+# Warmup Iteration   2: 3438.619 ns/op
+Iteration   1: 3451.445 ns/op
+Iteration   2: 3399.445 ns/op
+
+
+Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
+  3432.856 ±(99.9%) 148.123 ns/op [Average]
+  (min, avg, max) = (3399.445, 3432.856, 3451.445), stdev = 22.922
+  CI (99.9%): [3284.734, 3580.979] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
+# Parameters: (itemsCount = 100)
+
+# Run progress: 23.94% complete, ETA 00:07:43
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 19339.272 ns/op
+# Warmup Iteration   2: 16064.134 ns/op
+Iteration   1: 16157.310 ns/op
+Iteration   2: 15889.141 ns/op
+
+# Run progress: 24.65% complete, ETA 00:07:39
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 19712.030 ns/op
+# Warmup Iteration   2: 16435.387 ns/op
+Iteration   1: 16509.531 ns/op
+Iteration   2: 16229.050 ns/op
+
+
+Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
+  16196.258 ±(99.9%) 1647.713 ns/op [Average]
+  (min, avg, max) = (15889.141, 16196.258, 16509.531), stdev = 254.985
+  CI (99.9%): [14548.545, 17843.971] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
+# Parameters: (itemsCount = 5)
+
+# Run progress: 25.35% complete, ETA 00:07:35
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 2797.959 ns/op
+# Warmup Iteration   2: 2022.643 ns/op
+Iteration   1: 2007.645 ns/op
+Iteration   2: 1987.392 ns/op
+
+# Run progress: 26.06% complete, ETA 00:07:31
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 2752.821 ns/op
+# Warmup Iteration   2: 1955.417 ns/op
+Iteration   1: 1917.160 ns/op
+Iteration   2: 1910.981 ns/op
+
+
+Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
+  1955.795 ±(99.9%) 316.302 ns/op [Average]
+  (min, avg, max) = (1910.981, 1955.795, 2007.645), stdev = 48.948
+  CI (99.9%): [1639.492, 2272.097] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
+# Parameters: (itemsCount = 20)
+
+# Run progress: 26.76% complete, ETA 00:07:27
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8510.604 ns/op
+# Warmup Iteration   2: 6301.564 ns/op
+Iteration   1: 6187.622 ns/op
+Iteration   2: 6152.273 ns/op
+
+# Run progress: 27.46% complete, ETA 00:07:23
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 9352.181 ns/op
+# Warmup Iteration   2: 6706.248 ns/op
+Iteration   1: 6660.016 ns/op
+Iteration   2: 6571.643 ns/op
+
+
+Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
+  6392.889 ±(99.9%) 1682.353 ns/op [Average]
+  (min, avg, max) = (6152.273, 6392.889, 6660.016), stdev = 260.346
+  CI (99.9%): [4710.536, 8075.241] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
+# Parameters: (itemsCount = 100)
+
+# Run progress: 28.17% complete, ETA 00:07:19
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 39123.351 ns/op
+# Warmup Iteration   2: 30076.914 ns/op
+Iteration   1: 30125.853 ns/op
+Iteration   2: 29505.290 ns/op
+
+# Run progress: 28.87% complete, ETA 00:07:15
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 41290.409 ns/op
+# Warmup Iteration   2: 30766.529 ns/op
+Iteration   1: 30787.429 ns/op
+Iteration   2: 30311.366 ns/op
+
+
+Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
+  30182.485 ±(99.9%) 3428.242 ns/op [Average]
+  (min, avg, max) = (29505.290, 30182.485, 30787.429), stdev = 530.524
+  CI (99.9%): [26754.243, 33610.726] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.Add
+# Parameters: (url = https://example.com/)
+
+# Run progress: 29.58% complete, ETA 00:07:11
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 605.883 ns/op
+# Warmup Iteration   2: 481.852 ns/op
+Iteration   1: 457.273 ns/op
+Iteration   2: 457.155 ns/op
+
+# Run progress: 30.28% complete, ETA 00:07:08
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 587.392 ns/op
+# Warmup Iteration   2: 479.297 ns/op
+Iteration   1: 473.633 ns/op
+Iteration   2: 474.053 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
+  465.528 ±(99.9%) 62.050 ns/op [Average]
+  (min, avg, max) = (457.155, 465.528, 474.053), stdev = 9.602
+  CI (99.9%): [403.478, 527.578] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.Ctor
+# Parameters: (url = https://example.com/)
+
+# Run progress: 30.99% complete, ETA 00:07:04
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 398.092 ns/op
+# Warmup Iteration   2: 362.642 ns/op
+Iteration   1: 360.083 ns/op
+Iteration   2: 357.821 ns/op
+
+# Run progress: 31.69% complete, ETA 00:07:01
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 404.572 ns/op
+# Warmup Iteration   2: 362.430 ns/op
+Iteration   1: 358.907 ns/op
+Iteration   2: 358.357 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
+  358.792 ±(99.9%) 6.256 ns/op [Average]
+  (min, avg, max) = (357.821, 358.792, 360.083), stdev = 0.968
+  CI (99.9%): [352.536, 365.048] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.CtorHost
+# Parameters: (url = https://example.com/)
+
+# Run progress: 32.39% complete, ETA 00:06:57
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 511.802 ns/op
+# Warmup Iteration   2: 486.432 ns/op
+Iteration   1: 473.716 ns/op
+Iteration   2: 473.646 ns/op
+
+# Run progress: 33.10% complete, ETA 00:06:54
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 517.404 ns/op
+# Warmup Iteration   2: 459.241 ns/op
+Iteration   1: 451.364 ns/op
+Iteration   2: 449.827 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
+  462.138 ±(99.9%) 86.226 ns/op [Average]
+  (min, avg, max) = (449.827, 462.138, 473.716), stdev = 13.344
+  CI (99.9%): [375.912, 548.364] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.GetValues
+# Parameters: (url = https://example.com/)
+
+# Run progress: 33.80% complete, ETA 00:06:50
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 596.767 ns/op
+# Warmup Iteration   2: 522.052 ns/op
+Iteration   1: 491.661 ns/op
+Iteration   2: 491.110 ns/op
+
+# Run progress: 34.51% complete, ETA 00:06:46
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 623.852 ns/op
+# Warmup Iteration   2: 506.747 ns/op
+Iteration   1: 495.906 ns/op
+Iteration   2: 495.357 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
+  493.508 ±(99.9%) 15.972 ns/op [Average]
+  (min, avg, max) = (491.110, 493.508, 495.906), stdev = 2.472
+  CI (99.9%): [477.536, 509.480] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall
+# Parameters: (url = https://example.com/)
+
+# Run progress: 35.21% complete, ETA 00:06:43
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 146363714.286 ns/op
+# Warmup Iteration   2: 118416010.889 ns/op
+Iteration   1: 87452102.000 ns/op
+Iteration   2: 82808265.231 ns/op
+
+# Run progress: 35.92% complete, ETA 00:06:39
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 35767656.571 ns/op
+# Warmup Iteration   2: 22345889.413 ns/op
+Iteration   1: 20256698.020 ns/op
+Iteration   2: 21857647.609 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
+  53093678.215 ±(99.9%) 239396568.702 ns/op [Average]
+  (min, avg, max) = (20256698.020, 53093678.215, 87452102.000), stdev = 37046884.002
+  CI (99.9%): [≈ 0, 292490246.917] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync
+# Parameters: (url = https://example.com/)
+
+# Run progress: 36.62% complete, ETA 00:06:35
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 182487981.667 ns/op
+# Warmup Iteration   2: 91683167.167 ns/op
+Iteration   1: 83360747.500 ns/op
+Iteration   2: 88872900.083 ns/op
+
+# Run progress: 37.32% complete, ETA 00:06:32
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 131288362.625 ns/op
+# Warmup Iteration   2: 70087998.333 ns/op
+Iteration   1: 72536640.571 ns/op
+Iteration   2: 73537920.714 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync":
+  79577052.217 ±(99.9%) 50986644.036 ns/op [Average]
+  (min, avg, max) = (72536640.571, 79577052.217, 88872900.083), stdev = 7890239.603
+  CI (99.9%): [28590408.181, 130563696.253] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync
+# Parameters: (url = https://example.com/)
+
+# Run progress: 38.03% complete, ETA 00:06:28
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 29511769.029 ns/op
+# Warmup Iteration   2: 18725843.315 ns/op
+Iteration   1: 17051363.864 ns/op
+Iteration   2: 20838038.833 ns/op
+
+# Run progress: 38.73% complete, ETA 00:06:24
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 116029306.333 ns/op
+# Warmup Iteration   2: 69652528.600 ns/op
+Iteration   1: 69076754.333 ns/op
+Iteration   2: 73176063.857 ns/op
+
+
+Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync":
+  45035555.222 ±(99.9%) 195237015.056 ns/op [Average]
+  (min, avg, max) = (17051363.864, 45035555.222, 73176063.857), stdev = 30213144.194
+  CI (99.9%): [≈ 0, 240272570.278] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementManual
+
+# Run progress: 39.44% complete, ETA 00:06:21
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 48.255 ns/op
+# Warmup Iteration   2: 47.959 ns/op
+Iteration   1: 47.613 ns/op
+Iteration   2: 47.579 ns/op
+
+# Run progress: 40.14% complete, ETA 00:06:16
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 48.193 ns/op
+# Warmup Iteration   2: 47.658 ns/op
+Iteration   1: 47.524 ns/op
+Iteration   2: 47.705 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
+  47.605 ±(99.9%) 0.490 ns/op [Average]
+  (min, avg, max) = (47.524, 47.605, 47.705), stdev = 0.076
+  CI (99.9%): [47.116, 48.095] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementTP
+
+# Run progress: 40.85% complete, ETA 00:06:11
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 48.194 ns/op
+# Warmup Iteration   2: 47.375 ns/op
+Iteration   1: 47.314 ns/op
+Iteration   2: 47.304 ns/op
+
+# Run progress: 41.55% complete, ETA 00:06:07
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 48.058 ns/op
+# Warmup Iteration   2: 47.317 ns/op
+Iteration   1: 47.307 ns/op
+Iteration   2: 47.391 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
+  47.329 ±(99.9%) 0.267 ns/op [Average]
+  (min, avg, max) = (47.304, 47.329, 47.391), stdev = 0.041
+  CI (99.9%): [47.062, 47.596] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.Divide
+
+# Run progress: 42.25% complete, ETA 00:06:02
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 22.209 ns/op
+# Warmup Iteration   2: 20.980 ns/op
+Iteration   1: 20.517 ns/op
+Iteration   2: 20.508 ns/op
+
+# Run progress: 42.96% complete, ETA 00:05:57
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 22.323 ns/op
+# Warmup Iteration   2: 21.128 ns/op
+Iteration   1: 20.373 ns/op
+Iteration   2: 20.338 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
+  20.434 ±(99.9%) 0.593 ns/op [Average]
+  (min, avg, max) = (20.338, 20.434, 20.517), stdev = 0.092
+  CI (99.9%): [19.841, 21.027] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.GetFutureTime
+
+# Run progress: 43.66% complete, ETA 00:05:53
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 39.447 ns/op
+# Warmup Iteration   2: 39.313 ns/op
+Iteration   1: 38.863 ns/op
+Iteration   2: 38.851 ns/op
+
+# Run progress: 44.37% complete, ETA 00:05:48
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 39.450 ns/op
+# Warmup Iteration   2: 39.423 ns/op
+Iteration   1: 39.040 ns/op
+Iteration   2: 38.850 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
+  38.901 ±(99.9%) 0.601 ns/op [Average]
+  (min, avg, max) = (38.850, 38.901, 39.040), stdev = 0.093
+  CI (99.9%): [38.300, 39.502] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.GuidParse
+
+# Run progress: 45.07% complete, ETA 00:05:43
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 10.217 ns/op
+# Warmup Iteration   2: 9.620 ns/op
+Iteration   1: 10.577 ns/op
+Iteration   2: 10.591 ns/op
+
+# Run progress: 45.77% complete, ETA 00:05:39
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 10.242 ns/op
+# Warmup Iteration   2: 9.675 ns/op
+Iteration   1: 10.175 ns/op
+Iteration   2: 10.169 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
+  10.378 ±(99.9%) 1.539 ns/op [Average]
+  (min, avg, max) = (10.169, 10.378, 10.591), stdev = 0.238
+  CI (99.9%): [8.839, 11.917] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min
+
+# Run progress: 46.48% complete, ETA 00:05:34
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 69.003 ns/op
+# Warmup Iteration   2: 65.390 ns/op
+Iteration   1: 64.861 ns/op
+Iteration   2: 64.823 ns/op
+
+# Run progress: 47.18% complete, ETA 00:05:30
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 70.581 ns/op
+# Warmup Iteration   2: 64.673 ns/op
+Iteration   1: 65.227 ns/op
+Iteration   2: 65.647 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
+  65.140 ±(99.9%) 2.483 ns/op [Average]
+  (min, avg, max) = (64.823, 65.140, 65.647), stdev = 0.384
+  CI (99.9%): [62.657, 67.623] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.TranscodeParse
+
+# Run progress: 47.89% complete, ETA 00:05:25
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 33.289 ns/op
+# Warmup Iteration   2: 31.612 ns/op
+Iteration   1: 30.920 ns/op
+Iteration   2: 30.872 ns/op
+
+# Run progress: 48.59% complete, ETA 00:05:20
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 34.044 ns/op
+# Warmup Iteration   2: 31.471 ns/op
+Iteration   1: 30.954 ns/op
+Iteration   2: 30.921 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
+  30.917 ±(99.9%) 0.217 ns/op [Average]
+  (min, avg, max) = (30.872, 30.917, 30.954), stdev = 0.034
+  CI (99.9%): [30.699, 31.134] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version
+
+# Run progress: 49.30% complete, ETA 00:05:16
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 768.073 ns/op
+# Warmup Iteration   2: 571.245 ns/op
+Iteration   1: 559.831 ns/op
+Iteration   2: 560.026 ns/op
+
+# Run progress: 50.00% complete, ETA 00:05:11
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 840.927 ns/op
+# Warmup Iteration   2: 572.657 ns/op
+Iteration   1: 558.124 ns/op
+Iteration   2: 558.072 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
+  559.013 ±(99.9%) 6.850 ns/op [Average]
+  (min, avg, max) = (558.072, 559.013, 560.026), stdev = 1.060
+  CI (99.9%): [552.164, 565.863] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes
+
+# Run progress: 50.70% complete, ETA 00:05:07
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 75.799 ns/op
+# Warmup Iteration   2: 66.660 ns/op
+Iteration   1: 66.240 ns/op
+Iteration   2: 66.153 ns/op
+
+# Run progress: 51.41% complete, ETA 00:05:02
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 75.116 ns/op
+# Warmup Iteration   2: 67.891 ns/op
+Iteration   1: 69.493 ns/op
+Iteration   2: 71.143 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
+  68.257 ±(99.9%) 15.983 ns/op [Average]
+  (min, avg, max) = (66.153, 68.257, 71.143), stdev = 2.473
+  CI (99.9%): [52.275, 84.240] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse
+
+# Run progress: 52.11% complete, ETA 00:04:58
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 33.543 ns/op
+# Warmup Iteration   2: 31.530 ns/op
+Iteration   1: 30.540 ns/op
+Iteration   2: 30.512 ns/op
+
+# Run progress: 52.82% complete, ETA 00:04:53
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 33.481 ns/op
+# Warmup Iteration   2: 31.327 ns/op
+Iteration   1: 30.581 ns/op
+Iteration   2: 30.524 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
+  30.539 ±(99.9%) 0.195 ns/op [Average]
+  (min, avg, max) = (30.512, 30.539, 30.581), stdev = 0.030
+  CI (99.9%): [30.345, 30.734] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.NumericsBenchmark.VersionParse
+
+# Run progress: 53.52% complete, ETA 00:04:49
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 799.949 ns/op
+# Warmup Iteration   2: 534.921 ns/op
+Iteration   1: 526.092 ns/op
+Iteration   2: 525.216 ns/op
+
+# Run progress: 54.23% complete, ETA 00:04:44
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 792.599 ns/op
+# Warmup Iteration   2: 572.845 ns/op
+Iteration   1: 560.353 ns/op
+Iteration   2: 560.856 ns/op
+
+
+Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
+  543.129 ±(99.9%) 130.421 ns/op [Average]
+  (min, avg, max) = (525.216, 543.129, 560.856), stdev = 20.183
+  CI (99.9%): [412.708, 673.551] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.OtherCollectionsBenchmark.Get
+# Parameters: (count = 16)
+
+# Run progress: 54.93% complete, ETA 00:04:40
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 227.136 ns/op
+# Warmup Iteration   2: 213.828 ns/op
+Iteration   1: 224.295 ns/op
+Iteration   2: 224.503 ns/op
+
+# Run progress: 55.63% complete, ETA 00:04:35
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 227.740 ns/op
+# Warmup Iteration   2: 217.273 ns/op
+Iteration   1: 224.275 ns/op
+Iteration   2: 224.745 ns/op
+
+
+Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
+  224.455 ±(99.9%) 1.418 ns/op [Average]
+  (min, avg, max) = (224.275, 224.455, 224.745), stdev = 0.219
+  CI (99.9%): [223.036, 225.873] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.OtherCollectionsBenchmark.Get
+# Parameters: (count = 128)
+
+# Run progress: 56.34% complete, ETA 00:04:31
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 2032.678 ns/op
+# Warmup Iteration   2: 1904.101 ns/op
+Iteration   1: 1953.271 ns/op
+Iteration   2: 1950.923 ns/op
+
+# Run progress: 57.04% complete, ETA 00:04:26
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 2065.133 ns/op
+# Warmup Iteration   2: 1948.820 ns/op
+Iteration   1: 2048.212 ns/op
+Iteration   2: 2057.683 ns/op
+
+
+Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
+  2002.522 ±(99.9%) 377.136 ns/op [Average]
+  (min, avg, max) = (1950.923, 2002.522, 2057.683), stdev = 58.362
+  CI (99.9%): [1625.386, 2379.658] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.OtherCollectionsBenchmark.Get
+# Parameters: (count = 1024)
+
+# Run progress: 57.75% complete, ETA 00:04:22
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 32037.919 ns/op
+# Warmup Iteration   2: 30887.014 ns/op
+Iteration   1: 29186.234 ns/op
+Iteration   2: 29200.435 ns/op
+
+# Run progress: 58.45% complete, ETA 00:04:17
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 30690.053 ns/op
+# Warmup Iteration   2: 29954.202 ns/op
+Iteration   1: 28825.661 ns/op
+Iteration   2: 28690.590 ns/op
+
+
+Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
+  28975.730 ±(99.9%) 1662.753 ns/op [Average]
+  (min, avg, max) = (28690.590, 28975.730, 29200.435), stdev = 257.313
+  CI (99.9%): [27312.977, 30638.483] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
+# Parameters: (bytesLen = 16)
+
+# Run progress: 59.15% complete, ETA 00:04:13
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 27.145 ns/op
+# Warmup Iteration   2: 25.921 ns/op
+Iteration   1: 25.408 ns/op
+Iteration   2: 25.363 ns/op
+
+# Run progress: 59.86% complete, ETA 00:04:09
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 27.065 ns/op
+# Warmup Iteration   2: 25.957 ns/op
+Iteration   1: 25.304 ns/op
+Iteration   2: 25.306 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
+  25.345 ±(99.9%) 0.321 ns/op [Average]
+  (min, avg, max) = (25.304, 25.345, 25.408), stdev = 0.050
+  CI (99.9%): [25.025, 25.666] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
+# Parameters: (bytesLen = 32)
+
+# Run progress: 60.56% complete, ETA 00:04:04
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 56.425 ns/op
+# Warmup Iteration   2: 48.822 ns/op
+Iteration   1: 47.074 ns/op
+Iteration   2: 46.804 ns/op
+
+# Run progress: 61.27% complete, ETA 00:04:00
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 49.462 ns/op
+# Warmup Iteration   2: 48.544 ns/op
+Iteration   1: 47.014 ns/op
+Iteration   2: 46.911 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
+  46.951 ±(99.9%) 0.767 ns/op [Average]
+  (min, avg, max) = (46.804, 46.951, 47.074), stdev = 0.119
+  CI (99.9%): [46.183, 47.718] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
+# Parameters: (bytesLen = 64)
+
+# Run progress: 61.97% complete, ETA 00:03:55
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 89.861 ns/op
+# Warmup Iteration   2: 91.285 ns/op
+Iteration   1: 89.910 ns/op
+Iteration   2: 90.253 ns/op
+
+# Run progress: 62.68% complete, ETA 00:03:51
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 89.887 ns/op
+# Warmup Iteration   2: 90.422 ns/op
+Iteration   1: 89.886 ns/op
+Iteration   2: 89.772 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
+  89.955 ±(99.9%) 1.341 ns/op [Average]
+  (min, avg, max) = (89.772, 89.955, 90.253), stdev = 0.208
+  CI (99.9%): [88.614, 91.296] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.New
+# Parameters: (bytesLen = 16)
+
+# Run progress: 63.38% complete, ETA 00:03:46
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 273.376 ns/op
+# Warmup Iteration   2: 247.126 ns/op
+Iteration   1: 218.694 ns/op
+Iteration   2: 305.018 ns/op
+
+# Run progress: 64.08% complete, ETA 00:03:42
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 312.578 ns/op
+# Warmup Iteration   2: 239.125 ns/op
+Iteration   1: 275.868 ns/op
+Iteration   2: 263.586 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
+  265.791 ±(99.9%) 231.893 ns/op [Average]
+  (min, avg, max) = (218.694, 265.791, 305.018), stdev = 35.886
+  CI (99.9%): [33.899, 497.684] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.New
+# Parameters: (bytesLen = 32)
+
+# Run progress: 64.79% complete, ETA 00:03:38
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 306.507 ns/op
+# Warmup Iteration   2: 260.182 ns/op
+Iteration   1: 250.475 ns/op
+Iteration   2: 246.244 ns/op
+
+# Run progress: 65.49% complete, ETA 00:03:33
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 284.730 ns/op
+# Warmup Iteration   2: 225.221 ns/op
+Iteration   1: 290.294 ns/op
+Iteration   2: 223.286 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
+  252.575 ±(99.9%) 179.898 ns/op [Average]
+  (min, avg, max) = (223.286, 252.575, 290.294), stdev = 27.839
+  CI (99.9%): [72.677, 432.473] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.New
+# Parameters: (bytesLen = 64)
+
+# Run progress: 66.20% complete, ETA 00:03:29
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 314.876 ns/op
+# Warmup Iteration   2: 221.286 ns/op
+Iteration   1: 268.592 ns/op
+Iteration   2: 242.731 ns/op
+
+# Run progress: 66.90% complete, ETA 00:03:25
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 305.468 ns/op
+# Warmup Iteration   2: 244.710 ns/op
+Iteration   1: 252.841 ns/op
+Iteration   2: 264.274 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
+  257.109 ±(99.9%) 75.374 ns/op [Average]
+  (min, avg, max) = (242.731, 257.109, 268.592), stdev = 11.664
+  CI (99.9%): [181.736, 332.483] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
+# Parameters: (bytesLen = 16)
+
+# Run progress: 67.61% complete, ETA 00:03:20
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4.785 ns/op
+# Warmup Iteration   2: 4.354 ns/op
+Iteration   1: 3.887 ns/op
+Iteration   2: 3.881 ns/op
+
+# Run progress: 68.31% complete, ETA 00:03:16
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4.787 ns/op
+# Warmup Iteration   2: 4.351 ns/op
+Iteration   1: 3.906 ns/op
+Iteration   2: 3.895 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
+  3.892 ±(99.9%) 0.069 ns/op [Average]
+  (min, avg, max) = (3.881, 3.892, 3.906), stdev = 0.011
+  CI (99.9%): [3.823, 3.962] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
+# Parameters: (bytesLen = 32)
+
+# Run progress: 69.01% complete, ETA 00:03:11
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4.969 ns/op
+# Warmup Iteration   2: 4.333 ns/op
+Iteration   1: 3.897 ns/op
+Iteration   2: 3.904 ns/op
+
+# Run progress: 69.72% complete, ETA 00:03:07
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4.797 ns/op
+# Warmup Iteration   2: 4.339 ns/op
+Iteration   1: 3.877 ns/op
+Iteration   2: 3.867 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
+  3.886 ±(99.9%) 0.111 ns/op [Average]
+  (min, avg, max) = (3.867, 3.886, 3.904), stdev = 0.017
+  CI (99.9%): [3.775, 3.997] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
+# Parameters: (bytesLen = 64)
+
+# Run progress: 70.42% complete, ETA 00:03:03
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4.730 ns/op
+# Warmup Iteration   2: 4.297 ns/op
+Iteration   1: 3.846 ns/op
+Iteration   2: 3.832 ns/op
+
+# Run progress: 71.13% complete, ETA 00:02:58
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 4.786 ns/op
+# Warmup Iteration   2: 4.346 ns/op
+Iteration   1: 3.902 ns/op
+Iteration   2: 3.896 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
+  3.869 ±(99.9%) 0.227 ns/op [Average]
+  (min, avg, max) = (3.832, 3.869, 3.902), stdev = 0.035
+  CI (99.9%): [3.642, 4.097] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8
+# Parameters: (bytesLen = 16)
+
+# Run progress: 71.83% complete, ETA 00:02:54
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 20.063 ns/op
+# Warmup Iteration   2: 19.815 ns/op
+Iteration   1: 20.211 ns/op
+Iteration   2: 20.149 ns/op
+
+# Run progress: 72.54% complete, ETA 00:02:49
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 20.163 ns/op
+# Warmup Iteration   2: 19.894 ns/op
+Iteration   1: 20.184 ns/op
+Iteration   2: 20.159 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
+  20.176 ±(99.9%) 0.180 ns/op [Average]
+  (min, avg, max) = (20.149, 20.176, 20.211), stdev = 0.028
+  CI (99.9%): [19.996, 20.356] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8
+# Parameters: (bytesLen = 32)
+
+# Run progress: 73.24% complete, ETA 00:02:45
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 35.376 ns/op
+# Warmup Iteration   2: 34.794 ns/op
+Iteration   1: 35.515 ns/op
+Iteration   2: 35.537 ns/op
+
+# Run progress: 73.94% complete, ETA 00:02:41
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 35.383 ns/op
+# Warmup Iteration   2: 34.842 ns/op
+Iteration   1: 35.480 ns/op
+Iteration   2: 35.566 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
+  35.524 ±(99.9%) 0.233 ns/op [Average]
+  (min, avg, max) = (35.480, 35.524, 35.566), stdev = 0.036
+  CI (99.9%): [35.291, 35.758] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8
+# Parameters: (bytesLen = 64)
+
+# Run progress: 74.65% complete, ETA 00:02:36
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 65.602 ns/op
+# Warmup Iteration   2: 65.040 ns/op
+Iteration   1: 65.163 ns/op
+Iteration   2: 65.319 ns/op
+
+# Run progress: 75.35% complete, ETA 00:02:32
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 66.014 ns/op
+# Warmup Iteration   2: 65.486 ns/op
+Iteration   1: 65.155 ns/op
+Iteration   2: 65.336 ns/op
+
+
+Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
+  65.243 ±(99.9%) 0.630 ns/op [Average]
+  (min, avg, max) = (65.155, 65.243, 65.336), stdev = 0.098
+  CI (99.9%): [64.613, 65.873] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName
+
+# Run progress: 76.06% complete, ETA 00:02:27
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 13.204 ns/op
+# Warmup Iteration   2: 12.517 ns/op
+Iteration   1: 13.181 ns/op
+Iteration   2: 13.174 ns/op
+
+# Run progress: 76.76% complete, ETA 00:02:23
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 13.518 ns/op
+# Warmup Iteration   2: 17.458 ns/op
+Iteration   1: 14.078 ns/op
+Iteration   2: 14.056 ns/op
+
+
+Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
+  13.622 ±(99.9%) 3.319 ns/op [Average]
+  (min, avg, max) = (13.174, 13.622, 14.078), stdev = 0.514
+  CI (99.9%): [10.303, 16.941] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
+# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 128)
 
-# Run progress: 17.24% complete, ETA 00:00:54
-# Fork: 1 of 1
+# Run progress: 77.46% complete, ETA 00:02:19
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 72293.102 ns/op
-Iteration   1: 70453.304 ns/op
+# Warmup Iteration   1: 392.679 ns/op
+# Warmup Iteration   2: 406.983 ns/op
+Iteration   1: 388.175 ns/op
+Iteration   2: 387.400 ns/op
+
+# Run progress: 78.17% complete, ETA 00:02:14
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 393.802 ns/op
+# Warmup Iteration   2: 408.043 ns/op
+Iteration   1: 388.124 ns/op
+Iteration   2: 387.218 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  70453.304 ns/op
+Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
+  387.729 ±(99.9%) 3.177 ns/op [Average]
+  (min, avg, max) = (387.218, 387.729, 388.175), stdev = 0.492
+  CI (99.9%): [384.552, 390.906] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -160,26 +2331,41 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails
+# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 1024)
 
-# Run progress: 20.69% complete, ETA 00:00:52
-# Fork: 1 of 1
+# Run progress: 78.87% complete, ETA 00:02:10
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4247886.805 ns/op
-Iteration   1: 4100489.881 ns/op
+# Warmup Iteration   1: 2451.478 ns/op
+# Warmup Iteration   2: 2228.910 ns/op
+Iteration   1: 1902.645 ns/op
+Iteration   2: 1945.920 ns/op
+
+# Run progress: 79.58% complete, ETA 00:02:06
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 2450.821 ns/op
+# Warmup Iteration   2: 2223.287 ns/op
+Iteration   1: 1902.136 ns/op
+Iteration   2: 1902.919 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  4100489.881 ns/op
+Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
+  1913.405 ±(99.9%) 140.089 ns/op [Average]
+  (min, avg, max) = (1902.136, 1913.405, 1945.920), stdev = 21.679
+  CI (99.9%): [1773.316, 2053.494] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -187,26 +2373,41 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails
+# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 8192)
 
-# Run progress: 24.14% complete, ETA 00:00:49
-# Fork: 1 of 1
+# Run progress: 80.28% complete, ETA 00:02:01
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 254830565.000 ns/op
-Iteration   1: 259852805.250 ns/op
+# Warmup Iteration   1: 40538.063 ns/op
+# Warmup Iteration   2: 38493.599 ns/op
+Iteration   1: 39943.302 ns/op
+Iteration   2: 38775.773 ns/op
+
+# Run progress: 80.99% complete, ETA 00:01:57
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 40841.362 ns/op
+# Warmup Iteration   2: 38465.744 ns/op
+Iteration   1: 40183.833 ns/op
+Iteration   2: 38781.924 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
-  259852805.250 ns/op
+Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
+  39421.208 ±(99.9%) 4834.918 ns/op [Average]
+  (min, avg, max) = (38775.773, 39421.208, 40183.833), stdev = 748.209
+  CI (99.9%): [34586.290, 44256.125] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -214,26 +2415,40 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.regex_find_emails":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8
-# Parameters: (len = 128)
+# Benchmark: io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny
 
-# Run progress: 27.59% complete, ETA 00:00:47
-# Fork: 1 of 1
+# Run progress: 81.69% complete, ETA 00:01:52
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 14.849 ns/op
-Iteration   1: 13.609 ns/op
+# Warmup Iteration   1: 3.153 ns/op
+# Warmup Iteration   2: 2.838 ns/op
+Iteration   1: 2.833 ns/op
+Iteration   2: 2.826 ns/op
+
+# Run progress: 82.39% complete, ETA 00:01:48
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 3.157 ns/op
+# Warmup Iteration   2: 2.853 ns/op
+Iteration   1: 2.830 ns/op
+Iteration   2: 2.837 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  13.609 ns/op
+Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
+  2.832 ±(99.9%) 0.030 ns/op [Average]
+  (min, avg, max) = (2.826, 2.832, 2.837), stdev = 0.005
+  CI (99.9%): [2.801, 2.862] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -241,26 +2456,40 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8
-# Parameters: (len = 1024)
+# Benchmark: io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny
 
-# Run progress: 31.03% complete, ETA 00:00:45
-# Fork: 1 of 1
+# Run progress: 83.10% complete, ETA 00:01:44
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 82.288 ns/op
-Iteration   1: 74.869 ns/op
+# Warmup Iteration   1: 3.474 ns/op
+# Warmup Iteration   2: 3.161 ns/op
+Iteration   1: 3.425 ns/op
+Iteration   2: 3.431 ns/op
+
+# Run progress: 83.80% complete, ETA 00:01:39
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 3.474 ns/op
+# Warmup Iteration   2: 3.150 ns/op
+Iteration   1: 3.425 ns/op
+Iteration   2: 3.425 ns/op
 
 
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  74.869 ns/op
+Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
+  3.427 ±(99.9%) 0.017 ns/op [Average]
+  (min, avg, max) = (3.425, 3.427, 3.431), stdev = 0.003
+  CI (99.9%): [3.409, 3.444] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -268,215 +2497,41 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8
-# Parameters: (len = 8192)
-
-# Run progress: 34.48% complete, ETA 00:00:43
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 647.805 ns/op
-Iteration   1: 593.742 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_bytes_utf8":
-  593.742 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder
-# Parameters: (len = 128)
-
-# Run progress: 37.93% complete, ETA 00:00:40
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.378 ns/op
-Iteration   1: 0.374 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.374 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder
-# Parameters: (len = 1024)
-
-# Run progress: 41.38% complete, ETA 00:00:38
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.378 ns/op
-Iteration   1: 0.375 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.375 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder
-# Parameters: (len = 8192)
-
-# Run progress: 44.83% complete, ETA 00:00:36
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.379 ns/op
-Iteration   1: 0.372 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_builder":
-  0.372 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus
-# Parameters: (len = 128)
-
-# Run progress: 48.28% complete, ETA 00:00:34
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 121.310 ns/op
-Iteration   1: 114.832 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  114.832 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus
-# Parameters: (len = 1024)
-
-# Run progress: 51.72% complete, ETA 00:00:31
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 123.616 ns/op
-Iteration   1: 112.059 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  112.059 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus
-# Parameters: (len = 8192)
-
-# Run progress: 55.17% complete, ETA 00:00:29
-# Fork: 1 of 1
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 123.860 ns/op
-Iteration   1: 113.370 ns/op
-
-
-Result "io.github.benchjava.bench.RegexAndStringBenchmark.string_concat_plus":
-  113.370 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_for_each
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq
 # Parameters: (size = 100)
 
-# Run progress: 58.62% complete, ETA 00:00:27
-# Fork: 1 of 1
+# Run progress: 84.51% complete, ETA 00:01:35
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 56.290 ns/op
-Iteration   1: 55.389 ns/op
+# Warmup Iteration   1: 1377.040 ns/op
+# Warmup Iteration   2: 1324.101 ns/op
+Iteration   1: 1366.655 ns/op
+Iteration   2: 1366.059 ns/op
+
+# Run progress: 85.21% complete, ETA 00:01:31
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1418.250 ns/op
+# Warmup Iteration   2: 1382.385 ns/op
+Iteration   1: 1409.018 ns/op
+Iteration   2: 1396.891 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  55.389 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
+  1384.656 ±(99.9%) 140.245 ns/op [Average]
+  (min, avg, max) = (1366.059, 1384.656, 1409.018), stdev = 21.703
+  CI (99.9%): [1244.411, 1524.901] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -484,26 +2539,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_for_each
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq
 # Parameters: (size = 1000)
 
-# Run progress: 62.07% complete, ETA 00:00:24
-# Fork: 1 of 1
+# Run progress: 85.92% complete, ETA 00:01:26
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 503.969 ns/op
-Iteration   1: 510.151 ns/op
+# Warmup Iteration   1: 11179.510 ns/op
+# Warmup Iteration   2: 13133.971 ns/op
+Iteration   1: 13233.543 ns/op
+Iteration   2: 13251.733 ns/op
+
+# Run progress: 86.62% complete, ETA 00:01:22
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 11298.191 ns/op
+# Warmup Iteration   2: 13177.835 ns/op
+Iteration   1: 13607.950 ns/op
+Iteration   2: 13601.773 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  510.151 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
+  13423.750 ±(99.9%) 1352.345 ns/op [Average]
+  (min, avg, max) = (13233.543, 13423.750, 13607.950), stdev = 209.277
+  CI (99.9%): [12071.405, 14776.095] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -511,26 +2581,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_for_each
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq
 # Parameters: (size = 10000)
 
-# Run progress: 65.52% complete, ETA 00:00:22
-# Fork: 1 of 1
+# Run progress: 87.32% complete, ETA 00:01:18
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 5022.577 ns/op
-Iteration   1: 4984.530 ns/op
+# Warmup Iteration   1: 128394.112 ns/op
+# Warmup Iteration   2: 114129.599 ns/op
+Iteration   1: 113749.843 ns/op
+Iteration   2: 113619.180 ns/op
+
+# Run progress: 88.03% complete, ETA 00:01:13
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 125967.920 ns/op
+# Warmup Iteration   2: 114312.709 ns/op
+Iteration   1: 113995.506 ns/op
+Iteration   2: 114159.488 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
-  4984.530 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
+  113881.004 ±(99.9%) 1567.036 ns/op [Average]
+  (min, avg, max) = (113619.180, 113881.004, 114159.488), stdev = 242.501
+  CI (99.9%): [112313.969, 115448.040] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -538,26 +2623,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_for_each":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_loop
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq
 # Parameters: (size = 100)
 
-# Run progress: 68.97% complete, ETA 00:00:20
-# Fork: 1 of 1
+# Run progress: 88.73% complete, ETA 00:01:09
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 51.111 ns/op
-Iteration   1: 51.128 ns/op
+# Warmup Iteration   1: 895.640 ns/op
+# Warmup Iteration   2: 919.857 ns/op
+Iteration   1: 911.799 ns/op
+Iteration   2: 918.037 ns/op
+
+# Run progress: 89.44% complete, ETA 00:01:05
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 898.055 ns/op
+# Warmup Iteration   2: 893.710 ns/op
+Iteration   1: 888.154 ns/op
+Iteration   2: 890.065 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  51.128 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
+  902.014 ±(99.9%) 97.813 ns/op [Average]
+  (min, avg, max) = (888.154, 902.014, 918.037), stdev = 15.137
+  CI (99.9%): [804.200, 999.827] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -565,26 +2665,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_loop
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq
 # Parameters: (size = 1000)
 
-# Run progress: 72.41% complete, ETA 00:00:18
-# Fork: 1 of 1
+# Run progress: 90.14% complete, ETA 00:01:00
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 466.298 ns/op
-Iteration   1: 511.716 ns/op
+# Warmup Iteration   1: 8077.956 ns/op
+# Warmup Iteration   2: 7523.866 ns/op
+Iteration   1: 7378.765 ns/op
+Iteration   2: 7393.721 ns/op
+
+# Run progress: 90.85% complete, ETA 00:00:56
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8302.283 ns/op
+# Warmup Iteration   2: 7596.452 ns/op
+Iteration   1: 7400.929 ns/op
+Iteration   2: 7394.801 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  511.716 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
+  7392.054 ±(99.9%) 60.815 ns/op [Average]
+  (min, avg, max) = (7378.765, 7392.054, 7400.929), stdev = 9.411
+  CI (99.9%): [7331.239, 7452.869] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -592,26 +2707,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_loop
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq
 # Parameters: (size = 10000)
 
-# Run progress: 75.86% complete, ETA 00:00:15
-# Fork: 1 of 1
+# Run progress: 91.55% complete, ETA 00:00:52
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4664.492 ns/op
-Iteration   1: 4931.156 ns/op
+# Warmup Iteration   1: 81270.856 ns/op
+# Warmup Iteration   2: 77007.738 ns/op
+Iteration   1: 77340.967 ns/op
+Iteration   2: 76616.200 ns/op
+
+# Run progress: 92.25% complete, ETA 00:00:47
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 78428.930 ns/op
+# Warmup Iteration   2: 73548.639 ns/op
+Iteration   1: 72998.506 ns/op
+Iteration   2: 73414.390 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
-  4931.156 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
+  75092.516 ±(99.9%) 14244.805 ns/op [Average]
+  (min, avg, max) = (72998.506, 75092.516, 77340.967), stdev = 2204.399
+  CI (99.9%): [60847.711, 89337.321] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -619,26 +2749,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_loop":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq
 # Parameters: (size = 100)
 
-# Run progress: 79.31% complete, ETA 00:00:13
-# Fork: 1 of 1
+# Run progress: 92.96% complete, ETA 00:00:43
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 2854.145 ns/op
-Iteration   1: 2298.408 ns/op
+# Warmup Iteration   1: 904.694 ns/op
+# Warmup Iteration   2: 906.091 ns/op
+Iteration   1: 935.021 ns/op
+Iteration   2: 935.973 ns/op
+
+# Run progress: 93.66% complete, ETA 00:00:38
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 910.459 ns/op
+# Warmup Iteration   2: 906.811 ns/op
+Iteration   1: 937.878 ns/op
+Iteration   2: 936.429 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  2298.408 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
+  936.325 ±(99.9%) 7.688 ns/op [Average]
+  (min, avg, max) = (935.021, 936.325, 937.878), stdev = 1.190
+  CI (99.9%): [928.637, 944.014] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -646,26 +2791,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq
 # Parameters: (size = 1000)
 
-# Run progress: 82.76% complete, ETA 00:00:11
-# Fork: 1 of 1
+# Run progress: 94.37% complete, ETA 00:00:34
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3705.943 ns/op
-Iteration   1: 3101.168 ns/op
+# Warmup Iteration   1: 8159.423 ns/op
+# Warmup Iteration   2: 7621.861 ns/op
+Iteration   1: 8049.766 ns/op
+Iteration   2: 7958.926 ns/op
+
+# Run progress: 95.07% complete, ETA 00:00:30
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8110.031 ns/op
+# Warmup Iteration   2: 7713.338 ns/op
+Iteration   1: 8080.150 ns/op
+Iteration   2: 8024.247 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  3101.168 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
+  8028.272 ±(99.9%) 333.244 ns/op [Average]
+  (min, avg, max) = (7958.926, 8028.272, 8080.150), stdev = 51.570
+  CI (99.9%): [7695.028, 8361.516] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -673,26 +2833,41 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream
+# Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq
 # Parameters: (size = 10000)
 
-# Run progress: 86.21% complete, ETA 00:00:09
-# Fork: 1 of 1
+# Run progress: 95.77% complete, ETA 00:00:25
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 15779.386 ns/op
-Iteration   1: 13542.028 ns/op
+# Warmup Iteration   1: 80840.163 ns/op
+# Warmup Iteration   2: 77258.653 ns/op
+Iteration   1: 77320.094 ns/op
+Iteration   2: 77282.171 ns/op
+
+# Run progress: 96.48% complete, ETA 00:00:21
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 80919.814 ns/op
+# Warmup Iteration   2: 77638.410 ns/op
+Iteration   1: 77477.319 ns/op
+Iteration   2: 77541.836 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
-  13542.028 ns/op
+Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
+  77405.355 ±(99.9%) 802.344 ns/op [Average]
+  (min, avg, max) = (77282.171, 77405.355, 77541.836), stdev = 124.164
+  CI (99.9%): [76603.011, 78207.699] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -700,26 +2875,40 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_parallel_stream":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_stream
-# Parameters: (size = 100)
+# Benchmark: io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One
 
-# Run progress: 89.66% complete, ETA 00:00:06
-# Fork: 1 of 1
+# Run progress: 97.18% complete, ETA 00:00:17
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 82.166 ns/op
-Iteration   1: 97.294 ns/op
+# Warmup Iteration   1: 30.924 ns/op
+# Warmup Iteration   2: 28.634 ns/op
+Iteration   1: 28.503 ns/op
+Iteration   2: 28.554 ns/op
+
+# Run progress: 97.89% complete, ETA 00:00:12
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 30.961 ns/op
+# Warmup Iteration   2: 28.494 ns/op
+Iteration   1: 28.616 ns/op
+Iteration   2: 28.578 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  97.294 ns/op
+Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
+  28.563 ±(99.9%) 0.306 ns/op [Average]
+  (min, avg, max) = (28.503, 28.563, 28.616), stdev = 0.047
+  CI (99.9%): [28.257, 28.869] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -727,56 +2916,43 @@ Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
 # VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_stream
-# Parameters: (size = 1000)
+# Benchmark: io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two
 
-# Run progress: 93.10% complete, ETA 00:00:04
-# Fork: 1 of 1
+# Run progress: 98.59% complete, ETA 00:00:08
+# Fork: 1 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 640.487 ns/op
-Iteration   1: 648.268 ns/op
+# Warmup Iteration   1: 35.280 ns/op
+# Warmup Iteration   2: 32.505 ns/op
+Iteration   1: 31.760 ns/op
+Iteration   2: 31.774 ns/op
 
-
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  648.268 ns/op
-
-
-# JMH version: 1.37
-# VM version: JDK 24.0.2, OpenJDK 64-Bit Server VM, 24.0.2+12
-# VM invoker: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/24.0.2-12/x64/bin/java
-# VM options: <none>
-# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 1 iterations, 1 s each
-# Measurement: 1 iterations, 1 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
-# Benchmark: io.github.benchjava.bench.StreamsBenchmark.sum_stream
-# Parameters: (size = 10000)
-
-# Run progress: 96.55% complete, ETA 00:00:02
-# Fork: 1 of 1
+# Run progress: 99.30% complete, ETA 00:00:04
+# Fork: 2 of 2
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/home/runner/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
 WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6590.351 ns/op
-Iteration   1: 7204.844 ns/op
+# Warmup Iteration   1: 35.035 ns/op
+# Warmup Iteration   2: 32.462 ns/op
+Iteration   1: 31.637 ns/op
+Iteration   2: 31.677 ns/op
 
 
-Result "io.github.benchjava.bench.StreamsBenchmark.sum_stream":
-  7204.844 ns/op
+Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two":
+  31.712 ±(99.9%) 0.426 ns/op [Average]
+  (min, avg, max) = (31.637, 31.712, 31.774), stdev = 0.066
+  CI (99.9%): [31.286, 32.138] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:01:05
+# Run complete. Total time: 00:10:14
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -790,35 +2966,77 @@ works, and factor in a small probability of new VM bugs. Additionally, while com
 different JVMs are already problematic, the performance difference caused by different Blackhole
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                                      (len)  (size)  Mode  Cnt          Score   Error  Units
-NumericsBenchmark.biginteger_mul                 N/A     N/A  avgt              22.302          ns/op
-NumericsBenchmark.bit_ops                        N/A     N/A  avgt               0.939          ns/op
-NumericsBenchmark.double_fma                     N/A     N/A  avgt               0.638          ns/op
-NumericsBenchmark.int_add                        N/A     N/A  avgt               0.598          ns/op
-NumericsBenchmark.long_mul                       N/A     N/A  avgt               0.625          ns/op
-RegexAndStringBenchmark.regex_find_emails        128     N/A  avgt           70453.304          ns/op
-RegexAndStringBenchmark.regex_find_emails       1024     N/A  avgt         4100489.881          ns/op
-RegexAndStringBenchmark.regex_find_emails       8192     N/A  avgt       259852805.250          ns/op
-RegexAndStringBenchmark.string_bytes_utf8        128     N/A  avgt              13.609          ns/op
-RegexAndStringBenchmark.string_bytes_utf8       1024     N/A  avgt              74.869          ns/op
-RegexAndStringBenchmark.string_bytes_utf8       8192     N/A  avgt             593.742          ns/op
-RegexAndStringBenchmark.string_concat_builder    128     N/A  avgt               0.374          ns/op
-RegexAndStringBenchmark.string_concat_builder   1024     N/A  avgt               0.375          ns/op
-RegexAndStringBenchmark.string_concat_builder   8192     N/A  avgt               0.372          ns/op
-RegexAndStringBenchmark.string_concat_plus       128     N/A  avgt             114.832          ns/op
-RegexAndStringBenchmark.string_concat_plus      1024     N/A  avgt             112.059          ns/op
-RegexAndStringBenchmark.string_concat_plus      8192     N/A  avgt             113.370          ns/op
-StreamsBenchmark.sum_for_each                    N/A     100  avgt              55.389          ns/op
-StreamsBenchmark.sum_for_each                    N/A    1000  avgt             510.151          ns/op
-StreamsBenchmark.sum_for_each                    N/A   10000  avgt            4984.530          ns/op
-StreamsBenchmark.sum_loop                        N/A     100  avgt              51.128          ns/op
-StreamsBenchmark.sum_loop                        N/A    1000  avgt             511.716          ns/op
-StreamsBenchmark.sum_loop                        N/A   10000  avgt            4931.156          ns/op
-StreamsBenchmark.sum_parallel_stream             N/A     100  avgt            2298.408          ns/op
-StreamsBenchmark.sum_parallel_stream             N/A    1000  avgt            3101.168          ns/op
-StreamsBenchmark.sum_parallel_stream             N/A   10000  avgt           13542.028          ns/op
-StreamsBenchmark.sum_stream                      N/A     100  avgt              97.294          ns/op
-StreamsBenchmark.sum_stream                      N/A    1000  avgt             648.268          ns/op
-StreamsBenchmark.sum_stream                      N/A   10000  avgt            7204.844          ns/op
+Benchmark                                                     (bytesLen)  (count)  (itemsCount)  (len)  (size)                 (url)  Mode  Cnt         Score           Error  Units
+BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4       156.668 ±         0.772  ns/op
+BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4      1816.752 ±       235.484  ns/op
+BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        26.132 ±         1.337  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                   N/A  avgt    4     44875.211 ±     28391.495  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                   N/A  avgt    4     81915.220 ±     51863.620  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                   N/A  avgt    4    164854.493 ±    107664.255  ns/op
+CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4       716.583 ±        23.936  ns/op
+DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4         0.622 ±         0.002  ns/op
+DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4         2.892 ±         0.015  ns/op
+DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        61.139 ±         7.808  ns/op
+DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        57.808 ±         0.107  ns/op
+DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        57.804 ±         0.082  ns/op
+IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4   3911192.043 ±   2196706.783  ns/op
+IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4    365584.518 ±      4611.945  ns/op
+IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4  27370782.027 ±    397911.864  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                   N/A  avgt    4       988.299 ±        41.003  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                   N/A  avgt    4      3432.856 ±       148.123  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                   N/A  avgt    4     16196.258 ±      1647.713  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                   N/A  avgt    4      1955.795 ±       316.302  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                   N/A  avgt    4      6392.889 ±      1682.353  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                   N/A  avgt    4     30182.485 ±      3428.242  ns/op
+NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4       465.528 ±        62.050  ns/op
+NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4       358.792 ±         6.256  ns/op
+NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4       462.138 ±        86.226  ns/op
+NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4       493.508 ±        15.972  ns/op
+NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4  53093678.215 ± 239396568.702  ns/op
+NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4  79577052.217 ±  50986644.036  ns/op
+NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://example.com/  avgt    4  45035555.222 ± 195237015.056  ns/op
+NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        47.605 ±         0.490  ns/op
+NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        47.329 ±         0.267  ns/op
+NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        20.434 ±         0.593  ns/op
+NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        38.901 ±         0.601  ns/op
+NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        10.378 ±         1.539  ns/op
+NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        65.140 ±         2.483  ns/op
+NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        30.917 ±         0.217  ns/op
+NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4       559.013 ±         6.850  ns/op
+NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        68.257 ±        15.983  ns/op
+NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        30.539 ±         0.195  ns/op
+NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4       543.129 ±       130.421  ns/op
+OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                   N/A  avgt    4       224.455 ±         1.418  ns/op
+OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                   N/A  avgt    4      2002.522 ±       377.136  ns/op
+OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                   N/A  avgt    4     28975.730 ±      1662.753  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                   N/A  avgt    4        25.345 ±         0.321  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                   N/A  avgt    4        46.951 ±         0.767  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                   N/A  avgt    4        89.955 ±         1.341  ns/op
+PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                   N/A  avgt    4       265.791 ±       231.893  ns/op
+PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                   N/A  avgt    4       252.575 ±       179.898  ns/op
+PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                   N/A  avgt    4       257.109 ±        75.374  ns/op
+PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                   N/A  avgt    4         3.892 ±         0.069  ns/op
+PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                   N/A  avgt    4         3.886 ±         0.111  ns/op
+PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                   N/A  avgt    4         3.869 ±         0.227  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                   N/A  avgt    4        20.176 ±         0.180  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                   N/A  avgt    4        35.524 ±         0.233  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                   N/A  avgt    4        65.243 ±         0.630  ns/op
+ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        13.622 ±         3.319  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                   N/A  avgt    4       387.729 ±         3.177  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                   N/A  avgt    4      1913.405 ±       140.089  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                   N/A  avgt    4     39421.208 ±      4834.918  ns/op
+SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4         2.832 ±         0.030  ns/op
+SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4         3.427 ±         0.017  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                   N/A  avgt    4      1384.656 ±       140.245  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                   N/A  avgt    4     13423.750 ±      1352.345  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                   N/A  avgt    4    113881.004 ±      1567.036  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                   N/A  avgt    4       902.014 ±        97.813  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                   N/A  avgt    4      7392.054 ±        60.815  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                   N/A  avgt    4     75092.516 ±     14244.805  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                   N/A  avgt    4       936.325 ±         7.688  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                   N/A  avgt    4      8028.272 ±       333.244  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                   N/A  avgt    4     77405.355 ±       802.344  ns/op
+ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        28.563 ±         0.306  ns/op
+ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                   N/A  avgt    4        31.712 ±         0.426  ns/op
 
 Benchmark result is saved to /home/runner/work/java-benchmarks/java-benchmarks/java-in-time/results/temurin-24.json
