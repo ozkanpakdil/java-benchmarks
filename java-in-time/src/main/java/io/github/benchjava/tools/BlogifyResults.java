@@ -174,13 +174,18 @@ public class BlogifyResults {
     }
 
     private static String linkify(String benchmarkName) {
-        // Extract class name (strip method at the end if present)
+        // Build URL to the declaring class, but use a short label "Class.Method"
         String className = benchmarkName;
-        int lastDot = benchmarkName.lastIndexOf('.')
-                ;
+        int lastDot = benchmarkName.lastIndexOf('.');
         if (lastDot > 0) {
             className = benchmarkName.substring(0, lastDot);
         }
+        String method = (lastDot > 0) ? benchmarkName.substring(lastDot + 1) : benchmarkName;
+        String classSimple;
+        int prevDot = className.lastIndexOf('.');
+        classSimple = (prevDot >= 0) ? className.substring(prevDot + 1) : className;
+        String label = classSimple + "." + method;
+
         String repo = Optional.ofNullable(System.getenv("GITHUB_REPOSITORY")).orElse("ozkanpakdil/java-benchmarks");
         String branch = Optional.ofNullable(System.getenv("GITHUB_REF_NAME")).orElse("main");
 
@@ -194,7 +199,7 @@ public class BlogifyResults {
         }
         String path = moduleBase + className.replace('.', '/') + ".java";
         String url = "https://github.com/" + repo + "/blob/" + branch + "/" + path;
-        return "[" + benchmarkName + "](" + url + ")";
+        return "[" + label + "](" + url + ")";
     }
 
     private record Entry(double score, String unit) {}

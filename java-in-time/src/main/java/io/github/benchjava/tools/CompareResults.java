@@ -121,27 +121,28 @@ public class CompareResults {
         onlyA.removeAll(cand.keySet());
         Set<String> onlyB = new TreeSet<>(cand.keySet());
         onlyB.removeAll(base.keySet());
-        System.out.println();
-        System.out.println("Only in A (" + aFile.getName() + "): " + onlyA.size());
-        if (!onlyA.isEmpty()) {
+
+        if (!onlyA.isEmpty() || !onlyB.isEmpty()) {
+            System.out.println();
+            System.out.println("Only in A (" + aFile.getName() + "): " + onlyA.size());
             for (String name : onlyA) {
                 System.out.println("- " + name);
             }
-        }
-        System.out.println();
-        System.out.println("Only in B (" + bFile.getName() + "): " + onlyB.size());
-        if (!onlyB.isEmpty()) {
+            System.out.println();
+            System.out.println("Only in B (" + bFile.getName() + "): " + onlyB.size());
             for (String name : onlyB) {
                 System.out.println("- " + name);
             }
-        }
-
-        // Enforce strict matching: if any benchmark exists only on one side, fail the process
-        if (!onlyA.isEmpty() || !onlyB.isEmpty()) {
+            // Enforce strict matching: if any benchmark exists only on one side, fail the process
             System.out.println();
             System.err.println("ERROR: Benchmark set mismatch between files. All benchmarks should be present in both A and B.");
             System.err.println("Failing the build. Re-run benchmarks ensuring both JSONs are produced from the same commit and include filters.");
             System.exit(5);
+        } else {
+            // No mismatches → show who is faster counts instead of confusing Only-in=0 lines
+            int ties = n - aWinCount - bWinCount;
+            System.out.println();
+            System.out.println("Summary: A faster: " + aWinCount + ", B faster: " + bWinCount + ", Ties: " + Math.max(0, ties) + ".");
         }
     }
 
@@ -232,13 +233,18 @@ public class CompareResults {
     }
 
     private static String linkify(String benchmarkName) {
-        // Extract class name (strip method at the end if present)
+        // Build URL to the declaring class, but use a short label "Class.Method"
         String className = benchmarkName;
-        int lastDot = benchmarkName.lastIndexOf('.')
-                ;
+        int lastDot = benchmarkName.lastIndexOf('.');
         if (lastDot > 0) {
             className = benchmarkName.substring(0, lastDot);
         }
+        String method = (lastDot > 0) ? benchmarkName.substring(lastDot + 1) : benchmarkName;
+        String classSimple;
+        int prevDot = className.lastIndexOf('.');
+        classSimple = (prevDot >= 0) ? className.substring(prevDot + 1) : className;
+        String label = classSimple + "." + method;
+
         String repo = Optional.ofNullable(System.getenv("GITHUB_REPOSITORY")).orElse("ozkanpakdil/java-benchmarks");
         String branch = Optional.ofNullable(System.getenv("GITHUB_REF_NAME")).orElse("main");
 
@@ -253,7 +259,7 @@ public class CompareResults {
         }
         String path = moduleBase + className.replace('.', '/') + ".java";
         String url = "https://github.com/" + repo + "/blob/" + branch + "/" + path;
-        return "[" + benchmarkName + "](" + url + ")";
+        return "[" + label + "](" + url + ")";
     }
 
     private record Entry(double score, String unit) {}
