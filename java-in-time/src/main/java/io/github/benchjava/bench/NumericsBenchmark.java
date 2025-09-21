@@ -1,6 +1,16 @@
 package io.github.benchjava.bench;
 
-import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Fork;
+import org.openjdk.jmh.annotations.Level;
+import org.openjdk.jmh.annotations.Measurement;
+import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.Warmup;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
@@ -71,19 +81,25 @@ public class NumericsBenchmark {
         versionStrings = new String[DATA_SIZE];
         versionUtf8 = new byte[DATA_SIZE][];
         for (int i = 0; i < DATA_SIZE; i++) {
-            int a = 1 + rnd.nextInt(10);
+            // JDK 9+ version scheme: feature >= 9; keep random within a reasonable range
+            int a = 9 + rnd.nextInt(17); // 9..25
             int b = rnd.nextInt(20);
             int c = rnd.nextInt(50);
-            // Java Runtime.Version supports major[.minor][.security], not 4-part versions.
-            // Randomly choose 1–3 components.
+            // Java Runtime.Version supports major[.minor][.security]; some JDKs are stricter about combinations.
+            // Generate only forms broadly accepted:
+            // - 1-part: "a"
+            // - 2-part: "a.b" with b >= 1
+            // - 3-part: "a.0.c" with c >= 1
             int parts = 1 + rnd.nextInt(3);
             String vs;
             if (parts == 1) {
                 vs = Integer.toString(a);
             } else if (parts == 2) {
+                if (b == 0) b = 1; // avoid ".0" for two-part
                 vs = a + "." + b;
             } else {
-                vs = a + "." + b + "." + c;
+                if (c == 0) c = 1; // ensure security >= 1
+                vs = a + ".0." + c; // constrain to minor==0 for 3-part
             }
             versionStrings[i] = vs;
             versionUtf8[i] = vs.getBytes(StandardCharsets.US_ASCII);
