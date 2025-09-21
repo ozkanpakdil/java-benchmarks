@@ -23,7 +23,6 @@ public class JsonBenchmark {
         public int qty;
         public double price;
 
-        public OrderItem() {}
         public OrderItem(String sku, int qty, double price) {
             this.sku = sku; this.qty = qty; this.price = price;
         }
@@ -55,13 +54,17 @@ public class JsonBenchmark {
         json = MAPPER.writeValueAsString(order);
     }
 
+    // Blog JSON section — names aligned with blog snippet methods
+    // Blog HTML: Serialize method around line ~8876
     @Benchmark
-    public String serialize_jackson() throws JsonProcessingException {
+    public String Serialize() throws JsonProcessingException {
         return MAPPER.writeValueAsString(order);
     }
 
+    // Blog HTML: WithDeserialize method around line ~9146 (uses JsonSerializer.Deserialize<JsonElement> in C#)
+    // Java analogue: deserialize into Order using Jackson
     @Benchmark
-    public Order deserialize_jackson() throws JsonProcessingException {
+    public Order WithDeserialize() throws JsonProcessingException {
         return MAPPER.readValue(json, Order.class);
     }
 }

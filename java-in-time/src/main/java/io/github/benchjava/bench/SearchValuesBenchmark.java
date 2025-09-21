@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class SearchValuesBenchmark {
 
     private String text;
-    private boolean[] table = new boolean[256];
+    private final boolean[] table = new boolean[256];
 
     @Setup(Level.Trial)
     public void setup() {
@@ -22,8 +22,21 @@ public class SearchValuesBenchmark {
         for (int i = 0; i < needles.length(); i++) table[needles.charAt(i) & 0xFF] = true;
     }
 
+
+    // Blog-aligned names (implementations inlined to avoid non-blog helpers)
     @Benchmark
-    public int index_of_any_table() {
+    public boolean ContainsAny() {
+        String s = text;
+        boolean[] t = table;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c < 256 && t[c]) return true;
+        }
+        return false;
+    }
+
+    @Benchmark
+    public int IndexOfAny() {
         String s = text;
         boolean[] t = table;
         for (int i = 0; i < s.length(); i++) {
@@ -31,16 +44,5 @@ public class SearchValuesBenchmark {
             if (c < 256 && t[c]) return i;
         }
         return -1;
-    }
-
-    @Benchmark
-    public int index_of_any_chain() {
-        // naive chain of indexOf on multiple chars
-        int pos = Integer.MAX_VALUE;
-        for (char c : new char[]{'a','e','i','o','u'}) {
-            int p = text.indexOf(c);
-            if (p >= 0 && p < pos) pos = p;
-        }
-        return pos == Integer.MAX_VALUE ? -1 : pos;
     }
 }

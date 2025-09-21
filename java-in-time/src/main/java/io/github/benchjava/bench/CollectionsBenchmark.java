@@ -13,74 +13,31 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 public class CollectionsBenchmark {
 
-    @Param({"100", "1000", "10000"})
+    @Param({"4", "16", "64"})
     public int size;
 
     private List<Integer> list;
-    private Map<Integer, Integer> map;
-    private int[] array;
+    private List<Integer> _data;
 
     @Setup(Level.Trial)
     public void setup() {
-        Random rnd = new Random(42);
-        list = new ArrayList<>(size);
-        map = new HashMap<>(size * 2);
-        array = new int[size];
+        list = new ArrayList<>();
+        _data = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
-            int v = rnd.nextInt();
-            list.add(v);
-            map.put(i, v);
-            array[i] = v;
+            _data.add(i + 1);
         }
+        // seed list with a few values to force internal growth on insert
+        list.add(1000);
+        list.add(2000);
+        list.add(3000);
+        list.add(4000);
     }
 
+    // Blog-aligned name based on the Collections section discussing List<T>.InsertRange
     @Benchmark
-    public int array_sum() {
-        int s = 0;
-        int[] a = array;
-        for (int i = 0; i < a.length; i++) {
-            s += a[i];
-        }
-        return s;
-    }
-
-    @Benchmark
-    public int list_sum_forEach() {
-        int s = 0;
-        for (int v : list) {
-            s += v;
-        }
-        return s;
-    }
-
-    @Benchmark
-    public long list_sum_stream() {
-        return list.stream().mapToLong(Integer::intValue).sum();
-    }
-
-    @Benchmark
-    public int hashmap_get_hit() {
-        int s = 0;
-        for (int i = 0; i < size; i++) {
-            s += map.get(i);
-        }
-        return s;
-    }
-
-    @Benchmark
-    public int hashmap_get_miss() {
-        int s = 0;
-        for (int i = 0; i < size; i++) {
-            Integer v = map.get(i + size);
-            s += (v == null ? 0 : v);
-        }
-        return s;
-    }
-
-    @Benchmark
-    public List<Integer> list_sort_copy() {
-        List<Integer> copy = new ArrayList<>(list);
-        Collections.sort(copy);
-        return copy;
+    public List<Integer> InsertRange() {
+        // Analog for C# list.InsertRange(0, _data)
+        list.addAll(0, _data);
+        return list;
     }
 }
