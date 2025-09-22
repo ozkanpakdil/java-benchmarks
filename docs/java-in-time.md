@@ -12,12 +12,13 @@ This page lists raw JSON outputs produced by the java-in-time JMH suite and prov
 - oracle-25.json
 - temurin-17.json
 - temurin-24.json
+- temurin-25.json
 - zulu-17.json
 - zulu-24.json
 - zulu-25.json
 
 ## View in JMH viewer
-[Open all in jmh.morethan.io](https://jmh.morethan.io/?sources=https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/graalvm-community-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/graalvm-community-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/graalvm-community-25.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/microsoft-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/oracle-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/oracle-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/oracle-25.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/temurin-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/temurin-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/zulu-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/zulu-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/zulu-25.json)
+[Open all in jmh.morethan.io](https://jmh.morethan.io/?sources=https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/graalvm-community-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/graalvm-community-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/graalvm-community-25.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/microsoft-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/oracle-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/oracle-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/oracle-25.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/temurin-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/temurin-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/temurin-25.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/zulu-17.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/zulu-24.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/java-in-time/results/zulu-25.json)
 
 ## Big table (all JSONs)
 A single Markdown table with all available result files as columns:
@@ -38,11 +39,14 @@ Automatically generated comparisons across versions (within a distribution) and 
 - graalvm-community: 17 vs 25 → [view](./compare-graalvm-community-17-vs-25.md)
 - graalvm-community: 24 vs 25 → [view](./compare-graalvm-community-24-vs-25.md)
 - temurin: 17 vs 24 → [view](./compare-temurin-17-vs-24.md)
+- temurin: 17 vs 25 → [view](./compare-temurin-17-vs-25.md)
+- temurin: 24 vs 25 → [view](./compare-temurin-24-vs-25.md)
 
 ### Blog-style summaries (24 vs 25)
 - oracle: 24 vs 25 → [read blog](./blog-oracle-24-vs-25.md)
 - zulu: 24 vs 25 → [read blog](./blog-zulu-24-vs-25.md)
 - graalvm-community: 24 vs 25 → [read blog](./blog-graalvm-community-24-vs-25.md)
+- temurin: 24 vs 25 → [read blog](./blog-temurin-24-vs-25.md)
 
 ### Cross-distribution (same Java version)
 - Java 17: oracle vs zulu → [view](./compare-oracle-vs-zulu-17.md)
@@ -63,4 +67,7 @@ Automatically generated comparisons across versions (within a distribution) and 
 - Java 24: graalvm-community vs temurin → [view](./compare-graalvm-community-vs-temurin-24.md)
 - Java 25: oracle vs zulu → [view](./compare-oracle-vs-zulu-25.md)
 - Java 25: oracle vs graalvm-community → [view](./compare-oracle-vs-graalvm-community-25.md)
+- Java 25: oracle vs temurin → [view](./compare-oracle-vs-temurin-25.md)
 - Java 25: zulu vs graalvm-community → [view](./compare-zulu-vs-graalvm-community-25.md)
+- Java 25: zulu vs temurin → [view](./compare-zulu-vs-temurin-25.md)
+- Java 25: graalvm-community vs temurin → [view](./compare-graalvm-community-vs-temurin-25.md)
