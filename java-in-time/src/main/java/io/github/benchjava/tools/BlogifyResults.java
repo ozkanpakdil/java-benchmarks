@@ -12,15 +12,15 @@ import java.util.*;
 
 /**
  * Generate a blog-style markdown summary comparing two JMH JSON files.
- *
+ * <p>
  * Usage:
- *   java -cp target/benchmarks.jar io.github.benchjava.tools.BlogifyResults A.json B.json
- *
+ * java -cp target/benchmarks.jar io.github.benchjava.tools.BlogifyResults A.json B.json
+ * <p>
  * It prints a Markdown document with:
- *  - Title and date
- *  - Overall geometric-mean summary
- *  - Per-benchmark bullets saying which side is faster/slower and by how much
- *
+ * - Title and date
+ * - Overall geometric-mean summary
+ * - Per-benchmark bullets saying which side is faster/slower and by how much
+ * <p>
  * Notes: Lower is better for AverageTime benchmarks. Ratio = B / A.
  */
 public class BlogifyResults {
@@ -42,8 +42,10 @@ public class BlogifyResults {
         String bName = bFile.getName();
 
         ObjectMapper om = new ObjectMapper();
-        List<JsonNode> a = om.readValue(aFile, new TypeReference<List<JsonNode>>(){});
-        List<JsonNode> b = om.readValue(bFile, new TypeReference<List<JsonNode>>(){});
+        List<JsonNode> a = om.readValue(aFile, new TypeReference<>() {
+        });
+        List<JsonNode> b = om.readValue(bFile, new TypeReference<>() {
+        });
 
         Map<String, Entry> base = index(a);
         Map<String, Entry> cand = index(b);
@@ -62,7 +64,10 @@ public class BlogifyResults {
         System.out.println("_Generated on " + LocalDate.now() + " from `" + aName + "` (A) and `" + bName + "` (B)._\n");
 
         // Overall geometric mean
-        int n = 0; double sumLog = 0.0; int aWins = 0; int bWins = 0;
+        int n = 0;
+        double sumLog = 0.0;
+        int aWins = 0;
+        int bWins = 0;
         for (String name : common) {
             Entry ea = base.get(name);
             Entry eb = cand.get(name);
@@ -71,16 +76,21 @@ public class BlogifyResults {
                 if (Double.isFinite(r) && r > 0) {
                     sumLog += Math.log(r);
                     n++;
-                    if (r > 1.0) aWins++; else if (r < 1.0) bWins++;
+                    if (r > 1.0) aWins++;
+                    else if (r < 1.0) bWins++;
                 }
             }
         }
         if (n > 0) {
             double geo = Math.exp(sumLog / n);
-            String faster; String percent;
-            if (geo < 1.0) { faster = sideLabel(bVer, "B") + " is faster overall"; percent = fmtPct(1.0 - geo) + " faster"; }
-            else if (geo > 1.0) { faster = sideLabel(aVer, "A") + " is faster overall"; percent = fmtPct(geo - 1.0) + " faster"; }
-            else { faster = "A and B are tied overall"; percent = "0.0%"; }
+            String faster;
+            if (geo < 1.0) {
+                faster = sideLabel(bVer, "B") + " is faster overall";
+            } else if (geo > 1.0) {
+                faster = sideLabel(aVer, "A") + " is faster overall";
+            } else {
+                faster = "A and B are tied overall";
+            }
             System.out.println("**Overall:** " + faster + " (geomean B/A = " + DF3.format(geo) + ", across " + n + " benchmarks; " + aWins + " A faster, " + bWins + " B faster).\n");
         }
 
@@ -113,7 +123,14 @@ public class BlogifyResults {
             String pctStr = DF1P.format(Math.abs(r.pct)) + "%";
             String aVal = DF3.format(r.a);
             String bVal = DF3.format(r.b);
-            System.out.println("- " + link + ": <span style=\"color:" + color + ";font-weight:600\">" + who + ("Tie".equals(who) ? "" : (" is ")) + ("Tie".equals(who) ? "no overall change" : (pctStr + (bFaster ? " faster" : " slower"))) + "</span> " +
+            String message;
+            if ("Tie".equals(who)) {
+                message = "no overall change";
+            } else {
+                // 'who' is the faster side, so always say 'faster'
+                message = pctStr + " faster";
+            }
+            System.out.println("- " + link + ": <span style=\"color:" + color + ";font-weight:600\">" + who + ("Tie".equals(who) ? "" : " is ") + message + "</span> " +
                     " (A=" + aVal + ", B=" + bVal + " " + r.unit + ")");
         }
 
@@ -142,10 +159,6 @@ public class BlogifyResults {
 
     private static String sideLabel(String ver, String fallback) {
         return ver != null ? ("Java " + ver) : fallback;
-    }
-
-    private static String fmtPct(double v) {
-        return DF1P.format(v * 100.0) + "%";
     }
 
     private static Map<String, Entry> index(List<JsonNode> items) {
@@ -202,6 +215,9 @@ public class BlogifyResults {
         return "[" + label + "](" + url + ")";
     }
 
-    private record Entry(double score, String unit) {}
-    private record Row(String name, double a, double b, String unit, double pct) {}
+    private record Entry(double score, String unit) {
+    }
+
+    private record Row(String name, double a, double b, String unit, double pct) {
+    }
 }
