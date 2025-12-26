@@ -140,6 +140,41 @@ jobs:
           path: eclipse-collections/results/*.json
           if-no-files-found: warn
 
+  gc-build:
+    name: GC Benchmarks (${{ matrix.distribution }}-${{ matrix.java }})
+    runs-on: ubuntu-latest
+    if: matrix.java == 25
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [25]
+        distribution: [temurin]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: ${{ matrix.distribution }}
+          java-version: ${{ matrix.java }}
+          cache: maven
+
+      - name: Build and run GC benchmarks
+        working-directory: gc-benchmarks
+        run: |
+          mkdir -p results
+          mvn clean package -DskipTests
+          java -XX:+UseG1GC -jar target/benchmarks.jar -rf json -rff results/g1gc.json
+          java -XX:+UseZGC -jar target/benchmarks.jar -rf json -rff results/zgc.json
+
+      - name: Upload GC results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-gc
+          path: gc-benchmarks/results/*.json
+          if-no-files-found: error
+
   compare:
     name: Compare Results
     needs: build-and-run
@@ -219,7 +254,7 @@ jobs:
 
   publish:
     name: Publish results to Pages content
-    needs: [build-and-run, ec-build]
+    needs: [build-and-run, ec-build, gc-build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -239,6 +274,12 @@ jobs:
           merge-multiple: true
           path: eclipse-collections/results
 
+      - name: Download GC results artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: results-gc
+          path: gc-benchmarks/results
+
       - name: Build comparator tool (for auto-comparisons)
         working-directory: java-in-time
         run: mvn -q -ntp -DskipTests clean package
@@ -250,6 +291,18 @@ jobs:
           # Ensure filename globs that match nothing expand to empty (not literal patterns)
           shopt -s nullglob
           mkdir -p docs
+
+          # Build gc-benchmarks to have the tool available
+          pushd gc-benchmarks && mvn -q -ntp -DskipTests clean package && popd
+
+          # Generate GC comparison
+          if [ -f gc-benchmarks/results/g1gc.json ] && [ -f gc-benchmarks/results/zgc.json ]; then
+            java -cp gc-benchmarks/target/benchmarks.jar io.github.benchjava.tools.SummarizeGCResults \
+              gc-benchmarks/results/g1gc.json \
+              gc-benchmarks/results/zgc.json > docs/gc-benchmarks.md
+            echo -e "\n## Benchmarks Description\n\n### allocateShortLived\nAllocates many short-lived String objects to a List. This benchmark tests how efficiently the GC handles high allocation rates of small objects.\n\n### allocateLargeObjects\nAllocates 1MB byte arrays. This benchmark tests how the GC handles large object allocations (Humongous objects in G1)." >> docs/gc-benchmarks.md
+          fi
+
           repo="${GITHUB_REPOSITORY}"
           branch="${GITHUB_REF_NAME}"
 

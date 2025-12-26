@@ -11,6 +11,12 @@ See the results for Eclipse collections vs JDK lists benchmarks
 ## Java-in-time
 See the Java-in-time benchmark outputs: [java-in-time results](./docs/java-in-time.md)
 
+## GC Benchmarks
+See the GC benchmark results (G1 vs ZGC): [gc-benchmarks results](./docs/gc-benchmarks.md)
+
+View raw JMH results for GC Benchmarks:
+[G1 vs ZGC (JDK 25)](https://jmh.morethan.io/?sources=https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/gc-benchmarks/results/g1gc.json,https://raw.githubusercontent.com/ozkanpakdil/java-benchmarks/develop/gc-benchmarks/results/zgc.json)
+
 ## Eclipse Collections
 See the Eclipse Collections benchmark outputs: [eclipse-collections results](./docs/eclipse-collections.md)
 
