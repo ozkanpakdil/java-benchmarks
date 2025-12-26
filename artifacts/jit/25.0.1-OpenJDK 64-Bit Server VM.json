@@ -5,17 +5,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -23,29 +29,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 4315242.5,
+            "score" : 3064375.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 4243083.0,
-                "50.0" : 4315242.5,
-                "90.0" : 4387402.0,
-                "95.0" : 4387402.0,
-                "99.0" : 4387402.0,
-                "99.9" : 4387402.0,
-                "99.99" : 4387402.0,
-                "99.999" : 4387402.0,
-                "99.9999" : 4387402.0,
-                "100.0" : 4387402.0
+                "0.0" : 3062375.0,
+                "50.0" : 3064375.0,
+                "90.0" : 3066375.0,
+                "95.0" : 3066375.0,
+                "99.0" : 3066375.0,
+                "99.9" : 3066375.0,
+                "99.99" : 3066375.0,
+                "99.999" : 3066375.0,
+                "99.9999" : 3066375.0,
+                "100.0" : 3066375.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4243083.0,
-                    4387402.0
+                    3062375.0,
+                    3066375.0
                 ]
             ]
         },
@@ -58,17 +64,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -76,29 +88,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 2.1549181E7,
+            "score" : 1406229.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 2638098.0,
-                "50.0" : 2.1549181E7,
-                "90.0" : 4.0460264E7,
-                "95.0" : 4.0460264E7,
-                "99.0" : 4.0460264E7,
-                "99.9" : 4.0460264E7,
-                "99.99" : 4.0460264E7,
-                "99.999" : 4.0460264E7,
-                "99.9999" : 4.0460264E7,
-                "100.0" : 4.0460264E7
+                "0.0" : 1018375.0,
+                "50.0" : 1406229.0,
+                "90.0" : 1794083.0,
+                "95.0" : 1794083.0,
+                "99.0" : 1794083.0,
+                "99.9" : 1794083.0,
+                "99.99" : 1794083.0,
+                "99.999" : 1794083.0,
+                "99.9999" : 1794083.0,
+                "100.0" : 1794083.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4.0460264E7,
-                    2638098.0
+                    1018375.0,
+                    1794083.0
                 ]
             ]
         },
@@ -111,17 +123,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -129,29 +147,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 4783367.0,
+            "score" : 2516104.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 4173113.0,
-                "50.0" : 4783367.0,
-                "90.0" : 5393621.0,
-                "95.0" : 5393621.0,
-                "99.0" : 5393621.0,
-                "99.9" : 5393621.0,
-                "99.99" : 5393621.0,
-                "99.999" : 5393621.0,
-                "99.9999" : 5393621.0,
-                "100.0" : 5393621.0
+                "0.0" : 2504125.0,
+                "50.0" : 2516104.0,
+                "90.0" : 2528083.0,
+                "95.0" : 2528083.0,
+                "99.0" : 2528083.0,
+                "99.9" : 2528083.0,
+                "99.99" : 2528083.0,
+                "99.999" : 2528083.0,
+                "99.9999" : 2528083.0,
+                "100.0" : 2528083.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4173113.0,
-                    5393621.0
+                    2504125.0,
+                    2528083.0
                 ]
             ]
         },
@@ -164,17 +182,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -182,29 +206,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 3053496.5,
+            "score" : 900375.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 2505268.0,
-                "50.0" : 3053496.5,
-                "90.0" : 3601725.0,
-                "95.0" : 3601725.0,
-                "99.0" : 3601725.0,
-                "99.9" : 3601725.0,
-                "99.99" : 3601725.0,
-                "99.999" : 3601725.0,
-                "99.9999" : 3601725.0,
-                "100.0" : 3601725.0
+                "0.0" : 754875.0,
+                "50.0" : 900375.0,
+                "90.0" : 1045875.0,
+                "95.0" : 1045875.0,
+                "99.0" : 1045875.0,
+                "99.9" : 1045875.0,
+                "99.99" : 1045875.0,
+                "99.999" : 1045875.0,
+                "99.9999" : 1045875.0,
+                "100.0" : 1045875.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    2505268.0,
-                    3601725.0
+                    754875.0,
+                    1045875.0
                 ]
             ]
         },
@@ -217,17 +241,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -235,29 +265,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 6726881.0,
+            "score" : 3776208.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 6529042.0,
-                "50.0" : 6726881.0,
-                "90.0" : 6924720.0,
-                "95.0" : 6924720.0,
-                "99.0" : 6924720.0,
-                "99.9" : 6924720.0,
-                "99.99" : 6924720.0,
-                "99.999" : 6924720.0,
-                "99.9999" : 6924720.0,
-                "100.0" : 6924720.0
+                "0.0" : 3662417.0,
+                "50.0" : 3776208.5,
+                "90.0" : 3890000.0,
+                "95.0" : 3890000.0,
+                "99.0" : 3890000.0,
+                "99.9" : 3890000.0,
+                "99.99" : 3890000.0,
+                "99.999" : 3890000.0,
+                "99.9999" : 3890000.0,
+                "100.0" : 3890000.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    6924720.0,
-                    6529042.0
+                    3890000.0,
+                    3662417.0
                 ]
             ]
         },
@@ -270,17 +300,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -288,29 +324,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 4324616.5,
+            "score" : 1675708.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 4317787.0,
-                "50.0" : 4324616.5,
-                "90.0" : 4331446.0,
-                "95.0" : 4331446.0,
-                "99.0" : 4331446.0,
-                "99.9" : 4331446.0,
-                "99.99" : 4331446.0,
-                "99.999" : 4331446.0,
-                "99.9999" : 4331446.0,
-                "100.0" : 4331446.0
+                "0.0" : 1502542.0,
+                "50.0" : 1675708.5,
+                "90.0" : 1848875.0,
+                "95.0" : 1848875.0,
+                "99.0" : 1848875.0,
+                "99.9" : 1848875.0,
+                "99.99" : 1848875.0,
+                "99.999" : 1848875.0,
+                "99.9999" : 1848875.0,
+                "100.0" : 1848875.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4317787.0,
-                    4331446.0
+                    1502542.0,
+                    1848875.0
                 ]
             ]
         },
@@ -323,17 +359,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -341,29 +383,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 766010.0,
+            "score" : 568396.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 722148.0,
-                "50.0" : 766010.0,
-                "90.0" : 809872.0,
-                "95.0" : 809872.0,
-                "99.0" : 809872.0,
-                "99.9" : 809872.0,
-                "99.99" : 809872.0,
-                "99.999" : 809872.0,
-                "99.9999" : 809872.0,
-                "100.0" : 809872.0
+                "0.0" : 567667.0,
+                "50.0" : 568396.0,
+                "90.0" : 569125.0,
+                "95.0" : 569125.0,
+                "99.0" : 569125.0,
+                "99.9" : 569125.0,
+                "99.99" : 569125.0,
+                "99.999" : 569125.0,
+                "99.9999" : 569125.0,
+                "100.0" : 569125.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    809872.0,
-                    722148.0
+                    567667.0,
+                    569125.0
                 ]
             ]
         },
@@ -376,17 +418,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -394,29 +442,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 672600.5,
+            "score" : 649542.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 645393.0,
-                "50.0" : 672600.5,
-                "90.0" : 699808.0,
-                "95.0" : 699808.0,
-                "99.0" : 699808.0,
-                "99.9" : 699808.0,
-                "99.99" : 699808.0,
-                "99.999" : 699808.0,
-                "99.9999" : 699808.0,
-                "100.0" : 699808.0
+                "0.0" : 613542.0,
+                "50.0" : 649542.0,
+                "90.0" : 685542.0,
+                "95.0" : 685542.0,
+                "99.0" : 685542.0,
+                "99.9" : 685542.0,
+                "99.99" : 685542.0,
+                "99.999" : 685542.0,
+                "99.9999" : 685542.0,
+                "100.0" : 685542.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    699808.0,
-                    645393.0
+                    685542.0,
+                    613542.0
                 ]
             ]
         },
@@ -429,17 +477,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -447,29 +501,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 2330204.5,
+            "score" : 282396.0,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 2267603.0,
-                "50.0" : 2330204.5,
-                "90.0" : 2392806.0,
-                "95.0" : 2392806.0,
-                "99.0" : 2392806.0,
-                "99.9" : 2392806.0,
-                "99.99" : 2392806.0,
-                "99.999" : 2392806.0,
-                "99.9999" : 2392806.0,
-                "100.0" : 2392806.0
+                "0.0" : 195750.0,
+                "50.0" : 282396.0,
+                "90.0" : 369042.0,
+                "95.0" : 369042.0,
+                "99.0" : 369042.0,
+                "99.9" : 369042.0,
+                "99.99" : 369042.0,
+                "99.999" : 369042.0,
+                "99.9999" : 369042.0,
+                "100.0" : 369042.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    2267603.0,
-                    2392806.0
+                    369042.0,
+                    195750.0
                 ]
             ]
         },
@@ -482,17 +536,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -500,29 +560,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 266852.0,
+            "score" : 385749.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 259495.0,
-                "50.0" : 266852.0,
-                "90.0" : 274209.0,
-                "95.0" : 274209.0,
-                "99.0" : 274209.0,
-                "99.9" : 274209.0,
-                "99.99" : 274209.0,
-                "99.999" : 274209.0,
-                "99.9999" : 274209.0,
-                "100.0" : 274209.0
+                "0.0" : 315833.0,
+                "50.0" : 385749.5,
+                "90.0" : 455666.0,
+                "95.0" : 455666.0,
+                "99.0" : 455666.0,
+                "99.9" : 455666.0,
+                "99.99" : 455666.0,
+                "99.999" : 455666.0,
+                "99.9999" : 455666.0,
+                "100.0" : 455666.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    259495.0,
-                    274209.0
+                    315833.0,
+                    455666.0
                 ]
             ]
         },
@@ -535,17 +595,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -553,29 +619,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 1292032.0,
+            "score" : 620041.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 1281232.0,
-                "50.0" : 1292032.0,
-                "90.0" : 1302832.0,
-                "95.0" : 1302832.0,
-                "99.0" : 1302832.0,
-                "99.9" : 1302832.0,
-                "99.99" : 1302832.0,
-                "99.999" : 1302832.0,
-                "99.9999" : 1302832.0,
-                "100.0" : 1302832.0
+                "0.0" : 617125.0,
+                "50.0" : 620041.5,
+                "90.0" : 622958.0,
+                "95.0" : 622958.0,
+                "99.0" : 622958.0,
+                "99.9" : 622958.0,
+                "99.99" : 622958.0,
+                "99.999" : 622958.0,
+                "99.9999" : 622958.0,
+                "100.0" : 622958.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    1302832.0,
-                    1281232.0
+                    622958.0,
+                    617125.0
                 ]
             ]
         },
@@ -588,17 +654,23 @@
         "mode" : "ss",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "/usr/lib/jvm/temurin-25-jdk-amd64/bin/java",
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
         "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions",
             "--enable-native-access=ALL-UNNAMED",
-            "-Dclassworlds.conf=/usr/share/apache-maven-3.9.11/bin/m2.conf",
-            "-Dmaven.home=/usr/share/apache-maven-3.9.11",
-            "-Dlibrary.jansi.path=/usr/share/apache-maven-3.9.11/lib/jansi-native",
-            "-Dmaven.multiModuleProjectDirectory=/home/runner/work/java-benchmarks/java-benchmarks/eclipse-collections"
+            "-Dclassworlds.conf=/Users/ozkan/.sdkman/candidates/maven/current/bin/m2.conf",
+            "-Dmaven.home=/Users/ozkan/.sdkman/candidates/maven/current",
+            "-Dmaven.mainClass=org.apache.maven.cling.MavenCling",
+            "-Dlibrary.jline.path=/Users/ozkan/.sdkman/candidates/maven/current/lib/jline-native",
+            "-Dmaven.multiModuleProjectDirectory=/Users/ozkan/projects/java-benchmarks/eclipse-collections"
         ],
         "jdkVersion" : "25.0.1",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "25.0.1+8-LTS",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
         "warmupIterations" : 3,
         "warmupTime" : "4 s",
         "warmupBatchSize" : 1,
@@ -606,29 +678,29 @@
         "measurementTime" : "4 s",
         "measurementBatchSize" : 1,
         "primaryMetric" : {
-            "score" : 699180.0,
+            "score" : 436333.5,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 669540.0,
-                "50.0" : 699180.0,
-                "90.0" : 728820.0,
-                "95.0" : 728820.0,
-                "99.0" : 728820.0,
-                "99.9" : 728820.0,
-                "99.99" : 728820.0,
-                "99.999" : 728820.0,
-                "99.9999" : 728820.0,
-                "100.0" : 728820.0
+                "0.0" : 384167.0,
+                "50.0" : 436333.5,
+                "90.0" : 488500.0,
+                "95.0" : 488500.0,
+                "99.0" : 488500.0,
+                "99.9" : 488500.0,
+                "99.99" : 488500.0,
+                "99.999" : 488500.0,
+                "99.9999" : 488500.0,
+                "100.0" : 488500.0
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    728820.0,
-                    669540.0
+                    384167.0,
+                    488500.0
                 ]
             ]
         },
