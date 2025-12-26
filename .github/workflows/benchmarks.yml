@@ -64,7 +64,7 @@ jobs:
       # Setup JDK depending on distribution
       - name: Setup Java (non-GraalVM)
         id: setupjava
-        if: matrix.distribution != 'graalvm-community'
+        if: ${{ matrix.distribution != 'graalvm-community' }}
         uses: actions/setup-java@v4
         continue-on-error: true
         with:
@@ -74,7 +74,7 @@ jobs:
 
       - name: Setup GraalVM
         id: setupgraal
-        if: matrix.distribution == 'graalvm-community'
+        if: ${{ matrix.distribution == 'graalvm-community' }}
         uses: graalvm/setup-graalvm@v1
         continue-on-error: true
         with:
@@ -84,14 +84,14 @@ jobs:
           native-image-job-reports: 'false'
 
       - name: Print Java version
-        if: steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success'
+        if: ${{ steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success' }}
         run: |
           echo "JAVA_HOME=$JAVA_HOME"
           java -version
           mvn -v
 
       - name: Run benchmarks for this JDK
-        if: steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success'
+        if: ${{ steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success' }}
         working-directory: java-in-time
         env:
           # Default to a small smoke subset unless explicitly overridden via workflow input
@@ -103,7 +103,7 @@ jobs:
           bash scripts/run-benchmarks.sh "$label:$JAVA_HOME"
 
       - name: Upload results artifact
-        if: steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success'
+        if: ${{ steps.setupjava.outcome == 'success' || steps.setupgraal.outcome == 'success' }}
         uses: actions/upload-artifact@v4
         with:
           name: results-${{ matrix.distribution }}-${{ matrix.java }}
@@ -143,7 +143,6 @@ jobs:
   gc-build:
     name: GC Benchmarks (${{ matrix.distribution }}-${{ matrix.java }})
     runs-on: ubuntu-latest
-    if: matrix.java == 25
     strategy:
       fail-fast: false
       matrix:
