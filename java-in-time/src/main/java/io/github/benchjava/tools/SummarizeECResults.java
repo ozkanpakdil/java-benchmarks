@@ -21,6 +21,7 @@ public class SummarizeECResults {
 
         File file = new File(args[0]);
         ObjectMapper om = new ObjectMapper();
+        om.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);
         List<JsonNode> results = om.readValue(file, new TypeReference<List<JsonNode>>() {});
 
         Map<String, Double> scores = new HashMap<>();

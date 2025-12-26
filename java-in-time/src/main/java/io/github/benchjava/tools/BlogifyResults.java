@@ -42,6 +42,7 @@ public class BlogifyResults {
         String bName = bFile.getName();
 
         ObjectMapper om = new ObjectMapper();
+        om.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);
         List<JsonNode> a = om.readValue(aFile, new TypeReference<>() {
         });
         List<JsonNode> b = om.readValue(bFile, new TypeReference<>() {

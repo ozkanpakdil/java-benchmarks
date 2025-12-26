@@ -41,6 +41,7 @@ public class CompareResults {
         File bFile = new File(bPath);
 
         ObjectMapper om = new ObjectMapper();
+        om.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);
         List<JsonNode> a = om.readValue(aFile, new TypeReference<List<JsonNode>>(){});
         List<JsonNode> b = om.readValue(bFile, new TypeReference<List<JsonNode>>(){});
 
@@ -186,6 +187,7 @@ public class CompareResults {
 
     private static void compareMany(String[] paths) throws IOException {
         ObjectMapper om = new ObjectMapper();
+        om.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);
 
         // Read and index each file
         List<File> files = new ArrayList<>();
