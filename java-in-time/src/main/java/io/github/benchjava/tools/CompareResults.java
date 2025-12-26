@@ -1,8 +1,10 @@
 package io.github.benchjava.tools;
 
+import com.fasterxml.jackson.core.json.JsonReadFeature;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.json.JsonMapper;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,8 +42,9 @@ public class CompareResults {
         File aFile = new File(aPath);
         File bFile = new File(bPath);
 
-        ObjectMapper om = new ObjectMapper();
-        om.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);
+        ObjectMapper om = JsonMapper.builder()
+                .enable(JsonReadFeature.ALLOW_UNESCAPED_CONTROL_CHARS)
+                .build();
         List<JsonNode> a = om.readValue(aFile, new TypeReference<List<JsonNode>>(){});
         List<JsonNode> b = om.readValue(bFile, new TypeReference<List<JsonNode>>(){});
 
@@ -186,8 +189,9 @@ public class CompareResults {
     }
 
     private static void compareMany(String[] paths) throws IOException {
-        ObjectMapper om = new ObjectMapper();
-        om.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);
+        ObjectMapper om = JsonMapper.builder()
+                .enable(JsonReadFeature.ALLOW_UNESCAPED_CONTROL_CHARS)
+                .build();
 
         // Read and index each file
         List<File> files = new ArrayList<>();
