@@ -249,7 +249,7 @@ public class CompareResults {
         return m;
     }
 
-    private static String linkify(String benchmarkName) {
+    public static String linkify(String benchmarkName) {
         // Build URL to the declaring class, but use a short label "Class.Method"
         String className = benchmarkName;
         int lastDot = benchmarkName.lastIndexOf('.');

@@ -116,7 +116,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [21, 17]
+        java: [25, 24, 21, 17]
         distribution: [temurin, oracle]
     steps:
       - name: Checkout
@@ -451,6 +451,14 @@ jobs:
               echo "## Eclipse Collections"
               echo "See the Eclipse Collections benchmark outputs: [eclipse-collections results](./docs/eclipse-collections.md)"
             } >> index.md
+          fi
+
+          # Update the date in the footer
+          current_date=$(date +%Y-%m-%d)
+          if grep -q "^Date created: " index.md; then
+            sed -i "s/^Date created: .*/Date created: $current_date/" index.md
+          else
+            printf "\n---\nDate created: %s\n" "$current_date" >> index.md
           fi
 
       - name: Commit and push changes
