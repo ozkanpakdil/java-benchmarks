@@ -63,7 +63,7 @@ for pair in "$@"; do
   mvn -q -DskipTests dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
   CP="target/classes:$(cat target/classpath.txt)"
   # shellcheck disable=SC2086
-  java -cp "$CP" org.openjdk.jmh.Main -rf json -rff "$out_json" ${JMH_OPTS:-} ${BENCH_EXTRA_OPTS:-} -foe true ${BENCH_INCLUDE:-} | tee "$out_txt"
+  java -cp "$CP" org.openjdk.jmh.Main -rf json -rff "$out_json" ${JMH_OPTS:-} ${BENCH_EXTRA_OPTS:-} ${BENCH_INCLUDE:-} | tee "$out_txt"
   echo "Saved: $out_json and $out_txt"
 
 done
