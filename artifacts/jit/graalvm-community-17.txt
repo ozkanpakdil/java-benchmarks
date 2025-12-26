@@ -13,24 +13,24 @@
 # Run progress: 0.00% complete, ETA 00:09:28
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 99.798 ns/op
-# Warmup Iteration   2: 91.778 ns/op
-Iteration   1: 87.084 ns/op
-Iteration   2: 86.899 ns/op
+# Warmup Iteration   1: 102.434 ns/op
+# Warmup Iteration   2: 91.480 ns/op
+Iteration   1: 91.288 ns/op
+Iteration   2: 89.489 ns/op
 
 # Run progress: 0.70% complete, ETA 00:10:05
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 99.202 ns/op
-# Warmup Iteration   2: 88.221 ns/op
-Iteration   1: 90.460 ns/op
-Iteration   2: 86.996 ns/op
+# Warmup Iteration   1: 98.094 ns/op
+# Warmup Iteration   2: 88.248 ns/op
+Iteration   1: 89.761 ns/op
+Iteration   2: 91.319 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
-  87.860 ±(99.9%) 11.214 ns/op [Average]
-  (min, avg, max) = (86.899, 87.860, 90.460), stdev = 1.735
-  CI (99.9%): [76.646, 99.074] (assumes normal distribution)
+  90.464 ±(99.9%) 6.303 ns/op [Average]
+  (min, avg, max) = (89.489, 90.464, 91.319), stdev = 0.975
+  CI (99.9%): [84.161, 96.768] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -48,24 +48,24 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
 # Run progress: 1.41% complete, ETA 00:09:58
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1879.983 ns/op
-# Warmup Iteration   2: 1597.035 ns/op
-Iteration   1: 1918.114 ns/op
-Iteration   2: 1915.250 ns/op
+# Warmup Iteration   1: 1893.508 ns/op
+# Warmup Iteration   2: 1596.468 ns/op
+Iteration   1: 1913.508 ns/op
+Iteration   2: 1913.849 ns/op
 
-# Run progress: 2.11% complete, ETA 00:09:53
+# Run progress: 2.11% complete, ETA 00:09:54
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1900.880 ns/op
-# Warmup Iteration   2: 1594.768 ns/op
-Iteration   1: 1909.994 ns/op
-Iteration   2: 1925.195 ns/op
+# Warmup Iteration   1: 1900.289 ns/op
+# Warmup Iteration   2: 1596.405 ns/op
+Iteration   1: 1912.235 ns/op
+Iteration   2: 1922.552 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
-  1917.138 ±(99.9%) 40.950 ns/op [Average]
-  (min, avg, max) = (1909.994, 1917.138, 1925.195), stdev = 6.337
-  CI (99.9%): [1876.189, 1958.088] (assumes normal distribution)
+  1915.536 ±(99.9%) 30.555 ns/op [Average]
+  (min, avg, max) = (1912.235, 1915.536, 1922.552), stdev = 4.728
+  CI (99.9%): [1884.981, 1946.091] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -80,27 +80,27 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives
 
-# Run progress: 2.82% complete, ETA 00:09:48
+# Run progress: 2.82% complete, ETA 00:09:49
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 41.600 ns/op
-# Warmup Iteration   2: 32.907 ns/op
-Iteration   1: 32.859 ns/op
-Iteration   2: 32.781 ns/op
+# Warmup Iteration   1: 38.624 ns/op
+# Warmup Iteration   2: 32.960 ns/op
+Iteration   1: 32.920 ns/op
+Iteration   2: 33.187 ns/op
 
 # Run progress: 3.52% complete, ETA 00:09:44
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 39.757 ns/op
-# Warmup Iteration   2: 33.485 ns/op
-Iteration   1: 32.570 ns/op
-Iteration   2: 32.597 ns/op
+# Warmup Iteration   1: 39.312 ns/op
+# Warmup Iteration   2: 33.266 ns/op
+Iteration   1: 32.965 ns/op
+Iteration   2: 33.157 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives":
-  32.702 ±(99.9%) 0.910 ns/op [Average]
-  (min, avg, max) = (32.570, 32.702, 32.859), stdev = 0.141
-  CI (99.9%): [31.792, 33.611] (assumes normal distribution)
+  33.057 ±(99.9%) 0.869 ns/op [Average]
+  (min, avg, max) = (32.920, 33.057, 33.187), stdev = 0.134
+  CI (99.9%): [32.189, 33.926] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -119,24 +119,24 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimiti
 # Run progress: 4.23% complete, ETA 00:09:39
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 12837.814 ns/op
-# Warmup Iteration   2: 35888.193 ns/op
-Iteration   1: 53939.524 ns/op
-Iteration   2: 62527.831 ns/op
+# Warmup Iteration   1: 12802.452 ns/op
+# Warmup Iteration   2: 37985.366 ns/op
+Iteration   1: 50418.432 ns/op
+Iteration   2: 68734.544 ns/op
 
 # Run progress: 4.93% complete, ETA 00:09:35
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 12968.922 ns/op
-# Warmup Iteration   2: 35674.340 ns/op
-Iteration   1: 50978.196 ns/op
-Iteration   2: 67188.661 ns/op
+# Warmup Iteration   1: 12812.865 ns/op
+# Warmup Iteration   2: 36535.362 ns/op
+Iteration   1: 52429.977 ns/op
+Iteration   2: 69297.711 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  58658.553 ±(99.9%) 48499.538 ns/op [Average]
-  (min, avg, max) = (50978.196, 58658.553, 67188.661), stdev = 7505.357
-  CI (99.9%): [10159.015, 107158.091] (assumes normal distribution)
+  60220.166 ±(99.9%) 65863.435 ns/op [Average]
+  (min, avg, max) = (50418.432, 60220.166, 69297.711), stdev = 10192.440
+  CI (99.9%): [≈ 0, 126083.601] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -152,27 +152,27 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 16)
 
-# Run progress: 5.63% complete, ETA 00:09:31
+# Run progress: 5.63% complete, ETA 00:09:30
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 26691.101 ns/op
-# Warmup Iteration   2: 81653.494 ns/op
-Iteration   1: 385030.507 ns/op
-Iteration   2: 645958.361 ns/op
+# Warmup Iteration   1: 26936.235 ns/op
+# Warmup Iteration   2: 74273.077 ns/op
+Iteration   1: 203786.291 ns/op
+Iteration   2: 739885.119 ns/op
 
 # Run progress: 6.34% complete, ETA 00:09:26
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 26512.143 ns/op
-# Warmup Iteration   2: 76347.569 ns/op
-Iteration   1: 367894.526 ns/op
-Iteration   2: 867895.953 ns/op
+# Warmup Iteration   1: 26903.448 ns/op
+# Warmup Iteration   2: 70640.498 ns/op
+Iteration   1: 229327.889 ns/op
+Iteration   2: 912763.051 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  566694.837 ±(99.9%) 1536125.597 ns/op [Average]
-  (min, avg, max) = (367894.526, 566694.837, 867895.953), stdev = 237717.137
-  CI (99.9%): [≈ 0, 2102820.434] (assumes normal distribution)
+  521440.587 ±(99.9%) 2321180.878 ns/op [Average]
+  (min, avg, max) = (203786.291, 521440.587, 912763.051), stdev = 359205.310
+  CI (99.9%): [≈ 0, 2842621.466] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -191,24 +191,24 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Run progress: 7.04% complete, ETA 00:09:22
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 69262.056 ns/op
-# Warmup Iteration   2: 796741.108 ns/op
-Iteration   1: 1021290.400 ns/op
-Iteration   2: 1085361.603 ns/op
+# Warmup Iteration   1: 69728.562 ns/op
+# Warmup Iteration   2: 892334.921 ns/op
+Iteration   1: 1026409.345 ns/op
+Iteration   2: 1073340.065 ns/op
 
 # Run progress: 7.75% complete, ETA 00:09:18
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 69514.319 ns/op
-# Warmup Iteration   2: 942403.515 ns/op
-Iteration   1: 1009548.218 ns/op
-Iteration   2: 1080000.856 ns/op
+# Warmup Iteration   1: 68253.387 ns/op
+# Warmup Iteration   2: 917572.334 ns/op
+Iteration   1: 1029021.377 ns/op
+Iteration   2: 1093928.876 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  1049050.269 ±(99.9%) 253242.774 ns/op [Average]
-  (min, avg, max) = (1009548.218, 1049050.269, 1085361.603), stdev = 39189.600
-  CI (99.9%): [795807.495, 1302293.044] (assumes normal distribution)
+  1055674.916 ±(99.9%) 215689.411 ns/op [Average]
+  (min, avg, max) = (1026409.345, 1055674.916, 1093928.876), stdev = 33378.175
+  CI (99.9%): [839985.505, 1271364.327] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -223,27 +223,27 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.CryptoBenchmark.Hash
 
-# Run progress: 8.45% complete, ETA 00:09:14
+# Run progress: 8.45% complete, ETA 00:09:13
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 800.706 ns/op
-# Warmup Iteration   2: 737.074 ns/op
-Iteration   1: 736.531 ns/op
-Iteration   2: 738.956 ns/op
+# Warmup Iteration   1: 785.009 ns/op
+# Warmup Iteration   2: 734.690 ns/op
+Iteration   1: 733.071 ns/op
+Iteration   2: 734.953 ns/op
 
 # Run progress: 9.15% complete, ETA 00:09:09
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 786.961 ns/op
-# Warmup Iteration   2: 734.964 ns/op
-Iteration   1: 731.616 ns/op
-Iteration   2: 734.094 ns/op
+# Warmup Iteration   1: 786.500 ns/op
+# Warmup Iteration   2: 733.484 ns/op
+Iteration   1: 733.759 ns/op
+Iteration   2: 736.621 ns/op
 
 
 Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
-  735.299 ±(99.9%) 20.404 ns/op [Average]
-  (min, avg, max) = (731.616, 735.299, 738.956), stdev = 3.157
-  CI (99.9%): [714.896, 755.703] (assumes normal distribution)
+  734.601 ±(99.9%) 10.049 ns/op [Average]
+  (min, avg, max) = (733.071, 734.601, 736.621), stdev = 1.555
+  CI (99.9%): [724.552, 744.650] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -261,24 +261,24 @@ Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
 # Run progress: 9.86% complete, ETA 00:09:05
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 0.479 ns/op
-# Warmup Iteration   2: 0.486 ns/op
-Iteration   1: 0.489 ns/op
-Iteration   2: 0.479 ns/op
+# Warmup Iteration   1: 0.485 ns/op
+# Warmup Iteration   2: 0.497 ns/op
+Iteration   1: 0.490 ns/op
+Iteration   2: 0.486 ns/op
 
-# Run progress: 10.56% complete, ETA 00:09:01
+# Run progress: 10.56% complete, ETA 00:09:00
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 0.474 ns/op
-# Warmup Iteration   2: 0.480 ns/op
-Iteration   1: 0.479 ns/op
-Iteration   2: 0.478 ns/op
+# Warmup Iteration   1: 0.480 ns/op
+# Warmup Iteration   2: 0.488 ns/op
+Iteration   1: 0.478 ns/op
+Iteration   2: 0.484 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
-  0.481 ±(99.9%) 0.033 ns/op [Average]
-  (min, avg, max) = (0.478, 0.481, 0.489), stdev = 0.005
-  CI (99.9%): [0.448, 0.514] (assumes normal distribution)
+  0.484 ±(99.9%) 0.031 ns/op [Average]
+  (min, avg, max) = (0.478, 0.484, 0.490), stdev = 0.005
+  CI (99.9%): [0.453, 0.516] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -296,24 +296,24 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
 # Run progress: 11.27% complete, ETA 00:08:56
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 0.407 ns/op
-# Warmup Iteration   2: 0.428 ns/op
-Iteration   1: 0.427 ns/op
-Iteration   2: 0.416 ns/op
+# Warmup Iteration   1: 0.403 ns/op
+# Warmup Iteration   2: 0.418 ns/op
+Iteration   1: 0.410 ns/op
+Iteration   2: 0.415 ns/op
 
 # Run progress: 11.97% complete, ETA 00:08:52
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
 # Warmup Iteration   1: 0.397 ns/op
-# Warmup Iteration   2: 0.416 ns/op
+# Warmup Iteration   2: 0.420 ns/op
 Iteration   1: 0.410 ns/op
-Iteration   2: 0.414 ns/op
+Iteration   2: 0.409 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
-  0.417 ±(99.9%) 0.049 ns/op [Average]
-  (min, avg, max) = (0.410, 0.417, 0.427), stdev = 0.008
-  CI (99.9%): [0.368, 0.465] (assumes normal distribution)
+  0.411 ±(99.9%) 0.018 ns/op [Average]
+  (min, avg, max) = (0.409, 0.411, 0.415), stdev = 0.003
+  CI (99.9%): [0.393, 0.429] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -328,27 +328,27 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Oops
 
-# Run progress: 12.68% complete, ETA 00:08:48
+# Run progress: 12.68% complete, ETA 00:08:47
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 63.868 ns/op
-# Warmup Iteration   2: 67.601 ns/op
-Iteration   1: 66.747 ns/op
-Iteration   2: 66.709 ns/op
+# Warmup Iteration   1: 63.714 ns/op
+# Warmup Iteration   2: 67.002 ns/op
+Iteration   1: 66.781 ns/op
+Iteration   2: 66.706 ns/op
 
 # Run progress: 13.38% complete, ETA 00:08:43
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 64.555 ns/op
-# Warmup Iteration   2: 69.447 ns/op
-Iteration   1: 68.675 ns/op
-Iteration   2: 68.611 ns/op
+# Warmup Iteration   1: 64.254 ns/op
+# Warmup Iteration   2: 67.436 ns/op
+Iteration   1: 67.168 ns/op
+Iteration   2: 67.210 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
-  67.685 ±(99.9%) 7.147 ns/op [Average]
-  (min, avg, max) = (66.709, 67.685, 68.675), stdev = 1.106
-  CI (99.9%): [60.538, 74.833] (assumes normal distribution)
+  66.966 ±(99.9%) 1.677 ns/op [Average]
+  (min, avg, max) = (66.706, 66.966, 67.210), stdev = 0.259
+  CI (99.9%): [65.289, 68.643] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -366,24 +366,24 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
 # Run progress: 14.08% complete, ETA 00:08:39
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 58.083 ns/op
-# Warmup Iteration   2: 57.961 ns/op
-Iteration   1: 57.800 ns/op
-Iteration   2: 57.800 ns/op
+# Warmup Iteration   1: 58.105 ns/op
+# Warmup Iteration   2: 57.935 ns/op
+Iteration   1: 57.804 ns/op
+Iteration   2: 57.845 ns/op
 
-# Run progress: 14.79% complete, ETA 00:08:35
+# Run progress: 14.79% complete, ETA 00:08:34
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 58.126 ns/op
-# Warmup Iteration   2: 57.823 ns/op
-Iteration   1: 57.812 ns/op
-Iteration   2: 57.798 ns/op
+# Warmup Iteration   1: 58.038 ns/op
+# Warmup Iteration   2: 57.827 ns/op
+Iteration   1: 57.823 ns/op
+Iteration   2: 57.849 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
-  57.803 ±(99.9%) 0.042 ns/op [Average]
-  (min, avg, max) = (57.798, 57.803, 57.812), stdev = 0.006
-  CI (99.9%): [57.761, 57.844] (assumes normal distribution)
+  57.830 ±(99.9%) 0.136 ns/op [Average]
+  (min, avg, max) = (57.804, 57.830, 57.849), stdev = 0.021
+  CI (99.9%): [57.695, 57.966] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -398,27 +398,27 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew
 
-# Run progress: 15.49% complete, ETA 00:08:31
+# Run progress: 15.49% complete, ETA 00:08:30
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 57.985 ns/op
-# Warmup Iteration   2: 57.851 ns/op
-Iteration   1: 57.803 ns/op
-Iteration   2: 57.794 ns/op
+# Warmup Iteration   1: 58.148 ns/op
+# Warmup Iteration   2: 57.856 ns/op
+Iteration   1: 57.819 ns/op
+Iteration   2: 57.800 ns/op
 
 # Run progress: 16.20% complete, ETA 00:08:26
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 57.981 ns/op
-# Warmup Iteration   2: 58.008 ns/op
-Iteration   1: 57.794 ns/op
-Iteration   2: 57.818 ns/op
+# Warmup Iteration   1: 58.366 ns/op
+# Warmup Iteration   2: 57.855 ns/op
+Iteration   1: 57.804 ns/op
+Iteration   2: 57.815 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
-  57.802 ±(99.9%) 0.071 ns/op [Average]
-  (min, avg, max) = (57.794, 57.802, 57.818), stdev = 0.011
-  CI (99.9%): [57.731, 57.873] (assumes normal distribution)
+  57.809 ±(99.9%) 0.058 ns/op [Average]
+  (min, avg, max) = (57.800, 57.809, 57.819), stdev = 0.009
+  CI (99.9%): [57.752, 57.867] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -436,24 +436,24 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
 # Run progress: 16.90% complete, ETA 00:08:22
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3972810.734 ns/op
-# Warmup Iteration   2: 4281162.799 ns/op
-Iteration   1: 3677869.504 ns/op
-Iteration   2: 4041700.290 ns/op
+# Warmup Iteration   1: 4102240.561 ns/op
+# Warmup Iteration   2: 3779823.000 ns/op
+Iteration   1: 3908012.691 ns/op
+Iteration   2: 3622141.700 ns/op
 
-# Run progress: 17.61% complete, ETA 00:08:18
+# Run progress: 17.61% complete, ETA 00:08:17
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 4258564.779 ns/op
-# Warmup Iteration   2: 3967254.866 ns/op
-Iteration   1: 3922673.443 ns/op
-Iteration   2: 3961387.692 ns/op
+# Warmup Iteration   1: 4066208.348 ns/op
+# Warmup Iteration   2: 4075672.561 ns/op
+Iteration   1: 3690752.077 ns/op
+Iteration   2: 4111869.717 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.FSW":
-  3900907.732 ±(99.9%) 1012837.671 ns/op [Average]
-  (min, avg, max) = (3677869.504, 3900907.732, 4041700.290), stdev = 156737.751
-  CI (99.9%): [2888070.061, 4913745.403] (assumes normal distribution)
+  3833194.047 ±(99.9%) 1435719.499 ns/op [Average]
+  (min, avg, max) = (3622141.700, 3833194.047, 4111869.717), stdev = 222179.182
+  CI (99.9%): [2397474.547, 5268913.546] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -468,27 +468,27 @@ Result "io.github.benchjava.bench.IOBenchmark.FSW":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.IOBenchmark.MMF
 
-# Run progress: 18.31% complete, ETA 00:08:14
+# Run progress: 18.31% complete, ETA 00:08:13
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 483847.413 ns/op
-# Warmup Iteration   2: 413428.619 ns/op
-Iteration   1: 369073.038 ns/op
-Iteration   2: 367457.337 ns/op
+# Warmup Iteration   1: 406148.145 ns/op
+# Warmup Iteration   2: 408873.444 ns/op
+Iteration   1: 368934.894 ns/op
+Iteration   2: 367725.836 ns/op
 
 # Run progress: 19.01% complete, ETA 00:08:10
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 410549.842 ns/op
-# Warmup Iteration   2: 417273.696 ns/op
-Iteration   1: 369697.026 ns/op
-Iteration   2: 365735.359 ns/op
+# Warmup Iteration   1: 406136.817 ns/op
+# Warmup Iteration   2: 401009.433 ns/op
+Iteration   1: 368666.462 ns/op
+Iteration   2: 365020.797 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.MMF":
-  367990.690 ±(99.9%) 11471.347 ns/op [Average]
-  (min, avg, max) = (365735.359, 367990.690, 369697.026), stdev = 1775.204
-  CI (99.9%): [356519.343, 379462.038] (assumes normal distribution)
+  367586.997 ±(99.9%) 11551.565 ns/op [Average]
+  (min, avg, max) = (365020.797, 367586.997, 368934.894), stdev = 1787.617
+  CI (99.9%): [356035.432, 379138.562] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -506,24 +506,24 @@ Result "io.github.benchjava.bench.IOBenchmark.MMF":
 # Run progress: 19.72% complete, ETA 00:08:06
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 30330011.424 ns/op
-# Warmup Iteration   2: 29604363.294 ns/op
-Iteration   1: 29608889.029 ns/op
-Iteration   2: 29556504.588 ns/op
+# Warmup Iteration   1: 29832199.382 ns/op
+# Warmup Iteration   2: 29780327.912 ns/op
+Iteration   1: 29629587.441 ns/op
+Iteration   2: 29777193.500 ns/op
 
 # Run progress: 20.42% complete, ETA 00:08:02
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 29907257.206 ns/op
-# Warmup Iteration   2: 29573798.412 ns/op
-Iteration   1: 29805582.824 ns/op
-Iteration   2: 29720401.824 ns/op
+# Warmup Iteration   1: 29843316.853 ns/op
+# Warmup Iteration   2: 29956819.294 ns/op
+Iteration   1: 29630073.882 ns/op
+Iteration   2: 29626712.147 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
-  29672844.566 ±(99.9%) 722534.392 ns/op [Average]
-  (min, avg, max) = (29556504.588, 29672844.566, 29805582.824), stdev = 111812.997
-  CI (99.9%): [28950310.174, 30395378.958] (assumes normal distribution)
+  29665891.743 ±(99.9%) 479582.990 ns/op [Average]
+  (min, avg, max) = (29626712.147, 29665891.743, 29777193.500), stdev = 74215.999
+  CI (99.9%): [29186308.753, 30145474.733] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -542,24 +542,24 @@ Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
 # Run progress: 21.13% complete, ETA 00:07:58
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1180.154 ns/op
-# Warmup Iteration   2: 918.760 ns/op
-Iteration   1: 916.323 ns/op
-Iteration   2: 915.687 ns/op
+# Warmup Iteration   1: 1137.669 ns/op
+# Warmup Iteration   2: 931.503 ns/op
+Iteration   1: 914.398 ns/op
+Iteration   2: 914.592 ns/op
 
 # Run progress: 21.83% complete, ETA 00:07:54
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1129.413 ns/op
-# Warmup Iteration   2: 913.238 ns/op
-Iteration   1: 906.469 ns/op
-Iteration   2: 904.978 ns/op
+# Warmup Iteration   1: 2640.082 ns/op
+# Warmup Iteration   2: 942.715 ns/op
+Iteration   1: 937.704 ns/op
+Iteration   2: 932.420 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  910.864 ±(99.9%) 38.596 ns/op [Average]
-  (min, avg, max) = (904.978, 910.864, 916.323), stdev = 5.973
-  CI (99.9%): [872.268, 949.460] (assumes normal distribution)
+  924.779 ±(99.9%) 77.989 ns/op [Average]
+  (min, avg, max) = (914.398, 924.779, 937.704), stdev = 12.069
+  CI (99.9%): [846.790, 1002.768] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -578,24 +578,24 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Run progress: 22.54% complete, ETA 00:07:50
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3849.249 ns/op
-# Warmup Iteration   2: 3057.038 ns/op
-Iteration   1: 3049.868 ns/op
-Iteration   2: 3021.568 ns/op
+# Warmup Iteration   1: 3911.773 ns/op
+# Warmup Iteration   2: 3209.471 ns/op
+Iteration   1: 3204.994 ns/op
+Iteration   2: 3210.060 ns/op
 
-# Run progress: 23.24% complete, ETA 00:07:47
+# Run progress: 23.24% complete, ETA 00:07:46
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3598.665 ns/op
-# Warmup Iteration   2: 2915.150 ns/op
-Iteration   1: 2903.622 ns/op
-Iteration   2: 2893.550 ns/op
+# Warmup Iteration   1: 3713.430 ns/op
+# Warmup Iteration   2: 3050.602 ns/op
+Iteration   1: 3070.070 ns/op
+Iteration   2: 3013.666 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  2967.152 ±(99.9%) 517.717 ns/op [Average]
-  (min, avg, max) = (2893.550, 2967.152, 3049.868), stdev = 80.117
-  CI (99.9%): [2449.435, 3484.869] (assumes normal distribution)
+  3124.698 ±(99.9%) 635.844 ns/op [Average]
+  (min, avg, max) = (3013.666, 3124.698, 3210.060), stdev = 98.398
+  CI (99.9%): [2488.853, 3760.542] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -611,27 +611,27 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
 # Parameters: (itemsCount = 100)
 
-# Run progress: 23.94% complete, ETA 00:07:43
+# Run progress: 23.94% complete, ETA 00:07:42
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 17780.070 ns/op
-# Warmup Iteration   2: 14863.626 ns/op
-Iteration   1: 14998.264 ns/op
-Iteration   2: 14895.844 ns/op
+# Warmup Iteration   1: 17411.850 ns/op
+# Warmup Iteration   2: 14114.043 ns/op
+Iteration   1: 14107.791 ns/op
+Iteration   2: 13945.757 ns/op
 
 # Run progress: 24.65% complete, ETA 00:07:39
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 18175.780 ns/op
-# Warmup Iteration   2: 15131.871 ns/op
-Iteration   1: 15139.727 ns/op
-Iteration   2: 15085.113 ns/op
+# Warmup Iteration   1: 16913.201 ns/op
+# Warmup Iteration   2: 14068.541 ns/op
+Iteration   1: 14119.655 ns/op
+Iteration   2: 14183.339 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  15029.737 ±(99.9%) 688.760 ns/op [Average]
-  (min, avg, max) = (14895.844, 15029.737, 15139.727), stdev = 106.586
-  CI (99.9%): [14340.977, 15718.497] (assumes normal distribution)
+  14089.136 ±(99.9%) 653.813 ns/op [Average]
+  (min, avg, max) = (13945.757, 14089.136, 14183.339), stdev = 101.178
+  CI (99.9%): [13435.323, 14742.949] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -650,24 +650,24 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Run progress: 25.35% complete, ETA 00:07:35
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 2503.242 ns/op
-# Warmup Iteration   2: 1684.428 ns/op
-Iteration   1: 1657.472 ns/op
-Iteration   2: 1651.258 ns/op
+# Warmup Iteration   1: 2502.508 ns/op
+# Warmup Iteration   2: 1596.041 ns/op
+Iteration   1: 1572.901 ns/op
+Iteration   2: 1574.244 ns/op
 
 # Run progress: 26.06% complete, ETA 00:07:31
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 2469.023 ns/op
-# Warmup Iteration   2: 1613.249 ns/op
-Iteration   1: 1573.566 ns/op
-Iteration   2: 1569.456 ns/op
+# Warmup Iteration   1: 2551.705 ns/op
+# Warmup Iteration   2: 1653.128 ns/op
+Iteration   1: 1642.082 ns/op
+Iteration   2: 1635.967 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  1612.938 ±(99.9%) 309.739 ns/op [Average]
-  (min, avg, max) = (1569.456, 1612.938, 1657.472), stdev = 47.932
-  CI (99.9%): [1303.200, 1922.677] (assumes normal distribution)
+  1606.298 ±(99.9%) 244.750 ns/op [Average]
+  (min, avg, max) = (1572.901, 1606.298, 1642.082), stdev = 37.875
+  CI (99.9%): [1361.548, 1851.049] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -686,24 +686,24 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 # Run progress: 26.76% complete, ETA 00:07:27
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 7963.399 ns/op
-# Warmup Iteration   2: 5543.218 ns/op
-Iteration   1: 5503.734 ns/op
-Iteration   2: 5478.418 ns/op
+# Warmup Iteration   1: 7467.875 ns/op
+# Warmup Iteration   2: 5204.994 ns/op
+Iteration   1: 5118.523 ns/op
+Iteration   2: 5071.077 ns/op
 
 # Run progress: 27.46% complete, ETA 00:07:23
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 7629.505 ns/op
-# Warmup Iteration   2: 5578.735 ns/op
-Iteration   1: 5523.685 ns/op
-Iteration   2: 5479.594 ns/op
+# Warmup Iteration   1: 8248.955 ns/op
+# Warmup Iteration   2: 5936.102 ns/op
+Iteration   1: 5839.339 ns/op
+Iteration   2: 5835.908 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  5496.358 ±(99.9%) 139.795 ns/op [Average]
-  (min, avg, max) = (5478.418, 5496.358, 5523.685), stdev = 21.633
-  CI (99.9%): [5356.563, 5636.153] (assumes normal distribution)
+  5466.212 ±(99.9%) 2774.189 ns/op [Average]
+  (min, avg, max) = (5071.077, 5466.212, 5839.339), stdev = 429.309
+  CI (99.9%): [2692.023, 8240.401] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -722,24 +722,24 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 # Run progress: 28.17% complete, ETA 00:07:19
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 33092.811 ns/op
-# Warmup Iteration   2: 23543.839 ns/op
-Iteration   1: 23356.734 ns/op
-Iteration   2: 23136.704 ns/op
+# Warmup Iteration   1: 33635.970 ns/op
+# Warmup Iteration   2: 23534.161 ns/op
+Iteration   1: 23021.035 ns/op
+Iteration   2: 22966.762 ns/op
 
 # Run progress: 28.87% complete, ETA 00:07:15
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 33114.101 ns/op
-# Warmup Iteration   2: 24557.929 ns/op
-Iteration   1: 24496.293 ns/op
-Iteration   2: 24416.203 ns/op
+# Warmup Iteration   1: 32121.033 ns/op
+# Warmup Iteration   2: 23274.587 ns/op
+Iteration   1: 23206.664 ns/op
+Iteration   2: 23151.260 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  23851.483 ±(99.9%) 4554.631 ns/op [Average]
-  (min, avg, max) = (23136.704, 23851.483, 24496.293), stdev = 704.834
-  CI (99.9%): [19296.852, 28406.114] (assumes normal distribution)
+  23086.430 ±(99.9%) 720.117 ns/op [Average]
+  (min, avg, max) = (22966.762, 23086.430, 23206.664), stdev = 111.439
+  CI (99.9%): [22366.313, 23806.548] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -758,24 +758,24 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 # Run progress: 29.58% complete, ETA 00:07:11
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 739.059 ns/op
-# Warmup Iteration   2: 592.749 ns/op
-Iteration   1: 600.596 ns/op
-Iteration   2: 600.424 ns/op
+# Warmup Iteration   1: 734.973 ns/op
+# Warmup Iteration   2: 586.702 ns/op
+Iteration   1: 604.661 ns/op
+Iteration   2: 603.700 ns/op
 
-# Run progress: 30.28% complete, ETA 00:07:07
+# Run progress: 30.28% complete, ETA 00:07:08
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 759.347 ns/op
-# Warmup Iteration   2: 621.160 ns/op
-Iteration   1: 595.453 ns/op
-Iteration   2: 596.632 ns/op
+# Warmup Iteration   1: 772.692 ns/op
+# Warmup Iteration   2: 596.095 ns/op
+Iteration   1: 582.400 ns/op
+Iteration   2: 583.024 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
-  598.276 ±(99.9%) 16.960 ns/op [Average]
-  (min, avg, max) = (595.453, 598.276, 600.596), stdev = 2.625
-  CI (99.9%): [581.316, 615.236] (assumes normal distribution)
+  593.446 ±(99.9%) 80.153 ns/op [Average]
+  (min, avg, max) = (582.400, 593.446, 604.661), stdev = 12.404
+  CI (99.9%): [513.293, 673.599] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -794,24 +794,24 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
 # Run progress: 30.99% complete, ETA 00:07:04
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 623.270 ns/op
-# Warmup Iteration   2: 577.808 ns/op
-Iteration   1: 576.886 ns/op
-Iteration   2: 576.540 ns/op
+# Warmup Iteration   1: 614.738 ns/op
+# Warmup Iteration   2: 579.356 ns/op
+Iteration   1: 573.662 ns/op
+Iteration   2: 572.403 ns/op
 
-# Run progress: 31.69% complete, ETA 00:07:00
+# Run progress: 31.69% complete, ETA 00:07:01
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 632.532 ns/op
-# Warmup Iteration   2: 584.869 ns/op
-Iteration   1: 580.378 ns/op
-Iteration   2: 579.864 ns/op
+# Warmup Iteration   1: 630.042 ns/op
+# Warmup Iteration   2: 582.564 ns/op
+Iteration   1: 596.513 ns/op
+Iteration   2: 594.566 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
-  578.417 ±(99.9%) 12.817 ns/op [Average]
-  (min, avg, max) = (576.540, 578.417, 580.378), stdev = 1.983
-  CI (99.9%): [565.600, 591.234] (assumes normal distribution)
+  584.286 ±(99.9%) 84.192 ns/op [Average]
+  (min, avg, max) = (572.403, 584.286, 596.513), stdev = 13.029
+  CI (99.9%): [500.094, 668.478] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -830,24 +830,24 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
 # Run progress: 32.39% complete, ETA 00:06:57
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 868.807 ns/op
-# Warmup Iteration   2: 804.225 ns/op
-Iteration   1: 810.174 ns/op
-Iteration   2: 809.780 ns/op
+# Warmup Iteration   1: 863.808 ns/op
+# Warmup Iteration   2: 824.951 ns/op
+Iteration   1: 810.065 ns/op
+Iteration   2: 803.506 ns/op
 
 # Run progress: 33.10% complete, ETA 00:06:53
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 879.708 ns/op
-# Warmup Iteration   2: 822.014 ns/op
-Iteration   1: 806.888 ns/op
-Iteration   2: 806.534 ns/op
+# Warmup Iteration   1: 888.733 ns/op
+# Warmup Iteration   2: 824.693 ns/op
+Iteration   1: 808.354 ns/op
+Iteration   2: 810.641 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
-  808.344 ±(99.9%) 12.265 ns/op [Average]
-  (min, avg, max) = (806.534, 808.344, 810.174), stdev = 1.898
-  CI (99.9%): [796.079, 820.609] (assumes normal distribution)
+  808.142 ±(99.9%) 20.934 ns/op [Average]
+  (min, avg, max) = (803.506, 808.142, 810.641), stdev = 3.240
+  CI (99.9%): [787.207, 829.076] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -866,24 +866,24 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
 # Run progress: 33.80% complete, ETA 00:06:50
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 781.127 ns/op
-# Warmup Iteration   2: 629.162 ns/op
-Iteration   1: 624.805 ns/op
-Iteration   2: 617.853 ns/op
+# Warmup Iteration   1: 747.845 ns/op
+# Warmup Iteration   2: 618.126 ns/op
+Iteration   1: 616.224 ns/op
+Iteration   2: 615.121 ns/op
 
 # Run progress: 34.51% complete, ETA 00:06:46
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 787.357 ns/op
-# Warmup Iteration   2: 636.124 ns/op
-Iteration   1: 620.307 ns/op
-Iteration   2: 622.261 ns/op
+# Warmup Iteration   1: 756.657 ns/op
+# Warmup Iteration   2: 621.255 ns/op
+Iteration   1: 614.553 ns/op
+Iteration   2: 614.452 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
-  621.306 ±(99.9%) 19.049 ns/op [Average]
-  (min, avg, max) = (617.853, 621.306, 624.805), stdev = 2.948
-  CI (99.9%): [602.257, 640.356] (assumes normal distribution)
+  615.087 ±(99.9%) 5.252 ns/op [Average]
+  (min, avg, max) = (614.452, 615.087, 616.224), stdev = 0.813
+  CI (99.9%): [609.835, 620.340] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -902,24 +902,24 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
 # Run progress: 35.21% complete, ETA 00:06:42
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 2796832925.000 ns/op
-# Warmup Iteration   2: 2587220647.000 ns/op
-Iteration   1: 819534660.667 ns/op
-Iteration   2: 1118119808.000 ns/op
+# Warmup Iteration   1: 76101442.786 ns/op
+# Warmup Iteration   2: 67929759.667 ns/op
+Iteration   1: 72455243.143 ns/op
+Iteration   2: 53172152.842 ns/op
 
-# Run progress: 35.92% complete, ETA 00:06:47
+# Run progress: 35.92% complete, ETA 00:06:39
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3601704237.000 ns/op
-# Warmup Iteration   2: 981819099.000 ns/op
-Iteration   1: 806604743.000 ns/op
-Iteration   2: 2869523268.000 ns/op
+# Warmup Iteration   1: 74619382.143 ns/op
+# Warmup Iteration   2: 50725155.450 ns/op
+Iteration   1: 54729033.474 ns/op
+Iteration   2: 59869985.000 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
-  1403445619.917 ±(99.9%) 6383936936.877 ns/op [Average]
-  (min, avg, max) = (806604743.000, 1403445619.917, 2869523268.000), stdev = 987921307.569
-  CI (99.9%): [≈ 0, 7787382556.793] (assumes normal distribution)
+  60056603.615 ±(99.9%) 56524218.305 ns/op [Average]
+  (min, avg, max) = (53172152.842, 60056603.615, 72455243.143), stdev = 8747185.351
+  CI (99.9%): [3532385.310, 116580821.920] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -935,27 +935,27 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
 # Benchmark: io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync
 # Parameters: (url = https://www.google.com/)
 
-# Run progress: 36.62% complete, ETA 00:07:00
+# Run progress: 36.62% complete, ETA 00:06:35
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1777117107.000 ns/op
-# Warmup Iteration   2: 1623152323.000 ns/op
-Iteration   1: 676432595.000 ns/op
-Iteration   2: 1236317871.000 ns/op
+# Warmup Iteration   1: 72007306.214 ns/op
+# Warmup Iteration   2: 59606281.353 ns/op
+Iteration   1: 50397759.300 ns/op
+Iteration   2: 57505372.167 ns/op
 
-# Run progress: 37.32% complete, ETA 00:07:06
+# Run progress: 37.32% complete, ETA 00:06:31
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1066368638.000 ns/op
-# Warmup Iteration   2: 1445701339.000 ns/op
-Iteration   1: 479982838.667 ns/op
-Iteration   2: 2113083607.000 ns/op
+# Warmup Iteration   1: 72388866.071 ns/op
+# Warmup Iteration   2: 71975353.571 ns/op
+Iteration   1: 50482573.300 ns/op
+Iteration   2: 56625008.389 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync":
-  1126454227.917 ±(99.9%) 4727939672.981 ns/op [Average]
-  (min, avg, max) = (479982838.667, 1126454227.917, 2113083607.000), stdev = 731653897.904
-  CI (99.9%): [≈ 0, 5854393900.897] (assumes normal distribution)
+  53752678.289 ±(99.9%) 24826729.621 ns/op [Average]
+  (min, avg, max) = (50397759.300, 53752678.289, 57505372.167), stdev = 3841963.890
+  CI (99.9%): [28925948.668, 78579407.910] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -971,27 +971,27 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAs
 # Benchmark: io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync
 # Parameters: (url = https://www.google.com/)
 
-# Run progress: 38.03% complete, ETA 00:07:06
+# Run progress: 38.03% complete, ETA 00:06:28
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 2078917838.000 ns/op
-# Warmup Iteration   2: 558840498.500 ns/op
-Iteration   1: 1755660128.500 ns/op
-Iteration   2: 910477116.000 ns/op
+# Warmup Iteration   1: 74811225.786 ns/op
+# Warmup Iteration   2: 59289214.941 ns/op
+Iteration   1: 53199081.105 ns/op
+Iteration   2: 54359477.421 ns/op
 
-# Run progress: 38.73% complete, ETA 00:07:10
+# Run progress: 38.73% complete, ETA 00:06:24
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1737278331.000 ns/op
-# Warmup Iteration   2: 2831775417.000 ns/op
-Iteration   1: 672691605.750 ns/op
-Iteration   2: 2715199099.000 ns/op
+# Warmup Iteration   1: 63909299.188 ns/op
+# Warmup Iteration   2: 54716354.737 ns/op
+Iteration   1: 52726202.700 ns/op
+Iteration   2: 67754946.067 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync":
-  1513506987.313 ±(99.9%) 5984836689.733 ns/op [Average]
-  (min, avg, max) = (672691605.750, 1513506987.313, 2715199099.000), stdev = 926160102.546
-  CI (99.9%): [≈ 0, 7498343677.045] (assumes normal distribution)
+  57009926.823 ±(99.9%) 46501359.658 ns/op [Average]
+  (min, avg, max) = (52726202.700, 57009926.823, 67754946.067), stdev = 7196136.881
+  CI (99.9%): [10508567.166, 103511286.481] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1006,27 +1006,27 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAs
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementManual
 
-# Run progress: 39.44% complete, ETA 00:07:13
+# Run progress: 39.44% complete, ETA 00:06:20
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 613.174 ns/op
-# Warmup Iteration   2: 315.037 ns/op
-Iteration   1: 311.288 ns/op
-Iteration   2: 311.366 ns/op
+# Warmup Iteration   1: 620.595 ns/op
+# Warmup Iteration   2: 315.038 ns/op
+Iteration   1: 315.302 ns/op
+Iteration   2: 313.951 ns/op
 
-# Run progress: 40.14% complete, ETA 00:07:07
+# Run progress: 40.14% complete, ETA 00:06:15
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 613.768 ns/op
-# Warmup Iteration   2: 312.748 ns/op
-Iteration   1: 311.331 ns/op
-Iteration   2: 311.165 ns/op
+# Warmup Iteration   1: 632.690 ns/op
+# Warmup Iteration   2: 312.991 ns/op
+Iteration   1: 313.214 ns/op
+Iteration   2: 311.419 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
-  311.288 ±(99.9%) 0.567 ns/op [Average]
-  (min, avg, max) = (311.165, 311.288, 311.366), stdev = 0.088
-  CI (99.9%): [310.720, 311.855] (assumes normal distribution)
+  313.472 ±(99.9%) 10.461 ns/op [Average]
+  (min, avg, max) = (311.419, 313.472, 315.302), stdev = 1.619
+  CI (99.9%): [303.010, 323.933] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1041,27 +1041,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementTP
 
-# Run progress: 40.85% complete, ETA 00:07:01
+# Run progress: 40.85% complete, ETA 00:06:11
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 611.862 ns/op
-# Warmup Iteration   2: 311.321 ns/op
-Iteration   1: 311.713 ns/op
-Iteration   2: 311.199 ns/op
+# Warmup Iteration   1: 627.793 ns/op
+# Warmup Iteration   2: 312.448 ns/op
+Iteration   1: 312.638 ns/op
+Iteration   2: 311.232 ns/op
 
-# Run progress: 41.55% complete, ETA 00:06:55
+# Run progress: 41.55% complete, ETA 00:06:06
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 621.089 ns/op
-# Warmup Iteration   2: 313.036 ns/op
-Iteration   1: 311.169 ns/op
-Iteration   2: 311.127 ns/op
+# Warmup Iteration   1: 617.606 ns/op
+# Warmup Iteration   2: 311.655 ns/op
+Iteration   1: 311.555 ns/op
+Iteration   2: 314.611 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
-  311.302 ±(99.9%) 1.780 ns/op [Average]
-  (min, avg, max) = (311.127, 311.302, 311.713), stdev = 0.275
-  CI (99.9%): [309.522, 313.082] (assumes normal distribution)
+  312.509 ±(99.9%) 9.855 ns/op [Average]
+  (min, avg, max) = (311.232, 312.509, 314.611), stdev = 1.525
+  CI (99.9%): [302.654, 322.364] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1076,27 +1076,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.Divide
 
-# Run progress: 42.25% complete, ETA 00:06:49
+# Run progress: 42.25% complete, ETA 00:06:01
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 83.947 ns/op
-# Warmup Iteration   2: 74.305 ns/op
-Iteration   1: 74.131 ns/op
-Iteration   2: 73.916 ns/op
+# Warmup Iteration   1: 85.320 ns/op
+# Warmup Iteration   2: 74.514 ns/op
+Iteration   1: 73.660 ns/op
+Iteration   2: 73.495 ns/op
 
-# Run progress: 42.96% complete, ETA 00:06:43
+# Run progress: 42.96% complete, ETA 00:05:57
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 83.390 ns/op
-# Warmup Iteration   2: 78.133 ns/op
-Iteration   1: 73.731 ns/op
-Iteration   2: 73.448 ns/op
+# Warmup Iteration   1: 82.027 ns/op
+# Warmup Iteration   2: 74.061 ns/op
+Iteration   1: 73.318 ns/op
+Iteration   2: 73.401 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
-  73.807 ±(99.9%) 1.871 ns/op [Average]
-  (min, avg, max) = (73.448, 73.807, 74.131), stdev = 0.290
-  CI (99.9%): [71.936, 75.678] (assumes normal distribution)
+  73.468 ±(99.9%) 0.946 ns/op [Average]
+  (min, avg, max) = (73.318, 73.468, 73.660), stdev = 0.146
+  CI (99.9%): [72.522, 74.415] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1111,27 +1111,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.GetFutureTime
 
-# Run progress: 43.66% complete, ETA 00:06:37
+# Run progress: 43.66% complete, ETA 00:05:52
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 39.529 ns/op
-# Warmup Iteration   2: 39.213 ns/op
-Iteration   1: 38.845 ns/op
-Iteration   2: 38.849 ns/op
+# Warmup Iteration   1: 39.557 ns/op
+# Warmup Iteration   2: 39.083 ns/op
+Iteration   1: 38.921 ns/op
+Iteration   2: 38.890 ns/op
 
-# Run progress: 44.37% complete, ETA 00:06:31
+# Run progress: 44.37% complete, ETA 00:05:48
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 39.523 ns/op
-# Warmup Iteration   2: 39.144 ns/op
-Iteration   1: 38.839 ns/op
-Iteration   2: 38.865 ns/op
+# Warmup Iteration   1: 39.517 ns/op
+# Warmup Iteration   2: 39.185 ns/op
+Iteration   1: 38.850 ns/op
+Iteration   2: 38.862 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
-  38.850 ±(99.9%) 0.071 ns/op [Average]
-  (min, avg, max) = (38.839, 38.850, 38.865), stdev = 0.011
-  CI (99.9%): [38.779, 38.921] (assumes normal distribution)
+  38.881 ±(99.9%) 0.206 ns/op [Average]
+  (min, avg, max) = (38.850, 38.881, 38.921), stdev = 0.032
+  CI (99.9%): [38.675, 39.087] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1146,27 +1146,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.GuidParse
 
-# Run progress: 45.07% complete, ETA 00:06:26
+# Run progress: 45.07% complete, ETA 00:05:43
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 26.926 ns/op
-# Warmup Iteration   2: 25.283 ns/op
-Iteration   1: 25.258 ns/op
-Iteration   2: 25.235 ns/op
+# Warmup Iteration   1: 27.409 ns/op
+# Warmup Iteration   2: 25.271 ns/op
+Iteration   1: 25.233 ns/op
+Iteration   2: 25.228 ns/op
 
-# Run progress: 45.77% complete, ETA 00:06:20
+# Run progress: 45.77% complete, ETA 00:05:39
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 28.336 ns/op
-# Warmup Iteration   2: 25.520 ns/op
-Iteration   1: 25.188 ns/op
-Iteration   2: 25.208 ns/op
+# Warmup Iteration   1: 27.263 ns/op
+# Warmup Iteration   2: 25.370 ns/op
+Iteration   1: 25.184 ns/op
+Iteration   2: 25.194 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
-  25.222 ±(99.9%) 0.198 ns/op [Average]
-  (min, avg, max) = (25.188, 25.222, 25.258), stdev = 0.031
-  CI (99.9%): [25.024, 25.421] (assumes normal distribution)
+  25.210 ±(99.9%) 0.158 ns/op [Average]
+  (min, avg, max) = (25.184, 25.210, 25.233), stdev = 0.024
+  CI (99.9%): [25.052, 25.367] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1181,27 +1181,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min
 
-# Run progress: 46.48% complete, ETA 00:06:14
+# Run progress: 46.48% complete, ETA 00:05:34
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 68.151 ns/op
-# Warmup Iteration   2: 61.343 ns/op
-Iteration   1: 61.181 ns/op
-Iteration   2: 61.187 ns/op
+# Warmup Iteration   1: 67.388 ns/op
+# Warmup Iteration   2: 60.931 ns/op
+Iteration   1: 60.485 ns/op
+Iteration   2: 60.731 ns/op
 
-# Run progress: 47.18% complete, ETA 00:06:08
+# Run progress: 47.18% complete, ETA 00:05:29
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 67.927 ns/op
-# Warmup Iteration   2: 61.705 ns/op
-Iteration   1: 61.370 ns/op
-Iteration   2: 61.343 ns/op
+# Warmup Iteration   1: 66.489 ns/op
+# Warmup Iteration   2: 61.235 ns/op
+Iteration   1: 60.731 ns/op
+Iteration   2: 60.714 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
-  61.270 ±(99.9%) 0.648 ns/op [Average]
-  (min, avg, max) = (61.181, 61.270, 61.370), stdev = 0.100
-  CI (99.9%): [60.623, 61.918] (assumes normal distribution)
+  60.665 ±(99.9%) 0.777 ns/op [Average]
+  (min, avg, max) = (60.485, 60.665, 60.731), stdev = 0.120
+  CI (99.9%): [59.888, 61.442] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1216,27 +1216,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.TranscodeParse
 
-# Run progress: 47.89% complete, ETA 00:06:03
+# Run progress: 47.89% complete, ETA 00:05:25
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 39.854 ns/op
-# Warmup Iteration   2: 34.261 ns/op
-Iteration   1: 34.355 ns/op
-Iteration   2: 34.364 ns/op
+# Warmup Iteration   1: 39.614 ns/op
+# Warmup Iteration   2: 34.224 ns/op
+Iteration   1: 34.070 ns/op
+Iteration   2: 34.266 ns/op
 
-# Run progress: 48.59% complete, ETA 00:05:57
+# Run progress: 48.59% complete, ETA 00:05:20
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 37.501 ns/op
-# Warmup Iteration   2: 34.576 ns/op
-Iteration   1: 34.264 ns/op
-Iteration   2: 34.345 ns/op
+# Warmup Iteration   1: 36.480 ns/op
+# Warmup Iteration   2: 34.515 ns/op
+Iteration   1: 34.483 ns/op
+Iteration   2: 34.563 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
-  34.332 ±(99.9%) 0.296 ns/op [Average]
-  (min, avg, max) = (34.264, 34.332, 34.364), stdev = 0.046
-  CI (99.9%): [34.036, 34.628] (assumes normal distribution)
+  34.346 ±(99.9%) 1.436 ns/op [Average]
+  (min, avg, max) = (34.070, 34.346, 34.563), stdev = 0.222
+  CI (99.9%): [32.910, 35.782] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1251,27 +1251,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version
 
-# Run progress: 49.30% complete, ETA 00:05:52
+# Run progress: 49.30% complete, ETA 00:05:16
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 450.524 ns/op
-# Warmup Iteration   2: 298.815 ns/op
-Iteration   1: 299.040 ns/op
-Iteration   2: 298.670 ns/op
+# Warmup Iteration   1: 428.888 ns/op
+# Warmup Iteration   2: 292.733 ns/op
+Iteration   1: 293.753 ns/op
+Iteration   2: 293.861 ns/op
 
-# Run progress: 50.00% complete, ETA 00:05:46
+# Run progress: 50.00% complete, ETA 00:05:11
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 461.413 ns/op
-# Warmup Iteration   2: 289.297 ns/op
-Iteration   1: 289.218 ns/op
-Iteration   2: 288.909 ns/op
+# Warmup Iteration   1: 423.882 ns/op
+# Warmup Iteration   2: 283.801 ns/op
+Iteration   1: 284.777 ns/op
+Iteration   2: 284.545 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
-  293.959 ±(99.9%) 36.553 ns/op [Average]
-  (min, avg, max) = (288.909, 293.959, 299.040), stdev = 5.657
-  CI (99.9%): [257.406, 330.512] (assumes normal distribution)
+  289.234 ±(99.9%) 34.127 ns/op [Average]
+  (min, avg, max) = (284.545, 289.234, 293.861), stdev = 5.281
+  CI (99.9%): [255.107, 323.360] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1286,27 +1286,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes
 
-# Run progress: 50.70% complete, ETA 00:05:41
+# Run progress: 50.70% complete, ETA 00:05:07
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 28.118 ns/op
-# Warmup Iteration   2: 21.731 ns/op
-Iteration   1: 21.931 ns/op
-Iteration   2: 21.921 ns/op
+# Warmup Iteration   1: 28.346 ns/op
+# Warmup Iteration   2: 21.929 ns/op
+Iteration   1: 21.886 ns/op
+Iteration   2: 21.849 ns/op
 
-# Run progress: 51.41% complete, ETA 00:05:35
+# Run progress: 51.41% complete, ETA 00:05:02
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 28.144 ns/op
-# Warmup Iteration   2: 21.941 ns/op
-Iteration   1: 21.937 ns/op
-Iteration   2: 21.870 ns/op
+# Warmup Iteration   1: 28.402 ns/op
+# Warmup Iteration   2: 21.876 ns/op
+Iteration   1: 21.876 ns/op
+Iteration   2: 21.874 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
-  21.915 ±(99.9%) 0.198 ns/op [Average]
-  (min, avg, max) = (21.870, 21.915, 21.937), stdev = 0.031
-  CI (99.9%): [21.717, 22.113] (assumes normal distribution)
+  21.871 ±(99.9%) 0.100 ns/op [Average]
+  (min, avg, max) = (21.849, 21.871, 21.886), stdev = 0.015
+  CI (99.9%): [21.771, 21.971] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1321,27 +1321,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse
 
-# Run progress: 52.11% complete, ETA 00:05:30
+# Run progress: 52.11% complete, ETA 00:04:58
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 39.318 ns/op
-# Warmup Iteration   2: 34.279 ns/op
-Iteration   1: 34.307 ns/op
-Iteration   2: 34.329 ns/op
+# Warmup Iteration   1: 37.470 ns/op
+# Warmup Iteration   2: 34.145 ns/op
+Iteration   1: 34.349 ns/op
+Iteration   2: 34.317 ns/op
 
-# Run progress: 52.82% complete, ETA 00:05:24
+# Run progress: 52.82% complete, ETA 00:04:53
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 39.597 ns/op
-# Warmup Iteration   2: 34.304 ns/op
-Iteration   1: 34.335 ns/op
-Iteration   2: 34.284 ns/op
+# Warmup Iteration   1: 38.488 ns/op
+# Warmup Iteration   2: 34.347 ns/op
+Iteration   1: 34.428 ns/op
+Iteration   2: 34.372 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
-  34.314 ±(99.9%) 0.152 ns/op [Average]
-  (min, avg, max) = (34.284, 34.314, 34.335), stdev = 0.023
-  CI (99.9%): [34.162, 34.465] (assumes normal distribution)
+  34.367 ±(99.9%) 0.303 ns/op [Average]
+  (min, avg, max) = (34.317, 34.367, 34.428), stdev = 0.047
+  CI (99.9%): [34.064, 34.670] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1356,27 +1356,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.VersionParse
 
-# Run progress: 53.52% complete, ETA 00:05:19
+# Run progress: 53.52% complete, ETA 00:04:49
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 416.935 ns/op
-# Warmup Iteration   2: 277.711 ns/op
-Iteration   1: 279.733 ns/op
-Iteration   2: 279.495 ns/op
+# Warmup Iteration   1: 404.875 ns/op
+# Warmup Iteration   2: 277.996 ns/op
+Iteration   1: 279.037 ns/op
+Iteration   2: 278.227 ns/op
 
-# Run progress: 54.23% complete, ETA 00:05:14
+# Run progress: 54.23% complete, ETA 00:04:44
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 405.316 ns/op
-# Warmup Iteration   2: 264.082 ns/op
-Iteration   1: 261.511 ns/op
-Iteration   2: 261.088 ns/op
+# Warmup Iteration   1: 401.046 ns/op
+# Warmup Iteration   2: 273.746 ns/op
+Iteration   1: 272.604 ns/op
+Iteration   2: 273.892 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
-  270.456 ±(99.9%) 68.340 ns/op [Average]
-  (min, avg, max) = (261.088, 270.456, 279.733), stdev = 10.576
-  CI (99.9%): [202.116, 338.797] (assumes normal distribution)
+  275.940 ±(99.9%) 20.485 ns/op [Average]
+  (min, avg, max) = (272.604, 275.940, 279.037), stdev = 3.170
+  CI (99.9%): [255.455, 296.425] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1392,27 +1392,27 @@ Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
 # Benchmark: io.github.benchjava.bench.OtherCollectionsBenchmark.Get
 # Parameters: (count = 16)
 
-# Run progress: 54.93% complete, ETA 00:05:08
+# Run progress: 54.93% complete, ETA 00:04:40
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 348.752 ns/op
-# Warmup Iteration   2: 315.888 ns/op
-Iteration   1: 320.311 ns/op
-Iteration   2: 320.489 ns/op
+# Warmup Iteration   1: 356.530 ns/op
+# Warmup Iteration   2: 320.551 ns/op
+Iteration   1: 324.636 ns/op
+Iteration   2: 324.418 ns/op
 
-# Run progress: 55.63% complete, ETA 00:05:03
+# Run progress: 55.63% complete, ETA 00:04:35
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 345.608 ns/op
-# Warmup Iteration   2: 319.940 ns/op
-Iteration   1: 319.761 ns/op
-Iteration   2: 320.243 ns/op
+# Warmup Iteration   1: 345.971 ns/op
+# Warmup Iteration   2: 314.688 ns/op
+Iteration   1: 330.883 ns/op
+Iteration   2: 320.344 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  320.201 ±(99.9%) 2.009 ns/op [Average]
-  (min, avg, max) = (319.761, 320.201, 320.489), stdev = 0.311
-  CI (99.9%): [318.192, 322.210] (assumes normal distribution)
+  325.070 ±(99.9%) 28.102 ns/op [Average]
+  (min, avg, max) = (320.344, 325.070, 330.883), stdev = 4.349
+  CI (99.9%): [296.968, 353.172] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1428,27 +1428,27 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 # Benchmark: io.github.benchjava.bench.OtherCollectionsBenchmark.Get
 # Parameters: (count = 128)
 
-# Run progress: 56.34% complete, ETA 00:04:58
+# Run progress: 56.34% complete, ETA 00:04:31
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3164.760 ns/op
-# Warmup Iteration   2: 2880.821 ns/op
-Iteration   1: 2891.541 ns/op
-Iteration   2: 2890.001 ns/op
+# Warmup Iteration   1: 3112.917 ns/op
+# Warmup Iteration   2: 2904.527 ns/op
+Iteration   1: 2872.087 ns/op
+Iteration   2: 2882.304 ns/op
 
-# Run progress: 57.04% complete, ETA 00:04:53
+# Run progress: 57.04% complete, ETA 00:04:26
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3220.294 ns/op
-# Warmup Iteration   2: 2924.402 ns/op
-Iteration   1: 2876.741 ns/op
-Iteration   2: 2886.196 ns/op
+# Warmup Iteration   1: 3138.418 ns/op
+# Warmup Iteration   2: 2870.375 ns/op
+Iteration   1: 2877.370 ns/op
+Iteration   2: 2886.714 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  2886.120 ±(99.9%) 42.933 ns/op [Average]
-  (min, avg, max) = (2876.741, 2886.120, 2891.541), stdev = 6.644
-  CI (99.9%): [2843.187, 2929.053] (assumes normal distribution)
+  2879.619 ±(99.9%) 40.757 ns/op [Average]
+  (min, avg, max) = (2872.087, 2879.619, 2886.714), stdev = 6.307
+  CI (99.9%): [2838.862, 2920.376] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1464,27 +1464,27 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 # Benchmark: io.github.benchjava.bench.OtherCollectionsBenchmark.Get
 # Parameters: (count = 1024)
 
-# Run progress: 57.75% complete, ETA 00:04:47
+# Run progress: 57.75% complete, ETA 00:04:22
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 33671.858 ns/op
-# Warmup Iteration   2: 31244.840 ns/op
-Iteration   1: 30578.250 ns/op
-Iteration   2: 30841.271 ns/op
+# Warmup Iteration   1: 33434.331 ns/op
+# Warmup Iteration   2: 31623.912 ns/op
+Iteration   1: 31055.855 ns/op
+Iteration   2: 31423.397 ns/op
 
-# Run progress: 58.45% complete, ETA 00:04:42
+# Run progress: 58.45% complete, ETA 00:04:17
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 33688.127 ns/op
-# Warmup Iteration   2: 31665.919 ns/op
-Iteration   1: 31157.787 ns/op
-Iteration   2: 31720.305 ns/op
+# Warmup Iteration   1: 32928.372 ns/op
+# Warmup Iteration   2: 31370.916 ns/op
+Iteration   1: 30697.778 ns/op
+Iteration   2: 30834.255 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  31074.403 ±(99.9%) 3175.945 ns/op [Average]
-  (min, avg, max) = (30578.250, 31074.403, 31720.305), stdev = 491.481
-  CI (99.9%): [27898.458, 34250.348] (assumes normal distribution)
+  31002.821 ±(99.9%) 2047.416 ns/op [Average]
+  (min, avg, max) = (30697.778, 31002.821, 31423.397), stdev = 316.840
+  CI (99.9%): [28955.406, 33050.237] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1500,27 +1500,27 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
 # Parameters: (bytesLen = 16)
 
-# Run progress: 59.15% complete, ETA 00:04:37
+# Run progress: 59.15% complete, ETA 00:04:13
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 30.422 ns/op
-# Warmup Iteration   2: 25.152 ns/op
-Iteration   1: 26.281 ns/op
-Iteration   2: 26.419 ns/op
+# Warmup Iteration   1: 30.488 ns/op
+# Warmup Iteration   2: 24.870 ns/op
+Iteration   1: 24.844 ns/op
+Iteration   2: 26.174 ns/op
 
-# Run progress: 59.86% complete, ETA 00:04:32
+# Run progress: 59.86% complete, ETA 00:04:09
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 30.684 ns/op
-# Warmup Iteration   2: 24.894 ns/op
-Iteration   1: 26.242 ns/op
-Iteration   2: 26.363 ns/op
+# Warmup Iteration   1: 30.409 ns/op
+# Warmup Iteration   2: 25.153 ns/op
+Iteration   1: 26.196 ns/op
+Iteration   2: 26.899 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  26.326 ±(99.9%) 0.516 ns/op [Average]
-  (min, avg, max) = (26.242, 26.326, 26.419), stdev = 0.080
-  CI (99.9%): [25.810, 26.842] (assumes normal distribution)
+  26.028 ±(99.9%) 5.545 ns/op [Average]
+  (min, avg, max) = (24.844, 26.028, 26.899), stdev = 0.858
+  CI (99.9%): [20.483, 31.574] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1536,27 +1536,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
 # Parameters: (bytesLen = 32)
 
-# Run progress: 60.56% complete, ETA 00:04:27
+# Run progress: 60.56% complete, ETA 00:04:04
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 59.514 ns/op
-# Warmup Iteration   2: 47.778 ns/op
-Iteration   1: 49.968 ns/op
-Iteration   2: 50.450 ns/op
+# Warmup Iteration   1: 59.629 ns/op
+# Warmup Iteration   2: 47.614 ns/op
+Iteration   1: 47.121 ns/op
+Iteration   2: 50.223 ns/op
 
-# Run progress: 61.27% complete, ETA 00:04:22
+# Run progress: 61.27% complete, ETA 00:04:00
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 59.386 ns/op
-# Warmup Iteration   2: 47.175 ns/op
-Iteration   1: 52.587 ns/op
-Iteration   2: 50.599 ns/op
+# Warmup Iteration   1: 59.564 ns/op
+# Warmup Iteration   2: 47.249 ns/op
+Iteration   1: 47.064 ns/op
+Iteration   2: 50.635 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  50.901 ±(99.9%) 7.469 ns/op [Average]
-  (min, avg, max) = (49.968, 50.901, 52.587), stdev = 1.156
-  CI (99.9%): [43.432, 58.370] (assumes normal distribution)
+  48.761 ±(99.9%) 12.497 ns/op [Average]
+  (min, avg, max) = (47.064, 48.761, 50.635), stdev = 1.934
+  CI (99.9%): [36.264, 61.257] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1572,27 +1572,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
 # Parameters: (bytesLen = 64)
 
-# Run progress: 61.97% complete, ETA 00:04:17
+# Run progress: 61.97% complete, ETA 00:03:55
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 117.787 ns/op
-# Warmup Iteration   2: 92.556 ns/op
-Iteration   1: 97.791 ns/op
-Iteration   2: 97.765 ns/op
+# Warmup Iteration   1: 118.969 ns/op
+# Warmup Iteration   2: 93.430 ns/op
+Iteration   1: 98.068 ns/op
+Iteration   2: 98.728 ns/op
 
-# Run progress: 62.68% complete, ETA 00:04:12
+# Run progress: 62.68% complete, ETA 00:03:51
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 118.027 ns/op
-# Warmup Iteration   2: 93.439 ns/op
-Iteration   1: 97.961 ns/op
-Iteration   2: 98.243 ns/op
+# Warmup Iteration   1: 118.955 ns/op
+# Warmup Iteration   2: 93.139 ns/op
+Iteration   1: 98.286 ns/op
+Iteration   2: 98.111 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  97.940 ±(99.9%) 1.421 ns/op [Average]
-  (min, avg, max) = (97.765, 97.940, 98.243), stdev = 0.220
-  CI (99.9%): [96.519, 99.361] (assumes normal distribution)
+  98.298 ±(99.9%) 1.950 ns/op [Average]
+  (min, avg, max) = (98.068, 98.298, 98.728), stdev = 0.302
+  CI (99.9%): [96.349, 100.248] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1608,27 +1608,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.New
 # Parameters: (bytesLen = 16)
 
-# Run progress: 63.38% complete, ETA 00:04:06
+# Run progress: 63.38% complete, ETA 00:03:46
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 253.193 ns/op
-# Warmup Iteration   2: 250.101 ns/op
-Iteration   1: 222.870 ns/op
-Iteration   2: 292.075 ns/op
+# Warmup Iteration   1: 258.790 ns/op
+# Warmup Iteration   2: 231.620 ns/op
+Iteration   1: 279.509 ns/op
+Iteration   2: 261.768 ns/op
 
-# Run progress: 64.08% complete, ETA 00:04:02
+# Run progress: 64.08% complete, ETA 00:03:42
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 257.730 ns/op
-# Warmup Iteration   2: 249.663 ns/op
-Iteration   1: 243.769 ns/op
-Iteration   2: 242.728 ns/op
+# Warmup Iteration   1: 271.268 ns/op
+# Warmup Iteration   2: 245.008 ns/op
+Iteration   1: 242.020 ns/op
+Iteration   2: 234.262 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  250.360 ±(99.9%) 190.144 ns/op [Average]
-  (min, avg, max) = (222.870, 250.360, 292.075), stdev = 29.425
-  CI (99.9%): [60.216, 440.505] (assumes normal distribution)
+  254.390 ±(99.9%) 131.563 ns/op [Average]
+  (min, avg, max) = (234.262, 254.390, 279.509), stdev = 20.359
+  CI (99.9%): [122.827, 385.952] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1644,27 +1644,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.New
 # Parameters: (bytesLen = 32)
 
-# Run progress: 64.79% complete, ETA 00:03:57
+# Run progress: 64.79% complete, ETA 00:03:38
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 261.717 ns/op
-# Warmup Iteration   2: 239.945 ns/op
-Iteration   1: 214.706 ns/op
-Iteration   2: 257.679 ns/op
+# Warmup Iteration   1: 256.624 ns/op
+# Warmup Iteration   2: 246.369 ns/op
+Iteration   1: 226.855 ns/op
+Iteration   2: 270.348 ns/op
 
-# Run progress: 65.49% complete, ETA 00:03:52
+# Run progress: 65.49% complete, ETA 00:03:33
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 262.751 ns/op
-# Warmup Iteration   2: 237.983 ns/op
-Iteration   1: 234.699 ns/op
-Iteration   2: 236.597 ns/op
+# Warmup Iteration   1: 273.154 ns/op
+# Warmup Iteration   2: 241.403 ns/op
+Iteration   1: 235.780 ns/op
+Iteration   2: 243.798 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  235.920 ±(99.9%) 113.493 ns/op [Average]
-  (min, avg, max) = (214.706, 235.920, 257.679), stdev = 17.563
-  CI (99.9%): [122.427, 349.413] (assumes normal distribution)
+  244.195 ±(99.9%) 121.216 ns/op [Average]
+  (min, avg, max) = (226.855, 244.195, 270.348), stdev = 18.758
+  CI (99.9%): [122.979, 365.412] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1680,27 +1680,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.New
 # Parameters: (bytesLen = 64)
 
-# Run progress: 66.20% complete, ETA 00:03:47
+# Run progress: 66.20% complete, ETA 00:03:29
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 266.638 ns/op
-# Warmup Iteration   2: 242.740 ns/op
-Iteration   1: 230.547 ns/op
-Iteration   2: 259.120 ns/op
+# Warmup Iteration   1: 271.875 ns/op
+# Warmup Iteration   2: 238.645 ns/op
+Iteration   1: 271.345 ns/op
+Iteration   2: 266.494 ns/op
 
-# Run progress: 66.90% complete, ETA 00:03:42
+# Run progress: 66.90% complete, ETA 00:03:25
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 268.391 ns/op
-# Warmup Iteration   2: 238.898 ns/op
-Iteration   1: 288.043 ns/op
-Iteration   2: 276.987 ns/op
+# Warmup Iteration   1: 259.244 ns/op
+# Warmup Iteration   2: 250.048 ns/op
+Iteration   1: 267.979 ns/op
+Iteration   2: 249.422 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  263.674 ±(99.9%) 162.161 ns/op [Average]
-  (min, avg, max) = (230.547, 263.674, 288.043), stdev = 25.095
-  CI (99.9%): [101.513, 425.835] (assumes normal distribution)
+  263.810 ±(99.9%) 63.357 ns/op [Average]
+  (min, avg, max) = (249.422, 263.810, 271.345), stdev = 9.805
+  CI (99.9%): [200.453, 327.167] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1716,27 +1716,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
 # Parameters: (bytesLen = 16)
 
-# Run progress: 67.61% complete, ETA 00:03:37
+# Run progress: 67.61% complete, ETA 00:03:20
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.996 ns/op
-# Warmup Iteration   2: 3.412 ns/op
-Iteration   1: 3.422 ns/op
-Iteration   2: 3.413 ns/op
+# Warmup Iteration   1: 4.181 ns/op
+# Warmup Iteration   2: 3.528 ns/op
+Iteration   1: 3.475 ns/op
+Iteration   2: 3.444 ns/op
 
-# Run progress: 68.31% complete, ETA 00:03:32
+# Run progress: 68.31% complete, ETA 00:03:16
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 4.150 ns/op
-# Warmup Iteration   2: 3.487 ns/op
-Iteration   1: 3.457 ns/op
-Iteration   2: 3.443 ns/op
+# Warmup Iteration   1: 4.157 ns/op
+# Warmup Iteration   2: 3.516 ns/op
+Iteration   1: 3.450 ns/op
+Iteration   2: 3.470 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.434 ±(99.9%) 0.130 ns/op [Average]
-  (min, avg, max) = (3.413, 3.434, 3.457), stdev = 0.020
-  CI (99.9%): [3.303, 3.564] (assumes normal distribution)
+  3.460 ±(99.9%) 0.096 ns/op [Average]
+  (min, avg, max) = (3.444, 3.460, 3.475), stdev = 0.015
+  CI (99.9%): [3.364, 3.555] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1752,27 +1752,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
 # Parameters: (bytesLen = 32)
 
-# Run progress: 69.01% complete, ETA 00:03:27
+# Run progress: 69.01% complete, ETA 00:03:11
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.853 ns/op
-# Warmup Iteration   2: 3.472 ns/op
-Iteration   1: 3.440 ns/op
-Iteration   2: 3.399 ns/op
+# Warmup Iteration   1: 4.051 ns/op
+# Warmup Iteration   2: 3.544 ns/op
+Iteration   1: 3.509 ns/op
+Iteration   2: 3.510 ns/op
 
-# Run progress: 69.72% complete, ETA 00:03:22
+# Run progress: 69.72% complete, ETA 00:03:07
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.880 ns/op
-# Warmup Iteration   2: 3.440 ns/op
-Iteration   1: 3.429 ns/op
-Iteration   2: 3.447 ns/op
+# Warmup Iteration   1: 4.199 ns/op
+# Warmup Iteration   2: 3.484 ns/op
+Iteration   1: 3.546 ns/op
+Iteration   2: 3.591 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.429 ±(99.9%) 0.138 ns/op [Average]
-  (min, avg, max) = (3.399, 3.429, 3.447), stdev = 0.021
-  CI (99.9%): [3.291, 3.566] (assumes normal distribution)
+  3.539 ±(99.9%) 0.249 ns/op [Average]
+  (min, avg, max) = (3.509, 3.539, 3.591), stdev = 0.039
+  CI (99.9%): [3.290, 3.788] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1788,27 +1788,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
 # Parameters: (bytesLen = 64)
 
-# Run progress: 70.42% complete, ETA 00:03:17
+# Run progress: 70.42% complete, ETA 00:03:03
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.985 ns/op
-# Warmup Iteration   2: 3.471 ns/op
-Iteration   1: 3.421 ns/op
-Iteration   2: 3.409 ns/op
+# Warmup Iteration   1: 4.026 ns/op
+# Warmup Iteration   2: 3.602 ns/op
+Iteration   1: 3.559 ns/op
+Iteration   2: 3.511 ns/op
 
-# Run progress: 71.13% complete, ETA 00:03:13
+# Run progress: 71.13% complete, ETA 00:02:58
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 4.084 ns/op
-# Warmup Iteration   2: 3.483 ns/op
-Iteration   1: 3.417 ns/op
-Iteration   2: 3.421 ns/op
+# Warmup Iteration   1: 4.101 ns/op
+# Warmup Iteration   2: 3.519 ns/op
+Iteration   1: 3.474 ns/op
+Iteration   2: 3.471 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.417 ±(99.9%) 0.037 ns/op [Average]
-  (min, avg, max) = (3.409, 3.417, 3.421), stdev = 0.006
-  CI (99.9%): [3.380, 3.454] (assumes normal distribution)
+  3.504 ±(99.9%) 0.264 ns/op [Average]
+  (min, avg, max) = (3.471, 3.504, 3.559), stdev = 0.041
+  CI (99.9%): [3.239, 3.768] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1824,27 +1824,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8
 # Parameters: (bytesLen = 16)
 
-# Run progress: 71.83% complete, ETA 00:03:08
+# Run progress: 71.83% complete, ETA 00:02:54
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 24.459 ns/op
-# Warmup Iteration   2: 20.592 ns/op
-Iteration   1: 20.501 ns/op
-Iteration   2: 20.366 ns/op
+# Warmup Iteration   1: 24.561 ns/op
+# Warmup Iteration   2: 20.561 ns/op
+Iteration   1: 20.433 ns/op
+Iteration   2: 20.476 ns/op
 
-# Run progress: 72.54% complete, ETA 00:03:03
+# Run progress: 72.54% complete, ETA 00:02:49
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 24.656 ns/op
-# Warmup Iteration   2: 20.780 ns/op
-Iteration   1: 20.553 ns/op
-Iteration   2: 20.525 ns/op
+# Warmup Iteration   1: 24.555 ns/op
+# Warmup Iteration   2: 20.662 ns/op
+Iteration   1: 20.473 ns/op
+Iteration   2: 20.490 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  20.486 ±(99.9%) 0.534 ns/op [Average]
-  (min, avg, max) = (20.366, 20.486, 20.553), stdev = 0.083
-  CI (99.9%): [19.952, 21.020] (assumes normal distribution)
+  20.468 ±(99.9%) 0.158 ns/op [Average]
+  (min, avg, max) = (20.433, 20.468, 20.490), stdev = 0.024
+  CI (99.9%): [20.311, 20.626] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1860,27 +1860,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8
 # Parameters: (bytesLen = 32)
 
-# Run progress: 73.24% complete, ETA 00:02:58
+# Run progress: 73.24% complete, ETA 00:02:45
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 48.529 ns/op
-# Warmup Iteration   2: 38.006 ns/op
-Iteration   1: 37.737 ns/op
-Iteration   2: 37.713 ns/op
+# Warmup Iteration   1: 49.056 ns/op
+# Warmup Iteration   2: 38.086 ns/op
+Iteration   1: 37.754 ns/op
+Iteration   2: 37.735 ns/op
 
-# Run progress: 73.94% complete, ETA 00:02:53
+# Run progress: 73.94% complete, ETA 00:02:41
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 48.054 ns/op
-# Warmup Iteration   2: 38.231 ns/op
-Iteration   1: 37.703 ns/op
-Iteration   2: 37.590 ns/op
+# Warmup Iteration   1: 48.007 ns/op
+# Warmup Iteration   2: 38.243 ns/op
+Iteration   1: 37.744 ns/op
+Iteration   2: 37.674 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  37.686 ±(99.9%) 0.423 ns/op [Average]
-  (min, avg, max) = (37.590, 37.686, 37.737), stdev = 0.065
-  CI (99.9%): [37.263, 38.108] (assumes normal distribution)
+  37.727 ±(99.9%) 0.231 ns/op [Average]
+  (min, avg, max) = (37.674, 37.727, 37.754), stdev = 0.036
+  CI (99.9%): [37.495, 37.958] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1896,27 +1896,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8
 # Parameters: (bytesLen = 64)
 
-# Run progress: 74.65% complete, ETA 00:02:48
+# Run progress: 74.65% complete, ETA 00:02:36
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 98.971 ns/op
-# Warmup Iteration   2: 73.254 ns/op
-Iteration   1: 72.351 ns/op
-Iteration   2: 72.133 ns/op
+# Warmup Iteration   1: 99.858 ns/op
+# Warmup Iteration   2: 73.281 ns/op
+Iteration   1: 73.469 ns/op
+Iteration   2: 72.413 ns/op
 
-# Run progress: 75.35% complete, ETA 00:02:43
+# Run progress: 75.35% complete, ETA 00:02:32
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 98.641 ns/op
-# Warmup Iteration   2: 74.072 ns/op
-Iteration   1: 72.301 ns/op
-Iteration   2: 72.165 ns/op
+# Warmup Iteration   1: 99.196 ns/op
+# Warmup Iteration   2: 73.767 ns/op
+Iteration   1: 72.216 ns/op
+Iteration   2: 72.439 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  72.237 ±(99.9%) 0.678 ns/op [Average]
-  (min, avg, max) = (72.133, 72.237, 72.351), stdev = 0.105
-  CI (99.9%): [71.559, 72.916] (assumes normal distribution)
+  72.634 ±(99.9%) 3.654 ns/op [Average]
+  (min, avg, max) = (72.216, 72.634, 73.469), stdev = 0.565
+  CI (99.9%): [68.981, 76.288] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1931,27 +1931,27 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName
 
-# Run progress: 76.06% complete, ETA 00:02:39
+# Run progress: 76.06% complete, ETA 00:02:27
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 31.895 ns/op
-# Warmup Iteration   2: 29.994 ns/op
-Iteration   1: 29.639 ns/op
-Iteration   2: 29.806 ns/op
+# Warmup Iteration   1: 31.066 ns/op
+# Warmup Iteration   2: 29.142 ns/op
+Iteration   1: 28.974 ns/op
+Iteration   2: 29.017 ns/op
 
-# Run progress: 76.76% complete, ETA 00:02:34
+# Run progress: 76.76% complete, ETA 00:02:23
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 29.653 ns/op
-# Warmup Iteration   2: 29.202 ns/op
-Iteration   1: 29.028 ns/op
-Iteration   2: 29.091 ns/op
+# Warmup Iteration   1: 31.816 ns/op
+# Warmup Iteration   2: 29.221 ns/op
+Iteration   1: 29.008 ns/op
+Iteration   2: 28.954 ns/op
 
 
 Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
-  29.391 ±(99.9%) 2.518 ns/op [Average]
-  (min, avg, max) = (29.028, 29.391, 29.806), stdev = 0.390
-  CI (99.9%): [26.873, 31.909] (assumes normal distribution)
+  28.988 ±(99.9%) 0.191 ns/op [Average]
+  (min, avg, max) = (28.954, 28.988, 29.017), stdev = 0.029
+  CI (99.9%): [28.797, 29.178] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1967,27 +1967,27 @@ Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
 # Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 128)
 
-# Run progress: 77.46% complete, ETA 00:02:29
+# Run progress: 77.46% complete, ETA 00:02:19
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 375.467 ns/op
-# Warmup Iteration   2: 341.554 ns/op
-Iteration   1: 338.497 ns/op
-Iteration   2: 338.264 ns/op
+# Warmup Iteration   1: 362.638 ns/op
+# Warmup Iteration   2: 344.085 ns/op
+Iteration   1: 342.341 ns/op
+Iteration   2: 342.564 ns/op
 
-# Run progress: 78.17% complete, ETA 00:02:24
+# Run progress: 78.17% complete, ETA 00:02:14
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 364.939 ns/op
-# Warmup Iteration   2: 348.900 ns/op
-Iteration   1: 341.078 ns/op
-Iteration   2: 342.415 ns/op
+# Warmup Iteration   1: 372.295 ns/op
+# Warmup Iteration   2: 340.807 ns/op
+Iteration   1: 340.546 ns/op
+Iteration   2: 340.871 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  340.063 ±(99.9%) 13.058 ns/op [Average]
-  (min, avg, max) = (338.264, 340.063, 342.415), stdev = 2.021
-  CI (99.9%): [327.005, 353.122] (assumes normal distribution)
+  341.581 ±(99.9%) 6.588 ns/op [Average]
+  (min, avg, max) = (340.546, 341.581, 342.564), stdev = 1.020
+  CI (99.9%): [334.992, 348.169] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2003,27 +2003,27 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 # Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 1024)
 
-# Run progress: 78.87% complete, ETA 00:02:19
+# Run progress: 78.87% complete, ETA 00:02:10
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1531.879 ns/op
-# Warmup Iteration   2: 1498.755 ns/op
-Iteration   1: 1455.239 ns/op
-Iteration   2: 1453.669 ns/op
+# Warmup Iteration   1: 1533.055 ns/op
+# Warmup Iteration   2: 1492.728 ns/op
+Iteration   1: 1457.612 ns/op
+Iteration   2: 1455.817 ns/op
 
-# Run progress: 79.58% complete, ETA 00:02:15
+# Run progress: 79.58% complete, ETA 00:02:06
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1539.286 ns/op
-# Warmup Iteration   2: 1468.535 ns/op
-Iteration   1: 1452.727 ns/op
-Iteration   2: 1455.642 ns/op
+# Warmup Iteration   1: 1544.726 ns/op
+# Warmup Iteration   2: 1477.243 ns/op
+Iteration   1: 1459.769 ns/op
+Iteration   2: 1460.950 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  1454.319 ±(99.9%) 8.793 ns/op [Average]
-  (min, avg, max) = (1452.727, 1454.319, 1455.642), stdev = 1.361
-  CI (99.9%): [1445.526, 1463.113] (assumes normal distribution)
+  1458.537 ±(99.9%) 14.734 ns/op [Average]
+  (min, avg, max) = (1455.817, 1458.537, 1460.950), stdev = 2.280
+  CI (99.9%): [1443.803, 1473.271] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2039,27 +2039,27 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 # Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 8192)
 
-# Run progress: 80.28% complete, ETA 00:02:10
+# Run progress: 80.28% complete, ETA 00:02:01
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 10916.209 ns/op
-# Warmup Iteration   2: 10558.223 ns/op
-Iteration   1: 10413.956 ns/op
-Iteration   2: 10404.870 ns/op
+# Warmup Iteration   1: 10871.378 ns/op
+# Warmup Iteration   2: 10395.214 ns/op
+Iteration   1: 10417.644 ns/op
+Iteration   2: 10390.985 ns/op
 
-# Run progress: 80.99% complete, ETA 00:02:05
+# Run progress: 80.99% complete, ETA 00:01:57
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 10886.831 ns/op
-# Warmup Iteration   2: 10428.063 ns/op
-Iteration   1: 10393.699 ns/op
-Iteration   2: 10388.796 ns/op
+# Warmup Iteration   1: 10886.317 ns/op
+# Warmup Iteration   2: 10411.302 ns/op
+Iteration   1: 10400.619 ns/op
+Iteration   2: 10393.236 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  10400.330 ±(99.9%) 73.041 ns/op [Average]
-  (min, avg, max) = (10388.796, 10400.330, 10413.956), stdev = 11.303
-  CI (99.9%): [10327.290, 10473.371] (assumes normal distribution)
+  10400.621 ±(99.9%) 78.008 ns/op [Average]
+  (min, avg, max) = (10390.985, 10400.621, 10417.644), stdev = 12.072
+  CI (99.9%): [10322.613, 10478.629] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2074,27 +2074,27 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny
 
-# Run progress: 81.69% complete, ETA 00:02:00
+# Run progress: 81.69% complete, ETA 00:01:52
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.674 ns/op
-# Warmup Iteration   2: 3.472 ns/op
-Iteration   1: 3.543 ns/op
-Iteration   2: 3.544 ns/op
+# Warmup Iteration   1: 3.577 ns/op
+# Warmup Iteration   2: 3.438 ns/op
+Iteration   1: 3.688 ns/op
+Iteration   2: 3.699 ns/op
 
-# Run progress: 82.39% complete, ETA 00:01:56
+# Run progress: 82.39% complete, ETA 00:01:48
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.659 ns/op
-# Warmup Iteration   2: 4.020 ns/op
-Iteration   1: 3.505 ns/op
-Iteration   2: 3.539 ns/op
+# Warmup Iteration   1: 3.698 ns/op
+# Warmup Iteration   2: 3.464 ns/op
+Iteration   1: 3.589 ns/op
+Iteration   2: 3.623 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
-  3.533 ±(99.9%) 0.122 ns/op [Average]
-  (min, avg, max) = (3.505, 3.533, 3.544), stdev = 0.019
-  CI (99.9%): [3.411, 3.654] (assumes normal distribution)
+  3.650 ±(99.9%) 0.338 ns/op [Average]
+  (min, avg, max) = (3.589, 3.650, 3.699), stdev = 0.052
+  CI (99.9%): [3.312, 3.988] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2109,27 +2109,27 @@ Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny
 
-# Run progress: 83.10% complete, ETA 00:01:51
+# Run progress: 83.10% complete, ETA 00:01:44
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.696 ns/op
-# Warmup Iteration   2: 3.710 ns/op
-Iteration   1: 3.677 ns/op
-Iteration   2: 3.683 ns/op
+# Warmup Iteration   1: 3.697 ns/op
+# Warmup Iteration   2: 3.693 ns/op
+Iteration   1: 3.666 ns/op
+Iteration   2: 3.674 ns/op
 
-# Run progress: 83.80% complete, ETA 00:01:46
+# Run progress: 83.80% complete, ETA 00:01:39
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 3.709 ns/op
-# Warmup Iteration   2: 3.702 ns/op
-Iteration   1: 3.671 ns/op
-Iteration   2: 3.670 ns/op
+# Warmup Iteration   1: 3.712 ns/op
+# Warmup Iteration   2: 3.735 ns/op
+Iteration   1: 3.661 ns/op
+Iteration   2: 3.663 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
-  3.675 ±(99.9%) 0.040 ns/op [Average]
-  (min, avg, max) = (3.670, 3.675, 3.683), stdev = 0.006
-  CI (99.9%): [3.635, 3.716] (assumes normal distribution)
+  3.666 ±(99.9%) 0.035 ns/op [Average]
+  (min, avg, max) = (3.661, 3.666, 3.674), stdev = 0.005
+  CI (99.9%): [3.631, 3.701] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2145,27 +2145,27 @@ Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq
 # Parameters: (size = 100)
 
-# Run progress: 84.51% complete, ETA 00:01:41
+# Run progress: 84.51% complete, ETA 00:01:35
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1862.060 ns/op
-# Warmup Iteration   2: 1228.516 ns/op
-Iteration   1: 1202.944 ns/op
-Iteration   2: 1203.704 ns/op
+# Warmup Iteration   1: 1852.678 ns/op
+# Warmup Iteration   2: 1245.262 ns/op
+Iteration   1: 1188.378 ns/op
+Iteration   2: 1188.817 ns/op
 
-# Run progress: 85.21% complete, ETA 00:01:37
+# Run progress: 85.21% complete, ETA 00:01:31
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 1880.434 ns/op
-# Warmup Iteration   2: 1582.532 ns/op
-Iteration   1: 1199.109 ns/op
-Iteration   2: 1194.577 ns/op
+# Warmup Iteration   1: 1969.123 ns/op
+# Warmup Iteration   2: 1617.504 ns/op
+Iteration   1: 1642.273 ns/op
+Iteration   2: 1642.674 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  1200.084 ±(99.9%) 27.050 ns/op [Average]
-  (min, avg, max) = (1194.577, 1200.084, 1203.704), stdev = 4.186
-  CI (99.9%): [1173.034, 1227.134] (assumes normal distribution)
+  1415.535 ±(99.9%) 1693.337 ns/op [Average]
+  (min, avg, max) = (1188.378, 1415.535, 1642.674), stdev = 262.046
+  CI (99.9%): [≈ 0, 3108.872] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2181,27 +2181,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq
 # Parameters: (size = 1000)
 
-# Run progress: 85.92% complete, ETA 00:01:32
+# Run progress: 85.92% complete, ETA 00:01:26
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 17231.961 ns/op
-# Warmup Iteration   2: 16734.327 ns/op
-Iteration   1: 16082.575 ns/op
-Iteration   2: 16167.536 ns/op
+# Warmup Iteration   1: 17618.643 ns/op
+# Warmup Iteration   2: 16696.215 ns/op
+Iteration   1: 16231.650 ns/op
+Iteration   2: 16343.009 ns/op
 
-# Run progress: 86.62% complete, ETA 00:01:27
+# Run progress: 86.62% complete, ETA 00:01:22
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 17845.167 ns/op
-# Warmup Iteration   2: 16657.187 ns/op
-Iteration   1: 16369.073 ns/op
-Iteration   2: 16368.012 ns/op
+# Warmup Iteration   1: 15201.166 ns/op
+# Warmup Iteration   2: 13064.751 ns/op
+Iteration   1: 11049.839 ns/op
+Iteration   2: 11042.520 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  16246.799 ±(99.9%) 935.656 ns/op [Average]
-  (min, avg, max) = (16082.575, 16246.799, 16369.073), stdev = 144.794
-  CI (99.9%): [15311.143, 17182.456] (assumes normal distribution)
+  13666.755 ±(99.9%) 19556.063 ns/op [Average]
+  (min, avg, max) = (11042.520, 13666.755, 16343.009), stdev = 3026.322
+  CI (99.9%): [≈ 0, 33222.818] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2217,27 +2217,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq
 # Parameters: (size = 10000)
 
-# Run progress: 87.32% complete, ETA 00:01:23
+# Run progress: 87.32% complete, ETA 00:01:18
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 116488.590 ns/op
-# Warmup Iteration   2: 104424.331 ns/op
-Iteration   1: 103930.075 ns/op
-Iteration   2: 104237.624 ns/op
+# Warmup Iteration   1: 179862.384 ns/op
+# Warmup Iteration   2: 166431.813 ns/op
+Iteration   1: 165630.360 ns/op
+Iteration   2: 167148.376 ns/op
 
-# Run progress: 88.03% complete, ETA 00:01:18
+# Run progress: 88.03% complete, ETA 00:01:13
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 112833.320 ns/op
-# Warmup Iteration   2: 105682.035 ns/op
-Iteration   1: 104560.558 ns/op
-Iteration   2: 104894.546 ns/op
+# Warmup Iteration   1: 179694.382 ns/op
+# Warmup Iteration   2: 165484.773 ns/op
+Iteration   1: 164320.104 ns/op
+Iteration   2: 163975.329 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  104405.701 ±(99.9%) 2683.660 ns/op [Average]
-  (min, avg, max) = (103930.075, 104405.701, 104894.546), stdev = 415.299
-  CI (99.9%): [101722.041, 107089.361] (assumes normal distribution)
+  165268.542 ±(99.9%) 9317.090 ns/op [Average]
+  (min, avg, max) = (163975.329, 165268.542, 167148.376), stdev = 1441.830
+  CI (99.9%): [155951.452, 174585.632] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2253,27 +2253,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq
 # Parameters: (size = 100)
 
-# Run progress: 88.73% complete, ETA 00:01:13
+# Run progress: 88.73% complete, ETA 00:01:09
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 888.556 ns/op
-# Warmup Iteration   2: 852.158 ns/op
-Iteration   1: 857.619 ns/op
-Iteration   2: 859.826 ns/op
+# Warmup Iteration   1: 886.434 ns/op
+# Warmup Iteration   2: 871.410 ns/op
+Iteration   1: 864.925 ns/op
+Iteration   2: 868.196 ns/op
 
-# Run progress: 89.44% complete, ETA 00:01:09
+# Run progress: 89.44% complete, ETA 00:01:05
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 884.290 ns/op
-# Warmup Iteration   2: 864.994 ns/op
-Iteration   1: 870.697 ns/op
-Iteration   2: 873.716 ns/op
+# Warmup Iteration   1: 881.524 ns/op
+# Warmup Iteration   2: 868.475 ns/op
+Iteration   1: 868.397 ns/op
+Iteration   2: 868.040 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  865.465 ±(99.9%) 51.265 ns/op [Average]
-  (min, avg, max) = (857.619, 865.465, 873.716), stdev = 7.933
-  CI (99.9%): [814.200, 916.730] (assumes normal distribution)
+  867.390 ±(99.9%) 10.658 ns/op [Average]
+  (min, avg, max) = (864.925, 867.390, 868.397), stdev = 1.649
+  CI (99.9%): [856.731, 878.048] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2289,27 +2289,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq
 # Parameters: (size = 1000)
 
-# Run progress: 90.14% complete, ETA 00:01:04
+# Run progress: 90.14% complete, ETA 00:01:00
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 8870.158 ns/op
-# Warmup Iteration   2: 8407.507 ns/op
-Iteration   1: 8396.660 ns/op
-Iteration   2: 8404.075 ns/op
+# Warmup Iteration   1: 8899.188 ns/op
+# Warmup Iteration   2: 8490.998 ns/op
+Iteration   1: 8480.117 ns/op
+Iteration   2: 8766.414 ns/op
 
-# Run progress: 90.85% complete, ETA 00:00:59
+# Run progress: 90.85% complete, ETA 00:00:56
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 8953.262 ns/op
-# Warmup Iteration   2: 8421.099 ns/op
-Iteration   1: 8420.943 ns/op
-Iteration   2: 8386.425 ns/op
+# Warmup Iteration   1: 8932.135 ns/op
+# Warmup Iteration   2: 8657.057 ns/op
+Iteration   1: 8554.960 ns/op
+Iteration   2: 8543.823 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  8402.026 ±(99.9%) 93.957 ns/op [Average]
-  (min, avg, max) = (8386.425, 8402.026, 8420.943), stdev = 14.540
-  CI (99.9%): [8308.068, 8495.983] (assumes normal distribution)
+  8586.329 ±(99.9%) 804.531 ns/op [Average]
+  (min, avg, max) = (8480.117, 8586.329, 8766.414), stdev = 124.502
+  CI (99.9%): [7781.798, 9390.859] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2325,27 +2325,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq
 # Parameters: (size = 10000)
 
-# Run progress: 91.55% complete, ETA 00:00:55
+# Run progress: 91.55% complete, ETA 00:00:52
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 96072.504 ns/op
-# Warmup Iteration   2: 91050.500 ns/op
-Iteration   1: 90104.200 ns/op
-Iteration   2: 90041.078 ns/op
+# Warmup Iteration   1: 90930.577 ns/op
+# Warmup Iteration   2: 87983.928 ns/op
+Iteration   1: 87519.103 ns/op
+Iteration   2: 87517.005 ns/op
 
-# Run progress: 92.25% complete, ETA 00:00:50
+# Run progress: 92.25% complete, ETA 00:00:47
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 92301.506 ns/op
-# Warmup Iteration   2: 87229.993 ns/op
-Iteration   1: 87406.617 ns/op
-Iteration   2: 87356.607 ns/op
+# Warmup Iteration   1: 92403.846 ns/op
+# Warmup Iteration   2: 87551.467 ns/op
+Iteration   1: 87477.372 ns/op
+Iteration   2: 94252.214 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  88727.126 ±(99.9%) 10042.016 ns/op [Average]
-  (min, avg, max) = (87356.607, 88727.126, 90104.200), stdev = 1554.013
-  CI (99.9%): [78685.109, 98769.142] (assumes normal distribution)
+  89191.424 ±(99.9%) 21802.201 ns/op [Average]
+  (min, avg, max) = (87477.372, 89191.424, 94252.214), stdev = 3373.915
+  CI (99.9%): [67389.222, 110993.625] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2361,27 +2361,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq
 # Parameters: (size = 100)
 
-# Run progress: 92.96% complete, ETA 00:00:46
+# Run progress: 92.96% complete, ETA 00:00:43
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 940.718 ns/op
-# Warmup Iteration   2: 885.958 ns/op
-Iteration   1: 893.291 ns/op
-Iteration   2: 895.063 ns/op
+# Warmup Iteration   1: 948.315 ns/op
+# Warmup Iteration   2: 891.523 ns/op
+Iteration   1: 885.884 ns/op
+Iteration   2: 888.793 ns/op
 
-# Run progress: 93.66% complete, ETA 00:00:41
+# Run progress: 93.66% complete, ETA 00:00:38
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 921.558 ns/op
-# Warmup Iteration   2: 899.206 ns/op
-Iteration   1: 885.671 ns/op
-Iteration   2: 890.696 ns/op
+# Warmup Iteration   1: 936.743 ns/op
+# Warmup Iteration   2: 890.967 ns/op
+Iteration   1: 894.947 ns/op
+Iteration   2: 896.841 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  891.180 ±(99.9%) 26.411 ns/op [Average]
-  (min, avg, max) = (885.671, 891.180, 895.063), stdev = 4.087
-  CI (99.9%): [864.769, 917.591] (assumes normal distribution)
+  891.616 ±(99.9%) 33.208 ns/op [Average]
+  (min, avg, max) = (885.884, 891.616, 896.841), stdev = 5.139
+  CI (99.9%): [858.408, 924.824] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2397,27 +2397,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq
 # Parameters: (size = 1000)
 
-# Run progress: 94.37% complete, ETA 00:00:36
+# Run progress: 94.37% complete, ETA 00:00:34
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 9026.524 ns/op
-# Warmup Iteration   2: 8414.465 ns/op
-Iteration   1: 8416.749 ns/op
-Iteration   2: 8406.296 ns/op
+# Warmup Iteration   1: 9080.617 ns/op
+# Warmup Iteration   2: 8630.475 ns/op
+Iteration   1: 8528.277 ns/op
+Iteration   2: 8556.816 ns/op
 
-# Run progress: 95.07% complete, ETA 00:00:32
+# Run progress: 95.07% complete, ETA 00:00:30
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 9003.652 ns/op
-# Warmup Iteration   2: 8697.327 ns/op
-Iteration   1: 8541.509 ns/op
-Iteration   2: 8524.929 ns/op
+# Warmup Iteration   1: 8824.053 ns/op
+# Warmup Iteration   2: 8573.051 ns/op
+Iteration   1: 8494.376 ns/op
+Iteration   2: 8505.608 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  8472.371 ±(99.9%) 456.963 ns/op [Average]
-  (min, avg, max) = (8406.296, 8472.371, 8541.509), stdev = 70.716
-  CI (99.9%): [8015.407, 8929.334] (assumes normal distribution)
+  8521.269 ±(99.9%) 178.191 ns/op [Average]
+  (min, avg, max) = (8494.376, 8521.269, 8556.816), stdev = 27.575
+  CI (99.9%): [8343.078, 8699.460] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2433,27 +2433,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 # Benchmark: io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq
 # Parameters: (size = 10000)
 
-# Run progress: 95.77% complete, ETA 00:00:27
+# Run progress: 95.77% complete, ETA 00:00:25
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 91542.729 ns/op
-# Warmup Iteration   2: 87968.903 ns/op
-Iteration   1: 87984.622 ns/op
-Iteration   2: 88065.181 ns/op
+# Warmup Iteration   1: 90948.254 ns/op
+# Warmup Iteration   2: 87720.517 ns/op
+Iteration   1: 87326.580 ns/op
+Iteration   2: 87322.375 ns/op
 
-# Run progress: 96.48% complete, ETA 00:00:22
+# Run progress: 96.48% complete, ETA 00:00:21
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 91263.846 ns/op
-# Warmup Iteration   2: 87383.184 ns/op
-Iteration   1: 88438.553 ns/op
-Iteration   2: 87374.360 ns/op
+# Warmup Iteration   1: 91341.421 ns/op
+# Warmup Iteration   2: 88633.344 ns/op
+Iteration   1: 88414.013 ns/op
+Iteration   2: 88180.445 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  87965.679 ±(99.9%) 2849.944 ns/op [Average]
-  (min, avg, max) = (87374.360, 87965.679, 88438.553), stdev = 441.032
-  CI (99.9%): [85115.735, 90815.623] (assumes normal distribution)
+  87810.853 ±(99.9%) 3681.124 ns/op [Average]
+  (min, avg, max) = (87322.375, 87810.853, 88414.013), stdev = 569.658
+  CI (99.9%): [84129.730, 91491.977] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2468,27 +2468,27 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One
 
-# Run progress: 97.18% complete, ETA 00:00:18
+# Run progress: 97.18% complete, ETA 00:00:17
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 33.744 ns/op
-# Warmup Iteration   2: 30.786 ns/op
-Iteration   1: 30.056 ns/op
-Iteration   2: 29.405 ns/op
+# Warmup Iteration   1: 34.784 ns/op
+# Warmup Iteration   2: 29.337 ns/op
+Iteration   1: 28.958 ns/op
+Iteration   2: 28.937 ns/op
 
-# Run progress: 97.89% complete, ETA 00:00:13
+# Run progress: 97.89% complete, ETA 00:00:12
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 32.380 ns/op
-# Warmup Iteration   2: 29.780 ns/op
-Iteration   1: 29.332 ns/op
-Iteration   2: 29.362 ns/op
+# Warmup Iteration   1: 35.206 ns/op
+# Warmup Iteration   2: 29.640 ns/op
+Iteration   1: 29.085 ns/op
+Iteration   2: 28.942 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
-  29.539 ±(99.9%) 2.236 ns/op [Average]
-  (min, avg, max) = (29.332, 29.539, 30.056), stdev = 0.346
-  CI (99.9%): [27.303, 31.774] (assumes normal distribution)
+  28.980 ±(99.9%) 0.455 ns/op [Average]
+  (min, avg, max) = (28.937, 28.980, 29.085), stdev = 0.070
+  CI (99.9%): [28.526, 29.435] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2503,30 +2503,30 @@ Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two
 
-# Run progress: 98.59% complete, ETA 00:00:09
+# Run progress: 98.59% complete, ETA 00:00:08
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 37.069 ns/op
-# Warmup Iteration   2: 33.819 ns/op
-Iteration   1: 33.222 ns/op
-Iteration   2: 33.332 ns/op
+# Warmup Iteration   1: 37.651 ns/op
+# Warmup Iteration   2: 33.305 ns/op
+Iteration   1: 32.778 ns/op
+Iteration   2: 32.738 ns/op
 
 # Run progress: 99.30% complete, ETA 00:00:04
 # Fork: 2 of 2
 OpenJDK 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
-# Warmup Iteration   1: 38.862 ns/op
-# Warmup Iteration   2: 33.078 ns/op
-Iteration   1: 33.675 ns/op
-Iteration   2: 33.820 ns/op
+# Warmup Iteration   1: 36.651 ns/op
+# Warmup Iteration   2: 33.496 ns/op
+Iteration   1: 33.040 ns/op
+Iteration   2: 32.998 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two":
-  33.512 ±(99.9%) 1.821 ns/op [Average]
-  (min, avg, max) = (33.222, 33.512, 33.820), stdev = 0.282
-  CI (99.9%): [31.691, 35.333] (assumes normal distribution)
+  32.888 ±(99.9%) 0.985 ns/op [Average]
+  (min, avg, max) = (32.738, 32.888, 33.040), stdev = 0.152
+  CI (99.9%): [31.904, 33.873] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:10:49
+# Run complete. Total time: 00:10:14
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -2540,77 +2540,77 @@ works, and factor in a small probability of new VM bugs. Additionally, while com
 different JVMs are already problematic, the performance difference caused by different Blackhole
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                                                     (bytesLen)  (count)  (itemsCount)  (len)  (size)                    (url)  Mode  Cnt           Score            Error  Units
-BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          87.860 ±         11.214  ns/op
-BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        1917.138 ±         40.950  ns/op
-BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          32.702 ±          0.910  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                      N/A  avgt    4       58658.553 ±      48499.538  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                      N/A  avgt    4      566694.837 ±    1536125.597  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                      N/A  avgt    4     1049050.269 ±     253242.774  ns/op
-CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         735.299 ±         20.404  ns/op
-DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4           0.481 ±          0.033  ns/op
-DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4           0.417 ±          0.049  ns/op
-DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          67.685 ±          7.147  ns/op
-DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          57.803 ±          0.042  ns/op
-DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          57.802 ±          0.071  ns/op
-IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4     3900907.732 ±    1012837.671  ns/op
-IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4      367990.690 ±      11471.347  ns/op
-IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4    29672844.566 ±     722534.392  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                      N/A  avgt    4         910.864 ±         38.596  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                      N/A  avgt    4        2967.152 ±        517.717  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                      N/A  avgt    4       15029.737 ±        688.760  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                      N/A  avgt    4        1612.938 ±        309.739  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                      N/A  avgt    4        5496.358 ±        139.795  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                      N/A  avgt    4       23851.483 ±       4554.631  ns/op
-NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4         598.276 ±         16.960  ns/op
-NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4         578.417 ±         12.817  ns/op
-NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4         808.344 ±         12.265  ns/op
-NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4         621.306 ±         19.049  ns/op
-NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  1403445619.917 ± 6383936936.877  ns/op
-NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  1126454227.917 ± 4727939672.981  ns/op
-NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  1513506987.313 ± 5984836689.733  ns/op
-NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         311.288 ±          0.567  ns/op
-NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         311.302 ±          1.780  ns/op
-NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          73.807 ±          1.871  ns/op
-NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          38.850 ±          0.071  ns/op
-NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          25.222 ±          0.198  ns/op
-NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          61.270 ±          0.648  ns/op
-NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          34.332 ±          0.296  ns/op
-NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         293.959 ±         36.553  ns/op
-NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          21.915 ±          0.198  ns/op
-NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          34.314 ±          0.152  ns/op
-NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         270.456 ±         68.340  ns/op
-OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                      N/A  avgt    4         320.201 ±          2.009  ns/op
-OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                      N/A  avgt    4        2886.120 ±         42.933  ns/op
-OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                      N/A  avgt    4       31074.403 ±       3175.945  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                      N/A  avgt    4          26.326 ±          0.516  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                      N/A  avgt    4          50.901 ±          7.469  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                      N/A  avgt    4          97.940 ±          1.421  ns/op
-PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4         250.360 ±        190.144  ns/op
-PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4         235.920 ±        113.493  ns/op
-PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4         263.674 ±        162.161  ns/op
-PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4           3.434 ±          0.130  ns/op
-PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4           3.429 ±          0.138  ns/op
-PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4           3.417 ±          0.037  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                      N/A  avgt    4          20.486 ±          0.534  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                      N/A  avgt    4          37.686 ±          0.423  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                      N/A  avgt    4          72.237 ±          0.678  ns/op
-ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          29.391 ±          2.518  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                      N/A  avgt    4         340.063 ±         13.058  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                      N/A  avgt    4        1454.319 ±          8.793  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                      N/A  avgt    4       10400.330 ±         73.041  ns/op
-SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4           3.533 ±          0.122  ns/op
-SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4           3.675 ±          0.040  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                      N/A  avgt    4        1200.084 ±         27.050  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                      N/A  avgt    4       16246.799 ±        935.656  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                      N/A  avgt    4      104405.701 ±       2683.660  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                      N/A  avgt    4         865.465 ±         51.265  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                      N/A  avgt    4        8402.026 ±         93.957  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                      N/A  avgt    4       88727.126 ±      10042.016  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                      N/A  avgt    4         891.180 ±         26.411  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                      N/A  avgt    4        8472.371 ±        456.963  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                      N/A  avgt    4       87965.679 ±       2849.944  ns/op
-ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          29.539 ±          2.236  ns/op
-ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4          33.512 ±          1.821  ns/op
+Benchmark                                                     (bytesLen)  (count)  (itemsCount)  (len)  (size)                    (url)  Mode  Cnt         Score          Error  Units
+BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        90.464 ±        6.303  ns/op
+BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4      1915.536 ±       30.555  ns/op
+BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        33.057 ±        0.869  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                      N/A  avgt    4     60220.166 ±    65863.435  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                      N/A  avgt    4    521440.587 ±  2321180.878  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                      N/A  avgt    4   1055674.916 ±   215689.411  ns/op
+CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       734.601 ±       10.049  ns/op
+DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         0.484 ±        0.031  ns/op
+DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         0.411 ±        0.018  ns/op
+DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        66.966 ±        1.677  ns/op
+DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.830 ±        0.136  ns/op
+DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.809 ±        0.058  ns/op
+IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4   3833194.047 ±  1435719.499  ns/op
+IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4    367586.997 ±    11551.565  ns/op
+IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4  29665891.743 ±   479582.990  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                      N/A  avgt    4       924.779 ±       77.989  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                      N/A  avgt    4      3124.698 ±      635.844  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                      N/A  avgt    4     14089.136 ±      653.813  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                      N/A  avgt    4      1606.298 ±      244.750  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                      N/A  avgt    4      5466.212 ±     2774.189  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                      N/A  avgt    4     23086.430 ±      720.117  ns/op
+NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       593.446 ±       80.153  ns/op
+NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       584.286 ±       84.192  ns/op
+NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       808.142 ±       20.934  ns/op
+NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       615.087 ±        5.252  ns/op
+NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  60056603.615 ± 56524218.305  ns/op
+NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  53752678.289 ± 24826729.621  ns/op
+NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  57009926.823 ± 46501359.658  ns/op
+NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       313.472 ±       10.461  ns/op
+NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       312.509 ±        9.855  ns/op
+NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        73.468 ±        0.946  ns/op
+NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        38.881 ±        0.206  ns/op
+NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.210 ±        0.158  ns/op
+NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        60.665 ±        0.777  ns/op
+NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        34.346 ±        1.436  ns/op
+NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       289.234 ±       34.127  ns/op
+NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        21.871 ±        0.100  ns/op
+NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        34.367 ±        0.303  ns/op
+NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       275.940 ±       20.485  ns/op
+OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                      N/A  avgt    4       325.070 ±       28.102  ns/op
+OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                      N/A  avgt    4      2879.619 ±       40.757  ns/op
+OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                      N/A  avgt    4     31002.821 ±     2047.416  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                      N/A  avgt    4        26.028 ±        5.545  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                      N/A  avgt    4        48.761 ±       12.497  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                      N/A  avgt    4        98.298 ±        1.950  ns/op
+PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4       254.390 ±      131.563  ns/op
+PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4       244.195 ±      121.216  ns/op
+PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4       263.810 ±       63.357  ns/op
+PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.460 ±        0.096  ns/op
+PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.539 ±        0.249  ns/op
+PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.504 ±        0.264  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                      N/A  avgt    4        20.468 ±        0.158  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                      N/A  avgt    4        37.727 ±        0.231  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                      N/A  avgt    4        72.634 ±        3.654  ns/op
+ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        28.988 ±        0.191  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                      N/A  avgt    4       341.581 ±        6.588  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                      N/A  avgt    4      1458.537 ±       14.734  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                      N/A  avgt    4     10400.621 ±       78.008  ns/op
+SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.650 ±        0.338  ns/op
+SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.666 ±        0.035  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                      N/A  avgt    4      1415.535 ±     1693.337  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                      N/A  avgt    4     13666.755 ±    19556.063  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    165268.542 ±     9317.090  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                      N/A  avgt    4       867.390 ±       10.658  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      8586.329 ±      804.531  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                      N/A  avgt    4     89191.424 ±    21802.201  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                      N/A  avgt    4       891.616 ±       33.208  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      8521.269 ±      178.191  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                      N/A  avgt    4     87810.853 ±     3681.124  ns/op
+ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        28.980 ±        0.455  ns/op
+ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        32.888 ±        0.985  ns/op
 
 Benchmark result is saved to /home/runner/work/java-benchmarks/java-benchmarks/java-in-time/results/graalvm-community-17.json

@@ -27,6 +27,8 @@ This page lists raw JSON outputs produced by the Eclipse Collections benchmark m
 - 21.0.8-OpenJDK 64-Bit Server VM.json
 - 21.0.9-Java HotSpot(TM) 64-Bit Server VM.json
 - 21.0.9-OpenJDK 64-Bit Server VM.json
+- 24-Java HotSpot(TM) 64-Bit Server VM.json
+- 24.0.2-OpenJDK 64-Bit Server VM.json
 - 25.0.1-Java HotSpot(TM) 64-Bit Server VM.json
 - 25.0.1-OpenJDK 64-Bit Server VM.json
 - jmh-result-1.8.0_312.json
@@ -58,13 +60,13 @@ Comparison between standard JDK and Eclipse Collections equivalents.
 
 | Structure | Type | Insertion (10M) | Get (Random) |
 |---|---|---|---|
-| **ArrayList** | JDK | ~63 ms | ~35.7 ns |
-| **MutableList (FastList)** | EC | ~56 ms | ~40.5 ns |
-| **HashMap** | JDK | ~186 ms | ~149.1 ns |
-| **MutableMap (UnifiedMap)** | EC | ~80 ms | ~55.7 ns |
-| **TreeMap** | JDK | ~856 ms | ~700.8 ns |
-| **TreeSortedMap** | EC | ~849 ms | ~682.3 ns |
-| **LinkedList** | JDK | ~485 ms | ~13 ms |
+| **ArrayList** | JDK | - | - |
+| **MutableList (FastList)** | EC | - | - |
+| **HashMap** | JDK | - | - |
+| **MutableMap (UnifiedMap)** | EC | - | - |
+| **TreeMap** | JDK | - | - |
+| **TreeSortedMap** | EC | - | - |
+| **LinkedList** | JDK | - | - |
 
 ### Observations:
 - Results generated from 25.0.1-Java HotSpot(TM) 64-Bit Server VM.json

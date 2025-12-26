@@ -1,9 +1,9 @@
-**Overall result:** A (oracle-25.json) is faster overall (geometric mean ratio B/A = 1.041, 4.084% faster, 47 benchmark(s)).
+**Overall result:** A (oracle-25.json) is faster overall (geometric mean ratio B/A = 1.040, 3.966% faster, 47 benchmark(s)).
 
 | Benchmark | A (oracle-25.json) | B (microsoft-25.json) | Ratio B/A | Δ% (B vs A) | Winner (lower is better) | Unit |
 |---|---:|---:|---:|---:|:---:|---|
-| [BitArrayBenchmark.ByteCtor](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/BitArrayBenchmark.java) | <span style="color:#137333;font-weight:600">146.712</span> | <span style="color:#c5221f">155.986</span> | <span style="color:#c5221f;font-weight:600">1.063</span> | <span style="color:#c5221f;font-weight:600">+6.321%</span> | A | ns/op |
-| [BitArrayBenchmark.HammingDistanceManual](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/BitArrayBenchmark.java) | <span style="color:#c5221f">1961.627</span> | <span style="color:#137333;font-weight:600">1888.657</span> | <span style="color:#137333;font-weight:600">0.963</span> | <span style="color:#137333;font-weight:600">-3.720%</span> | B | ns/op |
+| [BitArrayBenchmark.ByteCtor](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/BitArrayBenchmark.java) | <span style="color:#c5221f">159.537</span> | <span style="color:#137333;font-weight:600">155.986</span> | <span style="color:#137333;font-weight:600">0.978</span> | <span style="color:#137333;font-weight:600">-2.225%</span> | B | ns/op |
+| [BitArrayBenchmark.HammingDistanceManual](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/BitArrayBenchmark.java) | <span style="color:#c5221f">1903.374</span> | <span style="color:#137333;font-weight:600">1888.657</span> | <span style="color:#137333;font-weight:600">0.992</span> | <span style="color:#137333;font-weight:600">-0.773%</span> | B | ns/op |
 | [BitArrayBenchmark.HammingDistanceTensorPrimitives](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/BitArrayBenchmark.java) | <span style="color:#137333;font-weight:600">26.098</span> | <span style="color:#c5221f">31.023</span> | <span style="color:#c5221f;font-weight:600">1.189</span> | <span style="color:#c5221f;font-weight:600">+18.869%</span> | A | ns/op |
 | [CollectionsBenchmark.InsertRange](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/CollectionsBenchmark.java) | <span style="color:#137333;font-weight:600">161001.082</span> | <span style="color:#c5221f">238844.400</span> | <span style="color:#c5221f;font-weight:600">1.483</span> | <span style="color:#c5221f;font-weight:600">+48.350%</span> | A | ns/op |
 | [CryptoBenchmark.Hash](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/java-in-time/src/main/java/io/github/benchjava/bench/CryptoBenchmark.java) | <span style="color:#137333;font-weight:600">713.828</span> | <span style="color:#c5221f">858.506</span> | <span style="color:#c5221f;font-weight:600">1.203</span> | <span style="color:#c5221f;font-weight:600">+20.268%</span> | A | ns/op |
@@ -52,4 +52,4 @@
 
 _Note: Benchmarks present in only one file are included with '-' on the missing side._
 
-Summary: A faster: 22, B faster: 25, Ties: 0.
+Summary: A faster: 21, B faster: 26, Ties: 0.
