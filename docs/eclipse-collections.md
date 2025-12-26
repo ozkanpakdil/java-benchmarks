@@ -2,6 +2,36 @@
 
 This page lists raw JSON outputs produced by the Eclipse Collections benchmark module and provides a combined viewer link.
 
+## Common Data Structures Comparison (10M Operations)
+
+Reproducing the benchmark from the [Substack post](https://substack.com/@skilledcoder/note/c-190793397) and adding Eclipse Collections.
+
+### Insertion (10M elements)
+| Structure | Time (~ms) |
+|---|---|
+| **ArrayList.add()** | ~70 |
+| **MutableList.add() (EC)** | ~63 |
+| **HashMap.put()** | ~241 |
+| **MutableMap.put() (EC)** | ~95 |
+| **TreeMap.put()** | ~806 |
+| **TreeSortedMap.put() (EC)** | ~904 |
+| **LinkedList.add()** | ~337 |
+
+### Get (10M operations total)
+Baseline comparison on a 10M sized structure. Values are normalized for comparison.
+
+| Structure | Time |
+|---|---|
+| **ArrayList.get(i)** | ~40 ms |
+| **MutableList.get(i) (EC)** | ~50 ms |
+| **HashMap.get(key)** | ~140 ms |
+| **MutableMap.get(key) (EC)** | ~150 ms |
+| **TreeMap.get(key)** | ~420 ms |
+| **TreeSortedMap.get(key) (EC)** | ~450 ms |
+| **LinkedList.get(i)** | ~2.5 s |
+
+*Note: The get() results for Eclipse Collections and standard JDK are very close. In this environment, `MutableList` and `MutableMap` showed significant performance improvements during insertion compared to standard JDK `ArrayList` and `HashMap` respectively. `LinkedList` and Tree-based structures show significantly higher costs as expected.*
+
 ## Raw JSON files
 - 17-Java HotSpot(TM) 64-Bit Server VM.json
 - 17.0.10-Java HotSpot(TM) 64-Bit Server VM.json

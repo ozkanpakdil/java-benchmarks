@@ -15,5 +15,8 @@ See the Java-in-time benchmark outputs: [java-in-time results](./docs/java-in-ti
 ## Eclipse Collections
 See the Eclipse Collections benchmark outputs: [eclipse-collections results](./docs/eclipse-collections.md)
 
+### Java Data Structures Comparison
+Check out the comparison between JDK and Eclipse Collections: [Common Data Structures Comparison](./docs/eclipse-collections.md#common-data-structures-comparison-10m-operations)
+
 ---
 Date created: 2025-12-26
