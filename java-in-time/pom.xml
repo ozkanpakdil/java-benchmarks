@@ -4,7 +4,7 @@
   <artifactId>java-version-benchmarks</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <name>Java Version Benchmarks (JMH)</name>
-  <description>Compare Java versions (8/11/17/24/25) with a suite of JMH microbenchmarks.</description>
+  <description>Compare Java versions (8/11/17/25) with a suite of JMH microbenchmarks.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
@@ -136,12 +136,6 @@
       <id>java-17</id>
       <properties>
         <maven.compiler.release>17</maven.compiler.release>
-      </properties>
-    </profile>
-    <profile>
-      <id>java-24</id>
-      <properties>
-        <maven.compiler.release>24</maven.compiler.release>
       </properties>
     </profile>
     <profile>

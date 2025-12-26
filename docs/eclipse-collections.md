@@ -27,8 +27,6 @@ This page lists raw JSON outputs produced by the Eclipse Collections benchmark m
 - 21.0.8-OpenJDK 64-Bit Server VM.json
 - 21.0.9-Java HotSpot(TM) 64-Bit Server VM.json
 - 21.0.9-OpenJDK 64-Bit Server VM.json
-- 24-Java HotSpot(TM) 64-Bit Server VM.json
-- 24.0.2-OpenJDK 64-Bit Server VM.json
 - 25.0.1-Java HotSpot(TM) 64-Bit Server VM.json
 - 25.0.1-OpenJDK 64-Bit Server VM.json
 - jmh-result-1.8.0_312.json

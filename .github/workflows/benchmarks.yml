@@ -50,7 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [25, 24, 17]
+        java: [25, 17]
         distribution: [temurin, zulu, microsoft, graalvm-community, oracle]
     steps:
       - name: Checkout
@@ -116,7 +116,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [25, 24, 21, 17]
+        java: [25, 21, 17]
         distribution: [temurin, oracle]
     steps:
       - name: Checkout
@@ -365,7 +365,7 @@ jobs:
             fi
           done
           vers=()
-          for v in 11 17 24 25; do
+          for v in 11 17 25; do
             if [[ -n "${seen_versions[$v]:-}" ]]; then vers+=("$v"); fi
           done
 
@@ -395,24 +395,6 @@ jobs:
                 fi
               done
             done
-          done
-
-          # 3a.1) Blog-style summaries for 24 vs 25 per distribution
-          echo >> "$JIT_DOC"
-          echo "### Blog-style summaries (24 vs 25)" >> "$JIT_DOC"
-          for d in "${dists[@]}"; do
-            a=24; b=25
-            base="java-in-time/results/${d}-${a}.json"
-            cand="java-in-time/results/${d}-${b}.json"
-            if [[ -f "$base" && -f "$cand" ]]; then
-              out="docs/blog-${d}-${a}-vs-${b}.md"
-              echo "Generating blog $out from $base vs $cand"
-              java -cp java-in-time/target/benchmarks.jar io.github.benchjava.tools.BlogifyResults "$base" "$cand" > "$out"
-              rel="./blog-${d}-${a}-vs-${b}.md"
-              echo "- ${d}: ${a} vs ${b} → [read blog](${rel})" >> "$JIT_DOC"
-            else
-              echo "Skipping blog ${d} ${a} vs ${b} (missing files)"
-            fi
           done
 
           # 3b) Cross-distribution comparisons for the same Java version
