@@ -299,7 +299,6 @@ jobs:
             java -cp gc-benchmarks/target/benchmarks.jar io.github.benchjava.tools.SummarizeGCResults \
               gc-benchmarks/results/g1gc.json \
               gc-benchmarks/results/zgc.json > docs/gc-benchmarks.md
-            echo -e "\n## Benchmarks Description\n\n### allocateShortLived\nAllocates many short-lived String objects to a List. This benchmark tests how efficiently the GC handles high allocation rates of small objects.\n\n### allocateLargeObjects\nAllocates 1MB byte arrays. This benchmark tests how the GC handles large object allocations (Humongous objects in G1)." >> docs/gc-benchmarks.md
           fi
 
           repo="${GITHUB_REPOSITORY}"
