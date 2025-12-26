@@ -1,6 +1,6 @@
 # Java 25 vs 24 performance
 
-_Generated on 2025-09-22 from `temurin-24.json` (A) and `temurin-25.json` (B)._
+_Generated on 2025-12-26 from `temurin-24.json` (A) and `temurin-25.json` (B)._
 
 **Overall:** Java 24 is faster overall (geomean B/A = 1.023, across 47 benchmarks; 20 A faster, 27 B faster).
 

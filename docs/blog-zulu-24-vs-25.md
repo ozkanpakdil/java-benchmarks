@@ -1,6 +1,6 @@
 # Java 25 vs 24 performance
 
-_Generated on 2025-09-22 from `zulu-24.json` (A) and `zulu-25.json` (B)._
+_Generated on 2025-12-26 from `zulu-24.json` (A) and `zulu-25.json` (B)._
 
 **Overall:** Java 25 is faster overall (geomean B/A = 0.996, across 47 benchmarks; 17 A faster, 30 B faster).
 
