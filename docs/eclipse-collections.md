@@ -70,7 +70,3 @@ Comparison between standard JDK and Eclipse Collections equivalents.
 
 ### Observations:
 - Results generated from 25.0.1-Java HotSpot(TM) 64-Bit Server VM.json
-- **Insertion**: Eclipse Collections `MutableList` and `MutableMap` show significant performance advantages over JDK `ArrayList` and `HashMap`.
-- **Maps**: `UnifiedMap` (EC) is twice as fast as `HashMap` (JDK) for insertions and almost three times as fast for lookups.
-- **Sorted Maps**: `TreeMap` and `TreeSortedMap` perform similarly, with a slight edge for EC in both insertions and lookups in this run.
-- **LinkedList**: Confirmed as significantly slower for both insertions and lookups compared to other structures. Lookups are particularly expensive due to $O(N)$ complexity.
