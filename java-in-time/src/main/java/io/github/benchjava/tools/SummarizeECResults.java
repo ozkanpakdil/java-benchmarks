@@ -129,14 +129,14 @@ public class SummarizeECResults {
             return "~" + DF3.format(score) + " " + unit;
         }
 
-        if (scoreInMs < 0.001) {
-            return "~" + DF1.format(scoreInMs * 1_000_000) + " ns";
-        } else if (scoreInMs < 1.0) {
-            return "~" + DF1.format(scoreInMs * 1000) + " μs";
+        // Always output in milliseconds for consistency
+        if (scoreInMs < 1.0) {
+            return "~" + DF3.format(scoreInMs) + " ms";
         } else if (scoreInMs < 1000) {
             return "~" + (int) Math.round(scoreInMs) + " ms";
         } else {
-            return "~" + DF1.format(scoreInMs / 1000.0) + " s";
+            // For large values, format with commas for readability
+            return "~" + String.format("%,.0f", scoreInMs) + " ms";
         }
     }
 }
