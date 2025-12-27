@@ -66,6 +66,8 @@ public class SummarizeECResults {
         System.out.println("## Common Data Structures Comparison (10M Operations)");
         System.out.println("Comparison between standard JDK and Eclipse Collections equivalents.");
         System.out.println();
+        System.out.println("📊 **[View Benchmark Source Code](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/eclipse-collections/src/main/java/com/mascix/DataStructureBenchmark.java)**");
+        System.out.println();
         
         System.out.println("### Quick Comparison");
         System.out.println("```text");

@@ -34,6 +34,8 @@ This page lists raw JSON outputs produced by the Eclipse Collections benchmark m
 ## Common Data Structures Comparison (10M Operations)
 Comparison between standard JDK and Eclipse Collections equivalents.
 
+📊 **[View Benchmark Source Code](https://github.com/ozkanpakdil/java-benchmarks/blob/develop/eclipse-collections/src/main/java/com/mascix/DataStructureBenchmark.java)**
+
 ### Quick Comparison
 ```text
 HashMap vs TreeMap vs ArrayList vs LinkedList
