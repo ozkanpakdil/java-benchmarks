@@ -39,30 +39,30 @@ Comparison between standard JDK and Eclipse Collections equivalents.
 ### Quick Comparison
 ```text
 HashMap vs TreeMap vs ArrayList vs LinkedList
-HashMap.get()      → ~39 ms
-TreeMap.get()      → ~728 ms
-ArrayList.get(i)   → ~6 ms
-LinkedList.get(i)  → ~11 ms (per op, O(N))
+HashMap.get()      → ~43 ms
+TreeMap.get()      → ~2,728 ms
+ArrayList.get(i)   → ~8 ms
+LinkedList.get(i)  → ~6 ms (per op, O(N))
 Insertion (10M elements):
-ArrayList.add()    → ~250 ms
-HashMap.put()      → ~388 ms
-TreeMap.put()      → ~999 ms
-LinkedList.add()   → ~797 ms
+ArrayList.add()    → ~1,334 ms
+HashMap.put()      → ~3,781 ms
+TreeMap.put()      → ~4,324 ms
+LinkedList.add()   → ~4,081 ms
 ```
 
 ### Detailed Comparison Table
 
 | Structure | Type | Insertion (10M) | Get (Random) |
 |---|---|---|---|
-| **ArrayList** | JDK | ~250 ms | ~6 ms |
-| **MutableList (FastList)** | EC | ~296 ms | ~6 ms |
-| **HashMap** | JDK | ~388 ms | ~39 ms |
-| **MutableMap (UnifiedMap)** | EC | ~307 ms | ~20 ms |
-| **TreeMap** | JDK | ~999 ms | ~728 ms |
-| **TreeSortedMap** | EC | ~1,213 ms | ~729 ms |
-| **LinkedList** | JDK | ~797 ms | ~11 ms (per op) |
+| **ArrayList** | JDK | ~1,334 ms | ~8 ms |
+| **MutableList (FastList)** | EC | ~1,294 ms | ~8 ms |
+| **HashMap** | JDK | ~3,781 ms | ~43 ms |
+| **MutableMap (UnifiedMap)** | EC | ~3,712 ms | ~38 ms |
+| **TreeMap** | JDK | ~4,324 ms | ~2,728 ms |
+| **TreeSortedMap** | EC | ~4,801 ms | ~2,710 ms |
+| **LinkedList** | JDK | ~4,081 ms | ~6 ms (per op) |
 
 ### Observations:
-- Results generated from 25-datastructure.json
+- Results generated from 25-temurin.json
 - 'Get' operations are scaled to 10M operations for consistency with 'Insertion'.
 - Eclipse Collections does not have a direct LinkedList equivalent (EC focuses on optimized array-based structures like FastList).
