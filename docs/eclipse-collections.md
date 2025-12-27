@@ -38,31 +38,32 @@ Comparison between standard JDK and Eclipse Collections equivalents.
 
 ### Quick Comparison
 ```text
-HashMap vs TreeMap vs ArrayList vs LinkedList
-HashMap.get()      → ~43 ms
-TreeMap.get()      → ~2,728 ms
-ArrayList.get(i)   → ~8 ms
-LinkedList.get(i)  → ~6 ms (per op, O(N))
+Get (10M elements):
+ArrayList.get()    → ~6 ms total, ~0.591 ns avg/op
+HashMap.get()      → ~37 ms total, ~3.686 ns avg/op
+TreeMap.get()      → ~728 ms total, ~72.819 ns avg/op
+LinkedList.get()   → ~73,752,434 ms total, ~7.375 ms avg/op
+
 Insertion (10M elements):
-ArrayList.add()    → ~1,334 ms
-HashMap.put()      → ~3,781 ms
-TreeMap.put()      → ~4,324 ms
-LinkedList.add()   → ~4,081 ms
+ArrayList.add()    → ~152 ms total, ~15.237 ns avg/op
+HashMap.put()      → ~400 ms total, ~39.982 ns avg/op
+TreeMap.put()      → ~1,025 ms total, ~102.514 ns avg/op
+LinkedList.add()   → ~833 ms total, ~83.338 ns avg/op
 ```
 
 ### Detailed Comparison Table
 
-| Structure | Type | Insertion (10M) | Get (Random) |
+| Structure | Type | Insertion 10M (Total / Avg) | Get 10M (Total / Avg) |
 |---|---|---|---|
-| **ArrayList** | JDK | ~1,334 ms | ~8 ms |
-| **MutableList (FastList)** | EC | ~1,294 ms | ~8 ms |
-| **HashMap** | JDK | ~3,781 ms | ~43 ms |
-| **MutableMap (UnifiedMap)** | EC | ~3,712 ms | ~38 ms |
-| **TreeMap** | JDK | ~4,324 ms | ~2,728 ms |
-| **TreeSortedMap** | EC | ~4,801 ms | ~2,710 ms |
-| **LinkedList** | JDK | ~4,081 ms | ~6 ms (per op) |
+| **ArrayList** | JDK | ~152 ms / ~15.237 ns | ~6 ms / ~0.591 ns |
+| **MutableList (FastList)** | EC | ~198 ms / ~19.752 ns | ~6 ms / ~0.612 ns |
+| **HashMap** | JDK | ~400 ms / ~39.982 ns | ~37 ms / ~3.686 ns |
+| **MutableMap (UnifiedMap)** | EC | ~236 ms / ~23.648 ns | ~20 ms / ~1.960 ns |
+| **TreeMap** | JDK | ~1,025 ms / ~102.514 ns | ~728 ms / ~72.819 ns |
+| **TreeSortedMap** | EC | ~981 ms / ~98.137 ns | ~759 ms / ~75.859 ns |
+| **LinkedList** | JDK | ~833 ms / ~83.338 ns | ~73,752,434 ms / ~7.375 ms |
 
 ### Observations:
-- Results generated from 25-temurin.json
-- 'Get' operations are scaled to 10M operations for consistency with 'Insertion'.
+- Results generated from 25-datastructure.json
+- All values show: Total time for 10M operations / Average time per single operation.
 - Eclipse Collections does not have a direct LinkedList equivalent (EC focuses on optimized array-based structures like FastList).

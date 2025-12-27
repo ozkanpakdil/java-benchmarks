@@ -74,36 +74,37 @@ public class SummarizeECResults {
         
         System.out.println("### Quick Comparison");
         System.out.println("```text");
-        System.out.println("HashMap vs TreeMap vs ArrayList vs LinkedList");
-        System.out.println("HashMap.get()      → " + format10M(scores.get("hashMapGet"), units.get("hashMapGet")));
-        System.out.println("TreeMap.get()      → " + format10M(scores.get("treeMapGet"), units.get("treeMapGet")));
-        System.out.println("ArrayList.get(i)   → " + format10M(scores.get("arrayListGet"), units.get("arrayListGet")));
-        System.out.println("LinkedList.get(i)  → " + formatSingleOp(scores.get("linkedListGet"), units.get("linkedListGet")) + " (per op, O(N))");
+        System.out.println("Get (10M elements):");
+        System.out.println("ArrayList.get()    → " + format10M(scores.get("arrayListGet"), units.get("arrayListGet")) + " total, " + formatAvgPerOp(scores.get("arrayListGet"), units.get("arrayListGet")) + " avg/op");
+        System.out.println("HashMap.get()      → " + format10M(scores.get("hashMapGet"), units.get("hashMapGet")) + " total, " + formatAvgPerOp(scores.get("hashMapGet"), units.get("hashMapGet")) + " avg/op");
+        System.out.println("TreeMap.get()      → " + format10M(scores.get("treeMapGet"), units.get("treeMapGet")) + " total, " + formatAvgPerOp(scores.get("treeMapGet"), units.get("treeMapGet")) + " avg/op");
+        System.out.println("LinkedList.get()   → " + format10M(scores.get("linkedListGet"), units.get("linkedListGet")) + " total, " + formatAvgPerOp(scores.get("linkedListGet"), units.get("linkedListGet")) + " avg/op");
+        System.out.println();
         System.out.println("Insertion (10M elements):");
-        System.out.println("ArrayList.add()    → " + format(scores.get("arrayListAdd"), units.get("arrayListAdd")));
-        System.out.println("HashMap.put()      → " + format(scores.get("hashMapPut"), units.get("hashMapPut")));
-        System.out.println("TreeMap.put()      → " + format(scores.get("treeMapPut"), units.get("treeMapPut")));
-        System.out.println("LinkedList.add()   → " + format(scores.get("linkedListAdd"), units.get("linkedListAdd")));
+        System.out.println("ArrayList.add()    → " + format(scores.get("arrayListAdd"), units.get("arrayListAdd")) + " total, " + formatAvgPerOp(scores.get("arrayListAdd"), units.get("arrayListAdd"), 10_000_000) + " avg/op");
+        System.out.println("HashMap.put()      → " + format(scores.get("hashMapPut"), units.get("hashMapPut")) + " total, " + formatAvgPerOp(scores.get("hashMapPut"), units.get("hashMapPut"), 10_000_000) + " avg/op");
+        System.out.println("TreeMap.put()      → " + format(scores.get("treeMapPut"), units.get("treeMapPut")) + " total, " + formatAvgPerOp(scores.get("treeMapPut"), units.get("treeMapPut"), 10_000_000) + " avg/op");
+        System.out.println("LinkedList.add()   → " + format(scores.get("linkedListAdd"), units.get("linkedListAdd")) + " total, " + formatAvgPerOp(scores.get("linkedListAdd"), units.get("linkedListAdd"), 10_000_000) + " avg/op");
         System.out.println("```");
         System.out.println();
 
         System.out.println("### Detailed Comparison Table");
         System.out.println();
-        System.out.println("| Structure | Type | Insertion (10M) | Get (Random) |");
+        System.out.println("| Structure | Type | Insertion 10M (Total / Avg) | Get 10M (Total / Avg) |");
         System.out.println("|---|---|---|---|");
 
-        printRow("ArrayList", "JDK", "arrayListAdd", "arrayListGet", scores, units, false);
-        printRow("MutableList (FastList)", "EC", "ecMutableListAdd", "ecMutableListGet", scores, units, false);
-        printRow("HashMap", "JDK", "hashMapPut", "hashMapGet", scores, units, false);
-        printRow("MutableMap (UnifiedMap)", "EC", "ecMutableMapPut", "ecMutableMapGet", scores, units, false);
-        printRow("TreeMap", "JDK", "treeMapPut", "treeMapGet", scores, units, false);
-        printRow("TreeSortedMap", "EC", "ecTreeSortedMapPut", "ecTreeSortedMapGet", scores, units, false);
-        printRow("LinkedList", "JDK", "linkedListAdd", "linkedListGet", scores, units, true);
+        printRow("ArrayList", "JDK", "arrayListAdd", "arrayListGet", scores, units);
+        printRow("MutableList (FastList)", "EC", "ecMutableListAdd", "ecMutableListGet", scores, units);
+        printRow("HashMap", "JDK", "hashMapPut", "hashMapGet", scores, units);
+        printRow("MutableMap (UnifiedMap)", "EC", "ecMutableMapPut", "ecMutableMapGet", scores, units);
+        printRow("TreeMap", "JDK", "treeMapPut", "treeMapGet", scores, units);
+        printRow("TreeSortedMap", "EC", "ecTreeSortedMapPut", "ecTreeSortedMapGet", scores, units);
+        printRow("LinkedList", "JDK", "linkedListAdd", "linkedListGet", scores, units);
         
         System.out.println();
         System.out.println("### Observations:");
         System.out.println("- Results generated from " + file.getName());
-        System.out.println("- 'Get' operations are scaled to 10M operations for consistency with 'Insertion'.");
+        System.out.println("- All values show: Total time for 10M operations / Average time per single operation.");
         System.out.println("- Eclipse Collections does not have a direct LinkedList equivalent (EC focuses on optimized array-based structures like FastList).");
     }
 
@@ -136,15 +137,71 @@ public class SummarizeECResults {
         }
     }
 
-    private static void printRow(String name, String type, String addBench, String getBench, Map<String, Double> scores, Map<String, String> units, boolean singleOpGet) {
-        String addVal = format(scores.get(addBench), units.get(addBench));
-        String getVal;
-        if (singleOpGet) {
-            // For O(N) operations like LinkedList.get(), show per-operation time
-            getVal = formatSingleOp(scores.get(getBench), units.get(getBench)) + " (per op)";
+    private static String formatAvgPerOp(Double scorePerOp, String unit) {
+        if (scorePerOp == null) return "-";
+        // scorePerOp is already the per-operation time from JMH
+        // Convert to appropriate unit for display
+        double scoreInNs;
+        if ("ns/op".equals(unit)) {
+            scoreInNs = scorePerOp;
+        } else if ("ms/op".equals(unit)) {
+            scoreInNs = scorePerOp * 1_000_000.0;
+        } else if ("s/op".equals(unit)) {
+            scoreInNs = scorePerOp * 1_000_000_000.0;
         } else {
-            getVal = format10M(scores.get(getBench), units.get(getBench));
+            return "~" + DF3.format(scorePerOp) + " " + unit;
         }
+        
+        // Choose best unit for readability
+        if (scoreInNs < 1000) {
+            return "~" + DF3.format(scoreInNs) + " ns";
+        } else if (scoreInNs < 1_000_000) {
+            return "~" + DF3.format(scoreInNs / 1000.0) + " µs";
+        } else if (scoreInNs < 1_000_000_000) {
+            return "~" + DF3.format(scoreInNs / 1_000_000.0) + " ms";
+        } else {
+            return "~" + DF3.format(scoreInNs / 1_000_000_000.0) + " s";
+        }
+    }
+
+    private static String formatAvgPerOp(Double totalScore, String unit, int numOps) {
+        if (totalScore == null) return "-";
+        // totalScore is the total time for all operations
+        // We need to divide by numOps to get per-operation time
+        double scoreInNs;
+        if ("ns/op".equals(unit)) {
+            scoreInNs = totalScore / numOps;
+        } else if ("ms/op".equals(unit)) {
+            scoreInNs = (totalScore * 1_000_000.0) / numOps;
+        } else if ("s/op".equals(unit)) {
+            scoreInNs = (totalScore * 1_000_000_000.0) / numOps;
+        } else {
+            return "~" + DF3.format(totalScore / numOps) + " " + unit;
+        }
+        
+        // Choose best unit for readability
+        if (scoreInNs < 1000) {
+            return "~" + DF3.format(scoreInNs) + " ns";
+        } else if (scoreInNs < 1_000_000) {
+            return "~" + DF3.format(scoreInNs / 1000.0) + " µs";
+        } else if (scoreInNs < 1_000_000_000) {
+            return "~" + DF3.format(scoreInNs / 1_000_000.0) + " ms";
+        } else {
+            return "~" + DF3.format(scoreInNs / 1_000_000_000.0) + " s";
+        }
+    }
+
+    private static void printRow(String name, String type, String addBench, String getBench, Map<String, Double> scores, Map<String, String> units) {
+        // Insertion: total time is the score directly (benchmark measures full 10M insertion)
+        String addTotal = format(scores.get(addBench), units.get(addBench));
+        String addAvg = formatAvgPerOp(scores.get(addBench), units.get(addBench), 10_000_000);
+        String addVal = addTotal + " / " + addAvg;
+        
+        // Get: score is per-op, need to scale to 10M for total
+        String getTotal = format10M(scores.get(getBench), units.get(getBench));
+        String getAvg = formatAvgPerOp(scores.get(getBench), units.get(getBench));
+        String getVal = getTotal + " / " + getAvg;
+        
         System.out.printf("| **%s** | %s | %s | %s |\n", name, type, addVal, getVal);
     }
 

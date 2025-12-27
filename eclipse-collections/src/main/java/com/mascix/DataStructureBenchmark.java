@@ -75,10 +75,9 @@ public class DataStructureBenchmark {
     }
 
     @Benchmark
-    @OperationsPerInvocation(166)
+    @OperationsPerInvocation(1000)
     public void linkedListGet(Blackhole bh) {
-        // LinkedList.get(i) is O(N), so we do it fewer times to avoid extreme delays
-        for (int i = 0; i < 166; i++) {
+        for (int i = 0; i < 1000; i++) {
             bh.consume(linkedList.get(indices[i]));
         }
     }
