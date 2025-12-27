@@ -58,6 +58,20 @@ This page lists raw JSON outputs produced by the Eclipse Collections benchmark m
 ## Common Data Structures Comparison (10M Operations)
 Comparison between standard JDK and Eclipse Collections equivalents.
 
+### Quick Comparison
+```text
+HashMap vs TreeMap vs ArrayList vs LinkedList
+HashMap.get()      → -
+TreeMap.get()      → -
+ArrayList.get(i)   → -
+LinkedList.get(i)  → -
+Insertion (10M elements):
+ArrayList.add()    → -
+HashMap.put()      → -
+LinkedList.add()   → -
+```
+
+### Detailed Comparison Table
 | Structure | Type | Insertion (10M) | Get (Random) |
 |---|---|---|---|
 | **ArrayList** | JDK | - | - |
@@ -70,3 +84,4 @@ Comparison between standard JDK and Eclipse Collections equivalents.
 
 ### Observations:
 - Results generated from 25.0.1-Java HotSpot(TM) 64-Bit Server VM.json
+- 'Get' operations are scaled to 10M operations for consistency with 'Insertion'.

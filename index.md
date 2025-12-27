@@ -24,4 +24,4 @@ See the Eclipse Collections benchmark outputs: [eclipse-collections results](./d
 Check out the comparison between JDK and Eclipse Collections: [Common Data Structures Comparison](./docs/eclipse-collections.md#common-data-structures-comparison-10m-operations)
 
 ---
-Date created: 2025-12-26
+Date created: 2025-12-27

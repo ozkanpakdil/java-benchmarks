@@ -30,17 +30,12 @@ A single Markdown table with all available result files as columns:
 Automatically generated comparisons across versions (within a distribution) and across distributions (same Java version), only when both JSON files exist.
 
 ### Cross-version (within same distribution)
-- oracle: 17 vs 25 → [view](./compare-oracle-17-vs-25.md)
 - zulu: 17 vs 25 → [view](./compare-zulu-17-vs-25.md)
 - graalvm-community: 17 vs 25 → [view](./compare-graalvm-community-17-vs-25.md)
 - temurin: 17 vs 25 → [view](./compare-temurin-17-vs-25.md)
 - microsoft: 17 vs 25 → [view](./compare-microsoft-17-vs-25.md)
 
 ### Cross-distribution (same Java version)
-- Java 17: oracle vs zulu → [view](./compare-oracle-vs-zulu-17.md)
-- Java 17: oracle vs graalvm-community → [view](./compare-oracle-vs-graalvm-community-17.md)
-- Java 17: oracle vs temurin → [view](./compare-oracle-vs-temurin-17.md)
-- Java 17: oracle vs microsoft → [view](./compare-oracle-vs-microsoft-17.md)
 - Java 17: zulu vs graalvm-community → [view](./compare-zulu-vs-graalvm-community-17.md)
 - Java 17: zulu vs temurin → [view](./compare-zulu-vs-temurin-17.md)
 - Java 17: zulu vs microsoft → [view](./compare-zulu-vs-microsoft-17.md)
