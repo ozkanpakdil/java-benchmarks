@@ -12,6 +12,32 @@ import java.util.*;
 public class SummarizeGCResults {
     private static final DecimalFormat DF = new DecimalFormat("0.000");
 
+    private static List<JsonNode> readJson(File f, ObjectMapper om) throws IOException {
+        try {
+            return om.readValue(f, new TypeReference<List<JsonNode>>() {});
+        } catch (Exception e) {
+            System.err.println("Warning: Failed to read " + f.getName() + " as a single JSON array: " + e.getMessage());
+            List<JsonNode> allNodes = new ArrayList<>();
+            List<JsonNode> finalNodes = allNodes;
+            try {
+                om.readValues(om.createParser(f), JsonNode.class).forEachRemaining(node -> {
+                    if (node.isArray()) {
+                        node.forEach(finalNodes::add);
+                    } else {
+                        finalNodes.add(node);
+                    }
+                });
+                if (!allNodes.isEmpty()) {
+                    System.err.println("Successfully recovered " + allNodes.size() + " entries from " + f.getName());
+                    return allNodes;
+                }
+            } catch (Exception e2) {
+                System.err.println("Failed to recover " + f.getName() + ": " + e2.getMessage());
+            }
+            throw e;
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         if (args.length < 2) {
             System.err.println("Usage: SummarizeGCResults <g1gc-result.json> <zgc-result.json>");
@@ -19,8 +45,8 @@ public class SummarizeGCResults {
         }
 
         ObjectMapper om = new ObjectMapper();
-        List<JsonNode> g1Results = om.readValue(new File(args[0]), new TypeReference<List<JsonNode>>() {});
-        List<JsonNode> zgcResults = om.readValue(new File(args[1]), new TypeReference<List<JsonNode>>() {});
+        List<JsonNode> g1Results = readJson(new File(args[0]), om);
+        List<JsonNode> zgcResults = readJson(new File(args[1]), om);
 
         Map<String, JsonNode> g1Map = index(g1Results);
         Map<String, JsonNode> zgcMap = index(zgcResults);

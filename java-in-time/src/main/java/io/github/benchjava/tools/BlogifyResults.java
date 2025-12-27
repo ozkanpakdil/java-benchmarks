@@ -37,6 +37,32 @@ public class BlogifyResults {
         blogify(args[0], args[1]);
     }
 
+    private static List<JsonNode> readJson(File f, ObjectMapper om) throws IOException {
+        try {
+            return om.readValue(f, new TypeReference<>() {
+            });
+        } catch (Exception e) {
+            System.err.println("Warning: Failed to read " + f.getName() + " as a single JSON array: " + e.getMessage());
+            List<JsonNode> allNodes = new ArrayList<>();
+            try {
+                om.readValues(om.createParser(f), JsonNode.class).forEachRemaining(node -> {
+                    if (node.isArray()) {
+                        node.forEach(allNodes::add);
+                    } else {
+                        allNodes.add(node);
+                    }
+                });
+                if (!allNodes.isEmpty()) {
+                    System.err.println("Successfully recovered " + allNodes.size() + " entries from " + f.getName() + " using multi-value parser.");
+                    return allNodes;
+                }
+            } catch (Exception e2) {
+                System.err.println("Failed to recover " + f.getName() + ": " + e2.getMessage());
+            }
+            throw e;
+        }
+    }
+
     private static void blogify(String aPath, String bPath) throws IOException {
         File aFile = new File(aPath);
         File bFile = new File(bPath);
@@ -46,10 +72,8 @@ public class BlogifyResults {
         ObjectMapper om = JsonMapper.builder()
                 .enable(JsonReadFeature.ALLOW_UNESCAPED_CONTROL_CHARS)
                 .build();
-        List<JsonNode> a = om.readValue(aFile, new TypeReference<>() {
-        });
-        List<JsonNode> b = om.readValue(bFile, new TypeReference<>() {
-        });
+        List<JsonNode> a = readJson(aFile, om);
+        List<JsonNode> b = readJson(bFile, om);
 
         Map<String, Entry> base = index(a);
         Map<String, Entry> cand = index(b);

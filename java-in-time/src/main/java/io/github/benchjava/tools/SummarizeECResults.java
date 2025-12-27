@@ -26,12 +26,35 @@ public class SummarizeECResults {
         ObjectMapper om = JsonMapper.builder()
                 .enable(JsonReadFeature.ALLOW_UNESCAPED_CONTROL_CHARS)
                 .build();
-        List<JsonNode> results = om.readValue(file, new TypeReference<List<JsonNode>>() {});
+        List<JsonNode> resultsList;
+        try {
+            resultsList = om.readValue(file, new TypeReference<>() {
+            });
+        } catch (Exception e) {
+            System.err.println("Warning: Failed to read " + file.getName() + " as a single JSON array: " + e.getMessage());
+            resultsList = new ArrayList<>();
+            List<JsonNode> finalResults = resultsList;
+            try {
+                om.readValues(om.createParser(file), JsonNode.class).forEachRemaining(node -> {
+                    if (node.isArray()) {
+                        node.forEach(finalResults::add);
+                    } else {
+                        finalResults.add(node);
+                    }
+                });
+                if (!resultsList.isEmpty()) {
+                    System.err.println("Successfully recovered " + resultsList.size() + " entries from " + file.getName());
+                }
+            } catch (Exception e2) {
+                System.err.println("Failed to recover " + file.getName() + ": " + e2.getMessage());
+                throw e;
+            }
+        }
 
         Map<String, Double> scores = new HashMap<>();
         Map<String, String> units = new HashMap<>();
 
-        for (JsonNode node : results) {
+        for (JsonNode node : resultsList) {
             String benchmark = node.get("benchmark").asText();
             String shortName = benchmark.substring(benchmark.lastIndexOf('.') + 1);
             double score = node.get("primaryMetric").get("score").asDouble();
