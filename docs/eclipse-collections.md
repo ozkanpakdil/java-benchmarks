@@ -38,32 +38,32 @@ Comparison between standard JDK and Eclipse Collections equivalents.
 
 ### Quick Comparison
 ```text
-Get (10M elements):
-ArrayList.get()    → ~8 ms total, ~0.833 ns avg/op
-HashMap.get()      → ~43 ms total, ~4.324 ns avg/op
-TreeMap.get()      → ~2,728 ms total, ~272.823 ns avg/op
-LinkedList.get()   → ~60,368,764 ms total, ~6.037 ms avg/op
+Get (avg per operation):
+ArrayList.get()    → ~0.591 ns
+HashMap.get()      → ~3.686 ns
+TreeMap.get()      → ~72.819 ns
+LinkedList.get()   → ~7375243.375 ns
 
-Insertion (10M elements):
-ArrayList.add()    → ~1,334 ms total, ~133.370 ns avg/op
-HashMap.put()      → ~3,781 ms total, ~378.101 ns avg/op
-TreeMap.put()      → ~4,324 ms total, ~432.432 ns avg/op
-LinkedList.add()   → ~4,081 ms total, ~408.091 ns avg/op
+Insertion (avg per operation):
+ArrayList.add()    → ~15.237 ns
+HashMap.put()      → ~39.982 ns
+TreeMap.put()      → ~102.514 ns
+LinkedList.add()   → ~83.338 ns
 ```
 
 ### Detailed Comparison Table
 
-| Structure | Type | Insertion 10M (Total / Avg) | Get 10M (Total / Avg) |
+| Structure | Type | Insertion (ns/op) | Get (ns/op) |
 |---|---|---|---|
-| **ArrayList** | JDK | ~1,334 ms / ~133.370 ns | ~8 ms / ~0.833 ns |
-| **MutableList (FastList)** | EC | ~1,294 ms / ~129.426 ns | ~8 ms / ~0.831 ns |
-| **HashMap** | JDK | ~3,781 ms / ~378.101 ns | ~43 ms / ~4.324 ns |
-| **MutableMap (UnifiedMap)** | EC | ~3,712 ms / ~371.230 ns | ~38 ms / ~3.796 ns |
-| **TreeMap** | JDK | ~4,324 ms / ~432.432 ns | ~2,728 ms / ~272.823 ns |
-| **TreeSortedMap** | EC | ~4,801 ms / ~480.139 ns | ~2,710 ms / ~271.022 ns |
-| **LinkedList** | JDK | ~4,081 ms / ~408.091 ns | ~60,368,764 ms / ~6.037 ms |
+| **ArrayList** | JDK | ~15.237 ns | ~0.591 ns |
+| **MutableList (FastList)** | EC | ~19.752 ns | ~0.612 ns |
+| **HashMap** | JDK | ~39.982 ns | ~3.686 ns |
+| **MutableMap (UnifiedMap)** | EC | ~23.648 ns | ~1.960 ns |
+| **TreeMap** | JDK | ~102.514 ns | ~72.819 ns |
+| **TreeSortedMap** | EC | ~98.137 ns | ~75.859 ns |
+| **LinkedList** | JDK | ~83.338 ns | ~7375243.375 ns |
 
 ### Observations:
-- Results generated from 25-temurin.json
-- All values show: Total time for 10M operations / Average time per single operation.
+- Results generated from 25-datastructure.json
+- All values are in nanoseconds per operation (ns/op).
 - Eclipse Collections does not have a direct LinkedList equivalent (EC focuses on optimized array-based structures like FastList).

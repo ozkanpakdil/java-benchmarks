@@ -74,23 +74,23 @@ public class SummarizeECResults {
         
         System.out.println("### Quick Comparison");
         System.out.println("```text");
-        System.out.println("Get (10M elements):");
-        System.out.println("ArrayList.get()    → " + format10M(scores.get("arrayListGet"), units.get("arrayListGet")) + " total, " + formatAvgPerOp(scores.get("arrayListGet"), units.get("arrayListGet")) + " avg/op");
-        System.out.println("HashMap.get()      → " + format10M(scores.get("hashMapGet"), units.get("hashMapGet")) + " total, " + formatAvgPerOp(scores.get("hashMapGet"), units.get("hashMapGet")) + " avg/op");
-        System.out.println("TreeMap.get()      → " + format10M(scores.get("treeMapGet"), units.get("treeMapGet")) + " total, " + formatAvgPerOp(scores.get("treeMapGet"), units.get("treeMapGet")) + " avg/op");
-        System.out.println("LinkedList.get()   → " + format10M(scores.get("linkedListGet"), units.get("linkedListGet")) + " total, " + formatAvgPerOp(scores.get("linkedListGet"), units.get("linkedListGet")) + " avg/op");
+        System.out.println("Get (avg per operation):");
+        System.out.println("ArrayList.get()    → " + formatNsOnly(scores.get("arrayListGet"), units.get("arrayListGet")));
+        System.out.println("HashMap.get()      → " + formatNsOnly(scores.get("hashMapGet"), units.get("hashMapGet")));
+        System.out.println("TreeMap.get()      → " + formatNsOnly(scores.get("treeMapGet"), units.get("treeMapGet")));
+        System.out.println("LinkedList.get()   → " + formatNsOnly(scores.get("linkedListGet"), units.get("linkedListGet")));
         System.out.println();
-        System.out.println("Insertion (10M elements):");
-        System.out.println("ArrayList.add()    → " + format(scores.get("arrayListAdd"), units.get("arrayListAdd")) + " total, " + formatAvgPerOp(scores.get("arrayListAdd"), units.get("arrayListAdd"), 10_000_000) + " avg/op");
-        System.out.println("HashMap.put()      → " + format(scores.get("hashMapPut"), units.get("hashMapPut")) + " total, " + formatAvgPerOp(scores.get("hashMapPut"), units.get("hashMapPut"), 10_000_000) + " avg/op");
-        System.out.println("TreeMap.put()      → " + format(scores.get("treeMapPut"), units.get("treeMapPut")) + " total, " + formatAvgPerOp(scores.get("treeMapPut"), units.get("treeMapPut"), 10_000_000) + " avg/op");
-        System.out.println("LinkedList.add()   → " + format(scores.get("linkedListAdd"), units.get("linkedListAdd")) + " total, " + formatAvgPerOp(scores.get("linkedListAdd"), units.get("linkedListAdd"), 10_000_000) + " avg/op");
+        System.out.println("Insertion (avg per operation):");
+        System.out.println("ArrayList.add()    → " + formatNsOnlyFromTotal(scores.get("arrayListAdd"), units.get("arrayListAdd"), 10_000_000));
+        System.out.println("HashMap.put()      → " + formatNsOnlyFromTotal(scores.get("hashMapPut"), units.get("hashMapPut"), 10_000_000));
+        System.out.println("TreeMap.put()      → " + formatNsOnlyFromTotal(scores.get("treeMapPut"), units.get("treeMapPut"), 10_000_000));
+        System.out.println("LinkedList.add()   → " + formatNsOnlyFromTotal(scores.get("linkedListAdd"), units.get("linkedListAdd"), 10_000_000));
         System.out.println("```");
         System.out.println();
 
         System.out.println("### Detailed Comparison Table");
         System.out.println();
-        System.out.println("| Structure | Type | Insertion 10M (Total / Avg) | Get 10M (Total / Avg) |");
+        System.out.println("| Structure | Type | Insertion (ns/op) | Get (ns/op) |");
         System.out.println("|---|---|---|---|");
 
         printRow("ArrayList", "JDK", "arrayListAdd", "arrayListGet", scores, units);
@@ -104,7 +104,7 @@ public class SummarizeECResults {
         System.out.println();
         System.out.println("### Observations:");
         System.out.println("- Results generated from " + file.getName());
-        System.out.println("- All values show: Total time for 10M operations / Average time per single operation.");
+        System.out.println("- All values are in nanoseconds per operation (ns/op).");
         System.out.println("- Eclipse Collections does not have a direct LinkedList equivalent (EC focuses on optimized array-based structures like FastList).");
     }
 
@@ -193,14 +193,10 @@ public class SummarizeECResults {
 
     private static void printRow(String name, String type, String addBench, String getBench, Map<String, Double> scores, Map<String, String> units) {
         // Insertion: total time is the score directly (benchmark measures full 10M insertion)
-        String addTotal = format(scores.get(addBench), units.get(addBench));
-        String addAvg = formatAvgPerOp(scores.get(addBench), units.get(addBench), 10_000_000);
-        String addVal = addTotal + " / " + addAvg;
+        String addVal = formatNsOnlyFromTotal(scores.get(addBench), units.get(addBench), 10_000_000);
         
-        // Get: score is per-op, need to scale to 10M for total
-        String getTotal = format10M(scores.get(getBench), units.get(getBench));
-        String getAvg = formatAvgPerOp(scores.get(getBench), units.get(getBench));
-        String getVal = getTotal + " / " + getAvg;
+        // Get: score is per-op
+        String getVal = formatNsOnly(scores.get(getBench), units.get(getBench));
         
         System.out.printf("| **%s** | %s | %s | %s |\n", name, type, addVal, getVal);
     }
@@ -227,5 +223,38 @@ public class SummarizeECResults {
             // For large values, format with commas for readability
             return "~" + String.format("%,.0f", scoreInMs) + " ms";
         }
+    }
+
+    private static String formatNsOnly(Double scorePerOp, String unit) {
+        if (scorePerOp == null) return "-";
+        // Convert to nanoseconds
+        double scoreInNs;
+        if ("ns/op".equals(unit)) {
+            scoreInNs = scorePerOp;
+        } else if ("ms/op".equals(unit)) {
+            scoreInNs = scorePerOp * 1_000_000.0;
+        } else if ("s/op".equals(unit)) {
+            scoreInNs = scorePerOp * 1_000_000_000.0;
+        } else {
+            return "~" + DF3.format(scorePerOp) + " " + unit;
+        }
+        return "~" + DF3.format(scoreInNs) + " ns";
+    }
+
+    private static String formatNsOnlyFromTotal(Double totalScore, String unit, int numOps) {
+        if (totalScore == null) return "-";
+        // totalScore is the total time for all operations
+        // We need to divide by numOps to get per-operation time in ns
+        double scoreInNs;
+        if ("ns/op".equals(unit)) {
+            scoreInNs = totalScore / numOps;
+        } else if ("ms/op".equals(unit)) {
+            scoreInNs = (totalScore * 1_000_000.0) / numOps;
+        } else if ("s/op".equals(unit)) {
+            scoreInNs = (totalScore * 1_000_000_000.0) / numOps;
+        } else {
+            return "~" + DF3.format(totalScore / numOps) + " " + unit;
+        }
+        return "~" + DF3.format(scoreInNs) + " ns";
     }
 }
