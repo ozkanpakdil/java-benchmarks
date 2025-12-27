@@ -82,6 +82,7 @@ public class SummarizeECResults {
         System.out.println();
 
         System.out.println("### Detailed Comparison Table");
+        System.out.println();
         System.out.println("| Structure | Type | Insertion (10M) | Get (Random) |");
         System.out.println("|---|---|---|---|");
 

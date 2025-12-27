@@ -48,6 +48,7 @@ LinkedList.add()   → ~4.2 s
 ```
 
 ### Detailed Comparison Table
+
 | Structure | Type | Insertion (10M) | Get (Random) |
 |---|---|---|---|
 | **ArrayList** | JDK | ~1.4 s | ~8 ms |
