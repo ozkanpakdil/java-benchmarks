@@ -386,7 +386,9 @@ jobs:
             done
             ec_url_list=""
             for f in "${ec_jsons[@]}"; do
-              raw="https://raw.githubusercontent.com/${repo}/${branch}/${f}"
+              # URL-encode the filename
+              encoded_f=$(echo "$f" | sed 's/ /%20/g; s/(/%28/g; s/)/%29/g')
+              raw="https://raw.githubusercontent.com/${repo}/${branch}/${encoded_f}"
               if [ -z "$ec_url_list" ]; then ec_url_list="$raw"; else ec_url_list="$ec_url_list,$raw"; fi
             done
             echo >> "$EC_DOC"
