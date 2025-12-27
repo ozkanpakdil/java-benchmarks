@@ -373,6 +373,10 @@ jobs:
           echo >> "$EC_DOC"
           echo "This page lists raw JSON outputs produced by the Eclipse Collections benchmark module and provides a combined viewer link." >> "$EC_DOC"
           echo >> "$EC_DOC"
+
+          # Filter and cleanup EC results
+          python3 scripts/filter_ec_results.py
+
           ec_jsons=(eclipse-collections/results/*.json)
           if [ ${#ec_jsons[@]} -gt 0 ]; then
             echo "## Raw JSON files" >> "$EC_DOC"
