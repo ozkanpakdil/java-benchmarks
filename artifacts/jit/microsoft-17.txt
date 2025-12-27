@@ -12,23 +12,23 @@
 
 # Run progress: 0.00% complete, ETA 00:09:28
 # Fork: 1 of 2
-# Warmup Iteration   1: 115.392 ns/op
-# Warmup Iteration   2: 103.011 ns/op
-Iteration   1: 155.512 ns/op
-Iteration   2: 155.434 ns/op
+# Warmup Iteration   1: 115.309 ns/op
+# Warmup Iteration   2: 103.201 ns/op
+Iteration   1: 139.036 ns/op
+Iteration   2: 139.009 ns/op
 
 # Run progress: 0.70% complete, ETA 00:10:00
 # Fork: 2 of 2
-# Warmup Iteration   1: 115.714 ns/op
-# Warmup Iteration   2: 103.844 ns/op
-Iteration   1: 138.956 ns/op
-Iteration   2: 141.291 ns/op
+# Warmup Iteration   1: 114.380 ns/op
+# Warmup Iteration   2: 103.054 ns/op
+Iteration   1: 155.702 ns/op
+Iteration   2: 159.306 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
-  147.798 ±(99.9%) 57.597 ns/op [Average]
-  (min, avg, max) = (138.956, 147.798, 155.512), stdev = 8.913
-  CI (99.9%): [90.201, 205.395] (assumes normal distribution)
+  148.263 ±(99.9%) 69.604 ns/op [Average]
+  (min, avg, max) = (139.009, 148.263, 159.306), stdev = 10.771
+  CI (99.9%): [78.659, 217.867] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -43,25 +43,25 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual
 
-# Run progress: 1.41% complete, ETA 00:09:59
+# Run progress: 1.41% complete, ETA 00:10:15
 # Fork: 1 of 2
-# Warmup Iteration   1: 2093.224 ns/op
-# Warmup Iteration   2: 1935.035 ns/op
-Iteration   1: 1990.008 ns/op
-Iteration   2: 1987.748 ns/op
+# Warmup Iteration   1: 2024.972 ns/op
+# Warmup Iteration   2: 2005.581 ns/op
+Iteration   1: 2156.346 ns/op
+Iteration   2: 2149.622 ns/op
 
-# Run progress: 2.11% complete, ETA 00:09:52
+# Run progress: 2.11% complete, ETA 00:10:03
 # Fork: 2 of 2
-# Warmup Iteration   1: 2037.898 ns/op
-# Warmup Iteration   2: 1911.926 ns/op
-Iteration   1: 1997.254 ns/op
-Iteration   2: 1993.833 ns/op
+# Warmup Iteration   1: 2065.525 ns/op
+# Warmup Iteration   2: 1939.817 ns/op
+Iteration   1: 1989.039 ns/op
+Iteration   2: 1988.487 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
-  1992.211 ±(99.9%) 27.119 ns/op [Average]
-  (min, avg, max) = (1987.748, 1992.211, 1997.254), stdev = 4.197
-  CI (99.9%): [1965.092, 2019.329] (assumes normal distribution)
+  2070.874 ±(99.9%) 612.940 ns/op [Average]
+  (min, avg, max) = (1988.487, 2070.874, 2156.346), stdev = 94.853
+  CI (99.9%): [1457.933, 2683.814] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -76,25 +76,25 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives
 
-# Run progress: 2.82% complete, ETA 00:09:46
+# Run progress: 2.82% complete, ETA 00:09:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 35.667 ns/op
-# Warmup Iteration   2: 32.537 ns/op
-Iteration   1: 32.117 ns/op
-Iteration   2: 32.149 ns/op
+# Warmup Iteration   1: 33.529 ns/op
+# Warmup Iteration   2: 31.850 ns/op
+Iteration   1: 32.541 ns/op
+Iteration   2: 32.578 ns/op
 
-# Run progress: 3.52% complete, ETA 00:09:41
+# Run progress: 3.52% complete, ETA 00:09:48
 # Fork: 2 of 2
-# Warmup Iteration   1: 32.832 ns/op
-# Warmup Iteration   2: 30.658 ns/op
-Iteration   1: 31.805 ns/op
-Iteration   2: 31.806 ns/op
+# Warmup Iteration   1: 33.655 ns/op
+# Warmup Iteration   2: 32.108 ns/op
+Iteration   1: 32.406 ns/op
+Iteration   2: 32.309 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives":
-  31.969 ±(99.9%) 1.223 ns/op [Average]
-  (min, avg, max) = (31.805, 31.969, 32.149), stdev = 0.189
-  CI (99.9%): [30.746, 33.193] (assumes normal distribution)
+  32.459 ±(99.9%) 0.803 ns/op [Average]
+  (min, avg, max) = (32.309, 32.459, 32.578), stdev = 0.124
+  CI (99.9%): [31.656, 33.262] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -110,25 +110,25 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimiti
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 4)
 
-# Run progress: 4.23% complete, ETA 00:09:36
+# Run progress: 4.23% complete, ETA 00:09:41
 # Fork: 1 of 2
-# Warmup Iteration   1: 12795.574 ns/op
-# Warmup Iteration   2: 34804.912 ns/op
-Iteration   1: 53841.101 ns/op
-Iteration   2: 62643.999 ns/op
+# Warmup Iteration   1: 12802.072 ns/op
+# Warmup Iteration   2: 35638.677 ns/op
+Iteration   1: 53780.397 ns/op
+Iteration   2: 62218.901 ns/op
 
-# Run progress: 4.93% complete, ETA 00:09:32
+# Run progress: 4.93% complete, ETA 00:09:36
 # Fork: 2 of 2
-# Warmup Iteration   1: 12780.776 ns/op
-# Warmup Iteration   2: 34699.406 ns/op
-Iteration   1: 52478.173 ns/op
-Iteration   2: 63823.538 ns/op
+# Warmup Iteration   1: 12794.007 ns/op
+# Warmup Iteration   2: 34682.460 ns/op
+Iteration   1: 54196.512 ns/op
+Iteration   2: 63689.064 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  58196.703 ±(99.9%) 37884.487 ns/op [Average]
-  (min, avg, max) = (52478.173, 58196.703, 63823.538), stdev = 5862.666
-  CI (99.9%): [20312.216, 96081.190] (assumes normal distribution)
+  58471.218 ±(99.9%) 33690.866 ns/op [Average]
+  (min, avg, max) = (53780.397, 58471.218, 63689.064), stdev = 5213.699
+  CI (99.9%): [24780.353, 92162.084] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -144,25 +144,25 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 16)
 
-# Run progress: 5.63% complete, ETA 00:09:27
+# Run progress: 5.63% complete, ETA 00:09:31
 # Fork: 1 of 2
-# Warmup Iteration   1: 25814.031 ns/op
-# Warmup Iteration   2: 68926.764 ns/op
-Iteration   1: 435827.733 ns/op
-Iteration   2: 849734.002 ns/op
+# Warmup Iteration   1: 25150.178 ns/op
+# Warmup Iteration   2: 83793.637 ns/op
+Iteration   1: 662166.481 ns/op
+Iteration   2: 780620.543 ns/op
 
-# Run progress: 6.34% complete, ETA 00:09:23
+# Run progress: 6.34% complete, ETA 00:09:26
 # Fork: 2 of 2
-# Warmup Iteration   1: 25951.295 ns/op
-# Warmup Iteration   2: 68782.772 ns/op
-Iteration   1: 365236.008 ns/op
-Iteration   2: 844646.278 ns/op
+# Warmup Iteration   1: 26252.802 ns/op
+# Warmup Iteration   2: 65401.003 ns/op
+Iteration   1: 419075.499 ns/op
+Iteration   2: 891152.359 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  623861.005 ±(99.9%) 1676833.926 ns/op [Average]
-  (min, avg, max) = (365236.008, 623861.005, 849734.002), stdev = 259491.906
-  CI (99.9%): [≈ 0, 2300694.931] (assumes normal distribution)
+  688253.720 ±(99.9%) 1307585.555 ns/op [Average]
+  (min, avg, max) = (419075.499, 688253.720, 891152.359), stdev = 202350.312
+  CI (99.9%): [≈ 0, 1995839.276] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -178,25 +178,25 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 64)
 
-# Run progress: 7.04% complete, ETA 00:09:18
+# Run progress: 7.04% complete, ETA 00:09:21
 # Fork: 1 of 2
-# Warmup Iteration   1: 69265.112 ns/op
-# Warmup Iteration   2: 869326.584 ns/op
-Iteration   1: 1021679.237 ns/op
-Iteration   2: 1065727.611 ns/op
+# Warmup Iteration   1: 69100.818 ns/op
+# Warmup Iteration   2: 935556.218 ns/op
+Iteration   1: 1016501.561 ns/op
+Iteration   2: 1045664.724 ns/op
 
-# Run progress: 7.75% complete, ETA 00:09:14
+# Run progress: 7.75% complete, ETA 00:09:17
 # Fork: 2 of 2
-# Warmup Iteration   1: 69326.685 ns/op
-# Warmup Iteration   2: 887036.976 ns/op
-Iteration   1: 1007108.564 ns/op
-Iteration   2: 1068030.939 ns/op
+# Warmup Iteration   1: 69486.599 ns/op
+# Warmup Iteration   2: 894786.374 ns/op
+Iteration   1: 1020406.430 ns/op
+Iteration   2: 1070041.734 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  1040636.588 ±(99.9%) 199643.731 ns/op [Average]
-  (min, avg, max) = (1007108.564, 1040636.588, 1068030.939), stdev = 30895.088
-  CI (99.9%): [840992.857, 1240280.319] (assumes normal distribution)
+  1038153.612 ±(99.9%) 160774.280 ns/op [Average]
+  (min, avg, max) = (1016501.561, 1038153.612, 1070041.734), stdev = 24879.998
+  CI (99.9%): [877379.332, 1198927.892] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -211,25 +211,25 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.CryptoBenchmark.Hash
 
-# Run progress: 8.45% complete, ETA 00:09:10
+# Run progress: 8.45% complete, ETA 00:09:12
 # Fork: 1 of 2
-# Warmup Iteration   1: 758.140 ns/op
-# Warmup Iteration   2: 720.198 ns/op
-Iteration   1: 719.520 ns/op
-Iteration   2: 716.007 ns/op
+# Warmup Iteration   1: 752.936 ns/op
+# Warmup Iteration   2: 719.440 ns/op
+Iteration   1: 722.481 ns/op
+Iteration   2: 718.933 ns/op
 
-# Run progress: 9.15% complete, ETA 00:09:05
+# Run progress: 9.15% complete, ETA 00:09:08
 # Fork: 2 of 2
-# Warmup Iteration   1: 760.191 ns/op
-# Warmup Iteration   2: 718.680 ns/op
-Iteration   1: 721.732 ns/op
-Iteration   2: 718.871 ns/op
+# Warmup Iteration   1: 759.275 ns/op
+# Warmup Iteration   2: 719.914 ns/op
+Iteration   1: 721.108 ns/op
+Iteration   2: 717.198 ns/op
 
 
 Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
-  719.033 ±(99.9%) 15.249 ns/op [Average]
-  (min, avg, max) = (716.007, 719.033, 721.732), stdev = 2.360
-  CI (99.9%): [703.783, 734.282] (assumes normal distribution)
+  719.930 ±(99.9%) 15.088 ns/op [Average]
+  (min, avg, max) = (717.198, 719.930, 722.481), stdev = 2.335
+  CI (99.9%): [704.843, 735.018] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -244,25 +244,25 @@ Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName
 
-# Run progress: 9.86% complete, ETA 00:09:01
+# Run progress: 9.86% complete, ETA 00:09:03
 # Fork: 1 of 2
-# Warmup Iteration   1: 2.194 ns/op
-# Warmup Iteration   2: 2.188 ns/op
-Iteration   1: 1.868 ns/op
-Iteration   2: 1.870 ns/op
-
-# Run progress: 10.56% complete, ETA 00:08:56
-# Fork: 2 of 2
-# Warmup Iteration   1: 2.195 ns/op
-# Warmup Iteration   2: 2.187 ns/op
+# Warmup Iteration   1: 2.196 ns/op
+# Warmup Iteration   2: 2.254 ns/op
 Iteration   1: 1.867 ns/op
-Iteration   2: 1.868 ns/op
+Iteration   2: 1.866 ns/op
+
+# Run progress: 10.56% complete, ETA 00:08:59
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.197 ns/op
+# Warmup Iteration   2: 2.206 ns/op
+Iteration   1: 1.866 ns/op
+Iteration   2: 1.869 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
-  1.868 ±(99.9%) 0.009 ns/op [Average]
-  (min, avg, max) = (1.867, 1.868, 1.870), stdev = 0.001
-  CI (99.9%): [1.859, 1.877] (assumes normal distribution)
+  1.867 ±(99.9%) 0.009 ns/op [Average]
+  (min, avg, max) = (1.866, 1.867, 1.869), stdev = 0.001
+  CI (99.9%): [1.857, 1.876] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -277,25 +277,25 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate
 
-# Run progress: 11.27% complete, ETA 00:08:52
+# Run progress: 11.27% complete, ETA 00:08:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.217 ns/op
-# Warmup Iteration   2: 4.059 ns/op
-Iteration   1: 3.805 ns/op
-Iteration   2: 3.797 ns/op
+# Warmup Iteration   1: 4.198 ns/op
+# Warmup Iteration   2: 4.051 ns/op
+Iteration   1: 3.813 ns/op
+Iteration   2: 3.803 ns/op
 
-# Run progress: 11.97% complete, ETA 00:08:48
+# Run progress: 11.97% complete, ETA 00:08:50
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.476 ns/op
-# Warmup Iteration   2: 3.988 ns/op
-Iteration   1: 3.769 ns/op
-Iteration   2: 3.773 ns/op
+# Warmup Iteration   1: 4.199 ns/op
+# Warmup Iteration   2: 4.053 ns/op
+Iteration   1: 3.827 ns/op
+Iteration   2: 3.832 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
-  3.786 ±(99.9%) 0.116 ns/op [Average]
-  (min, avg, max) = (3.769, 3.786, 3.805), stdev = 0.018
-  CI (99.9%): [3.670, 3.902] (assumes normal distribution)
+  3.819 ±(99.9%) 0.086 ns/op [Average]
+  (min, avg, max) = (3.803, 3.819, 3.832), stdev = 0.013
+  CI (99.9%): [3.733, 3.905] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -310,25 +310,25 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Oops
 
-# Run progress: 12.68% complete, ETA 00:08:44
+# Run progress: 12.68% complete, ETA 00:08:45
 # Fork: 1 of 2
-# Warmup Iteration   1: 70.435 ns/op
-# Warmup Iteration   2: 60.680 ns/op
-Iteration   1: 60.489 ns/op
-Iteration   2: 60.248 ns/op
+# Warmup Iteration   1: 63.414 ns/op
+# Warmup Iteration   2: 61.887 ns/op
+Iteration   1: 60.961 ns/op
+Iteration   2: 60.957 ns/op
 
-# Run progress: 13.38% complete, ETA 00:08:39
+# Run progress: 13.38% complete, ETA 00:08:41
 # Fork: 2 of 2
-# Warmup Iteration   1: 63.112 ns/op
-# Warmup Iteration   2: 60.105 ns/op
-Iteration   1: 60.127 ns/op
-Iteration   2: 59.996 ns/op
+# Warmup Iteration   1: 64.184 ns/op
+# Warmup Iteration   2: 60.436 ns/op
+Iteration   1: 60.023 ns/op
+Iteration   2: 60.184 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
-  60.215 ±(99.9%) 1.355 ns/op [Average]
-  (min, avg, max) = (59.996, 60.215, 60.489), stdev = 0.210
-  CI (99.9%): [58.860, 61.570] (assumes normal distribution)
+  60.531 ±(99.9%) 3.219 ns/op [Average]
+  (min, avg, max) = (60.023, 60.531, 60.961), stdev = 0.498
+  CI (99.9%): [57.312, 63.750] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -343,25 +343,25 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp
 
-# Run progress: 14.08% complete, ETA 00:08:35
+# Run progress: 14.08% complete, ETA 00:08:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 58.020 ns/op
-# Warmup Iteration   2: 57.871 ns/op
-Iteration   1: 57.794 ns/op
-Iteration   2: 57.830 ns/op
+# Warmup Iteration   1: 58.012 ns/op
+# Warmup Iteration   2: 57.829 ns/op
+Iteration   1: 57.808 ns/op
+Iteration   2: 57.816 ns/op
 
-# Run progress: 14.79% complete, ETA 00:08:31
+# Run progress: 14.79% complete, ETA 00:08:32
 # Fork: 2 of 2
-# Warmup Iteration   1: 58.098 ns/op
-# Warmup Iteration   2: 57.830 ns/op
-Iteration   1: 57.802 ns/op
-Iteration   2: 57.827 ns/op
+# Warmup Iteration   1: 58.018 ns/op
+# Warmup Iteration   2: 57.818 ns/op
+Iteration   1: 57.818 ns/op
+Iteration   2: 57.794 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
-  57.813 ±(99.9%) 0.116 ns/op [Average]
-  (min, avg, max) = (57.794, 57.813, 57.830), stdev = 0.018
-  CI (99.9%): [57.697, 57.930] (assumes normal distribution)
+  57.809 ±(99.9%) 0.071 ns/op [Average]
+  (min, avg, max) = (57.794, 57.809, 57.818), stdev = 0.011
+  CI (99.9%): [57.738, 57.880] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -376,25 +376,25 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew
 
-# Run progress: 15.49% complete, ETA 00:08:26
+# Run progress: 15.49% complete, ETA 00:08:28
 # Fork: 1 of 2
-# Warmup Iteration   1: 58.059 ns/op
-# Warmup Iteration   2: 57.841 ns/op
-Iteration   1: 57.802 ns/op
-Iteration   2: 57.814 ns/op
+# Warmup Iteration   1: 58.041 ns/op
+# Warmup Iteration   2: 57.809 ns/op
+Iteration   1: 57.871 ns/op
+Iteration   2: 57.797 ns/op
 
-# Run progress: 16.20% complete, ETA 00:08:22
+# Run progress: 16.20% complete, ETA 00:08:23
 # Fork: 2 of 2
-# Warmup Iteration   1: 58.020 ns/op
-# Warmup Iteration   2: 57.828 ns/op
-Iteration   1: 57.814 ns/op
-Iteration   2: 57.827 ns/op
+# Warmup Iteration   1: 58.169 ns/op
+# Warmup Iteration   2: 58.298 ns/op
+Iteration   1: 57.796 ns/op
+Iteration   2: 57.788 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
-  57.814 ±(99.9%) 0.066 ns/op [Average]
-  (min, avg, max) = (57.802, 57.814, 57.827), stdev = 0.010
-  CI (99.9%): [57.748, 57.880] (assumes normal distribution)
+  57.813 ±(99.9%) 0.252 ns/op [Average]
+  (min, avg, max) = (57.788, 57.813, 57.871), stdev = 0.039
+  CI (99.9%): [57.560, 58.065] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -409,25 +409,25 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.IOBenchmark.FSW
 
-# Run progress: 16.90% complete, ETA 00:08:18
+# Run progress: 16.90% complete, ETA 00:08:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 3719451.526 ns/op
-# Warmup Iteration   2: 4098072.163 ns/op
-Iteration   1: 4002003.600 ns/op
-Iteration   2: 4168141.288 ns/op
+# Warmup Iteration   1: 4276720.664 ns/op
+# Warmup Iteration   2: 4058787.073 ns/op
+Iteration   1: 4083639.637 ns/op
+Iteration   2: 4163362.199 ns/op
 
-# Run progress: 17.61% complete, ETA 00:08:14
+# Run progress: 17.61% complete, ETA 00:08:15
 # Fork: 2 of 2
-# Warmup Iteration   1: 4264724.706 ns/op
-# Warmup Iteration   2: 4193016.151 ns/op
-Iteration   1: 4260597.551 ns/op
-Iteration   2: 3326344.429 ns/op
+# Warmup Iteration   1: 4076520.122 ns/op
+# Warmup Iteration   2: 4322779.116 ns/op
+Iteration   1: 3666425.190 ns/op
+Iteration   2: 3451371.821 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.FSW":
-  3939271.717 ±(99.9%) 2729496.970 ns/op [Average]
-  (min, avg, max) = (3326344.429, 3939271.717, 4260597.551), stdev = 422392.677
-  CI (99.9%): [1209774.747, 6668768.686] (assumes normal distribution)
+  3841199.712 ±(99.9%) 2191613.960 ns/op [Average]
+  (min, avg, max) = (3451371.821, 3841199.712, 4163362.199), stdev = 339154.686
+  CI (99.9%): [1649585.751, 6032813.672] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -442,25 +442,25 @@ Result "io.github.benchjava.bench.IOBenchmark.FSW":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.IOBenchmark.MMF
 
-# Run progress: 18.31% complete, ETA 00:08:10
+# Run progress: 18.31% complete, ETA 00:08:11
 # Fork: 1 of 2
-# Warmup Iteration   1: 388526.812 ns/op
-# Warmup Iteration   2: 376624.230 ns/op
-Iteration   1: 446591.221 ns/op
-Iteration   2: 371719.062 ns/op
+# Warmup Iteration   1: 389161.051 ns/op
+# Warmup Iteration   2: 380645.349 ns/op
+Iteration   1: 438721.338 ns/op
+Iteration   2: 373910.720 ns/op
 
-# Run progress: 19.01% complete, ETA 00:08:06
+# Run progress: 19.01% complete, ETA 00:08:07
 # Fork: 2 of 2
-# Warmup Iteration   1: 390781.319 ns/op
-# Warmup Iteration   2: 376148.361 ns/op
-Iteration   1: 442500.417 ns/op
-Iteration   2: 373247.216 ns/op
+# Warmup Iteration   1: 391454.698 ns/op
+# Warmup Iteration   2: 375510.260 ns/op
+Iteration   1: 440723.550 ns/op
+Iteration   2: 372871.442 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.MMF":
-  408514.479 ±(99.9%) 269100.407 ns/op [Average]
-  (min, avg, max) = (371719.062, 408514.479, 446591.221), stdev = 41643.586
-  CI (99.9%): [139414.072, 677614.886] (assumes normal distribution)
+  406556.762 ±(99.9%) 247542.670 ns/op [Average]
+  (min, avg, max) = (372871.442, 406556.762, 440723.550), stdev = 38307.502
+  CI (99.9%): [159014.093, 654099.432] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -475,25 +475,25 @@ Result "io.github.benchjava.bench.IOBenchmark.MMF":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.IOBenchmark.WriteByte
 
-# Run progress: 19.72% complete, ETA 00:08:02
+# Run progress: 19.72% complete, ETA 00:08:03
 # Fork: 1 of 2
-# Warmup Iteration   1: 30181685.324 ns/op
-# Warmup Iteration   2: 29569355.971 ns/op
-Iteration   1: 29515881.765 ns/op
-Iteration   2: 29640790.441 ns/op
+# Warmup Iteration   1: 30219283.706 ns/op
+# Warmup Iteration   2: 29678124.941 ns/op
+Iteration   1: 29712646.000 ns/op
+Iteration   2: 29662598.294 ns/op
 
-# Run progress: 20.42% complete, ETA 00:07:58
+# Run progress: 20.42% complete, ETA 00:07:59
 # Fork: 2 of 2
-# Warmup Iteration   1: 30150637.059 ns/op
-# Warmup Iteration   2: 29480698.176 ns/op
-Iteration   1: 29464587.529 ns/op
-Iteration   2: 29446505.529 ns/op
+# Warmup Iteration   1: 29958243.029 ns/op
+# Warmup Iteration   2: 29545616.118 ns/op
+Iteration   1: 29553583.853 ns/op
+Iteration   2: 29596205.147 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
-  29516941.316 ±(99.9%) 566323.074 ns/op [Average]
-  (min, avg, max) = (29446505.529, 29516941.316, 29640790.441), stdev = 87639.123
-  CI (99.9%): [28950618.242, 30083264.391] (assumes normal distribution)
+  29631258.324 ±(99.9%) 454919.706 ns/op [Average]
+  (min, avg, max) = (29553583.853, 29631258.324, 29712646.000), stdev = 70399.328
+  CI (99.9%): [29176338.617, 30086178.030] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -509,25 +509,25 @@ Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
 # Parameters: (itemsCount = 5)
 
-# Run progress: 21.13% complete, ETA 00:07:54
+# Run progress: 21.13% complete, ETA 00:07:55
 # Fork: 1 of 2
-# Warmup Iteration   1: 1151.358 ns/op
-# Warmup Iteration   2: 919.950 ns/op
-Iteration   1: 916.625 ns/op
-Iteration   2: 915.467 ns/op
+# Warmup Iteration   1: 1118.645 ns/op
+# Warmup Iteration   2: 898.568 ns/op
+Iteration   1: 885.306 ns/op
+Iteration   2: 885.946 ns/op
 
-# Run progress: 21.83% complete, ETA 00:07:50
+# Run progress: 21.83% complete, ETA 00:07:51
 # Fork: 2 of 2
-# Warmup Iteration   1: 1131.012 ns/op
-# Warmup Iteration   2: 890.671 ns/op
-Iteration   1: 883.990 ns/op
-Iteration   2: 885.566 ns/op
+# Warmup Iteration   1: 1227.548 ns/op
+# Warmup Iteration   2: 976.916 ns/op
+Iteration   1: 976.986 ns/op
+Iteration   2: 976.401 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  900.412 ±(99.9%) 116.769 ns/op [Average]
-  (min, avg, max) = (883.990, 900.412, 916.625), stdev = 18.070
-  CI (99.9%): [783.643, 1017.181] (assumes normal distribution)
+  931.160 ±(99.9%) 339.765 ns/op [Average]
+  (min, avg, max) = (885.306, 931.160, 976.986), stdev = 52.579
+  CI (99.9%): [591.395, 1270.925] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -543,25 +543,25 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
 # Parameters: (itemsCount = 20)
 
-# Run progress: 22.54% complete, ETA 00:07:46
+# Run progress: 22.54% complete, ETA 00:07:47
 # Fork: 1 of 2
-# Warmup Iteration   1: 3494.497 ns/op
-# Warmup Iteration   2: 3057.644 ns/op
-Iteration   1: 3080.569 ns/op
-Iteration   2: 3040.237 ns/op
+# Warmup Iteration   1: 4047.318 ns/op
+# Warmup Iteration   2: 3350.343 ns/op
+Iteration   1: 3333.426 ns/op
+Iteration   2: 3315.071 ns/op
 
-# Run progress: 23.24% complete, ETA 00:07:43
+# Run progress: 23.24% complete, ETA 00:07:44
 # Fork: 2 of 2
-# Warmup Iteration   1: 3682.051 ns/op
-# Warmup Iteration   2: 3002.072 ns/op
-Iteration   1: 2989.098 ns/op
-Iteration   2: 2973.686 ns/op
+# Warmup Iteration   1: 3620.494 ns/op
+# Warmup Iteration   2: 2948.378 ns/op
+Iteration   1: 2927.240 ns/op
+Iteration   2: 2921.958 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  3020.897 ±(99.9%) 316.018 ns/op [Average]
-  (min, avg, max) = (2973.686, 3020.897, 3080.569), stdev = 48.904
-  CI (99.9%): [2704.879, 3336.916] (assumes normal distribution)
+  3124.424 ±(99.9%) 1491.876 ns/op [Average]
+  (min, avg, max) = (2921.958, 3124.424, 3333.426), stdev = 230.869
+  CI (99.9%): [1632.548, 4616.299] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -577,25 +577,25 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
 # Parameters: (itemsCount = 100)
 
-# Run progress: 23.94% complete, ETA 00:07:39
+# Run progress: 23.94% complete, ETA 00:07:40
 # Fork: 1 of 2
-# Warmup Iteration   1: 16331.633 ns/op
-# Warmup Iteration   2: 14532.292 ns/op
-Iteration   1: 14463.568 ns/op
-Iteration   2: 14611.461 ns/op
+# Warmup Iteration   1: 16550.925 ns/op
+# Warmup Iteration   2: 14025.230 ns/op
+Iteration   1: 14027.763 ns/op
+Iteration   2: 14193.492 ns/op
 
-# Run progress: 24.65% complete, ETA 00:07:35
+# Run progress: 24.65% complete, ETA 00:07:36
 # Fork: 2 of 2
-# Warmup Iteration   1: 15889.623 ns/op
-# Warmup Iteration   2: 14119.056 ns/op
-Iteration   1: 14095.720 ns/op
-Iteration   2: 14040.515 ns/op
+# Warmup Iteration   1: 16910.905 ns/op
+# Warmup Iteration   2: 14077.576 ns/op
+Iteration   1: 14004.923 ns/op
+Iteration   2: 14016.667 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  14302.816 ±(99.9%) 1800.075 ns/op [Average]
-  (min, avg, max) = (14040.515, 14302.816, 14611.461), stdev = 278.564
-  CI (99.9%): [12502.741, 16102.891] (assumes normal distribution)
+  14060.711 ±(99.9%) 575.185 ns/op [Average]
+  (min, avg, max) = (14004.923, 14060.711, 14193.492), stdev = 89.011
+  CI (99.9%): [13485.526, 14635.897] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -611,25 +611,25 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
 # Parameters: (itemsCount = 5)
 
-# Run progress: 25.35% complete, ETA 00:07:31
+# Run progress: 25.35% complete, ETA 00:07:32
 # Fork: 1 of 2
-# Warmup Iteration   1: 2662.809 ns/op
-# Warmup Iteration   2: 1757.199 ns/op
-Iteration   1: 1720.134 ns/op
-Iteration   2: 1720.376 ns/op
+# Warmup Iteration   1: 3012.690 ns/op
+# Warmup Iteration   2: 2067.467 ns/op
+Iteration   1: 1998.961 ns/op
+Iteration   2: 1993.004 ns/op
 
-# Run progress: 26.06% complete, ETA 00:07:27
+# Run progress: 26.06% complete, ETA 00:07:28
 # Fork: 2 of 2
-# Warmup Iteration   1: 2715.277 ns/op
-# Warmup Iteration   2: 1817.428 ns/op
-Iteration   1: 1787.506 ns/op
-Iteration   2: 1779.647 ns/op
+# Warmup Iteration   1: 2658.999 ns/op
+# Warmup Iteration   2: 1922.835 ns/op
+Iteration   1: 1880.643 ns/op
+Iteration   2: 1870.590 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  1751.916 ±(99.9%) 237.152 ns/op [Average]
-  (min, avg, max) = (1720.134, 1751.916, 1787.506), stdev = 36.700
-  CI (99.9%): [1514.764, 1989.068] (assumes normal distribution)
+  1935.799 ±(99.9%) 450.123 ns/op [Average]
+  (min, avg, max) = (1870.590, 1935.799, 1998.961), stdev = 69.657
+  CI (99.9%): [1485.677, 2385.922] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -645,25 +645,25 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
 # Parameters: (itemsCount = 20)
 
-# Run progress: 26.76% complete, ETA 00:07:23
+# Run progress: 26.76% complete, ETA 00:07:24
 # Fork: 1 of 2
-# Warmup Iteration   1: 8642.644 ns/op
-# Warmup Iteration   2: 6043.192 ns/op
-Iteration   1: 5911.425 ns/op
-Iteration   2: 5878.193 ns/op
+# Warmup Iteration   1: 8085.485 ns/op
+# Warmup Iteration   2: 5832.079 ns/op
+Iteration   1: 5739.819 ns/op
+Iteration   2: 5752.567 ns/op
 
-# Run progress: 27.46% complete, ETA 00:07:19
+# Run progress: 27.46% complete, ETA 00:07:20
 # Fork: 2 of 2
-# Warmup Iteration   1: 8545.170 ns/op
-# Warmup Iteration   2: 5914.764 ns/op
-Iteration   1: 5816.975 ns/op
-Iteration   2: 5795.493 ns/op
+# Warmup Iteration   1: 8934.891 ns/op
+# Warmup Iteration   2: 6156.457 ns/op
+Iteration   1: 6048.513 ns/op
+Iteration   2: 6057.540 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  5850.522 ±(99.9%) 346.555 ns/op [Average]
-  (min, avg, max) = (5795.493, 5850.522, 5911.425), stdev = 53.630
-  CI (99.9%): [5503.967, 6197.076] (assumes normal distribution)
+  5899.610 ±(99.9%) 1145.486 ns/op [Average]
+  (min, avg, max) = (5739.819, 5899.610, 6057.540), stdev = 177.265
+  CI (99.9%): [4754.124, 7045.096] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -679,25 +679,25 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
 # Parameters: (itemsCount = 100)
 
-# Run progress: 28.17% complete, ETA 00:07:15
+# Run progress: 28.17% complete, ETA 00:07:16
 # Fork: 1 of 2
-# Warmup Iteration   1: 42137.748 ns/op
-# Warmup Iteration   2: 30298.265 ns/op
-Iteration   1: 30041.861 ns/op
-Iteration   2: 29826.178 ns/op
+# Warmup Iteration   1: 44386.844 ns/op
+# Warmup Iteration   2: 30732.911 ns/op
+Iteration   1: 30620.948 ns/op
+Iteration   2: 30551.447 ns/op
 
-# Run progress: 28.87% complete, ETA 00:07:11
+# Run progress: 28.87% complete, ETA 00:07:12
 # Fork: 2 of 2
-# Warmup Iteration   1: 38194.780 ns/op
-# Warmup Iteration   2: 28389.782 ns/op
-Iteration   1: 28206.983 ns/op
-Iteration   2: 28142.996 ns/op
+# Warmup Iteration   1: 39479.359 ns/op
+# Warmup Iteration   2: 28183.432 ns/op
+Iteration   1: 28156.163 ns/op
+Iteration   2: 28172.355 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  29054.504 ±(99.9%) 6589.428 ns/op [Average]
-  (min, avg, max) = (28142.996, 29054.504, 30041.861), stdev = 1019.721
-  CI (99.9%): [22465.077, 35643.932] (assumes normal distribution)
+  29375.228 ±(99.9%) 9037.806 ns/op [Average]
+  (min, avg, max) = (28156.163, 29375.228, 30620.948), stdev = 1398.611
+  CI (99.9%): [20337.422, 38413.035] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -713,25 +713,25 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 # Benchmark: io.github.benchjava.bench.NetworkingBenchmark.Add
 # Parameters: (url = https://www.google.com/)
 
-# Run progress: 29.58% complete, ETA 00:07:07
+# Run progress: 29.58% complete, ETA 00:07:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 673.491 ns/op
-# Warmup Iteration   2: 565.226 ns/op
-Iteration   1: 575.740 ns/op
-Iteration   2: 566.663 ns/op
+# Warmup Iteration   1: 621.793 ns/op
+# Warmup Iteration   2: 504.018 ns/op
+Iteration   1: 487.488 ns/op
+Iteration   2: 486.155 ns/op
 
-# Run progress: 30.28% complete, ETA 00:07:04
+# Run progress: 30.28% complete, ETA 00:07:05
 # Fork: 2 of 2
-# Warmup Iteration   1: 660.435 ns/op
-# Warmup Iteration   2: 525.057 ns/op
-Iteration   1: 529.887 ns/op
-Iteration   2: 530.905 ns/op
+# Warmup Iteration   1: 635.358 ns/op
+# Warmup Iteration   2: 522.877 ns/op
+Iteration   1: 518.082 ns/op
+Iteration   2: 524.153 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
-  550.799 ±(99.9%) 154.135 ns/op [Average]
-  (min, avg, max) = (529.887, 550.799, 575.740), stdev = 23.852
-  CI (99.9%): [396.664, 704.933] (assumes normal distribution)
+  503.970 ±(99.9%) 128.999 ns/op [Average]
+  (min, avg, max) = (486.155, 503.970, 524.153), stdev = 19.963
+  CI (99.9%): [374.971, 632.969] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -749,23 +749,23 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
 
 # Run progress: 30.99% complete, ETA 00:07:01
 # Fork: 1 of 2
-# Warmup Iteration   1: 456.151 ns/op
-# Warmup Iteration   2: 418.951 ns/op
-Iteration   1: 410.496 ns/op
-Iteration   2: 409.827 ns/op
+# Warmup Iteration   1: 479.397 ns/op
+# Warmup Iteration   2: 423.223 ns/op
+Iteration   1: 423.057 ns/op
+Iteration   2: 429.712 ns/op
 
-# Run progress: 31.69% complete, ETA 00:06:57
+# Run progress: 31.69% complete, ETA 00:06:58
 # Fork: 2 of 2
-# Warmup Iteration   1: 449.109 ns/op
-# Warmup Iteration   2: 406.149 ns/op
-Iteration   1: 404.137 ns/op
-Iteration   2: 404.178 ns/op
+# Warmup Iteration   1: 410.854 ns/op
+# Warmup Iteration   2: 381.069 ns/op
+Iteration   1: 378.603 ns/op
+Iteration   2: 385.011 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
-  407.159 ±(99.9%) 22.469 ns/op [Average]
-  (min, avg, max) = (404.137, 407.159, 410.496), stdev = 3.477
-  CI (99.9%): [384.691, 429.628] (assumes normal distribution)
+  404.096 ±(99.9%) 168.089 ns/op [Average]
+  (min, avg, max) = (378.603, 404.096, 429.712), stdev = 26.012
+  CI (99.9%): [236.007, 572.185] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -783,23 +783,23 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
 
 # Run progress: 32.39% complete, ETA 00:06:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 510.195 ns/op
-# Warmup Iteration   2: 450.611 ns/op
-Iteration   1: 433.864 ns/op
-Iteration   2: 434.165 ns/op
+# Warmup Iteration   1: 492.904 ns/op
+# Warmup Iteration   2: 447.047 ns/op
+Iteration   1: 444.237 ns/op
+Iteration   2: 443.802 ns/op
 
-# Run progress: 33.10% complete, ETA 00:06:50
+# Run progress: 33.10% complete, ETA 00:06:51
 # Fork: 2 of 2
-# Warmup Iteration   1: 487.634 ns/op
-# Warmup Iteration   2: 435.688 ns/op
-Iteration   1: 443.346 ns/op
-Iteration   2: 442.615 ns/op
+# Warmup Iteration   1: 504.802 ns/op
+# Warmup Iteration   2: 452.480 ns/op
+Iteration   1: 436.973 ns/op
+Iteration   2: 437.193 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
-  438.498 ±(99.9%) 33.515 ns/op [Average]
-  (min, avg, max) = (433.864, 438.498, 443.346), stdev = 5.187
-  CI (99.9%): [404.982, 472.013] (assumes normal distribution)
+  440.551 ±(99.9%) 25.912 ns/op [Average]
+  (min, avg, max) = (436.973, 440.551, 444.237), stdev = 4.010
+  CI (99.9%): [414.639, 466.463] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -817,23 +817,23 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
 
 # Run progress: 33.80% complete, ETA 00:06:47
 # Fork: 1 of 2
-# Warmup Iteration   1: 634.270 ns/op
-# Warmup Iteration   2: 543.518 ns/op
-Iteration   1: 533.141 ns/op
-Iteration   2: 532.626 ns/op
+# Warmup Iteration   1: 639.006 ns/op
+# Warmup Iteration   2: 561.149 ns/op
+Iteration   1: 531.828 ns/op
+Iteration   2: 531.308 ns/op
 
 # Run progress: 34.51% complete, ETA 00:06:43
 # Fork: 2 of 2
-# Warmup Iteration   1: 665.383 ns/op
-# Warmup Iteration   2: 509.016 ns/op
-Iteration   1: 518.799 ns/op
-Iteration   2: 517.525 ns/op
+# Warmup Iteration   1: 679.182 ns/op
+# Warmup Iteration   2: 533.402 ns/op
+Iteration   1: 522.583 ns/op
+Iteration   2: 522.134 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
-  525.523 ±(99.9%) 55.044 ns/op [Average]
-  (min, avg, max) = (517.525, 525.523, 533.141), stdev = 8.518
-  CI (99.9%): [470.479, 580.566] (assumes normal distribution)
+  526.963 ±(99.9%) 34.408 ns/op [Average]
+  (min, avg, max) = (522.134, 526.963, 531.828), stdev = 5.325
+  CI (99.9%): [492.555, 561.371] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -849,25 +849,25 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
 # Benchmark: io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall
 # Parameters: (url = https://www.google.com/)
 
-# Run progress: 35.21% complete, ETA 00:06:39
+# Run progress: 35.21% complete, ETA 00:06:40
 # Fork: 1 of 2
-# Warmup Iteration   1: 57998555.556 ns/op
-# Warmup Iteration   2: 45587129.682 ns/op
-Iteration   1: 44769098.304 ns/op
-Iteration   2: 43067097.292 ns/op
+# Warmup Iteration   1: 73467199.214 ns/op
+# Warmup Iteration   2: 53198070.421 ns/op
+Iteration   1: 59538236.412 ns/op
+Iteration   2: 51681969.950 ns/op
 
 # Run progress: 35.92% complete, ETA 00:06:36
 # Fork: 2 of 2
-# Warmup Iteration   1: 56502580.000 ns/op
-# Warmup Iteration   2: 43064388.625 ns/op
-Iteration   1: 41829274.333 ns/op
-Iteration   2: 49039746.810 ns/op
+# Warmup Iteration   1: 71573636.214 ns/op
+# Warmup Iteration   2: 52429760.800 ns/op
+Iteration   1: 57225332.056 ns/op
+Iteration   2: 60827016.000 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
-  44676304.185 ±(99.9%) 20347013.878 ns/op [Average]
-  (min, avg, max) = (41829274.333, 44676304.185, 49039746.810), stdev = 3148722.920
-  CI (99.9%): [24329290.307, 65023318.063] (assumes normal distribution)
+  57318138.604 ±(99.9%) 26120099.687 ns/op [Average]
+  (min, avg, max) = (51681969.950, 57318138.604, 60827016.000), stdev = 4042114.340
+  CI (99.9%): [31198038.917, 83438238.292] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -883,25 +883,25 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
 # Benchmark: io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync
 # Parameters: (url = https://www.google.com/)
 
-# Run progress: 36.62% complete, ETA 00:06:32
+# Run progress: 36.62% complete, ETA 00:06:33
 # Fork: 1 of 2
-# Warmup Iteration   1: 57288727.778 ns/op
-# Warmup Iteration   2: 47203705.818 ns/op
-Iteration   1: 41807283.917 ns/op
-Iteration   2: 42711420.083 ns/op
+# Warmup Iteration   1: 83724245.083 ns/op
+# Warmup Iteration   2: 51627735.200 ns/op
+Iteration   1: 67879314.600 ns/op
+Iteration   2: 57348887.111 ns/op
 
-# Run progress: 37.32% complete, ETA 00:06:28
+# Run progress: 37.32% complete, ETA 00:06:29
 # Fork: 2 of 2
-# Warmup Iteration   1: 69901010.800 ns/op
-# Warmup Iteration   2: 49439988.095 ns/op
-Iteration   1: 51217785.700 ns/op
-Iteration   2: 45105673.391 ns/op
+# Warmup Iteration   1: 69469570.600 ns/op
+# Warmup Iteration   2: 52780726.579 ns/op
+Iteration   1: 51009115.700 ns/op
+Iteration   2: 50623986.150 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync":
-  45210540.773 ±(99.9%) 27397043.947 ns/op [Average]
-  (min, avg, max) = (41807283.917, 45210540.773, 51217785.700), stdev = 4239722.877
-  CI (99.9%): [17813496.826, 72607584.720] (assumes normal distribution)
+  56715325.890 ±(99.9%) 52058306.036 ns/op [Average]
+  (min, avg, max) = (50623986.150, 56715325.890, 67879314.600), stdev = 8056080.484
+  CI (99.9%): [4657019.854, 108773631.926] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -919,23 +919,23 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAs
 
 # Run progress: 38.03% complete, ETA 00:06:25
 # Fork: 1 of 2
-# Warmup Iteration   1: 59780697.588 ns/op
-# Warmup Iteration   2: 51746694.650 ns/op
-Iteration   1: 42037673.667 ns/op
-Iteration   2: 55971292.111 ns/op
+# Warmup Iteration   1: 65589892.125 ns/op
+# Warmup Iteration   2: 64384930.706 ns/op
+Iteration   1: 49733388.238 ns/op
+Iteration   2: 50902368.600 ns/op
 
-# Run progress: 38.73% complete, ETA 00:06:21
+# Run progress: 38.73% complete, ETA 00:06:22
 # Fork: 2 of 2
-# Warmup Iteration   1: 59335405.588 ns/op
-# Warmup Iteration   2: 43239123.083 ns/op
-Iteration   1: 46587077.091 ns/op
-Iteration   2: 43014748.417 ns/op
+# Warmup Iteration   1: 64622166.375 ns/op
+# Warmup Iteration   2: 53249240.789 ns/op
+Iteration   1: 51203431.050 ns/op
+Iteration   2: 52304734.300 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync":
-  46902697.821 ±(99.9%) 41060104.125 ns/op [Average]
-  (min, avg, max) = (42037673.667, 46902697.821, 55971292.111), stdev = 6354096.564
-  CI (99.9%): [5842593.697, 87962801.946] (assumes normal distribution)
+  51035980.547 ±(99.9%) 6830962.187 ns/op [Average]
+  (min, avg, max) = (49733388.238, 51035980.547, 52304734.300), stdev = 1057098.960
+  CI (99.9%): [44205018.360, 57866942.734] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -950,25 +950,25 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAs
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementManual
 
-# Run progress: 39.44% complete, ETA 00:06:17
+# Run progress: 39.44% complete, ETA 00:06:18
 # Fork: 1 of 2
-# Warmup Iteration   1: 42.304 ns/op
-# Warmup Iteration   2: 41.481 ns/op
-Iteration   1: 41.128 ns/op
-Iteration   2: 41.191 ns/op
+# Warmup Iteration   1: 42.520 ns/op
+# Warmup Iteration   2: 41.477 ns/op
+Iteration   1: 41.127 ns/op
+Iteration   2: 41.132 ns/op
 
 # Run progress: 40.14% complete, ETA 00:06:13
 # Fork: 2 of 2
-# Warmup Iteration   1: 42.270 ns/op
-# Warmup Iteration   2: 41.819 ns/op
-Iteration   1: 41.175 ns/op
-Iteration   2: 41.095 ns/op
+# Warmup Iteration   1: 42.428 ns/op
+# Warmup Iteration   2: 41.540 ns/op
+Iteration   1: 41.103 ns/op
+Iteration   2: 41.114 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
-  41.147 ±(99.9%) 0.282 ns/op [Average]
-  (min, avg, max) = (41.095, 41.147, 41.191), stdev = 0.044
-  CI (99.9%): [40.864, 41.429] (assumes normal distribution)
+  41.119 ±(99.9%) 0.085 ns/op [Average]
+  (min, avg, max) = (41.103, 41.119, 41.132), stdev = 0.013
+  CI (99.9%): [41.034, 41.204] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -983,25 +983,25 @@ Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementTP
 
-# Run progress: 40.85% complete, ETA 00:06:08
+# Run progress: 40.85% complete, ETA 00:06:09
 # Fork: 1 of 2
-# Warmup Iteration   1: 42.543 ns/op
-# Warmup Iteration   2: 41.496 ns/op
-Iteration   1: 41.125 ns/op
-Iteration   2: 41.234 ns/op
+# Warmup Iteration   1: 42.478 ns/op
+# Warmup Iteration   2: 41.492 ns/op
+Iteration   1: 41.111 ns/op
+Iteration   2: 41.123 ns/op
 
-# Run progress: 41.55% complete, ETA 00:06:03
+# Run progress: 41.55% complete, ETA 00:06:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 42.438 ns/op
-# Warmup Iteration   2: 41.849 ns/op
-Iteration   1: 41.084 ns/op
-Iteration   2: 41.145 ns/op
+# Warmup Iteration   1: 42.462 ns/op
+# Warmup Iteration   2: 41.745 ns/op
+Iteration   1: 41.093 ns/op
+Iteration   2: 41.085 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
-  41.147 ±(99.9%) 0.409 ns/op [Average]
-  (min, avg, max) = (41.084, 41.147, 41.234), stdev = 0.063
-  CI (99.9%): [40.738, 41.556] (assumes normal distribution)
+  41.103 ±(99.9%) 0.113 ns/op [Average]
+  (min, avg, max) = (41.085, 41.103, 41.123), stdev = 0.017
+  CI (99.9%): [40.990, 41.216] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1018,23 +1018,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
 
 # Run progress: 42.25% complete, ETA 00:05:59
 # Fork: 1 of 2
-# Warmup Iteration   1: 108.336 ns/op
-# Warmup Iteration   2: 97.017 ns/op
-Iteration   1: 97.851 ns/op
-Iteration   2: 97.548 ns/op
+# Warmup Iteration   1: 108.309 ns/op
+# Warmup Iteration   2: 97.649 ns/op
+Iteration   1: 98.093 ns/op
+Iteration   2: 97.709 ns/op
 
-# Run progress: 42.96% complete, ETA 00:05:54
+# Run progress: 42.96% complete, ETA 00:05:55
 # Fork: 2 of 2
-# Warmup Iteration   1: 110.681 ns/op
-# Warmup Iteration   2: 97.565 ns/op
-Iteration   1: 97.864 ns/op
-Iteration   2: 98.357 ns/op
+# Warmup Iteration   1: 107.438 ns/op
+# Warmup Iteration   2: 97.781 ns/op
+Iteration   1: 97.305 ns/op
+Iteration   2: 97.274 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
-  97.905 ±(99.9%) 2.166 ns/op [Average]
-  (min, avg, max) = (97.548, 97.905, 98.357), stdev = 0.335
-  CI (99.9%): [95.740, 100.071] (assumes normal distribution)
+  97.595 ±(99.9%) 2.497 ns/op [Average]
+  (min, avg, max) = (97.274, 97.595, 98.093), stdev = 0.386
+  CI (99.9%): [95.098, 100.092] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1051,23 +1051,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
 
 # Run progress: 43.66% complete, ETA 00:05:50
 # Fork: 1 of 2
-# Warmup Iteration   1: 40.728 ns/op
-# Warmup Iteration   2: 40.253 ns/op
-Iteration   1: 40.105 ns/op
-Iteration   2: 40.137 ns/op
+# Warmup Iteration   1: 40.608 ns/op
+# Warmup Iteration   2: 40.239 ns/op
+Iteration   1: 40.101 ns/op
+Iteration   2: 40.112 ns/op
 
-# Run progress: 44.37% complete, ETA 00:05:45
+# Run progress: 44.37% complete, ETA 00:05:46
 # Fork: 2 of 2
-# Warmup Iteration   1: 40.723 ns/op
-# Warmup Iteration   2: 40.258 ns/op
-Iteration   1: 40.120 ns/op
-Iteration   2: 40.109 ns/op
+# Warmup Iteration   1: 40.591 ns/op
+# Warmup Iteration   2: 40.234 ns/op
+Iteration   1: 40.093 ns/op
+Iteration   2: 40.095 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
-  40.118 ±(99.9%) 0.093 ns/op [Average]
-  (min, avg, max) = (40.105, 40.118, 40.137), stdev = 0.014
-  CI (99.9%): [40.025, 40.210] (assumes normal distribution)
+  40.100 ±(99.9%) 0.056 ns/op [Average]
+  (min, avg, max) = (40.093, 40.100, 40.112), stdev = 0.009
+  CI (99.9%): [40.045, 40.156] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1084,23 +1084,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
 
 # Run progress: 45.07% complete, ETA 00:05:41
 # Fork: 1 of 2
-# Warmup Iteration   1: 26.872 ns/op
-# Warmup Iteration   2: 26.225 ns/op
-Iteration   1: 25.729 ns/op
-Iteration   2: 25.686 ns/op
+# Warmup Iteration   1: 26.978 ns/op
+# Warmup Iteration   2: 26.345 ns/op
+Iteration   1: 25.827 ns/op
+Iteration   2: 25.782 ns/op
 
-# Run progress: 45.77% complete, ETA 00:05:36
+# Run progress: 45.77% complete, ETA 00:05:37
 # Fork: 2 of 2
-# Warmup Iteration   1: 26.884 ns/op
-# Warmup Iteration   2: 26.191 ns/op
-Iteration   1: 25.682 ns/op
-Iteration   2: 25.707 ns/op
+# Warmup Iteration   1: 26.989 ns/op
+# Warmup Iteration   2: 26.296 ns/op
+Iteration   1: 25.784 ns/op
+Iteration   2: 25.755 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
-  25.701 ±(99.9%) 0.140 ns/op [Average]
-  (min, avg, max) = (25.682, 25.701, 25.729), stdev = 0.022
-  CI (99.9%): [25.561, 25.841] (assumes normal distribution)
+  25.787 ±(99.9%) 0.192 ns/op [Average]
+  (min, avg, max) = (25.755, 25.787, 25.827), stdev = 0.030
+  CI (99.9%): [25.595, 25.979] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1117,23 +1117,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
 
 # Run progress: 46.48% complete, ETA 00:05:32
 # Fork: 1 of 2
-# Warmup Iteration   1: 80.800 ns/op
-# Warmup Iteration   2: 74.374 ns/op
-Iteration   1: 74.262 ns/op
-Iteration   2: 74.346 ns/op
+# Warmup Iteration   1: 78.175 ns/op
+# Warmup Iteration   2: 72.153 ns/op
+Iteration   1: 72.167 ns/op
+Iteration   2: 72.140 ns/op
 
 # Run progress: 47.18% complete, ETA 00:05:27
 # Fork: 2 of 2
-# Warmup Iteration   1: 80.214 ns/op
-# Warmup Iteration   2: 73.980 ns/op
-Iteration   1: 73.922 ns/op
-Iteration   2: 74.048 ns/op
+# Warmup Iteration   1: 81.477 ns/op
+# Warmup Iteration   2: 74.899 ns/op
+Iteration   1: 74.443 ns/op
+Iteration   2: 74.405 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
-  74.145 ±(99.9%) 1.255 ns/op [Average]
-  (min, avg, max) = (73.922, 74.145, 74.346), stdev = 0.194
-  CI (99.9%): [72.890, 75.399] (assumes normal distribution)
+  73.289 ±(99.9%) 8.472 ns/op [Average]
+  (min, avg, max) = (72.140, 73.289, 74.443), stdev = 1.311
+  CI (99.9%): [64.817, 81.760] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1150,23 +1150,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
 
 # Run progress: 47.89% complete, ETA 00:05:23
 # Fork: 1 of 2
-# Warmup Iteration   1: 40.285 ns/op
-# Warmup Iteration   2: 36.127 ns/op
-Iteration   1: 35.785 ns/op
-Iteration   2: 35.823 ns/op
+# Warmup Iteration   1: 38.290 ns/op
+# Warmup Iteration   2: 35.741 ns/op
+Iteration   1: 35.476 ns/op
+Iteration   2: 35.762 ns/op
 
 # Run progress: 48.59% complete, ETA 00:05:18
 # Fork: 2 of 2
-# Warmup Iteration   1: 39.258 ns/op
-# Warmup Iteration   2: 35.765 ns/op
-Iteration   1: 35.435 ns/op
-Iteration   2: 35.404 ns/op
+# Warmup Iteration   1: 39.788 ns/op
+# Warmup Iteration   2: 35.614 ns/op
+Iteration   1: 35.363 ns/op
+Iteration   2: 35.275 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
-  35.612 ±(99.9%) 1.441 ns/op [Average]
-  (min, avg, max) = (35.404, 35.612, 35.823), stdev = 0.223
-  CI (99.9%): [34.171, 37.053] (assumes normal distribution)
+  35.469 ±(99.9%) 1.368 ns/op [Average]
+  (min, avg, max) = (35.275, 35.469, 35.762), stdev = 0.212
+  CI (99.9%): [34.101, 36.837] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1183,23 +1183,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
 
 # Run progress: 49.30% complete, ETA 00:05:14
 # Fork: 1 of 2
-# Warmup Iteration   1: 466.547 ns/op
-# Warmup Iteration   2: 336.547 ns/op
-Iteration   1: 334.729 ns/op
-Iteration   2: 335.156 ns/op
+# Warmup Iteration   1: 446.965 ns/op
+# Warmup Iteration   2: 339.977 ns/op
+Iteration   1: 336.864 ns/op
+Iteration   2: 336.596 ns/op
 
 # Run progress: 50.00% complete, ETA 00:05:09
 # Fork: 2 of 2
-# Warmup Iteration   1: 477.687 ns/op
-# Warmup Iteration   2: 340.927 ns/op
-Iteration   1: 348.184 ns/op
-Iteration   2: 340.362 ns/op
+# Warmup Iteration   1: 449.348 ns/op
+# Warmup Iteration   2: 336.868 ns/op
+Iteration   1: 335.094 ns/op
+Iteration   2: 334.735 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
-  339.608 ±(99.9%) 40.481 ns/op [Average]
-  (min, avg, max) = (334.729, 339.608, 348.184), stdev = 6.264
-  CI (99.9%): [299.127, 380.089] (assumes normal distribution)
+  335.822 ±(99.9%) 6.874 ns/op [Average]
+  (min, avg, max) = (334.735, 335.822, 336.864), stdev = 1.064
+  CI (99.9%): [328.948, 342.696] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1216,23 +1216,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
 
 # Run progress: 50.70% complete, ETA 00:05:05
 # Fork: 1 of 2
-# Warmup Iteration   1: 26.445 ns/op
-# Warmup Iteration   2: 26.425 ns/op
-Iteration   1: 26.004 ns/op
-Iteration   2: 26.025 ns/op
+# Warmup Iteration   1: 26.168 ns/op
+# Warmup Iteration   2: 26.247 ns/op
+Iteration   1: 26.116 ns/op
+Iteration   2: 25.842 ns/op
 
-# Run progress: 51.41% complete, ETA 00:05:00
+# Run progress: 51.41% complete, ETA 00:05:01
 # Fork: 2 of 2
-# Warmup Iteration   1: 27.467 ns/op
-# Warmup Iteration   2: 26.731 ns/op
-Iteration   1: 25.581 ns/op
-Iteration   2: 25.766 ns/op
+# Warmup Iteration   1: 27.350 ns/op
+# Warmup Iteration   2: 26.258 ns/op
+Iteration   1: 26.071 ns/op
+Iteration   2: 25.939 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
-  25.844 ±(99.9%) 1.363 ns/op [Average]
-  (min, avg, max) = (25.581, 25.844, 26.025), stdev = 0.211
-  CI (99.9%): [24.482, 27.207] (assumes normal distribution)
+  25.992 ±(99.9%) 0.809 ns/op [Average]
+  (min, avg, max) = (25.842, 25.992, 26.116), stdev = 0.125
+  CI (99.9%): [25.183, 26.801] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1249,23 +1249,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
 
 # Run progress: 52.11% complete, ETA 00:04:56
 # Fork: 1 of 2
-# Warmup Iteration   1: 39.310 ns/op
-# Warmup Iteration   2: 35.602 ns/op
-Iteration   1: 35.455 ns/op
-Iteration   2: 35.423 ns/op
+# Warmup Iteration   1: 39.047 ns/op
+# Warmup Iteration   2: 35.579 ns/op
+Iteration   1: 35.322 ns/op
+Iteration   2: 35.310 ns/op
 
-# Run progress: 52.82% complete, ETA 00:04:51
+# Run progress: 52.82% complete, ETA 00:04:52
 # Fork: 2 of 2
-# Warmup Iteration   1: 39.417 ns/op
-# Warmup Iteration   2: 35.689 ns/op
-Iteration   1: 35.473 ns/op
-Iteration   2: 35.397 ns/op
+# Warmup Iteration   1: 39.720 ns/op
+# Warmup Iteration   2: 35.858 ns/op
+Iteration   1: 35.681 ns/op
+Iteration   2: 35.595 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
-  35.437 ±(99.9%) 0.219 ns/op [Average]
-  (min, avg, max) = (35.397, 35.437, 35.473), stdev = 0.034
-  CI (99.9%): [35.218, 35.656] (assumes normal distribution)
+  35.477 ±(99.9%) 1.223 ns/op [Average]
+  (min, avg, max) = (35.310, 35.477, 35.681), stdev = 0.189
+  CI (99.9%): [34.254, 36.700] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1282,23 +1282,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
 
 # Run progress: 53.52% complete, ETA 00:04:47
 # Fork: 1 of 2
-# Warmup Iteration   1: 446.898 ns/op
-# Warmup Iteration   2: 321.242 ns/op
-Iteration   1: 319.476 ns/op
-Iteration   2: 319.161 ns/op
+# Warmup Iteration   1: 431.635 ns/op
+# Warmup Iteration   2: 310.733 ns/op
+Iteration   1: 310.563 ns/op
+Iteration   2: 310.884 ns/op
 
-# Run progress: 54.23% complete, ETA 00:04:42
+# Run progress: 54.23% complete, ETA 00:04:43
 # Fork: 2 of 2
-# Warmup Iteration   1: 430.472 ns/op
-# Warmup Iteration   2: 310.868 ns/op
-Iteration   1: 311.280 ns/op
-Iteration   2: 311.481 ns/op
+# Warmup Iteration   1: 452.412 ns/op
+# Warmup Iteration   2: 322.394 ns/op
+Iteration   1: 320.923 ns/op
+Iteration   2: 320.044 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
-  315.349 ±(99.9%) 29.632 ns/op [Average]
-  (min, avg, max) = (311.280, 315.349, 319.476), stdev = 4.586
-  CI (99.9%): [285.718, 344.981] (assumes normal distribution)
+  315.603 ±(99.9%) 36.496 ns/op [Average]
+  (min, avg, max) = (310.563, 315.603, 320.923), stdev = 5.648
+  CI (99.9%): [279.108, 352.099] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1316,23 +1316,23 @@ Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
 
 # Run progress: 54.93% complete, ETA 00:04:38
 # Fork: 1 of 2
-# Warmup Iteration   1: 331.198 ns/op
-# Warmup Iteration   2: 317.580 ns/op
-Iteration   1: 347.087 ns/op
-Iteration   2: 346.681 ns/op
+# Warmup Iteration   1: 326.107 ns/op
+# Warmup Iteration   2: 313.639 ns/op
+Iteration   1: 340.270 ns/op
+Iteration   2: 340.606 ns/op
 
-# Run progress: 55.63% complete, ETA 00:04:33
+# Run progress: 55.63% complete, ETA 00:04:34
 # Fork: 2 of 2
-# Warmup Iteration   1: 324.358 ns/op
-# Warmup Iteration   2: 314.142 ns/op
-Iteration   1: 340.916 ns/op
-Iteration   2: 340.676 ns/op
+# Warmup Iteration   1: 326.888 ns/op
+# Warmup Iteration   2: 318.330 ns/op
+Iteration   1: 350.627 ns/op
+Iteration   2: 348.248 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  343.840 ±(99.9%) 22.746 ns/op [Average]
-  (min, avg, max) = (340.676, 343.840, 347.087), stdev = 3.520
-  CI (99.9%): [321.094, 366.587] (assumes normal distribution)
+  344.938 ±(99.9%) 34.169 ns/op [Average]
+  (min, avg, max) = (340.270, 344.938, 350.627), stdev = 5.288
+  CI (99.9%): [310.769, 379.107] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1350,23 +1350,23 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 
 # Run progress: 56.34% complete, ETA 00:04:29
 # Fork: 1 of 2
-# Warmup Iteration   1: 2922.257 ns/op
-# Warmup Iteration   2: 2792.588 ns/op
-Iteration   1: 2923.151 ns/op
-Iteration   2: 2924.233 ns/op
+# Warmup Iteration   1: 2834.049 ns/op
+# Warmup Iteration   2: 2747.224 ns/op
+Iteration   1: 2881.717 ns/op
+Iteration   2: 2900.503 ns/op
 
 # Run progress: 57.04% complete, ETA 00:04:25
 # Fork: 2 of 2
-# Warmup Iteration   1: 2836.537 ns/op
-# Warmup Iteration   2: 2681.482 ns/op
-Iteration   1: 2855.215 ns/op
-Iteration   2: 2850.197 ns/op
+# Warmup Iteration   1: 2904.263 ns/op
+# Warmup Iteration   2: 2731.998 ns/op
+Iteration   1: 2871.789 ns/op
+Iteration   2: 2869.114 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  2888.199 ±(99.9%) 265.183 ns/op [Average]
-  (min, avg, max) = (2850.197, 2888.199, 2924.233), stdev = 41.037
-  CI (99.9%): [2623.016, 3153.382] (assumes normal distribution)
+  2880.781 ±(99.9%) 91.902 ns/op [Average]
+  (min, avg, max) = (2869.114, 2880.781, 2900.503), stdev = 14.222
+  CI (99.9%): [2788.878, 2972.683] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1384,23 +1384,23 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 
 # Run progress: 57.75% complete, ETA 00:04:20
 # Fork: 1 of 2
-# Warmup Iteration   1: 31921.647 ns/op
-# Warmup Iteration   2: 30751.202 ns/op
-Iteration   1: 29326.119 ns/op
-Iteration   2: 28807.210 ns/op
+# Warmup Iteration   1: 33075.767 ns/op
+# Warmup Iteration   2: 31075.115 ns/op
+Iteration   1: 29746.352 ns/op
+Iteration   2: 29368.261 ns/op
 
 # Run progress: 58.45% complete, ETA 00:04:16
 # Fork: 2 of 2
-# Warmup Iteration   1: 33244.682 ns/op
-# Warmup Iteration   2: 31333.079 ns/op
-Iteration   1: 29283.535 ns/op
-Iteration   2: 28777.584 ns/op
+# Warmup Iteration   1: 32505.538 ns/op
+# Warmup Iteration   2: 31059.172 ns/op
+Iteration   1: 29793.624 ns/op
+Iteration   2: 29424.616 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  29048.612 ±(99.9%) 1916.681 ns/op [Average]
-  (min, avg, max) = (28777.584, 29048.612, 29326.119), stdev = 296.608
-  CI (99.9%): [27131.931, 30965.293] (assumes normal distribution)
+  29583.213 ±(99.9%) 1407.094 ns/op [Average]
+  (min, avg, max) = (29368.261, 29583.213, 29793.624), stdev = 217.749
+  CI (99.9%): [28176.119, 30990.308] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1418,23 +1418,23 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 
 # Run progress: 59.15% complete, ETA 00:04:11
 # Fork: 1 of 2
-# Warmup Iteration   1: 26.193 ns/op
-# Warmup Iteration   2: 26.167 ns/op
-Iteration   1: 25.043 ns/op
-Iteration   2: 25.019 ns/op
+# Warmup Iteration   1: 26.349 ns/op
+# Warmup Iteration   2: 26.077 ns/op
+Iteration   1: 27.482 ns/op
+Iteration   2: 27.414 ns/op
 
 # Run progress: 59.86% complete, ETA 00:04:07
 # Fork: 2 of 2
-# Warmup Iteration   1: 26.349 ns/op
-# Warmup Iteration   2: 26.072 ns/op
-Iteration   1: 24.953 ns/op
-Iteration   2: 25.023 ns/op
+# Warmup Iteration   1: 26.518 ns/op
+# Warmup Iteration   2: 26.049 ns/op
+Iteration   1: 28.485 ns/op
+Iteration   2: 28.457 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  25.009 ±(99.9%) 0.251 ns/op [Average]
-  (min, avg, max) = (24.953, 25.009, 25.043), stdev = 0.039
-  CI (99.9%): [24.759, 25.260] (assumes normal distribution)
+  27.960 ±(99.9%) 3.822 ns/op [Average]
+  (min, avg, max) = (27.414, 27.960, 28.485), stdev = 0.592
+  CI (99.9%): [24.137, 31.782] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1450,25 +1450,25 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
 # Parameters: (bytesLen = 32)
 
-# Run progress: 60.56% complete, ETA 00:04:02
+# Run progress: 60.56% complete, ETA 00:04:03
 # Fork: 1 of 2
-# Warmup Iteration   1: 48.495 ns/op
-# Warmup Iteration   2: 48.264 ns/op
-Iteration   1: 49.108 ns/op
-Iteration   2: 49.063 ns/op
+# Warmup Iteration   1: 48.696 ns/op
+# Warmup Iteration   2: 48.168 ns/op
+Iteration   1: 46.675 ns/op
+Iteration   2: 46.574 ns/op
 
 # Run progress: 61.27% complete, ETA 00:03:58
 # Fork: 2 of 2
-# Warmup Iteration   1: 48.572 ns/op
-# Warmup Iteration   2: 48.243 ns/op
-Iteration   1: 48.933 ns/op
-Iteration   2: 49.006 ns/op
+# Warmup Iteration   1: 48.506 ns/op
+# Warmup Iteration   2: 48.159 ns/op
+Iteration   1: 49.109 ns/op
+Iteration   2: 49.168 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  49.027 ±(99.9%) 0.490 ns/op [Average]
-  (min, avg, max) = (48.933, 49.027, 49.108), stdev = 0.076
-  CI (99.9%): [48.537, 49.517] (assumes normal distribution)
+  47.881 ±(99.9%) 9.384 ns/op [Average]
+  (min, avg, max) = (46.574, 47.881, 49.168), stdev = 1.452
+  CI (99.9%): [38.497, 57.266] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1486,23 +1486,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 
 # Run progress: 61.97% complete, ETA 00:03:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 94.242 ns/op
-# Warmup Iteration   2: 89.770 ns/op
-Iteration   1: 94.396 ns/op
-Iteration   2: 94.280 ns/op
+# Warmup Iteration   1: 94.204 ns/op
+# Warmup Iteration   2: 92.316 ns/op
+Iteration   1: 92.775 ns/op
+Iteration   2: 92.714 ns/op
 
 # Run progress: 62.68% complete, ETA 00:03:49
 # Fork: 2 of 2
-# Warmup Iteration   1: 93.416 ns/op
-# Warmup Iteration   2: 89.926 ns/op
-Iteration   1: 92.502 ns/op
-Iteration   2: 92.856 ns/op
+# Warmup Iteration   1: 93.949 ns/op
+# Warmup Iteration   2: 92.857 ns/op
+Iteration   1: 94.387 ns/op
+Iteration   2: 95.944 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  93.509 ±(99.9%) 6.267 ns/op [Average]
-  (min, avg, max) = (92.502, 93.509, 94.396), stdev = 0.970
-  CI (99.9%): [87.242, 99.775] (assumes normal distribution)
+  93.955 ±(99.9%) 9.923 ns/op [Average]
+  (min, avg, max) = (92.714, 93.955, 95.944), stdev = 1.536
+  CI (99.9%): [84.032, 103.878] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1520,23 +1520,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 
 # Run progress: 63.38% complete, ETA 00:03:45
 # Fork: 1 of 2
-# Warmup Iteration   1: 257.331 ns/op
-# Warmup Iteration   2: 244.029 ns/op
-Iteration   1: 243.887 ns/op
-Iteration   2: 244.979 ns/op
+# Warmup Iteration   1: 257.326 ns/op
+# Warmup Iteration   2: 244.383 ns/op
+Iteration   1: 237.048 ns/op
+Iteration   2: 244.140 ns/op
 
-# Run progress: 64.08% complete, ETA 00:03:40
+# Run progress: 64.08% complete, ETA 00:03:41
 # Fork: 2 of 2
-# Warmup Iteration   1: 262.101 ns/op
-# Warmup Iteration   2: 248.912 ns/op
-Iteration   1: 237.208 ns/op
-Iteration   2: 244.668 ns/op
+# Warmup Iteration   1: 261.139 ns/op
+# Warmup Iteration   2: 246.232 ns/op
+Iteration   1: 243.735 ns/op
+Iteration   2: 241.687 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  242.686 ±(99.9%) 23.783 ns/op [Average]
-  (min, avg, max) = (237.208, 242.686, 244.979), stdev = 3.680
-  CI (99.9%): [218.903, 266.469] (assumes normal distribution)
+  241.652 ±(99.9%) 21.014 ns/op [Average]
+  (min, avg, max) = (237.048, 241.652, 244.140), stdev = 3.252
+  CI (99.9%): [220.638, 262.667] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1554,23 +1554,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 
 # Run progress: 64.79% complete, ETA 00:03:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 258.664 ns/op
-# Warmup Iteration   2: 239.750 ns/op
-Iteration   1: 227.667 ns/op
-Iteration   2: 268.958 ns/op
+# Warmup Iteration   1: 267.056 ns/op
+# Warmup Iteration   2: 237.182 ns/op
+Iteration   1: 210.110 ns/op
+Iteration   2: 237.651 ns/op
 
 # Run progress: 65.49% complete, ETA 00:03:32
 # Fork: 2 of 2
-# Warmup Iteration   1: 259.848 ns/op
-# Warmup Iteration   2: 244.412 ns/op
-Iteration   1: 244.385 ns/op
-Iteration   2: 247.071 ns/op
+# Warmup Iteration   1: 256.623 ns/op
+# Warmup Iteration   2: 242.613 ns/op
+Iteration   1: 237.006 ns/op
+Iteration   2: 237.338 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  247.020 ±(99.9%) 109.584 ns/op [Average]
-  (min, avg, max) = (227.667, 247.020, 268.958), stdev = 16.958
-  CI (99.9%): [137.436, 356.604] (assumes normal distribution)
+  230.526 ±(99.9%) 87.972 ns/op [Average]
+  (min, avg, max) = (210.110, 230.526, 237.651), stdev = 13.614
+  CI (99.9%): [142.555, 318.498] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1588,23 +1588,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 
 # Run progress: 66.20% complete, ETA 00:03:28
 # Fork: 1 of 2
-# Warmup Iteration   1: 260.126 ns/op
-# Warmup Iteration   2: 245.782 ns/op
-Iteration   1: 245.671 ns/op
-Iteration   2: 245.224 ns/op
+# Warmup Iteration   1: 253.920 ns/op
+# Warmup Iteration   2: 252.703 ns/op
+Iteration   1: 231.316 ns/op
+Iteration   2: 242.924 ns/op
 
-# Run progress: 66.90% complete, ETA 00:03:23
+# Run progress: 66.90% complete, ETA 00:03:24
 # Fork: 2 of 2
-# Warmup Iteration   1: 262.230 ns/op
-# Warmup Iteration   2: 237.262 ns/op
-Iteration   1: 241.703 ns/op
-Iteration   2: 243.842 ns/op
+# Warmup Iteration   1: 260.910 ns/op
+# Warmup Iteration   2: 240.554 ns/op
+Iteration   1: 218.687 ns/op
+Iteration   2: 275.975 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  244.110 ±(99.9%) 11.526 ns/op [Average]
-  (min, avg, max) = (241.703, 244.110, 245.671), stdev = 1.784
-  CI (99.9%): [232.584, 255.636] (assumes normal distribution)
+  242.225 ±(99.9%) 158.840 ns/op [Average]
+  (min, avg, max) = (218.687, 242.225, 275.975), stdev = 24.581
+  CI (99.9%): [83.386, 401.065] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1622,23 +1622,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 
 # Run progress: 67.61% complete, ETA 00:03:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.867 ns/op
-# Warmup Iteration   2: 4.231 ns/op
-Iteration   1: 3.791 ns/op
-Iteration   2: 3.792 ns/op
+# Warmup Iteration   1: 4.949 ns/op
+# Warmup Iteration   2: 4.159 ns/op
+Iteration   1: 3.749 ns/op
+Iteration   2: 3.735 ns/op
 
 # Run progress: 68.31% complete, ETA 00:03:15
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.871 ns/op
-# Warmup Iteration   2: 4.254 ns/op
-Iteration   1: 3.825 ns/op
-Iteration   2: 3.812 ns/op
+# Warmup Iteration   1: 4.791 ns/op
+# Warmup Iteration   2: 4.160 ns/op
+Iteration   1: 3.754 ns/op
+Iteration   2: 3.748 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.805 ±(99.9%) 0.106 ns/op [Average]
-  (min, avg, max) = (3.791, 3.805, 3.825), stdev = 0.016
-  CI (99.9%): [3.699, 3.911] (assumes normal distribution)
+  3.746 ±(99.9%) 0.052 ns/op [Average]
+  (min, avg, max) = (3.735, 3.746, 3.754), stdev = 0.008
+  CI (99.9%): [3.694, 3.798] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1656,23 +1656,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 
 # Run progress: 69.01% complete, ETA 00:03:10
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.815 ns/op
-# Warmup Iteration   2: 4.213 ns/op
-Iteration   1: 3.796 ns/op
-Iteration   2: 3.775 ns/op
+# Warmup Iteration   1: 4.874 ns/op
+# Warmup Iteration   2: 4.218 ns/op
+Iteration   1: 3.769 ns/op
+Iteration   2: 3.760 ns/op
 
 # Run progress: 69.72% complete, ETA 00:03:06
 # Fork: 2 of 2
-# Warmup Iteration   1: 5.031 ns/op
-# Warmup Iteration   2: 4.180 ns/op
-Iteration   1: 3.782 ns/op
-Iteration   2: 3.796 ns/op
+# Warmup Iteration   1: 4.809 ns/op
+# Warmup Iteration   2: 4.184 ns/op
+Iteration   1: 3.740 ns/op
+Iteration   2: 3.736 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.787 ±(99.9%) 0.067 ns/op [Average]
-  (min, avg, max) = (3.775, 3.787, 3.796), stdev = 0.010
-  CI (99.9%): [3.720, 3.855] (assumes normal distribution)
+  3.751 ±(99.9%) 0.103 ns/op [Average]
+  (min, avg, max) = (3.736, 3.751, 3.769), stdev = 0.016
+  CI (99.9%): [3.648, 3.854] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1690,23 +1690,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 
 # Run progress: 70.42% complete, ETA 00:03:02
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.856 ns/op
-# Warmup Iteration   2: 4.241 ns/op
-Iteration   1: 3.795 ns/op
-Iteration   2: 3.788 ns/op
+# Warmup Iteration   1: 4.828 ns/op
+# Warmup Iteration   2: 4.180 ns/op
+Iteration   1: 3.768 ns/op
+Iteration   2: 3.760 ns/op
 
 # Run progress: 71.13% complete, ETA 00:02:57
 # Fork: 2 of 2
-# Warmup Iteration   1: 5.069 ns/op
-# Warmup Iteration   2: 4.214 ns/op
-Iteration   1: 3.796 ns/op
-Iteration   2: 3.804 ns/op
+# Warmup Iteration   1: 4.969 ns/op
+# Warmup Iteration   2: 4.180 ns/op
+Iteration   1: 3.746 ns/op
+Iteration   2: 3.747 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.796 ±(99.9%) 0.042 ns/op [Average]
-  (min, avg, max) = (3.788, 3.796, 3.804), stdev = 0.007
-  CI (99.9%): [3.753, 3.838] (assumes normal distribution)
+  3.755 ±(99.9%) 0.070 ns/op [Average]
+  (min, avg, max) = (3.746, 3.755, 3.768), stdev = 0.011
+  CI (99.9%): [3.686, 3.825] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1724,23 +1724,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 
 # Run progress: 71.83% complete, ETA 00:02:53
 # Fork: 1 of 2
-# Warmup Iteration   1: 20.110 ns/op
-# Warmup Iteration   2: 20.172 ns/op
-Iteration   1: 19.714 ns/op
-Iteration   2: 19.668 ns/op
+# Warmup Iteration   1: 20.103 ns/op
+# Warmup Iteration   2: 20.267 ns/op
+Iteration   1: 19.743 ns/op
+Iteration   2: 19.688 ns/op
 
-# Run progress: 72.54% complete, ETA 00:02:48
+# Run progress: 72.54% complete, ETA 00:02:49
 # Fork: 2 of 2
-# Warmup Iteration   1: 20.104 ns/op
-# Warmup Iteration   2: 20.169 ns/op
-Iteration   1: 19.710 ns/op
-Iteration   2: 19.673 ns/op
+# Warmup Iteration   1: 20.179 ns/op
+# Warmup Iteration   2: 20.173 ns/op
+Iteration   1: 19.665 ns/op
+Iteration   2: 19.738 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  19.691 ±(99.9%) 0.156 ns/op [Average]
-  (min, avg, max) = (19.668, 19.691, 19.714), stdev = 0.024
-  CI (99.9%): [19.535, 19.847] (assumes normal distribution)
+  19.709 ±(99.9%) 0.247 ns/op [Average]
+  (min, avg, max) = (19.665, 19.709, 19.743), stdev = 0.038
+  CI (99.9%): [19.462, 19.955] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1758,23 +1758,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 
 # Run progress: 73.24% complete, ETA 00:02:44
 # Fork: 1 of 2
-# Warmup Iteration   1: 36.358 ns/op
-# Warmup Iteration   2: 35.235 ns/op
-Iteration   1: 35.340 ns/op
-Iteration   2: 35.286 ns/op
+# Warmup Iteration   1: 36.320 ns/op
+# Warmup Iteration   2: 35.380 ns/op
+Iteration   1: 35.375 ns/op
+Iteration   2: 35.422 ns/op
 
 # Run progress: 73.94% complete, ETA 00:02:40
 # Fork: 2 of 2
-# Warmup Iteration   1: 36.266 ns/op
-# Warmup Iteration   2: 35.516 ns/op
-Iteration   1: 35.242 ns/op
-Iteration   2: 35.294 ns/op
+# Warmup Iteration   1: 36.944 ns/op
+# Warmup Iteration   2: 35.372 ns/op
+Iteration   1: 35.306 ns/op
+Iteration   2: 35.341 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  35.291 ±(99.9%) 0.259 ns/op [Average]
-  (min, avg, max) = (35.242, 35.291, 35.340), stdev = 0.040
-  CI (99.9%): [35.031, 35.550] (assumes normal distribution)
+  35.361 ±(99.9%) 0.321 ns/op [Average]
+  (min, avg, max) = (35.306, 35.361, 35.422), stdev = 0.050
+  CI (99.9%): [35.040, 35.682] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1792,23 +1792,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 
 # Run progress: 74.65% complete, ETA 00:02:35
 # Fork: 1 of 2
-# Warmup Iteration   1: 66.267 ns/op
-# Warmup Iteration   2: 64.931 ns/op
-Iteration   1: 65.095 ns/op
-Iteration   2: 65.204 ns/op
+# Warmup Iteration   1: 66.695 ns/op
+# Warmup Iteration   2: 65.486 ns/op
+Iteration   1: 65.899 ns/op
+Iteration   2: 65.027 ns/op
 
 # Run progress: 75.35% complete, ETA 00:02:31
 # Fork: 2 of 2
-# Warmup Iteration   1: 66.427 ns/op
-# Warmup Iteration   2: 64.896 ns/op
-Iteration   1: 65.132 ns/op
-Iteration   2: 64.970 ns/op
+# Warmup Iteration   1: 66.785 ns/op
+# Warmup Iteration   2: 65.273 ns/op
+Iteration   1: 65.189 ns/op
+Iteration   2: 65.300 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  65.100 ±(99.9%) 0.632 ns/op [Average]
-  (min, avg, max) = (64.970, 65.100, 65.204), stdev = 0.098
-  CI (99.9%): [64.468, 65.732] (assumes normal distribution)
+  65.354 ±(99.9%) 2.458 ns/op [Average]
+  (min, avg, max) = (65.027, 65.354, 65.899), stdev = 0.380
+  CI (99.9%): [62.896, 67.811] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1825,23 +1825,23 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 
 # Run progress: 76.06% complete, ETA 00:02:27
 # Fork: 1 of 2
-# Warmup Iteration   1: 29.569 ns/op
-# Warmup Iteration   2: 26.338 ns/op
-Iteration   1: 25.687 ns/op
-Iteration   2: 25.533 ns/op
+# Warmup Iteration   1: 28.034 ns/op
+# Warmup Iteration   2: 26.412 ns/op
+Iteration   1: 25.637 ns/op
+Iteration   2: 25.791 ns/op
 
 # Run progress: 76.76% complete, ETA 00:02:22
 # Fork: 2 of 2
-# Warmup Iteration   1: 29.716 ns/op
-# Warmup Iteration   2: 26.151 ns/op
-Iteration   1: 25.426 ns/op
-Iteration   2: 25.387 ns/op
+# Warmup Iteration   1: 29.629 ns/op
+# Warmup Iteration   2: 26.263 ns/op
+Iteration   1: 25.548 ns/op
+Iteration   2: 25.552 ns/op
 
 
 Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
-  25.508 ±(99.9%) 0.869 ns/op [Average]
-  (min, avg, max) = (25.387, 25.508, 25.687), stdev = 0.134
-  CI (99.9%): [24.640, 26.377] (assumes normal distribution)
+  25.632 ±(99.9%) 0.734 ns/op [Average]
+  (min, avg, max) = (25.548, 25.632, 25.791), stdev = 0.114
+  CI (99.9%): [24.898, 26.366] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1859,23 +1859,23 @@ Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
 
 # Run progress: 77.46% complete, ETA 00:02:18
 # Fork: 1 of 2
-# Warmup Iteration   1: 409.666 ns/op
-# Warmup Iteration   2: 388.000 ns/op
-Iteration   1: 387.803 ns/op
-Iteration   2: 388.252 ns/op
+# Warmup Iteration   1: 411.403 ns/op
+# Warmup Iteration   2: 389.705 ns/op
+Iteration   1: 388.900 ns/op
+Iteration   2: 389.389 ns/op
 
 # Run progress: 78.17% complete, ETA 00:02:14
 # Fork: 2 of 2
-# Warmup Iteration   1: 410.439 ns/op
-# Warmup Iteration   2: 391.634 ns/op
-Iteration   1: 388.140 ns/op
-Iteration   2: 387.908 ns/op
+# Warmup Iteration   1: 410.991 ns/op
+# Warmup Iteration   2: 388.458 ns/op
+Iteration   1: 387.238 ns/op
+Iteration   2: 395.710 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  388.026 ±(99.9%) 1.332 ns/op [Average]
-  (min, avg, max) = (387.803, 388.026, 388.252), stdev = 0.206
-  CI (99.9%): [386.694, 389.358] (assumes normal distribution)
+  390.309 ±(99.9%) 24.017 ns/op [Average]
+  (min, avg, max) = (387.238, 390.309, 395.710), stdev = 3.717
+  CI (99.9%): [366.292, 414.326] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1893,23 +1893,23 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 
 # Run progress: 78.87% complete, ETA 00:02:09
 # Fork: 1 of 2
-# Warmup Iteration   1: 2215.094 ns/op
-# Warmup Iteration   2: 2119.912 ns/op
-Iteration   1: 2099.459 ns/op
-Iteration   2: 2100.412 ns/op
+# Warmup Iteration   1: 2203.797 ns/op
+# Warmup Iteration   2: 2119.695 ns/op
+Iteration   1: 2107.515 ns/op
+Iteration   2: 2100.934 ns/op
 
 # Run progress: 79.58% complete, ETA 00:02:05
 # Fork: 2 of 2
-# Warmup Iteration   1: 2216.368 ns/op
-# Warmup Iteration   2: 2116.706 ns/op
-Iteration   1: 2097.658 ns/op
-Iteration   2: 2100.249 ns/op
+# Warmup Iteration   1: 2208.660 ns/op
+# Warmup Iteration   2: 2133.742 ns/op
+Iteration   1: 2097.998 ns/op
+Iteration   2: 2111.836 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  2099.445 ±(99.9%) 8.154 ns/op [Average]
-  (min, avg, max) = (2097.658, 2099.445, 2100.412), stdev = 1.262
-  CI (99.9%): [2091.291, 2107.599] (assumes normal distribution)
+  2104.571 ±(99.9%) 40.508 ns/op [Average]
+  (min, avg, max) = (2097.998, 2104.571, 2111.836), stdev = 6.269
+  CI (99.9%): [2064.062, 2145.079] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1925,25 +1925,25 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 # Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 8192)
 
-# Run progress: 80.28% complete, ETA 00:02:00
+# Run progress: 80.28% complete, ETA 00:02:01
 # Fork: 1 of 2
-# Warmup Iteration   1: 40108.784 ns/op
-# Warmup Iteration   2: 39229.172 ns/op
-Iteration   1: 39663.979 ns/op
-Iteration   2: 40305.456 ns/op
+# Warmup Iteration   1: 16194.562 ns/op
+# Warmup Iteration   2: 16173.261 ns/op
+Iteration   1: 15523.069 ns/op
+Iteration   2: 15528.010 ns/op
 
 # Run progress: 80.99% complete, ETA 00:01:56
 # Fork: 2 of 2
-# Warmup Iteration   1: 40119.298 ns/op
-# Warmup Iteration   2: 39106.989 ns/op
-Iteration   1: 39255.877 ns/op
-Iteration   2: 38972.804 ns/op
+# Warmup Iteration   1: 16191.790 ns/op
+# Warmup Iteration   2: 16365.763 ns/op
+Iteration   1: 15500.399 ns/op
+Iteration   2: 15509.304 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  39549.529 ±(99.9%) 3737.109 ns/op [Average]
-  (min, avg, max) = (38972.804, 39549.529, 40305.456), stdev = 578.322
-  CI (99.9%): [35812.420, 43286.639] (assumes normal distribution)
+  15515.196 ±(99.9%) 81.725 ns/op [Average]
+  (min, avg, max) = (15500.399, 15515.196, 15528.010), stdev = 12.647
+  CI (99.9%): [15433.470, 15596.921] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1960,23 +1960,23 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 
 # Run progress: 81.69% complete, ETA 00:01:52
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.098 ns/op
-# Warmup Iteration   2: 3.459 ns/op
-Iteration   1: 3.544 ns/op
-Iteration   2: 3.543 ns/op
+# Warmup Iteration   1: 4.097 ns/op
+# Warmup Iteration   2: 3.448 ns/op
+Iteration   1: 3.537 ns/op
+Iteration   2: 3.547 ns/op
 
 # Run progress: 82.39% complete, ETA 00:01:47
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.095 ns/op
-# Warmup Iteration   2: 3.458 ns/op
-Iteration   1: 3.531 ns/op
-Iteration   2: 3.550 ns/op
+# Warmup Iteration   1: 4.100 ns/op
+# Warmup Iteration   2: 3.455 ns/op
+Iteration   1: 3.535 ns/op
+Iteration   2: 3.537 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
-  3.542 ±(99.9%) 0.050 ns/op [Average]
-  (min, avg, max) = (3.531, 3.542, 3.550), stdev = 0.008
-  CI (99.9%): [3.492, 3.591] (assumes normal distribution)
+  3.539 ±(99.9%) 0.034 ns/op [Average]
+  (min, avg, max) = (3.535, 3.539, 3.547), stdev = 0.005
+  CI (99.9%): [3.505, 3.573] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -1993,23 +1993,23 @@ Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
 
 # Run progress: 83.10% complete, ETA 00:01:43
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.104 ns/op
-# Warmup Iteration   2: 3.689 ns/op
-Iteration   1: 4.048 ns/op
-Iteration   2: 4.056 ns/op
+# Warmup Iteration   1: 4.101 ns/op
+# Warmup Iteration   2: 3.664 ns/op
+Iteration   1: 4.046 ns/op
+Iteration   2: 4.047 ns/op
 
 # Run progress: 83.80% complete, ETA 00:01:39
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.109 ns/op
-# Warmup Iteration   2: 3.693 ns/op
-Iteration   1: 4.048 ns/op
+# Warmup Iteration   1: 4.105 ns/op
+# Warmup Iteration   2: 3.685 ns/op
+Iteration   1: 4.050 ns/op
 Iteration   2: 4.049 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
-  4.050 ±(99.9%) 0.026 ns/op [Average]
-  (min, avg, max) = (4.048, 4.050, 4.056), stdev = 0.004
-  CI (99.9%): [4.024, 4.077] (assumes normal distribution)
+  4.048 ±(99.9%) 0.010 ns/op [Average]
+  (min, avg, max) = (4.046, 4.048, 4.050), stdev = 0.002
+  CI (99.9%): [4.038, 4.059] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2027,23 +2027,23 @@ Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
 
 # Run progress: 84.51% complete, ETA 00:01:34
 # Fork: 1 of 2
-# Warmup Iteration   1: 1309.519 ns/op
-# Warmup Iteration   2: 1237.976 ns/op
-Iteration   1: 1351.651 ns/op
-Iteration   2: 1351.836 ns/op
+# Warmup Iteration   1: 1553.854 ns/op
+# Warmup Iteration   2: 1294.723 ns/op
+Iteration   1: 1293.907 ns/op
+Iteration   2: 1293.688 ns/op
 
 # Run progress: 85.21% complete, ETA 00:01:30
 # Fork: 2 of 2
-# Warmup Iteration   1: 1349.741 ns/op
-# Warmup Iteration   2: 1245.647 ns/op
-Iteration   1: 1338.557 ns/op
-Iteration   2: 1337.120 ns/op
+# Warmup Iteration   1: 1345.024 ns/op
+# Warmup Iteration   2: 1249.024 ns/op
+Iteration   1: 1357.255 ns/op
+Iteration   2: 1356.602 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  1344.791 ±(99.9%) 52.019 ns/op [Average]
-  (min, avg, max) = (1337.120, 1344.791, 1351.836), stdev = 8.050
-  CI (99.9%): [1292.772, 1396.810] (assumes normal distribution)
+  1325.363 ±(99.9%) 235.540 ns/op [Average]
+  (min, avg, max) = (1293.688, 1325.363, 1357.255), stdev = 36.450
+  CI (99.9%): [1089.823, 1560.903] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2061,23 +2061,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 
 # Run progress: 85.92% complete, ETA 00:01:26
 # Fork: 1 of 2
-# Warmup Iteration   1: 11570.525 ns/op
-# Warmup Iteration   2: 13081.778 ns/op
-Iteration   1: 14319.169 ns/op
-Iteration   2: 14279.191 ns/op
+# Warmup Iteration   1: 11148.765 ns/op
+# Warmup Iteration   2: 12896.204 ns/op
+Iteration   1: 14074.116 ns/op
+Iteration   2: 14019.921 ns/op
 
 # Run progress: 86.62% complete, ETA 00:01:21
 # Fork: 2 of 2
-# Warmup Iteration   1: 11715.368 ns/op
-# Warmup Iteration   2: 13212.006 ns/op
-Iteration   1: 14194.152 ns/op
-Iteration   2: 14168.189 ns/op
+# Warmup Iteration   1: 12273.962 ns/op
+# Warmup Iteration   2: 12934.672 ns/op
+Iteration   1: 14135.446 ns/op
+Iteration   2: 14513.826 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  14240.175 ±(99.9%) 457.881 ns/op [Average]
-  (min, avg, max) = (14168.189, 14240.175, 14319.169), stdev = 70.858
-  CI (99.9%): [13782.294, 14698.057] (assumes normal distribution)
+  14185.827 ±(99.9%) 1445.549 ns/op [Average]
+  (min, avg, max) = (14019.921, 14185.827, 14513.826), stdev = 223.700
+  CI (99.9%): [12740.278, 15631.376] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2095,23 +2095,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 
 # Run progress: 87.32% complete, ETA 00:01:17
 # Fork: 1 of 2
-# Warmup Iteration   1: 119503.179 ns/op
-# Warmup Iteration   2: 109834.469 ns/op
-Iteration   1: 108960.820 ns/op
-Iteration   2: 108942.250 ns/op
+# Warmup Iteration   1: 121868.062 ns/op
+# Warmup Iteration   2: 114308.447 ns/op
+Iteration   1: 113001.439 ns/op
+Iteration   2: 113034.419 ns/op
 
 # Run progress: 88.03% complete, ETA 00:01:13
 # Fork: 2 of 2
-# Warmup Iteration   1: 125384.679 ns/op
-# Warmup Iteration   2: 117910.529 ns/op
-Iteration   1: 116871.934 ns/op
-Iteration   2: 116929.535 ns/op
+# Warmup Iteration   1: 127288.097 ns/op
+# Warmup Iteration   2: 119844.069 ns/op
+Iteration   1: 118805.714 ns/op
+Iteration   2: 118630.171 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  112926.135 ±(99.9%) 29657.551 ns/op [Average]
-  (min, avg, max) = (108942.250, 112926.135, 116929.535), stdev = 4589.539
-  CI (99.9%): [83268.584, 142583.686] (assumes normal distribution)
+  115867.936 ±(99.9%) 21271.008 ns/op [Average]
+  (min, avg, max) = (113001.439, 115867.936, 118805.714), stdev = 3291.712
+  CI (99.9%): [94596.928, 137138.943] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2129,23 +2129,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 
 # Run progress: 88.73% complete, ETA 00:01:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 826.837 ns/op
-# Warmup Iteration   2: 808.640 ns/op
-Iteration   1: 791.342 ns/op
-Iteration   2: 791.488 ns/op
+# Warmup Iteration   1: 819.287 ns/op
+# Warmup Iteration   2: 852.624 ns/op
+Iteration   1: 800.224 ns/op
+Iteration   2: 799.526 ns/op
 
 # Run progress: 89.44% complete, ETA 00:01:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 835.125 ns/op
-# Warmup Iteration   2: 847.781 ns/op
-Iteration   1: 800.378 ns/op
-Iteration   2: 800.735 ns/op
+# Warmup Iteration   1: 817.671 ns/op
+# Warmup Iteration   2: 808.794 ns/op
+Iteration   1: 788.198 ns/op
+Iteration   2: 787.690 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  795.986 ±(99.9%) 34.121 ns/op [Average]
-  (min, avg, max) = (791.342, 795.986, 800.735), stdev = 5.280
-  CI (99.9%): [761.864, 830.107] (assumes normal distribution)
+  793.910 ±(99.9%) 44.571 ns/op [Average]
+  (min, avg, max) = (787.690, 793.910, 800.224), stdev = 6.897
+  CI (99.9%): [749.338, 838.481] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2163,23 +2163,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 
 # Run progress: 90.14% complete, ETA 00:01:00
 # Fork: 1 of 2
-# Warmup Iteration   1: 8262.867 ns/op
-# Warmup Iteration   2: 7898.586 ns/op
-Iteration   1: 7665.813 ns/op
-Iteration   2: 7674.928 ns/op
+# Warmup Iteration   1: 8277.911 ns/op
+# Warmup Iteration   2: 7851.652 ns/op
+Iteration   1: 7604.765 ns/op
+Iteration   2: 7609.108 ns/op
 
 # Run progress: 90.85% complete, ETA 00:00:56
 # Fork: 2 of 2
-# Warmup Iteration   1: 8306.842 ns/op
-# Warmup Iteration   2: 7994.477 ns/op
-Iteration   1: 7880.898 ns/op
-Iteration   2: 7862.487 ns/op
+# Warmup Iteration   1: 8232.892 ns/op
+# Warmup Iteration   2: 7866.332 ns/op
+Iteration   1: 7572.605 ns/op
+Iteration   2: 7633.365 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  7771.031 ±(99.9%) 753.053 ns/op [Average]
-  (min, avg, max) = (7665.813, 7771.031, 7880.898), stdev = 116.536
-  CI (99.9%): [7017.978, 8524.084] (assumes normal distribution)
+  7604.961 ±(99.9%) 161.373 ns/op [Average]
+  (min, avg, max) = (7572.605, 7604.961, 7633.365), stdev = 24.973
+  CI (99.9%): [7443.588, 7766.334] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2197,23 +2197,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 
 # Run progress: 91.55% complete, ETA 00:00:51
 # Fork: 1 of 2
-# Warmup Iteration   1: 84825.598 ns/op
-# Warmup Iteration   2: 80885.237 ns/op
-Iteration   1: 81869.913 ns/op
-Iteration   2: 80386.286 ns/op
+# Warmup Iteration   1: 83428.526 ns/op
+# Warmup Iteration   2: 79492.711 ns/op
+Iteration   1: 78965.911 ns/op
+Iteration   2: 79287.619 ns/op
 
 # Run progress: 92.25% complete, ETA 00:00:47
 # Fork: 2 of 2
-# Warmup Iteration   1: 81720.679 ns/op
-# Warmup Iteration   2: 78677.894 ns/op
-Iteration   1: 84695.414 ns/op
-Iteration   2: 82517.150 ns/op
+# Warmup Iteration   1: 84854.470 ns/op
+# Warmup Iteration   2: 80389.583 ns/op
+Iteration   1: 80580.368 ns/op
+Iteration   2: 81709.228 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  82367.191 ±(99.9%) 11568.213 ns/op [Average]
-  (min, avg, max) = (80386.286, 82367.191, 84695.414), stdev = 1790.194
-  CI (99.9%): [70798.978, 93935.404] (assumes normal distribution)
+  80135.782 ±(99.9%) 8140.883 ns/op [Average]
+  (min, avg, max) = (78965.911, 80135.782, 81709.228), stdev = 1259.811
+  CI (99.9%): [71994.899, 88276.665] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2231,23 +2231,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 
 # Run progress: 92.96% complete, ETA 00:00:43
 # Fork: 1 of 2
-# Warmup Iteration   1: 825.617 ns/op
-# Warmup Iteration   2: 804.642 ns/op
-Iteration   1: 801.974 ns/op
-Iteration   2: 802.778 ns/op
+# Warmup Iteration   1: 821.332 ns/op
+# Warmup Iteration   2: 804.045 ns/op
+Iteration   1: 802.643 ns/op
+Iteration   2: 803.362 ns/op
 
 # Run progress: 93.66% complete, ETA 00:00:38
 # Fork: 2 of 2
-# Warmup Iteration   1: 821.746 ns/op
-# Warmup Iteration   2: 813.120 ns/op
-Iteration   1: 808.046 ns/op
-Iteration   2: 808.343 ns/op
+# Warmup Iteration   1: 834.649 ns/op
+# Warmup Iteration   2: 813.894 ns/op
+Iteration   1: 807.997 ns/op
+Iteration   2: 808.820 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  805.285 ±(99.9%) 21.827 ns/op [Average]
-  (min, avg, max) = (801.974, 805.285, 808.343), stdev = 3.378
-  CI (99.9%): [783.458, 827.112] (assumes normal distribution)
+  805.706 ±(99.9%) 20.376 ns/op [Average]
+  (min, avg, max) = (802.643, 805.706, 808.820), stdev = 3.153
+  CI (99.9%): [785.330, 826.082] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2265,23 +2265,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 
 # Run progress: 94.37% complete, ETA 00:00:34
 # Fork: 1 of 2
-# Warmup Iteration   1: 10842.635 ns/op
-# Warmup Iteration   2: 9114.327 ns/op
-Iteration   1: 7901.341 ns/op
-Iteration   2: 7900.775 ns/op
+# Warmup Iteration   1: 10639.552 ns/op
+# Warmup Iteration   2: 10064.250 ns/op
+Iteration   1: 7930.353 ns/op
+Iteration   2: 8077.248 ns/op
 
 # Run progress: 95.07% complete, ETA 00:00:30
 # Fork: 2 of 2
-# Warmup Iteration   1: 10358.740 ns/op
-# Warmup Iteration   2: 9820.525 ns/op
-Iteration   1: 8230.492 ns/op
-Iteration   2: 8329.703 ns/op
+# Warmup Iteration   1: 10807.190 ns/op
+# Warmup Iteration   2: 9386.992 ns/op
+Iteration   1: 7865.127 ns/op
+Iteration   2: 7844.617 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  8090.578 ±(99.9%) 1438.150 ns/op [Average]
-  (min, avg, max) = (7900.775, 8090.578, 8329.703), stdev = 222.555
-  CI (99.9%): [6652.428, 9528.727] (assumes normal distribution)
+  7929.336 ±(99.9%) 679.576 ns/op [Average]
+  (min, avg, max) = (7844.617, 7929.336, 8077.248), stdev = 105.165
+  CI (99.9%): [7249.761, 8608.912] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2299,23 +2299,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 
 # Run progress: 95.77% complete, ETA 00:00:25
 # Fork: 1 of 2
-# Warmup Iteration   1: 107250.809 ns/op
-# Warmup Iteration   2: 134511.948 ns/op
-Iteration   1: 134271.301 ns/op
-Iteration   2: 133190.308 ns/op
+# Warmup Iteration   1: 106056.458 ns/op
+# Warmup Iteration   2: 133592.245 ns/op
+Iteration   1: 133839.309 ns/op
+Iteration   2: 132787.008 ns/op
 
 # Run progress: 96.48% complete, ETA 00:00:21
 # Fork: 2 of 2
-# Warmup Iteration   1: 102631.636 ns/op
-# Warmup Iteration   2: 133794.099 ns/op
-Iteration   1: 134019.890 ns/op
-Iteration   2: 133943.725 ns/op
+# Warmup Iteration   1: 101037.934 ns/op
+# Warmup Iteration   2: 132951.491 ns/op
+Iteration   1: 133926.439 ns/op
+Iteration   2: 134056.492 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  133856.306 ±(99.9%) 3008.301 ns/op [Average]
-  (min, avg, max) = (133190.308, 133856.306, 134271.301), stdev = 465.538
-  CI (99.9%): [130848.005, 136864.607] (assumes normal distribution)
+  133652.312 ±(99.9%) 3772.063 ns/op [Average]
+  (min, avg, max) = (132787.008, 133652.312, 134056.492), stdev = 583.731
+  CI (99.9%): [129880.249, 137424.375] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2332,23 +2332,23 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 
 # Run progress: 97.18% complete, ETA 00:00:17
 # Fork: 1 of 2
-# Warmup Iteration   1: 31.461 ns/op
-# Warmup Iteration   2: 28.045 ns/op
-Iteration   1: 27.371 ns/op
-Iteration   2: 27.454 ns/op
+# Warmup Iteration   1: 30.733 ns/op
+# Warmup Iteration   2: 28.062 ns/op
+Iteration   1: 27.497 ns/op
+Iteration   2: 27.482 ns/op
 
 # Run progress: 97.89% complete, ETA 00:00:12
 # Fork: 2 of 2
-# Warmup Iteration   1: 31.545 ns/op
-# Warmup Iteration   2: 27.976 ns/op
-Iteration   1: 27.441 ns/op
-Iteration   2: 27.461 ns/op
+# Warmup Iteration   1: 29.818 ns/op
+# Warmup Iteration   2: 28.058 ns/op
+Iteration   1: 27.471 ns/op
+Iteration   2: 27.469 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
-  27.432 ±(99.9%) 0.268 ns/op [Average]
-  (min, avg, max) = (27.371, 27.432, 27.461), stdev = 0.041
-  CI (99.9%): [27.164, 27.700] (assumes normal distribution)
+  27.480 ±(99.9%) 0.083 ns/op [Average]
+  (min, avg, max) = (27.469, 27.480, 27.497), stdev = 0.013
+  CI (99.9%): [27.396, 27.563] (assumes normal distribution)
 
 
 # JMH version: 1.37
@@ -2365,23 +2365,23 @@ Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
 
 # Run progress: 98.59% complete, ETA 00:00:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 34.050 ns/op
-# Warmup Iteration   2: 31.688 ns/op
-Iteration   1: 31.251 ns/op
-Iteration   2: 31.272 ns/op
+# Warmup Iteration   1: 32.346 ns/op
+# Warmup Iteration   2: 30.321 ns/op
+Iteration   1: 29.671 ns/op
+Iteration   2: 29.657 ns/op
 
 # Run progress: 99.30% complete, ETA 00:00:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 34.218 ns/op
-# Warmup Iteration   2: 31.703 ns/op
-Iteration   1: 31.250 ns/op
-Iteration   2: 31.191 ns/op
+# Warmup Iteration   1: 35.005 ns/op
+# Warmup Iteration   2: 31.569 ns/op
+Iteration   1: 30.948 ns/op
+Iteration   2: 30.940 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two":
-  31.241 ±(99.9%) 0.223 ns/op [Average]
-  (min, avg, max) = (31.191, 31.241, 31.272), stdev = 0.034
-  CI (99.9%): [31.018, 31.464] (assumes normal distribution)
+  30.304 ±(99.9%) 4.777 ns/op [Average]
+  (min, avg, max) = (29.657, 30.304, 30.948), stdev = 0.739
+  CI (99.9%): [25.527, 35.081] (assumes normal distribution)
 
 
 # Run complete. Total time: 00:10:10
@@ -2399,76 +2399,76 @@ different JVMs are already problematic, the performance difference caused by dif
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
 Benchmark                                                     (bytesLen)  (count)  (itemsCount)  (len)  (size)                    (url)  Mode  Cnt         Score          Error  Units
-BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       147.798 ±       57.597  ns/op
-BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4      1992.211 ±       27.119  ns/op
-BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        31.969 ±        1.223  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                      N/A  avgt    4     58196.703 ±    37884.487  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                      N/A  avgt    4    623861.005 ±  1676833.926  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                      N/A  avgt    4   1040636.588 ±   199643.731  ns/op
-CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       719.033 ±       15.249  ns/op
-DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         1.868 ±        0.009  ns/op
-DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.786 ±        0.116  ns/op
-DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        60.215 ±        1.355  ns/op
-DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.813 ±        0.116  ns/op
-DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.814 ±        0.066  ns/op
-IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4   3939271.717 ±  2729496.970  ns/op
-IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4    408514.479 ±   269100.407  ns/op
-IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4  29516941.316 ±   566323.074  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                      N/A  avgt    4       900.412 ±      116.769  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                      N/A  avgt    4      3020.897 ±      316.018  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                      N/A  avgt    4     14302.816 ±     1800.075  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                      N/A  avgt    4      1751.916 ±      237.152  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                      N/A  avgt    4      5850.522 ±      346.555  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                      N/A  avgt    4     29054.504 ±     6589.428  ns/op
-NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       550.799 ±      154.135  ns/op
-NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       407.159 ±       22.469  ns/op
-NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       438.498 ±       33.515  ns/op
-NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       525.523 ±       55.044  ns/op
-NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  44676304.185 ± 20347013.878  ns/op
-NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  45210540.773 ± 27397043.947  ns/op
-NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  46902697.821 ± 41060104.125  ns/op
-NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        41.147 ±        0.282  ns/op
-NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        41.147 ±        0.409  ns/op
-NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        97.905 ±        2.166  ns/op
-NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        40.118 ±        0.093  ns/op
-NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.701 ±        0.140  ns/op
-NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        74.145 ±        1.255  ns/op
-NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.612 ±        1.441  ns/op
-NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       339.608 ±       40.481  ns/op
-NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.844 ±        1.363  ns/op
-NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.437 ±        0.219  ns/op
-NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       315.349 ±       29.632  ns/op
-OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                      N/A  avgt    4       343.840 ±       22.746  ns/op
-OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                      N/A  avgt    4      2888.199 ±      265.183  ns/op
-OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                      N/A  avgt    4     29048.612 ±     1916.681  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.009 ±        0.251  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                      N/A  avgt    4        49.027 ±        0.490  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                      N/A  avgt    4        93.509 ±        6.267  ns/op
-PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4       242.686 ±       23.783  ns/op
-PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4       247.020 ±      109.584  ns/op
-PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4       244.110 ±       11.526  ns/op
-PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.805 ±        0.106  ns/op
-PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.787 ±        0.067  ns/op
-PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.796 ±        0.042  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                      N/A  avgt    4        19.691 ±        0.156  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.291 ±        0.259  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                      N/A  avgt    4        65.100 ±        0.632  ns/op
-ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.508 ±        0.869  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                      N/A  avgt    4       388.026 ±        1.332  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                      N/A  avgt    4      2099.445 ±        8.154  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                      N/A  avgt    4     39549.529 ±     3737.109  ns/op
-SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.542 ±        0.050  ns/op
-SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         4.050 ±        0.026  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                      N/A  avgt    4      1344.791 ±       52.019  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                      N/A  avgt    4     14240.175 ±      457.881  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    112926.135 ±    29657.551  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                      N/A  avgt    4       795.986 ±       34.121  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      7771.031 ±      753.053  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                      N/A  avgt    4     82367.191 ±    11568.213  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                      N/A  avgt    4       805.285 ±       21.827  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      8090.578 ±     1438.150  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    133856.306 ±     3008.301  ns/op
-ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        27.432 ±        0.268  ns/op
-ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        31.241 ±        0.223  ns/op
+BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       148.263 ±       69.604  ns/op
+BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4      2070.874 ±      612.940  ns/op
+BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        32.459 ±        0.803  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                      N/A  avgt    4     58471.218 ±    33690.866  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                      N/A  avgt    4    688253.720 ±  1307585.555  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                      N/A  avgt    4   1038153.612 ±   160774.280  ns/op
+CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       719.930 ±       15.088  ns/op
+DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         1.867 ±        0.009  ns/op
+DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.819 ±        0.086  ns/op
+DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        60.531 ±        3.219  ns/op
+DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.809 ±        0.071  ns/op
+DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.813 ±        0.252  ns/op
+IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4   3841199.712 ±  2191613.960  ns/op
+IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4    406556.762 ±   247542.670  ns/op
+IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4  29631258.324 ±   454919.706  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                      N/A  avgt    4       931.160 ±      339.765  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                      N/A  avgt    4      3124.424 ±     1491.876  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                      N/A  avgt    4     14060.711 ±      575.185  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                      N/A  avgt    4      1935.799 ±      450.123  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                      N/A  avgt    4      5899.610 ±     1145.486  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                      N/A  avgt    4     29375.228 ±     9037.806  ns/op
+NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       503.970 ±      128.999  ns/op
+NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       404.096 ±      168.089  ns/op
+NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       440.551 ±       25.912  ns/op
+NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       526.963 ±       34.408  ns/op
+NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  57318138.604 ± 26120099.687  ns/op
+NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  56715325.890 ± 52058306.036  ns/op
+NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  51035980.547 ±  6830962.187  ns/op
+NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        41.119 ±        0.085  ns/op
+NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        41.103 ±        0.113  ns/op
+NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        97.595 ±        2.497  ns/op
+NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        40.100 ±        0.056  ns/op
+NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.787 ±        0.192  ns/op
+NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        73.289 ±        8.472  ns/op
+NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.469 ±        1.368  ns/op
+NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       335.822 ±        6.874  ns/op
+NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.992 ±        0.809  ns/op
+NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.477 ±        1.223  ns/op
+NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       315.603 ±       36.496  ns/op
+OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                      N/A  avgt    4       344.938 ±       34.169  ns/op
+OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                      N/A  avgt    4      2880.781 ±       91.902  ns/op
+OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                      N/A  avgt    4     29583.213 ±     1407.094  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                      N/A  avgt    4        27.960 ±        3.822  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                      N/A  avgt    4        47.881 ±        9.384  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                      N/A  avgt    4        93.955 ±        9.923  ns/op
+PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4       241.652 ±       21.014  ns/op
+PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4       230.526 ±       87.972  ns/op
+PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4       242.225 ±      158.840  ns/op
+PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.746 ±        0.052  ns/op
+PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.751 ±        0.103  ns/op
+PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.755 ±        0.070  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                      N/A  avgt    4        19.709 ±        0.247  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.361 ±        0.321  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                      N/A  avgt    4        65.354 ±        2.458  ns/op
+ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.632 ±        0.734  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                      N/A  avgt    4       390.309 ±       24.017  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                      N/A  avgt    4      2104.571 ±       40.508  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                      N/A  avgt    4     15515.196 ±       81.725  ns/op
+SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.539 ±        0.034  ns/op
+SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         4.048 ±        0.010  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                      N/A  avgt    4      1325.363 ±      235.540  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                      N/A  avgt    4     14185.827 ±     1445.549  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    115867.936 ±    21271.008  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                      N/A  avgt    4       793.910 ±       44.571  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      7604.961 ±      161.373  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                      N/A  avgt    4     80135.782 ±     8140.883  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                      N/A  avgt    4       805.706 ±       20.376  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      7929.336 ±      679.576  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    133652.312 ±     3772.063  ns/op
+ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        27.480 ±        0.083  ns/op
+ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        30.304 ±        4.777  ns/op
 
 Benchmark result is saved to /home/runner/work/java-benchmarks/java-benchmarks/java-in-time/results/microsoft-17.json
