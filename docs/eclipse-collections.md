@@ -46,6 +46,7 @@ LinkedList.get(i)  → ~60,368,764 ms
 Insertion (10M elements):
 ArrayList.add()    → ~1,334 ms
 HashMap.put()      → ~3,781 ms
+TreeMap.put()      → ~4,324 ms
 LinkedList.add()   → ~4,081 ms
 ```
 

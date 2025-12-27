@@ -79,6 +79,7 @@ public class SummarizeECResults {
         System.out.println("Insertion (10M elements):");
         System.out.println("ArrayList.add()    → " + format(scores.get("arrayListAdd"), units.get("arrayListAdd")));
         System.out.println("HashMap.put()      → " + format(scores.get("hashMapPut"), units.get("hashMapPut")));
+        System.out.println("TreeMap.put()      → " + format(scores.get("treeMapPut"), units.get("treeMapPut")));
         System.out.println("LinkedList.add()   → " + format(scores.get("linkedListAdd"), units.get("linkedListAdd")));
         System.out.println("```");
         System.out.println();
