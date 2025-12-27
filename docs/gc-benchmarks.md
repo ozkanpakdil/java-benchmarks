@@ -3,10 +3,10 @@ Comparison of throughput between G1 and ZGC collectors. Higher scores (ops/s) ar
 
 | Benchmark | G1 Score | ZGC Score | Ratio (ZGC/G1) | Winner | Improvement |
 |---|---|---|---|---|---|
-| allocateLargeObjects (listSize:1000) | 17677.967 ops/s | 18390.539 ops/s | 1.040x | **ZGC** | +4.031% |
-| allocateLargeObjects (listSize:10000) | 17631.992 ops/s | 18639.060 ops/s | 1.057x | **ZGC** | +5.712% |
-| allocateShortLived (listSize:1000) | 101038.331 ops/s | 103102.206 ops/s | 1.020x | **ZGC** | +2.043% |
-| allocateShortLived (listSize:10000) | 9425.909 ops/s | 9764.209 ops/s | 1.036x | **ZGC** | +3.589% |
+| allocateLargeObjects (listSize:1000) | 17132.916 ops/s | 19523.323 ops/s | 1.140x | **ZGC** | +13.952% |
+| allocateLargeObjects (listSize:10000) | 17158.254 ops/s | 18949.244 ops/s | 1.104x | **ZGC** | +10.438% |
+| allocateShortLived (listSize:1000) | 100996.207 ops/s | 102915.164 ops/s | 1.019x | **ZGC** | +1.900% |
+| allocateShortLived (listSize:10000) | 9510.035 ops/s | 9768.792 ops/s | 1.027x | **ZGC** | +2.721% |
 
 ## Summary
 Overall, **ZGC** performed better in this suite, winning 4 out of 4 tests.
