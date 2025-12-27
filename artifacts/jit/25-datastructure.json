@@ -1,0 +1,788 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.arrayListAdd",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 265.6801745,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 129.153224,
+                "50.0" : 265.6801745,
+                "90.0" : 402.207125,
+                "95.0" : 402.207125,
+                "99.0" : 402.207125,
+                "99.9" : 402.207125,
+                "99.99" : 402.207125,
+                "99.999" : 402.207125,
+                "99.9999" : 402.207125,
+                "100.0" : 402.207125
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    402.207125,
+                    129.153224
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.arrayListGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 6.147535131663048E-7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.086309429344623E-7,
+                "50.0" : 6.147535131663048E-7,
+                "90.0" : 6.208760833981474E-7,
+                "95.0" : 6.208760833981474E-7,
+                "99.0" : 6.208760833981474E-7,
+                "99.9" : 6.208760833981474E-7,
+                "99.99" : 6.208760833981474E-7,
+                "99.999" : 6.208760833981474E-7,
+                "99.9999" : 6.208760833981474E-7,
+                "100.0" : 6.208760833981474E-7
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    6.086309429344623E-7,
+                    6.208760833981474E-7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.ecMutableListAdd",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 639.2733680555556,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 131.12773611111112,
+                "50.0" : 639.2733680555557,
+                "90.0" : 1147.419,
+                "95.0" : 1147.419,
+                "99.0" : 1147.419,
+                "99.9" : 1147.419,
+                "99.99" : 1147.419,
+                "99.999" : 1147.419,
+                "99.9999" : 1147.419,
+                "100.0" : 1147.419
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1147.419,
+                    131.12773611111112
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.ecMutableListGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 5.876729579133619E-7,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.866596243076379E-7,
+                "50.0" : 5.876729579133619E-7,
+                "90.0" : 5.886862915190858E-7,
+                "95.0" : 5.886862915190858E-7,
+                "99.0" : 5.886862915190858E-7,
+                "99.9" : 5.886862915190858E-7,
+                "99.99" : 5.886862915190858E-7,
+                "99.999" : 5.886862915190858E-7,
+                "99.9999" : 5.886862915190858E-7,
+                "100.0" : 5.886862915190858E-7
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    5.866596243076379E-7,
+                    5.886862915190858E-7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.ecMutableMapGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 1.9896942737311915E-6,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.9608859837614956E-6,
+                "50.0" : 1.9896942737311915E-6,
+                "90.0" : 2.0185025637008875E-6,
+                "95.0" : 2.0185025637008875E-6,
+                "99.0" : 2.0185025637008875E-6,
+                "99.9" : 2.0185025637008875E-6,
+                "99.99" : 2.0185025637008875E-6,
+                "99.999" : 2.0185025637008875E-6,
+                "99.9999" : 2.0185025637008875E-6,
+                "100.0" : 2.0185025637008875E-6
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    2.0185025637008875E-6,
+                    1.9608859837614956E-6
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.ecMutableMapPut",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 210.98097914285714,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 200.79170228571428,
+                "50.0" : 210.98097914285714,
+                "90.0" : 221.170256,
+                "95.0" : 221.170256,
+                "99.0" : 221.170256,
+                "99.9" : 221.170256,
+                "99.99" : 221.170256,
+                "99.999" : 221.170256,
+                "99.9999" : 221.170256,
+                "100.0" : 221.170256
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    200.79170228571428,
+                    221.170256
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.ecTreeSortedMapGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 7.490174526460244E-5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.357796095238096E-5,
+                "50.0" : 7.490174526460244E-5,
+                "90.0" : 7.62255295768239E-5,
+                "95.0" : 7.62255295768239E-5,
+                "99.0" : 7.62255295768239E-5,
+                "99.9" : 7.62255295768239E-5,
+                "99.99" : 7.62255295768239E-5,
+                "99.999" : 7.62255295768239E-5,
+                "99.9999" : 7.62255295768239E-5,
+                "100.0" : 7.62255295768239E-5
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    7.62255295768239E-5,
+                    7.357796095238096E-5
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.ecTreeSortedMapPut",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 949.176427,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 873.651875,
+                "50.0" : 949.176427,
+                "90.0" : 1024.700979,
+                "95.0" : 1024.700979,
+                "99.0" : 1024.700979,
+                "99.9" : 1024.700979,
+                "99.99" : 1024.700979,
+                "99.999" : 1024.700979,
+                "99.9999" : 1024.700979,
+                "100.0" : 1024.700979
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    873.651875,
+                    1024.700979
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.hashMapGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 3.7751040249920914E-6,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.7308839991684793E-6,
+                "50.0" : 3.7751040249920914E-6,
+                "90.0" : 3.8193240508157035E-6,
+                "95.0" : 3.8193240508157035E-6,
+                "99.0" : 3.8193240508157035E-6,
+                "99.9" : 3.8193240508157035E-6,
+                "99.99" : 3.8193240508157035E-6,
+                "99.999" : 3.8193240508157035E-6,
+                "99.9999" : 3.8193240508157035E-6,
+                "100.0" : 3.8193240508157035E-6
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    3.7308839991684793E-6,
+                    3.8193240508157035E-6
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.hashMapPut",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 277.69920325,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 259.2017085,
+                "50.0" : 277.69920325,
+                "90.0" : 296.196698,
+                "95.0" : 296.196698,
+                "99.0" : 296.196698,
+                "99.9" : 296.196698,
+                "99.99" : 296.196698,
+                "99.999" : 296.196698,
+                "99.9999" : 296.196698,
+                "100.0" : 296.196698
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    259.2017085,
+                    296.196698
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.linkedListAdd",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 921.5593230000001,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 567.081396,
+                "50.0" : 921.5593230000001,
+                "90.0" : 1276.03725,
+                "95.0" : 1276.03725,
+                "99.0" : 1276.03725,
+                "99.9" : 1276.03725,
+                "99.99" : 1276.03725,
+                "99.999" : 1276.03725,
+                "99.9999" : 1276.03725,
+                "100.0" : 1276.03725
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    567.081396,
+                    1276.03725
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.linkedListGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 7.7512761665,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.745202583,
+                "50.0" : 7.7512761665,
+                "90.0" : 7.75734975,
+                "95.0" : 7.75734975,
+                "99.0" : 7.75734975,
+                "99.9" : 7.75734975,
+                "99.99" : 7.75734975,
+                "99.999" : 7.75734975,
+                "99.9999" : 7.75734975,
+                "100.0" : 7.75734975
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    7.75734975,
+                    7.745202583
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.treeMapGet",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 8.175139409738886E-5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.415634993359894E-5,
+                "50.0" : 8.175139409738886E-5,
+                "90.0" : 8.934643826117877E-5,
+                "95.0" : 8.934643826117877E-5,
+                "99.0" : 8.934643826117877E-5,
+                "99.9" : 8.934643826117877E-5,
+                "99.99" : 8.934643826117877E-5,
+                "99.999" : 8.934643826117877E-5,
+                "99.9999" : 8.934643826117877E-5,
+                "100.0" : 8.934643826117877E-5
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    8.934643826117877E-5,
+                    7.415634993359894E-5
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.mascix.DataStructureBenchmark.treeMapPut",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/ozkan/.sdkman/candidates/java/25.0.1-graalce/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:+EnableJVMCI",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "25.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "25.0.1+8-jvmci-b01",
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "size" : "10000000"
+        },
+        "primaryMetric" : {
+            "score" : 1083.04535425,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 946.0379585,
+                "50.0" : 1083.04535425,
+                "90.0" : 1220.05275,
+                "95.0" : 1220.05275,
+                "99.0" : 1220.05275,
+                "99.9" : 1220.05275,
+                "99.99" : 1220.05275,
+                "99.999" : 1220.05275,
+                "99.9999" : 1220.05275,
+                "100.0" : 1220.05275
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    946.0379585,
+                    1220.05275
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
