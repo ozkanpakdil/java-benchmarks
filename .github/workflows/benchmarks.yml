@@ -130,14 +130,8 @@ jobs:
           cache: maven
 
       - name: Build and run eclipse-collections benchmarks
-        working-directory: eclipse-collections
         run: |
-          mkdir -p results
-          mvn -ntp clean package -DskipTests
-          java -jar target/benchmarks.jar -rf json -rff "results/${JAVA_VERSION}-${VM_NAME}.json" -wi 2 -i 3 -f 1 -bm avgt -tu ns
-        env:
-          JAVA_VERSION: ${{ matrix.java }}
-          VM_NAME: ${{ matrix.distribution }}
+          bash run-benchmarks-local.sh --ci --output "results/${{ matrix.java }}-${{ matrix.distribution }}.json"
 
       - name: Upload EC results artifact
         uses: actions/upload-artifact@v4

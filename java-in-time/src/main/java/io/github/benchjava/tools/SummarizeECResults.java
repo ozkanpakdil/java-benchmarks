@@ -13,7 +13,10 @@ import java.util.*;
 
 
 public class SummarizeECResults {
-    private static final DecimalFormat DF1 = new DecimalFormat("0.0");
+    static {
+        new DecimalFormat("0.0");
+    }
+
     private static final DecimalFormat DF3 = new DecimalFormat("0.000");
 
     public static void main(String[] args) throws IOException {
@@ -75,7 +78,7 @@ public class SummarizeECResults {
         System.out.println("HashMap.get()      → " + format10M(scores.get("hashMapGet"), units.get("hashMapGet")));
         System.out.println("TreeMap.get()      → " + format10M(scores.get("treeMapGet"), units.get("treeMapGet")));
         System.out.println("ArrayList.get(i)   → " + format10M(scores.get("arrayListGet"), units.get("arrayListGet")));
-        System.out.println("LinkedList.get(i)  → " + format10M(scores.get("linkedListGet"), units.get("linkedListGet")));
+        System.out.println("LinkedList.get(i)  → " + formatSingleOp(scores.get("linkedListGet"), units.get("linkedListGet")) + " (per op, O(N))");
         System.out.println("Insertion (10M elements):");
         System.out.println("ArrayList.add()    → " + format(scores.get("arrayListAdd"), units.get("arrayListAdd")));
         System.out.println("HashMap.put()      → " + format(scores.get("hashMapPut"), units.get("hashMapPut")));
@@ -89,18 +92,19 @@ public class SummarizeECResults {
         System.out.println("| Structure | Type | Insertion (10M) | Get (Random) |");
         System.out.println("|---|---|---|---|");
 
-        printRow("ArrayList", "JDK", "arrayListAdd", "arrayListGet", scores, units);
-        printRow("MutableList (FastList)", "EC", "ecMutableListAdd", "ecMutableListGet", scores, units);
-        printRow("HashMap", "JDK", "hashMapPut", "hashMapGet", scores, units);
-        printRow("MutableMap (UnifiedMap)", "EC", "ecMutableMapPut", "ecMutableMapGet", scores, units);
-        printRow("TreeMap", "JDK", "treeMapPut", "treeMapGet", scores, units);
-        printRow("TreeSortedMap", "EC", "ecTreeSortedMapPut", "ecTreeSortedMapGet", scores, units);
-        printRow("LinkedList", "JDK", "linkedListAdd", "linkedListGet", scores, units);
+        printRow("ArrayList", "JDK", "arrayListAdd", "arrayListGet", scores, units, false);
+        printRow("MutableList (FastList)", "EC", "ecMutableListAdd", "ecMutableListGet", scores, units, false);
+        printRow("HashMap", "JDK", "hashMapPut", "hashMapGet", scores, units, false);
+        printRow("MutableMap (UnifiedMap)", "EC", "ecMutableMapPut", "ecMutableMapGet", scores, units, false);
+        printRow("TreeMap", "JDK", "treeMapPut", "treeMapGet", scores, units, false);
+        printRow("TreeSortedMap", "EC", "ecTreeSortedMapPut", "ecTreeSortedMapGet", scores, units, false);
+        printRow("LinkedList", "JDK", "linkedListAdd", "linkedListGet", scores, units, true);
         
         System.out.println();
         System.out.println("### Observations:");
         System.out.println("- Results generated from " + file.getName());
         System.out.println("- 'Get' operations are scaled to 10M operations for consistency with 'Insertion'.");
+        System.out.println("- Eclipse Collections does not have a direct LinkedList equivalent (EC focuses on optimized array-based structures like FastList).");
     }
 
     private static String format10M(Double scorePerOp, String unit) {
@@ -111,9 +115,36 @@ public class SummarizeECResults {
         return format(totalScore, unit);
     }
 
-    private static void printRow(String name, String type, String addBench, String getBench, Map<String, Double> scores, Map<String, String> units) {
+    private static String formatSingleOp(Double scorePerOp, String unit) {
+        if (scorePerOp == null) return "-";
+        // Convert to milliseconds for display
+        double scoreInMs;
+        if ("ms/op".equals(unit)) {
+            scoreInMs = scorePerOp;
+        } else if ("ns/op".equals(unit)) {
+            scoreInMs = scorePerOp / 1_000_000.0;
+        } else if ("s/op".equals(unit)) {
+            scoreInMs = scorePerOp * 1000.0;
+        } else {
+            return "~" + DF3.format(scorePerOp) + " " + unit;
+        }
+        
+        if (scoreInMs < 1.0) {
+            return "~" + DF3.format(scoreInMs) + " ms";
+        } else {
+            return "~" + (int) Math.round(scoreInMs) + " ms";
+        }
+    }
+
+    private static void printRow(String name, String type, String addBench, String getBench, Map<String, Double> scores, Map<String, String> units, boolean singleOpGet) {
         String addVal = format(scores.get(addBench), units.get(addBench));
-        String getVal = format10M(scores.get(getBench), units.get(getBench));
+        String getVal;
+        if (singleOpGet) {
+            // For O(N) operations like LinkedList.get(), show per-operation time
+            getVal = formatSingleOp(scores.get(getBench), units.get(getBench)) + " (per op)";
+        } else {
+            getVal = format10M(scores.get(getBench), units.get(getBench));
+        }
         System.out.printf("| **%s** | %s | %s | %s |\n", name, type, addVal, getVal);
     }
 
