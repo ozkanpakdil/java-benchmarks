@@ -1,6 +1,6 @@
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -12,28 +12,28 @@
 
 # Run progress: 0.00% complete, ETA 00:09:28
 # Fork: 1 of 2
-# Warmup Iteration   1: 115.309 ns/op
-# Warmup Iteration   2: 103.201 ns/op
-Iteration   1: 139.036 ns/op
-Iteration   2: 139.009 ns/op
+# Warmup Iteration   1: 108.458 ns/op
+# Warmup Iteration   2: 103.986 ns/op
+Iteration   1: 149.556 ns/op
+Iteration   2: 150.477 ns/op
 
-# Run progress: 0.70% complete, ETA 00:10:00
+# Run progress: 0.70% complete, ETA 00:10:03
 # Fork: 2 of 2
-# Warmup Iteration   1: 114.380 ns/op
-# Warmup Iteration   2: 103.054 ns/op
-Iteration   1: 155.702 ns/op
-Iteration   2: 159.306 ns/op
+# Warmup Iteration   1: 107.641 ns/op
+# Warmup Iteration   2: 102.199 ns/op
+Iteration   1: 153.129 ns/op
+Iteration   2: 152.351 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
-  148.263 ±(99.9%) 69.604 ns/op [Average]
-  (min, avg, max) = (139.009, 148.263, 159.306), stdev = 10.771
-  CI (99.9%): [78.659, 217.867] (assumes normal distribution)
+  151.378 ±(99.9%) 10.648 ns/op [Average]
+  (min, avg, max) = (149.556, 151.378, 153.129), stdev = 1.648
+  CI (99.9%): [140.730, 162.026] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -43,30 +43,30 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.ByteCtor":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual
 
-# Run progress: 1.41% complete, ETA 00:10:15
+# Run progress: 1.41% complete, ETA 00:09:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 2024.972 ns/op
-# Warmup Iteration   2: 2005.581 ns/op
-Iteration   1: 2156.346 ns/op
-Iteration   2: 2149.622 ns/op
+# Warmup Iteration   1: 1796.707 ns/op
+# Warmup Iteration   2: 1733.136 ns/op
+Iteration   1: 2185.054 ns/op
+Iteration   2: 2227.504 ns/op
 
-# Run progress: 2.11% complete, ETA 00:10:03
+# Run progress: 2.11% complete, ETA 00:09:51
 # Fork: 2 of 2
-# Warmup Iteration   1: 2065.525 ns/op
-# Warmup Iteration   2: 1939.817 ns/op
-Iteration   1: 1989.039 ns/op
-Iteration   2: 1988.487 ns/op
+# Warmup Iteration   1: 1785.660 ns/op
+# Warmup Iteration   2: 1706.214 ns/op
+Iteration   1: 2196.205 ns/op
+Iteration   2: 2195.410 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
-  2070.874 ±(99.9%) 612.940 ns/op [Average]
-  (min, avg, max) = (1988.487, 2070.874, 2156.346), stdev = 94.853
-  CI (99.9%): [1457.933, 2683.814] (assumes normal distribution)
+  2201.043 ±(99.9%) 118.623 ns/op [Average]
+  (min, avg, max) = (2185.054, 2201.043, 2227.504), stdev = 18.357
+  CI (99.9%): [2082.420, 2319.667] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -76,30 +76,30 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceManual":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives
 
-# Run progress: 2.82% complete, ETA 00:09:54
+# Run progress: 2.82% complete, ETA 00:09:46
 # Fork: 1 of 2
-# Warmup Iteration   1: 33.529 ns/op
-# Warmup Iteration   2: 31.850 ns/op
-Iteration   1: 32.541 ns/op
-Iteration   2: 32.578 ns/op
+# Warmup Iteration   1: 39.861 ns/op
+# Warmup Iteration   2: 38.138 ns/op
+Iteration   1: 38.823 ns/op
+Iteration   2: 38.834 ns/op
 
-# Run progress: 3.52% complete, ETA 00:09:48
+# Run progress: 3.52% complete, ETA 00:09:41
 # Fork: 2 of 2
-# Warmup Iteration   1: 33.655 ns/op
-# Warmup Iteration   2: 32.108 ns/op
-Iteration   1: 32.406 ns/op
-Iteration   2: 32.309 ns/op
+# Warmup Iteration   1: 39.545 ns/op
+# Warmup Iteration   2: 39.210 ns/op
+Iteration   1: 38.790 ns/op
+Iteration   2: 38.852 ns/op
 
 
 Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimitives":
-  32.459 ±(99.9%) 0.803 ns/op [Average]
-  (min, avg, max) = (32.309, 32.459, 32.578), stdev = 0.124
-  CI (99.9%): [31.656, 33.262] (assumes normal distribution)
+  38.825 ±(99.9%) 0.170 ns/op [Average]
+  (min, avg, max) = (38.790, 38.825, 38.852), stdev = 0.026
+  CI (99.9%): [38.654, 38.995] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -110,30 +110,30 @@ Result "io.github.benchjava.bench.BitArrayBenchmark.HammingDistanceTensorPrimiti
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 4)
 
-# Run progress: 4.23% complete, ETA 00:09:41
+# Run progress: 4.23% complete, ETA 00:09:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 12802.072 ns/op
-# Warmup Iteration   2: 35638.677 ns/op
-Iteration   1: 53780.397 ns/op
-Iteration   2: 62218.901 ns/op
+# Warmup Iteration   1: 12912.499 ns/op
+# Warmup Iteration   2: 42004.370 ns/op
+Iteration   1: 67890.863 ns/op
+Iteration   2: 86203.012 ns/op
 
-# Run progress: 4.93% complete, ETA 00:09:36
+# Run progress: 4.93% complete, ETA 00:09:32
 # Fork: 2 of 2
-# Warmup Iteration   1: 12794.007 ns/op
-# Warmup Iteration   2: 34682.460 ns/op
-Iteration   1: 54196.512 ns/op
-Iteration   2: 63689.064 ns/op
+# Warmup Iteration   1: 12877.240 ns/op
+# Warmup Iteration   2: 42171.635 ns/op
+Iteration   1: 66770.532 ns/op
+Iteration   2: 83011.683 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  58471.218 ±(99.9%) 33690.866 ns/op [Average]
-  (min, avg, max) = (53780.397, 58471.218, 63689.064), stdev = 5213.699
-  CI (99.9%): [24780.353, 92162.084] (assumes normal distribution)
+  75969.023 ±(99.9%) 65070.927 ns/op [Average]
+  (min, avg, max) = (66770.532, 75969.023, 86203.012), stdev = 10069.798
+  CI (99.9%): [10898.096, 141039.949] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -144,30 +144,30 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 16)
 
-# Run progress: 5.63% complete, ETA 00:09:31
+# Run progress: 5.63% complete, ETA 00:09:27
 # Fork: 1 of 2
-# Warmup Iteration   1: 25150.178 ns/op
-# Warmup Iteration   2: 83793.637 ns/op
-Iteration   1: 662166.481 ns/op
-Iteration   2: 780620.543 ns/op
+# Warmup Iteration   1: 28352.667 ns/op
+# Warmup Iteration   2: 96728.574 ns/op
+Iteration   1: 122125.568 ns/op
+Iteration   2: 586250.662 ns/op
 
-# Run progress: 6.34% complete, ETA 00:09:26
+# Run progress: 6.34% complete, ETA 00:09:23
 # Fork: 2 of 2
-# Warmup Iteration   1: 26252.802 ns/op
-# Warmup Iteration   2: 65401.003 ns/op
-Iteration   1: 419075.499 ns/op
-Iteration   2: 891152.359 ns/op
+# Warmup Iteration   1: 28113.657 ns/op
+# Warmup Iteration   2: 92531.473 ns/op
+Iteration   1: 130825.336 ns/op
+Iteration   2: 415559.012 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  688253.720 ±(99.9%) 1307585.555 ns/op [Average]
-  (min, avg, max) = (419075.499, 688253.720, 891152.359), stdev = 202350.312
-  CI (99.9%): [≈ 0, 1995839.276] (assumes normal distribution)
+  313690.145 ±(99.9%) 1467896.156 ns/op [Average]
+  (min, avg, max) = (122125.568, 313690.145, 586250.662), stdev = 227158.555
+  CI (99.9%): [≈ 0, 1781586.301] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -178,30 +178,30 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark: io.github.benchjava.bench.CollectionsBenchmark.InsertRange
 # Parameters: (size = 64)
 
-# Run progress: 7.04% complete, ETA 00:09:21
+# Run progress: 7.04% complete, ETA 00:09:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 69100.818 ns/op
-# Warmup Iteration   2: 935556.218 ns/op
-Iteration   1: 1016501.561 ns/op
-Iteration   2: 1045664.724 ns/op
+# Warmup Iteration   1: 74612.704 ns/op
+# Warmup Iteration   2: 845118.346 ns/op
+Iteration   1: 941750.186 ns/op
+Iteration   2: 1057770.000 ns/op
 
-# Run progress: 7.75% complete, ETA 00:09:17
+# Run progress: 7.75% complete, ETA 00:09:14
 # Fork: 2 of 2
-# Warmup Iteration   1: 69486.599 ns/op
-# Warmup Iteration   2: 894786.374 ns/op
-Iteration   1: 1020406.430 ns/op
-Iteration   2: 1070041.734 ns/op
+# Warmup Iteration   1: 72909.318 ns/op
+# Warmup Iteration   2: 850961.186 ns/op
+Iteration   1: 1292460.188 ns/op
+Iteration   2: 1472294.445 ns/op
 
 
 Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
-  1038153.612 ±(99.9%) 160774.280 ns/op [Average]
-  (min, avg, max) = (1016501.561, 1038153.612, 1070041.734), stdev = 24879.998
-  CI (99.9%): [877379.332, 1198927.892] (assumes normal distribution)
+  1191068.705 ±(99.9%) 1535074.627 ns/op [Average]
+  (min, avg, max) = (941750.186, 1191068.705, 1472294.445), stdev = 237554.498
+  CI (99.9%): [≈ 0, 2726143.331] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -211,30 +211,30 @@ Result "io.github.benchjava.bench.CollectionsBenchmark.InsertRange":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.CryptoBenchmark.Hash
 
-# Run progress: 8.45% complete, ETA 00:09:12
+# Run progress: 8.45% complete, ETA 00:09:10
 # Fork: 1 of 2
-# Warmup Iteration   1: 752.936 ns/op
-# Warmup Iteration   2: 719.440 ns/op
-Iteration   1: 722.481 ns/op
-Iteration   2: 718.933 ns/op
+# Warmup Iteration   1: 849.942 ns/op
+# Warmup Iteration   2: 807.002 ns/op
+Iteration   1: 808.016 ns/op
+Iteration   2: 805.964 ns/op
 
-# Run progress: 9.15% complete, ETA 00:09:08
+# Run progress: 9.15% complete, ETA 00:09:06
 # Fork: 2 of 2
-# Warmup Iteration   1: 759.275 ns/op
-# Warmup Iteration   2: 719.914 ns/op
-Iteration   1: 721.108 ns/op
-Iteration   2: 717.198 ns/op
+# Warmup Iteration   1: 841.202 ns/op
+# Warmup Iteration   2: 806.522 ns/op
+Iteration   1: 807.082 ns/op
+Iteration   2: 803.858 ns/op
 
 
 Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
-  719.930 ±(99.9%) 15.088 ns/op [Average]
-  (min, avg, max) = (717.198, 719.930, 722.481), stdev = 2.335
-  CI (99.9%): [704.843, 735.018] (assumes normal distribution)
+  806.230 ±(99.9%) 11.567 ns/op [Average]
+  (min, avg, max) = (803.858, 806.230, 808.016), stdev = 1.790
+  CI (99.9%): [794.663, 817.796] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -244,30 +244,30 @@ Result "io.github.benchjava.bench.CryptoBenchmark.Hash":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName
 
-# Run progress: 9.86% complete, ETA 00:09:03
+# Run progress: 9.86% complete, ETA 00:09:01
 # Fork: 1 of 2
-# Warmup Iteration   1: 2.196 ns/op
-# Warmup Iteration   2: 2.254 ns/op
-Iteration   1: 1.867 ns/op
-Iteration   2: 1.866 ns/op
+# Warmup Iteration   1: 2.481 ns/op
+# Warmup Iteration   2: 2.477 ns/op
+Iteration   1: 1.760 ns/op
+Iteration   2: 1.760 ns/op
 
-# Run progress: 10.56% complete, ETA 00:08:59
+# Run progress: 10.56% complete, ETA 00:08:57
 # Fork: 2 of 2
-# Warmup Iteration   1: 2.197 ns/op
-# Warmup Iteration   2: 2.206 ns/op
-Iteration   1: 1.866 ns/op
-Iteration   2: 1.869 ns/op
+# Warmup Iteration   1: 2.480 ns/op
+# Warmup Iteration   2: 2.471 ns/op
+Iteration   1: 1.761 ns/op
+Iteration   2: 1.759 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
-  1.867 ±(99.9%) 0.009 ns/op [Average]
-  (min, avg, max) = (1.866, 1.867, 1.869), stdev = 0.001
-  CI (99.9%): [1.857, 1.876] (assumes normal distribution)
+  1.760 ±(99.9%) 0.007 ns/op [Average]
+  (min, avg, max) = (1.759, 1.760, 1.761), stdev = 0.001
+  CI (99.9%): [1.753, 1.767] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -277,30 +277,30 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.AssemblyQualifiedName":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate
 
-# Run progress: 11.27% complete, ETA 00:08:54
+# Run progress: 11.27% complete, ETA 00:08:53
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.198 ns/op
-# Warmup Iteration   2: 4.051 ns/op
-Iteration   1: 3.813 ns/op
-Iteration   2: 3.803 ns/op
+# Warmup Iteration   1: 4.872 ns/op
+# Warmup Iteration   2: 4.805 ns/op
+Iteration   1: 5.008 ns/op
+Iteration   2: 5.005 ns/op
 
-# Run progress: 11.97% complete, ETA 00:08:50
+# Run progress: 11.97% complete, ETA 00:08:49
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.199 ns/op
-# Warmup Iteration   2: 4.053 ns/op
-Iteration   1: 3.827 ns/op
-Iteration   2: 3.832 ns/op
+# Warmup Iteration   1: 4.551 ns/op
+# Warmup Iteration   2: 4.325 ns/op
+Iteration   1: 4.188 ns/op
+Iteration   2: 4.163 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
-  3.819 ±(99.9%) 0.086 ns/op [Average]
-  (min, avg, max) = (3.803, 3.819, 3.832), stdev = 0.013
-  CI (99.9%): [3.733, 3.905] (assumes normal distribution)
+  4.591 ±(99.9%) 3.101 ns/op [Average]
+  (min, avg, max) = (4.163, 4.591, 5.008), stdev = 0.480
+  CI (99.9%): [1.490, 7.692] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -310,30 +310,30 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.Interpolate":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.Oops
 
-# Run progress: 12.68% complete, ETA 00:08:45
+# Run progress: 12.68% complete, ETA 00:08:44
 # Fork: 1 of 2
-# Warmup Iteration   1: 63.414 ns/op
-# Warmup Iteration   2: 61.887 ns/op
-Iteration   1: 60.961 ns/op
-Iteration   2: 60.957 ns/op
+# Warmup Iteration   1: 65.972 ns/op
+# Warmup Iteration   2: 63.087 ns/op
+Iteration   1: 62.915 ns/op
+Iteration   2: 62.886 ns/op
 
-# Run progress: 13.38% complete, ETA 00:08:41
+# Run progress: 13.38% complete, ETA 00:08:40
 # Fork: 2 of 2
-# Warmup Iteration   1: 64.184 ns/op
-# Warmup Iteration   2: 60.436 ns/op
-Iteration   1: 60.023 ns/op
-Iteration   2: 60.184 ns/op
+# Warmup Iteration   1: 66.227 ns/op
+# Warmup Iteration   2: 63.497 ns/op
+Iteration   1: 64.060 ns/op
+Iteration   2: 63.341 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
-  60.531 ±(99.9%) 3.219 ns/op [Average]
-  (min, avg, max) = (60.023, 60.531, 60.961), stdev = 0.498
-  CI (99.9%): [57.312, 63.750] (assumes normal distribution)
+  63.301 ±(99.9%) 3.538 ns/op [Average]
+  (min, avg, max) = (62.886, 63.301, 64.060), stdev = 0.548
+  CI (99.9%): [59.763, 66.839] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -345,28 +345,28 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.Oops":
 
 # Run progress: 14.08% complete, ETA 00:08:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 58.012 ns/op
-# Warmup Iteration   2: 57.829 ns/op
-Iteration   1: 57.808 ns/op
-Iteration   2: 57.816 ns/op
+# Warmup Iteration   1: 62.451 ns/op
+# Warmup Iteration   2: 62.240 ns/op
+Iteration   1: 62.361 ns/op
+Iteration   2: 62.220 ns/op
 
-# Run progress: 14.79% complete, ETA 00:08:32
+# Run progress: 14.79% complete, ETA 00:08:31
 # Fork: 2 of 2
-# Warmup Iteration   1: 58.018 ns/op
-# Warmup Iteration   2: 57.818 ns/op
-Iteration   1: 57.818 ns/op
-Iteration   2: 57.794 ns/op
+# Warmup Iteration   1: 62.538 ns/op
+# Warmup Iteration   2: 62.268 ns/op
+Iteration   1: 62.226 ns/op
+Iteration   2: 62.212 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
-  57.809 ±(99.9%) 0.071 ns/op [Average]
-  (min, avg, max) = (57.794, 57.809, 57.818), stdev = 0.011
-  CI (99.9%): [57.738, 57.880] (assumes normal distribution)
+  62.255 ±(99.9%) 0.458 ns/op [Average]
+  (min, avg, max) = (62.212, 62.255, 62.361), stdev = 0.071
+  CI (99.9%): [61.797, 62.713] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -376,30 +376,30 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithGetTimestamp":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew
 
-# Run progress: 15.49% complete, ETA 00:08:28
+# Run progress: 15.49% complete, ETA 00:08:27
 # Fork: 1 of 2
-# Warmup Iteration   1: 58.041 ns/op
-# Warmup Iteration   2: 57.809 ns/op
-Iteration   1: 57.871 ns/op
-Iteration   2: 57.797 ns/op
+# Warmup Iteration   1: 62.473 ns/op
+# Warmup Iteration   2: 62.249 ns/op
+Iteration   1: 62.732 ns/op
+Iteration   2: 62.227 ns/op
 
 # Run progress: 16.20% complete, ETA 00:08:23
 # Fork: 2 of 2
-# Warmup Iteration   1: 58.169 ns/op
-# Warmup Iteration   2: 58.298 ns/op
-Iteration   1: 57.796 ns/op
-Iteration   2: 57.788 ns/op
+# Warmup Iteration   1: 62.471 ns/op
+# Warmup Iteration   2: 62.225 ns/op
+Iteration   1: 62.305 ns/op
+Iteration   2: 62.256 ns/op
 
 
 Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
-  57.813 ±(99.9%) 0.252 ns/op [Average]
-  (min, avg, max) = (57.788, 57.813, 57.871), stdev = 0.039
-  CI (99.9%): [57.560, 58.065] (assumes normal distribution)
+  62.380 ±(99.9%) 1.530 ns/op [Average]
+  (min, avg, max) = (62.227, 62.380, 62.732), stdev = 0.237
+  CI (99.9%): [60.850, 63.910] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -411,28 +411,28 @@ Result "io.github.benchjava.bench.DiagnosticsBenchmark.WithStartNew":
 
 # Run progress: 16.90% complete, ETA 00:08:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 4276720.664 ns/op
-# Warmup Iteration   2: 4058787.073 ns/op
-Iteration   1: 4083639.637 ns/op
-Iteration   2: 4163362.199 ns/op
+# Warmup Iteration   1: 4049387.633 ns/op
+# Warmup Iteration   2: 4064487.955 ns/op
+Iteration   1: 4381680.096 ns/op
+Iteration   2: 4272281.234 ns/op
 
-# Run progress: 17.61% complete, ETA 00:08:15
+# Run progress: 17.61% complete, ETA 00:08:14
 # Fork: 2 of 2
-# Warmup Iteration   1: 4076520.122 ns/op
-# Warmup Iteration   2: 4322779.116 ns/op
-Iteration   1: 3666425.190 ns/op
-Iteration   2: 3451371.821 ns/op
+# Warmup Iteration   1: 4078580.398 ns/op
+# Warmup Iteration   2: 3896115.444 ns/op
+Iteration   1: 4381901.253 ns/op
+Iteration   2: 4123213.025 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.FSW":
-  3841199.712 ±(99.9%) 2191613.960 ns/op [Average]
-  (min, avg, max) = (3451371.821, 3841199.712, 4163362.199), stdev = 339154.686
-  CI (99.9%): [1649585.751, 6032813.672] (assumes normal distribution)
+  4289768.902 ±(99.9%) 791276.828 ns/op [Average]
+  (min, avg, max) = (4123213.025, 4289768.902, 4381901.253), stdev = 122450.965
+  CI (99.9%): [3498492.074, 5081045.730] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -442,30 +442,30 @@ Result "io.github.benchjava.bench.IOBenchmark.FSW":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.IOBenchmark.MMF
 
-# Run progress: 18.31% complete, ETA 00:08:11
+# Run progress: 18.31% complete, ETA 00:08:10
 # Fork: 1 of 2
-# Warmup Iteration   1: 389161.051 ns/op
-# Warmup Iteration   2: 380645.349 ns/op
-Iteration   1: 438721.338 ns/op
-Iteration   2: 373910.720 ns/op
+# Warmup Iteration   1: 446724.798 ns/op
+# Warmup Iteration   2: 432050.066 ns/op
+Iteration   1: 505649.849 ns/op
+Iteration   2: 428843.917 ns/op
 
-# Run progress: 19.01% complete, ETA 00:08:07
+# Run progress: 19.01% complete, ETA 00:08:06
 # Fork: 2 of 2
-# Warmup Iteration   1: 391454.698 ns/op
-# Warmup Iteration   2: 375510.260 ns/op
-Iteration   1: 440723.550 ns/op
-Iteration   2: 372871.442 ns/op
+# Warmup Iteration   1: 448997.039 ns/op
+# Warmup Iteration   2: 431622.912 ns/op
+Iteration   1: 495343.000 ns/op
+Iteration   2: 428295.790 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.MMF":
-  406556.762 ±(99.9%) 247542.670 ns/op [Average]
-  (min, avg, max) = (372871.442, 406556.762, 440723.550), stdev = 38307.502
-  CI (99.9%): [159014.093, 654099.432] (assumes normal distribution)
+  464533.139 ±(99.9%) 269723.812 ns/op [Average]
+  (min, avg, max) = (428295.790, 464533.139, 505649.849), stdev = 41740.058
+  CI (99.9%): [194809.327, 734256.950] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -475,30 +475,30 @@ Result "io.github.benchjava.bench.IOBenchmark.MMF":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.IOBenchmark.WriteByte
 
-# Run progress: 19.72% complete, ETA 00:08:03
+# Run progress: 19.72% complete, ETA 00:08:02
 # Fork: 1 of 2
-# Warmup Iteration   1: 30219283.706 ns/op
-# Warmup Iteration   2: 29678124.941 ns/op
-Iteration   1: 29712646.000 ns/op
-Iteration   2: 29662598.294 ns/op
+# Warmup Iteration   1: 34360733.533 ns/op
+# Warmup Iteration   2: 33703903.100 ns/op
+Iteration   1: 33740012.800 ns/op
+Iteration   2: 33723962.900 ns/op
 
-# Run progress: 20.42% complete, ETA 00:07:59
+# Run progress: 20.42% complete, ETA 00:07:58
 # Fork: 2 of 2
-# Warmup Iteration   1: 29958243.029 ns/op
-# Warmup Iteration   2: 29545616.118 ns/op
-Iteration   1: 29553583.853 ns/op
-Iteration   2: 29596205.147 ns/op
+# Warmup Iteration   1: 34238547.133 ns/op
+# Warmup Iteration   2: 33906943.667 ns/op
+Iteration   1: 33822085.733 ns/op
+Iteration   2: 33769304.800 ns/op
 
 
 Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
-  29631258.324 ±(99.9%) 454919.706 ns/op [Average]
-  (min, avg, max) = (29553583.853, 29631258.324, 29712646.000), stdev = 70399.328
-  CI (99.9%): [29176338.617, 30086178.030] (assumes normal distribution)
+  33763841.558 ±(99.9%) 278699.540 ns/op [Average]
+  (min, avg, max) = (33723962.900, 33763841.558, 33822085.733), stdev = 43129.062
+  CI (99.9%): [33485142.018, 34042541.098] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -509,30 +509,30 @@ Result "io.github.benchjava.bench.IOBenchmark.WriteByte":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
 # Parameters: (itemsCount = 5)
 
-# Run progress: 21.13% complete, ETA 00:07:55
+# Run progress: 21.13% complete, ETA 00:07:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 1118.645 ns/op
-# Warmup Iteration   2: 898.568 ns/op
-Iteration   1: 885.306 ns/op
-Iteration   2: 885.946 ns/op
+# Warmup Iteration   1: 1056.120 ns/op
+# Warmup Iteration   2: 957.858 ns/op
+Iteration   1: 911.223 ns/op
+Iteration   2: 896.313 ns/op
 
 # Run progress: 21.83% complete, ETA 00:07:51
 # Fork: 2 of 2
-# Warmup Iteration   1: 1227.548 ns/op
-# Warmup Iteration   2: 976.916 ns/op
-Iteration   1: 976.986 ns/op
-Iteration   2: 976.401 ns/op
+# Warmup Iteration   1: 1038.126 ns/op
+# Warmup Iteration   2: 890.346 ns/op
+Iteration   1: 881.613 ns/op
+Iteration   2: 880.994 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  931.160 ±(99.9%) 339.765 ns/op [Average]
-  (min, avg, max) = (885.306, 931.160, 976.986), stdev = 52.579
-  CI (99.9%): [591.395, 1270.925] (assumes normal distribution)
+  892.536 ±(99.9%) 92.596 ns/op [Average]
+  (min, avg, max) = (880.994, 892.536, 911.223), stdev = 14.329
+  CI (99.9%): [799.939, 985.132] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -545,28 +545,28 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 
 # Run progress: 22.54% complete, ETA 00:07:47
 # Fork: 1 of 2
-# Warmup Iteration   1: 4047.318 ns/op
-# Warmup Iteration   2: 3350.343 ns/op
-Iteration   1: 3333.426 ns/op
-Iteration   2: 3315.071 ns/op
+# Warmup Iteration   1: 3357.888 ns/op
+# Warmup Iteration   2: 2963.049 ns/op
+Iteration   1: 2967.286 ns/op
+Iteration   2: 2950.459 ns/op
 
-# Run progress: 23.24% complete, ETA 00:07:44
+# Run progress: 23.24% complete, ETA 00:07:43
 # Fork: 2 of 2
-# Warmup Iteration   1: 3620.494 ns/op
-# Warmup Iteration   2: 2948.378 ns/op
-Iteration   1: 2927.240 ns/op
-Iteration   2: 2921.958 ns/op
+# Warmup Iteration   1: 3335.197 ns/op
+# Warmup Iteration   2: 2950.371 ns/op
+Iteration   1: 3016.288 ns/op
+Iteration   2: 2938.746 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  3124.424 ±(99.9%) 1491.876 ns/op [Average]
-  (min, avg, max) = (2921.958, 3124.424, 3333.426), stdev = 230.869
-  CI (99.9%): [1632.548, 4616.299] (assumes normal distribution)
+  2968.195 ±(99.9%) 220.581 ns/op [Average]
+  (min, avg, max) = (2938.746, 2968.195, 3016.288), stdev = 34.135
+  CI (99.9%): [2747.613, 3188.776] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -577,30 +577,30 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.Serialize
 # Parameters: (itemsCount = 100)
 
-# Run progress: 23.94% complete, ETA 00:07:40
+# Run progress: 23.94% complete, ETA 00:07:39
 # Fork: 1 of 2
-# Warmup Iteration   1: 16550.925 ns/op
-# Warmup Iteration   2: 14025.230 ns/op
-Iteration   1: 14027.763 ns/op
-Iteration   2: 14193.492 ns/op
+# Warmup Iteration   1: 16317.356 ns/op
+# Warmup Iteration   2: 14532.774 ns/op
+Iteration   1: 14593.099 ns/op
+Iteration   2: 14531.450 ns/op
 
-# Run progress: 24.65% complete, ETA 00:07:36
+# Run progress: 24.65% complete, ETA 00:07:35
 # Fork: 2 of 2
-# Warmup Iteration   1: 16910.905 ns/op
-# Warmup Iteration   2: 14077.576 ns/op
-Iteration   1: 14004.923 ns/op
-Iteration   2: 14016.667 ns/op
+# Warmup Iteration   1: 16835.709 ns/op
+# Warmup Iteration   2: 14514.294 ns/op
+Iteration   1: 14466.448 ns/op
+Iteration   2: 14435.215 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
-  14060.711 ±(99.9%) 575.185 ns/op [Average]
-  (min, avg, max) = (14004.923, 14060.711, 14193.492), stdev = 89.011
-  CI (99.9%): [13485.526, 14635.897] (assumes normal distribution)
+  14506.553 ±(99.9%) 453.992 ns/op [Average]
+  (min, avg, max) = (14435.215, 14506.553, 14593.099), stdev = 70.256
+  CI (99.9%): [14052.561, 14960.545] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -611,30 +611,30 @@ Result "io.github.benchjava.bench.JsonBenchmark.Serialize":
 # Benchmark: io.github.benchjava.bench.JsonBenchmark.WithDeserialize
 # Parameters: (itemsCount = 5)
 
-# Run progress: 25.35% complete, ETA 00:07:32
+# Run progress: 25.35% complete, ETA 00:07:31
 # Fork: 1 of 2
-# Warmup Iteration   1: 3012.690 ns/op
-# Warmup Iteration   2: 2067.467 ns/op
-Iteration   1: 1998.961 ns/op
-Iteration   2: 1993.004 ns/op
+# Warmup Iteration   1: 2248.026 ns/op
+# Warmup Iteration   2: 1675.392 ns/op
+Iteration   1: 1665.784 ns/op
+Iteration   2: 1693.141 ns/op
 
 # Run progress: 26.06% complete, ETA 00:07:28
 # Fork: 2 of 2
-# Warmup Iteration   1: 2658.999 ns/op
-# Warmup Iteration   2: 1922.835 ns/op
-Iteration   1: 1880.643 ns/op
-Iteration   2: 1870.590 ns/op
+# Warmup Iteration   1: 2478.108 ns/op
+# Warmup Iteration   2: 1680.329 ns/op
+Iteration   1: 1662.784 ns/op
+Iteration   2: 1659.768 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  1935.799 ±(99.9%) 450.123 ns/op [Average]
-  (min, avg, max) = (1870.590, 1935.799, 1998.961), stdev = 69.657
-  CI (99.9%): [1485.677, 2385.922] (assumes normal distribution)
+  1670.369 ±(99.9%) 99.375 ns/op [Average]
+  (min, avg, max) = (1659.768, 1670.369, 1693.141), stdev = 15.378
+  CI (99.9%): [1570.995, 1769.744] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -647,28 +647,28 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 
 # Run progress: 26.76% complete, ETA 00:07:24
 # Fork: 1 of 2
-# Warmup Iteration   1: 8085.485 ns/op
-# Warmup Iteration   2: 5832.079 ns/op
-Iteration   1: 5739.819 ns/op
-Iteration   2: 5752.567 ns/op
+# Warmup Iteration   1: 8456.951 ns/op
+# Warmup Iteration   2: 5940.770 ns/op
+Iteration   1: 5818.195 ns/op
+Iteration   2: 5803.412 ns/op
 
 # Run progress: 27.46% complete, ETA 00:07:20
 # Fork: 2 of 2
-# Warmup Iteration   1: 8934.891 ns/op
-# Warmup Iteration   2: 6156.457 ns/op
-Iteration   1: 6048.513 ns/op
-Iteration   2: 6057.540 ns/op
+# Warmup Iteration   1: 7700.051 ns/op
+# Warmup Iteration   2: 5347.489 ns/op
+Iteration   1: 5293.881 ns/op
+Iteration   2: 5279.298 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  5899.610 ±(99.9%) 1145.486 ns/op [Average]
-  (min, avg, max) = (5739.819, 5899.610, 6057.540), stdev = 177.265
-  CI (99.9%): [4754.124, 7045.096] (assumes normal distribution)
+  5548.696 ±(99.9%) 1956.523 ns/op [Average]
+  (min, avg, max) = (5279.298, 5548.696, 5818.195), stdev = 302.774
+  CI (99.9%): [3592.174, 7505.219] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -681,28 +681,28 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 
 # Run progress: 28.17% complete, ETA 00:07:16
 # Fork: 1 of 2
-# Warmup Iteration   1: 44386.844 ns/op
-# Warmup Iteration   2: 30732.911 ns/op
-Iteration   1: 30620.948 ns/op
-Iteration   2: 30551.447 ns/op
+# Warmup Iteration   1: 37695.263 ns/op
+# Warmup Iteration   2: 26775.890 ns/op
+Iteration   1: 26520.347 ns/op
+Iteration   2: 26430.636 ns/op
 
 # Run progress: 28.87% complete, ETA 00:07:12
 # Fork: 2 of 2
-# Warmup Iteration   1: 39479.359 ns/op
-# Warmup Iteration   2: 28183.432 ns/op
-Iteration   1: 28156.163 ns/op
-Iteration   2: 28172.355 ns/op
+# Warmup Iteration   1: 35920.453 ns/op
+# Warmup Iteration   2: 24692.844 ns/op
+Iteration   1: 24558.934 ns/op
+Iteration   2: 24614.126 ns/op
 
 
 Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
-  29375.228 ±(99.9%) 9037.806 ns/op [Average]
-  (min, avg, max) = (28156.163, 29375.228, 30620.948), stdev = 1398.611
-  CI (99.9%): [20337.422, 38413.035] (assumes normal distribution)
+  25531.011 ±(99.9%) 7052.871 ns/op [Average]
+  (min, avg, max) = (24558.934, 25531.011, 26520.347), stdev = 1091.440
+  CI (99.9%): [18478.140, 32583.882] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -715,28 +715,28 @@ Result "io.github.benchjava.bench.JsonBenchmark.WithDeserialize":
 
 # Run progress: 29.58% complete, ETA 00:07:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 621.793 ns/op
-# Warmup Iteration   2: 504.018 ns/op
-Iteration   1: 487.488 ns/op
-Iteration   2: 486.155 ns/op
+# Warmup Iteration   1: 545.557 ns/op
+# Warmup Iteration   2: 441.463 ns/op
+Iteration   1: 419.250 ns/op
+Iteration   2: 419.716 ns/op
 
-# Run progress: 30.28% complete, ETA 00:07:05
+# Run progress: 30.28% complete, ETA 00:07:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 635.358 ns/op
-# Warmup Iteration   2: 522.877 ns/op
-Iteration   1: 518.082 ns/op
-Iteration   2: 524.153 ns/op
+# Warmup Iteration   1: 491.629 ns/op
+# Warmup Iteration   2: 394.472 ns/op
+Iteration   1: 388.523 ns/op
+Iteration   2: 388.627 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
-  503.970 ±(99.9%) 128.999 ns/op [Average]
-  (min, avg, max) = (486.155, 503.970, 524.153), stdev = 19.963
-  CI (99.9%): [374.971, 632.969] (assumes normal distribution)
+  404.029 ±(99.9%) 115.319 ns/op [Average]
+  (min, avg, max) = (388.523, 404.029, 419.716), stdev = 17.846
+  CI (99.9%): [288.711, 519.348] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -749,28 +749,28 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.Add":
 
 # Run progress: 30.99% complete, ETA 00:07:01
 # Fork: 1 of 2
-# Warmup Iteration   1: 479.397 ns/op
-# Warmup Iteration   2: 423.223 ns/op
-Iteration   1: 423.057 ns/op
-Iteration   2: 429.712 ns/op
+# Warmup Iteration   1: 444.727 ns/op
+# Warmup Iteration   2: 409.199 ns/op
+Iteration   1: 405.430 ns/op
+Iteration   2: 403.423 ns/op
 
 # Run progress: 31.69% complete, ETA 00:06:58
 # Fork: 2 of 2
-# Warmup Iteration   1: 410.854 ns/op
-# Warmup Iteration   2: 381.069 ns/op
-Iteration   1: 378.603 ns/op
-Iteration   2: 385.011 ns/op
+# Warmup Iteration   1: 418.044 ns/op
+# Warmup Iteration   2: 387.277 ns/op
+Iteration   1: 388.671 ns/op
+Iteration   2: 384.143 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
-  404.096 ±(99.9%) 168.089 ns/op [Average]
-  (min, avg, max) = (378.603, 404.096, 429.712), stdev = 26.012
-  CI (99.9%): [236.007, 572.185] (assumes normal distribution)
+  395.417 ±(99.9%) 68.486 ns/op [Average]
+  (min, avg, max) = (384.143, 395.417, 405.430), stdev = 10.598
+  CI (99.9%): [326.931, 463.903] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -783,28 +783,28 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.Ctor":
 
 # Run progress: 32.39% complete, ETA 00:06:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 492.904 ns/op
-# Warmup Iteration   2: 447.047 ns/op
-Iteration   1: 444.237 ns/op
-Iteration   2: 443.802 ns/op
+# Warmup Iteration   1: 503.258 ns/op
+# Warmup Iteration   2: 443.755 ns/op
+Iteration   1: 440.469 ns/op
+Iteration   2: 439.036 ns/op
 
 # Run progress: 33.10% complete, ETA 00:06:51
 # Fork: 2 of 2
-# Warmup Iteration   1: 504.802 ns/op
-# Warmup Iteration   2: 452.480 ns/op
-Iteration   1: 436.973 ns/op
-Iteration   2: 437.193 ns/op
+# Warmup Iteration   1: 497.976 ns/op
+# Warmup Iteration   2: 439.579 ns/op
+Iteration   1: 438.733 ns/op
+Iteration   2: 440.148 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
-  440.551 ±(99.9%) 25.912 ns/op [Average]
-  (min, avg, max) = (436.973, 440.551, 444.237), stdev = 4.010
-  CI (99.9%): [414.639, 466.463] (assumes normal distribution)
+  439.596 ±(99.9%) 5.439 ns/op [Average]
+  (min, avg, max) = (438.733, 439.596, 440.469), stdev = 0.842
+  CI (99.9%): [434.157, 445.035] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -817,28 +817,28 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.CtorHost":
 
 # Run progress: 33.80% complete, ETA 00:06:47
 # Fork: 1 of 2
-# Warmup Iteration   1: 639.006 ns/op
-# Warmup Iteration   2: 561.149 ns/op
-Iteration   1: 531.828 ns/op
-Iteration   2: 531.308 ns/op
+# Warmup Iteration   1: 548.930 ns/op
+# Warmup Iteration   2: 411.025 ns/op
+Iteration   1: 406.271 ns/op
+Iteration   2: 405.648 ns/op
 
 # Run progress: 34.51% complete, ETA 00:06:43
 # Fork: 2 of 2
-# Warmup Iteration   1: 679.182 ns/op
-# Warmup Iteration   2: 533.402 ns/op
-Iteration   1: 522.583 ns/op
-Iteration   2: 522.134 ns/op
+# Warmup Iteration   1: 552.776 ns/op
+# Warmup Iteration   2: 442.834 ns/op
+Iteration   1: 437.488 ns/op
+Iteration   2: 436.821 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
-  526.963 ±(99.9%) 34.408 ns/op [Average]
-  (min, avg, max) = (522.134, 526.963, 531.828), stdev = 5.325
-  CI (99.9%): [492.555, 561.371] (assumes normal distribution)
+  421.557 ±(99.9%) 116.408 ns/op [Average]
+  (min, avg, max) = (405.648, 421.557, 437.488), stdev = 18.014
+  CI (99.9%): [305.149, 537.965] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -851,28 +851,28 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.GetValues":
 
 # Run progress: 35.21% complete, ETA 00:06:40
 # Fork: 1 of 2
-# Warmup Iteration   1: 73467199.214 ns/op
-# Warmup Iteration   2: 53198070.421 ns/op
-Iteration   1: 59538236.412 ns/op
-Iteration   2: 51681969.950 ns/op
+# Warmup Iteration   1: 67891534.867 ns/op
+# Warmup Iteration   2: 43577671.478 ns/op
+Iteration   1: 43306268.875 ns/op
+Iteration   2: 44065321.565 ns/op
 
 # Run progress: 35.92% complete, ETA 00:06:36
 # Fork: 2 of 2
-# Warmup Iteration   1: 71573636.214 ns/op
-# Warmup Iteration   2: 52429760.800 ns/op
-Iteration   1: 57225332.056 ns/op
-Iteration   2: 60827016.000 ns/op
+# Warmup Iteration   1: 61309773.765 ns/op
+# Warmup Iteration   2: 43375559.708 ns/op
+Iteration   1: 43534497.435 ns/op
+Iteration   2: 43804392.304 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
-  57318138.604 ±(99.9%) 26120099.687 ns/op [Average]
-  (min, avg, max) = (51681969.950, 57318138.604, 60827016.000), stdev = 4042114.340
-  CI (99.9%): [31198038.917, 83438238.292] (assumes normal distribution)
+  43677620.045 ±(99.9%) 2126146.529 ns/op [Average]
+  (min, avg, max) = (43306268.875, 43677620.045, 44065321.565), stdev = 329023.529
+  CI (99.9%): [41551473.516, 45803766.574] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -883,30 +883,30 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.HttpGetSmall":
 # Benchmark: io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync
 # Parameters: (url = https://www.google.com/)
 
-# Run progress: 36.62% complete, ETA 00:06:33
+# Run progress: 36.62% complete, ETA 00:06:32
 # Fork: 1 of 2
-# Warmup Iteration   1: 83724245.083 ns/op
-# Warmup Iteration   2: 51627735.200 ns/op
-Iteration   1: 67879314.600 ns/op
-Iteration   2: 57348887.111 ns/op
+# Warmup Iteration   1: 59697992.647 ns/op
+# Warmup Iteration   2: 43449113.417 ns/op
+Iteration   1: 42797539.208 ns/op
+Iteration   2: 41803891.292 ns/op
 
 # Run progress: 37.32% complete, ETA 00:06:29
 # Fork: 2 of 2
-# Warmup Iteration   1: 69469570.600 ns/op
-# Warmup Iteration   2: 52780726.579 ns/op
-Iteration   1: 51009115.700 ns/op
-Iteration   2: 50623986.150 ns/op
+# Warmup Iteration   1: 61573212.235 ns/op
+# Warmup Iteration   2: 46234831.000 ns/op
+Iteration   1: 45056155.609 ns/op
+Iteration   2: 44313570.652 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync":
-  56715325.890 ±(99.9%) 52058306.036 ns/op [Average]
-  (min, avg, max) = (50623986.150, 56715325.890, 67879314.600), stdev = 8056080.484
-  CI (99.9%): [4657019.854, 108773631.926] (assumes normal distribution)
+  43492789.190 ±(99.9%) 9477740.068 ns/op [Average]
+  (min, avg, max) = (41803891.292, 43492789.190, 45056155.609), stdev = 1466690.767
+  CI (99.9%): [34015049.122, 52970529.258] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -919,28 +919,28 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseContentRead_ReadAs
 
 # Run progress: 38.03% complete, ETA 00:06:25
 # Fork: 1 of 2
-# Warmup Iteration   1: 65589892.125 ns/op
-# Warmup Iteration   2: 64384930.706 ns/op
-Iteration   1: 49733388.238 ns/op
-Iteration   2: 50902368.600 ns/op
+# Warmup Iteration   1: 60459393.824 ns/op
+# Warmup Iteration   2: 43171043.625 ns/op
+Iteration   1: 43022628.125 ns/op
+Iteration   2: 42849530.083 ns/op
 
-# Run progress: 38.73% complete, ETA 00:06:22
+# Run progress: 38.73% complete, ETA 00:06:21
 # Fork: 2 of 2
-# Warmup Iteration   1: 64622166.375 ns/op
-# Warmup Iteration   2: 53249240.789 ns/op
-Iteration   1: 51203431.050 ns/op
-Iteration   2: 52304734.300 ns/op
+# Warmup Iteration   1: 59897905.588 ns/op
+# Warmup Iteration   2: 43265221.083 ns/op
+Iteration   1: 42898795.625 ns/op
+Iteration   2: 43989703.435 ns/op
 
 
 Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync":
-  51035980.547 ±(99.9%) 6830962.187 ns/op [Average]
-  (min, avg, max) = (49733388.238, 51035980.547, 52304734.300), stdev = 1057098.960
-  CI (99.9%): [44205018.360, 57866942.734] (assumes normal distribution)
+  43190164.317 ±(99.9%) 3476403.259 ns/op [Average]
+  (min, avg, max) = (42849530.083, 43190164.317, 43989703.435), stdev = 537977.252
+  CI (99.9%): [39713761.058, 46666567.576] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -950,30 +950,30 @@ Result "io.github.benchjava.bench.NetworkingBenchmark.ResponseHeadersRead_ReadAs
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementManual
 
-# Run progress: 39.44% complete, ETA 00:06:18
+# Run progress: 39.44% complete, ETA 00:06:17
 # Fork: 1 of 2
-# Warmup Iteration   1: 42.520 ns/op
-# Warmup Iteration   2: 41.477 ns/op
-Iteration   1: 41.127 ns/op
-Iteration   2: 41.132 ns/op
+# Warmup Iteration   1: 47.319 ns/op
+# Warmup Iteration   2: 46.629 ns/op
+Iteration   1: 46.407 ns/op
+Iteration   2: 46.416 ns/op
 
 # Run progress: 40.14% complete, ETA 00:06:13
 # Fork: 2 of 2
-# Warmup Iteration   1: 42.428 ns/op
-# Warmup Iteration   2: 41.540 ns/op
-Iteration   1: 41.103 ns/op
-Iteration   2: 41.114 ns/op
+# Warmup Iteration   1: 47.850 ns/op
+# Warmup Iteration   2: 46.800 ns/op
+Iteration   1: 46.831 ns/op
+Iteration   2: 46.883 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
-  41.119 ±(99.9%) 0.085 ns/op [Average]
-  (min, avg, max) = (41.103, 41.119, 41.132), stdev = 0.013
-  CI (99.9%): [41.034, 41.204] (assumes normal distribution)
+  46.634 ±(99.9%) 1.667 ns/op [Average]
+  (min, avg, max) = (46.407, 46.634, 46.883), stdev = 0.258
+  CI (99.9%): [44.967, 48.301] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -983,30 +983,30 @@ Result "io.github.benchjava.bench.NumericsBenchmark.DecrementManual":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.NumericsBenchmark.DecrementTP
 
-# Run progress: 40.85% complete, ETA 00:06:09
+# Run progress: 40.85% complete, ETA 00:06:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 42.478 ns/op
-# Warmup Iteration   2: 41.492 ns/op
-Iteration   1: 41.111 ns/op
-Iteration   2: 41.123 ns/op
+# Warmup Iteration   1: 47.202 ns/op
+# Warmup Iteration   2: 46.487 ns/op
+Iteration   1: 46.450 ns/op
+Iteration   2: 46.726 ns/op
 
 # Run progress: 41.55% complete, ETA 00:06:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 42.462 ns/op
-# Warmup Iteration   2: 41.745 ns/op
-Iteration   1: 41.093 ns/op
-Iteration   2: 41.085 ns/op
+# Warmup Iteration   1: 47.390 ns/op
+# Warmup Iteration   2: 46.827 ns/op
+Iteration   1: 47.581 ns/op
+Iteration   2: 47.002 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
-  41.103 ±(99.9%) 0.113 ns/op [Average]
-  (min, avg, max) = (41.085, 41.103, 41.123), stdev = 0.017
-  CI (99.9%): [40.990, 41.216] (assumes normal distribution)
+  46.940 ±(99.9%) 3.123 ns/op [Average]
+  (min, avg, max) = (46.450, 46.940, 47.581), stdev = 0.483
+  CI (99.9%): [43.817, 50.063] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1018,28 +1018,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.DecrementTP":
 
 # Run progress: 42.25% complete, ETA 00:05:59
 # Fork: 1 of 2
-# Warmup Iteration   1: 108.309 ns/op
-# Warmup Iteration   2: 97.649 ns/op
-Iteration   1: 98.093 ns/op
-Iteration   2: 97.709 ns/op
+# Warmup Iteration   1: 90.754 ns/op
+# Warmup Iteration   2: 86.676 ns/op
+Iteration   1: 86.301 ns/op
+Iteration   2: 85.441 ns/op
 
 # Run progress: 42.96% complete, ETA 00:05:55
 # Fork: 2 of 2
-# Warmup Iteration   1: 107.438 ns/op
-# Warmup Iteration   2: 97.781 ns/op
-Iteration   1: 97.305 ns/op
-Iteration   2: 97.274 ns/op
+# Warmup Iteration   1: 92.130 ns/op
+# Warmup Iteration   2: 85.762 ns/op
+Iteration   1: 85.533 ns/op
+Iteration   2: 85.965 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
-  97.595 ±(99.9%) 2.497 ns/op [Average]
-  (min, avg, max) = (97.274, 97.595, 98.093), stdev = 0.386
-  CI (99.9%): [95.098, 100.092] (assumes normal distribution)
+  85.810 ±(99.9%) 2.580 ns/op [Average]
+  (min, avg, max) = (85.441, 85.810, 86.301), stdev = 0.399
+  CI (99.9%): [83.230, 88.390] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1051,28 +1051,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.Divide":
 
 # Run progress: 43.66% complete, ETA 00:05:50
 # Fork: 1 of 2
-# Warmup Iteration   1: 40.608 ns/op
-# Warmup Iteration   2: 40.239 ns/op
-Iteration   1: 40.101 ns/op
-Iteration   2: 40.112 ns/op
+# Warmup Iteration   1: 44.557 ns/op
+# Warmup Iteration   2: 43.762 ns/op
+Iteration   1: 43.608 ns/op
+Iteration   2: 43.976 ns/op
 
-# Run progress: 44.37% complete, ETA 00:05:46
+# Run progress: 44.37% complete, ETA 00:05:45
 # Fork: 2 of 2
-# Warmup Iteration   1: 40.591 ns/op
-# Warmup Iteration   2: 40.234 ns/op
-Iteration   1: 40.093 ns/op
-Iteration   2: 40.095 ns/op
+# Warmup Iteration   1: 44.588 ns/op
+# Warmup Iteration   2: 43.786 ns/op
+Iteration   1: 43.661 ns/op
+Iteration   2: 43.596 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
-  40.100 ±(99.9%) 0.056 ns/op [Average]
-  (min, avg, max) = (40.093, 40.100, 40.112), stdev = 0.009
-  CI (99.9%): [40.045, 40.156] (assumes normal distribution)
+  43.710 ±(99.9%) 1.159 ns/op [Average]
+  (min, avg, max) = (43.596, 43.710, 43.976), stdev = 0.179
+  CI (99.9%): [42.551, 44.869] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1084,28 +1084,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.GetFutureTime":
 
 # Run progress: 45.07% complete, ETA 00:05:41
 # Fork: 1 of 2
-# Warmup Iteration   1: 26.978 ns/op
-# Warmup Iteration   2: 26.345 ns/op
-Iteration   1: 25.827 ns/op
-Iteration   2: 25.782 ns/op
+# Warmup Iteration   1: 29.111 ns/op
+# Warmup Iteration   2: 28.702 ns/op
+Iteration   1: 28.327 ns/op
+Iteration   2: 28.318 ns/op
 
-# Run progress: 45.77% complete, ETA 00:05:37
+# Run progress: 45.77% complete, ETA 00:05:36
 # Fork: 2 of 2
-# Warmup Iteration   1: 26.989 ns/op
-# Warmup Iteration   2: 26.296 ns/op
-Iteration   1: 25.784 ns/op
-Iteration   2: 25.755 ns/op
+# Warmup Iteration   1: 31.765 ns/op
+# Warmup Iteration   2: 28.573 ns/op
+Iteration   1: 28.327 ns/op
+Iteration   2: 28.451 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
-  25.787 ±(99.9%) 0.192 ns/op [Average]
-  (min, avg, max) = (25.755, 25.787, 25.827), stdev = 0.030
-  CI (99.9%): [25.595, 25.979] (assumes normal distribution)
+  28.356 ±(99.9%) 0.411 ns/op [Average]
+  (min, avg, max) = (28.318, 28.356, 28.451), stdev = 0.064
+  CI (99.9%): [27.945, 28.766] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1117,28 +1117,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.GuidParse":
 
 # Run progress: 46.48% complete, ETA 00:05:32
 # Fork: 1 of 2
-# Warmup Iteration   1: 78.175 ns/op
-# Warmup Iteration   2: 72.153 ns/op
-Iteration   1: 72.167 ns/op
-Iteration   2: 72.140 ns/op
+# Warmup Iteration   1: 92.645 ns/op
+# Warmup Iteration   2: 87.785 ns/op
+Iteration   1: 87.196 ns/op
+Iteration   2: 87.195 ns/op
 
 # Run progress: 47.18% complete, ETA 00:05:27
 # Fork: 2 of 2
-# Warmup Iteration   1: 81.477 ns/op
-# Warmup Iteration   2: 74.899 ns/op
-Iteration   1: 74.443 ns/op
-Iteration   2: 74.405 ns/op
+# Warmup Iteration   1: 85.061 ns/op
+# Warmup Iteration   2: 79.961 ns/op
+Iteration   1: 79.256 ns/op
+Iteration   2: 79.411 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
-  73.289 ±(99.9%) 8.472 ns/op [Average]
-  (min, avg, max) = (72.140, 73.289, 74.443), stdev = 1.311
-  CI (99.9%): [64.817, 81.760] (assumes normal distribution)
+  83.264 ±(99.9%) 29.336 ns/op [Average]
+  (min, avg, max) = (79.256, 83.264, 87.196), stdev = 4.540
+  CI (99.9%): [53.929, 112.600] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1150,28 +1150,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.ParseInt32Min":
 
 # Run progress: 47.89% complete, ETA 00:05:23
 # Fork: 1 of 2
-# Warmup Iteration   1: 38.290 ns/op
-# Warmup Iteration   2: 35.741 ns/op
-Iteration   1: 35.476 ns/op
-Iteration   2: 35.762 ns/op
+# Warmup Iteration   1: 40.838 ns/op
+# Warmup Iteration   2: 38.389 ns/op
+Iteration   1: 37.970 ns/op
+Iteration   2: 37.934 ns/op
 
 # Run progress: 48.59% complete, ETA 00:05:18
 # Fork: 2 of 2
-# Warmup Iteration   1: 39.788 ns/op
-# Warmup Iteration   2: 35.614 ns/op
-Iteration   1: 35.363 ns/op
-Iteration   2: 35.275 ns/op
+# Warmup Iteration   1: 40.534 ns/op
+# Warmup Iteration   2: 38.209 ns/op
+Iteration   1: 37.822 ns/op
+Iteration   2: 37.961 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
-  35.469 ±(99.9%) 1.368 ns/op [Average]
-  (min, avg, max) = (35.275, 35.469, 35.762), stdev = 0.212
-  CI (99.9%): [34.101, 36.837] (assumes normal distribution)
+  37.922 ±(99.9%) 0.442 ns/op [Average]
+  (min, avg, max) = (37.822, 37.922, 37.970), stdev = 0.068
+  CI (99.9%): [37.480, 38.363] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1183,28 +1183,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse":
 
 # Run progress: 49.30% complete, ETA 00:05:14
 # Fork: 1 of 2
-# Warmup Iteration   1: 446.965 ns/op
-# Warmup Iteration   2: 339.977 ns/op
-Iteration   1: 336.864 ns/op
-Iteration   2: 336.596 ns/op
+# Warmup Iteration   1: 386.521 ns/op
+# Warmup Iteration   2: 267.960 ns/op
+Iteration   1: 269.615 ns/op
+Iteration   2: 270.228 ns/op
 
 # Run progress: 50.00% complete, ETA 00:05:09
 # Fork: 2 of 2
-# Warmup Iteration   1: 449.348 ns/op
-# Warmup Iteration   2: 336.868 ns/op
-Iteration   1: 335.094 ns/op
-Iteration   2: 334.735 ns/op
+# Warmup Iteration   1: 400.148 ns/op
+# Warmup Iteration   2: 291.380 ns/op
+Iteration   1: 292.330 ns/op
+Iteration   2: 292.808 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
-  335.822 ±(99.9%) 6.874 ns/op [Average]
-  (min, avg, max) = (334.735, 335.822, 336.864), stdev = 1.064
-  CI (99.9%): [328.948, 342.696] (assumes normal distribution)
+  281.245 ±(99.9%) 84.520 ns/op [Average]
+  (min, avg, max) = (269.615, 281.245, 292.808), stdev = 13.079
+  CI (99.9%): [196.726, 365.765] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1216,28 +1216,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TranscodeParse_Version":
 
 # Run progress: 50.70% complete, ETA 00:05:05
 # Fork: 1 of 2
-# Warmup Iteration   1: 26.168 ns/op
-# Warmup Iteration   2: 26.247 ns/op
-Iteration   1: 26.116 ns/op
-Iteration   2: 25.842 ns/op
+# Warmup Iteration   1: 28.029 ns/op
+# Warmup Iteration   2: 26.865 ns/op
+Iteration   1: 25.382 ns/op
+Iteration   2: 25.410 ns/op
 
-# Run progress: 51.41% complete, ETA 00:05:01
+# Run progress: 51.41% complete, ETA 00:05:00
 # Fork: 2 of 2
-# Warmup Iteration   1: 27.350 ns/op
-# Warmup Iteration   2: 26.258 ns/op
-Iteration   1: 26.071 ns/op
-Iteration   2: 25.939 ns/op
+# Warmup Iteration   1: 27.626 ns/op
+# Warmup Iteration   2: 28.098 ns/op
+Iteration   1: 26.247 ns/op
+Iteration   2: 26.202 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
-  25.992 ±(99.9%) 0.809 ns/op [Average]
-  (min, avg, max) = (25.842, 25.992, 26.116), stdev = 0.125
-  CI (99.9%): [25.183, 26.801] (assumes normal distribution)
+  25.810 ±(99.9%) 3.093 ns/op [Average]
+  (min, avg, max) = (25.382, 25.810, 26.247), stdev = 0.479
+  CI (99.9%): [22.717, 28.903] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1249,28 +1249,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.TryWriteBytes":
 
 # Run progress: 52.11% complete, ETA 00:04:56
 # Fork: 1 of 2
-# Warmup Iteration   1: 39.047 ns/op
-# Warmup Iteration   2: 35.579 ns/op
-Iteration   1: 35.322 ns/op
-Iteration   2: 35.310 ns/op
+# Warmup Iteration   1: 39.797 ns/op
+# Warmup Iteration   2: 38.366 ns/op
+Iteration   1: 37.949 ns/op
+Iteration   2: 37.917 ns/op
 
-# Run progress: 52.82% complete, ETA 00:04:52
+# Run progress: 52.82% complete, ETA 00:04:51
 # Fork: 2 of 2
-# Warmup Iteration   1: 39.720 ns/op
-# Warmup Iteration   2: 35.858 ns/op
-Iteration   1: 35.681 ns/op
-Iteration   2: 35.595 ns/op
+# Warmup Iteration   1: 41.709 ns/op
+# Warmup Iteration   2: 38.196 ns/op
+Iteration   1: 37.783 ns/op
+Iteration   2: 37.758 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
-  35.477 ±(99.9%) 1.223 ns/op [Average]
-  (min, avg, max) = (35.310, 35.477, 35.681), stdev = 0.189
-  CI (99.9%): [34.254, 36.700] (assumes normal distribution)
+  37.852 ±(99.9%) 0.616 ns/op [Average]
+  (min, avg, max) = (37.758, 37.852, 37.949), stdev = 0.095
+  CI (99.9%): [37.236, 38.468] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1282,28 +1282,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.Utf8ParserParse":
 
 # Run progress: 53.52% complete, ETA 00:04:47
 # Fork: 1 of 2
-# Warmup Iteration   1: 431.635 ns/op
-# Warmup Iteration   2: 310.733 ns/op
-Iteration   1: 310.563 ns/op
-Iteration   2: 310.884 ns/op
+# Warmup Iteration   1: 364.113 ns/op
+# Warmup Iteration   2: 262.143 ns/op
+Iteration   1: 263.447 ns/op
+Iteration   2: 263.143 ns/op
 
-# Run progress: 54.23% complete, ETA 00:04:43
+# Run progress: 54.23% complete, ETA 00:04:42
 # Fork: 2 of 2
-# Warmup Iteration   1: 452.412 ns/op
-# Warmup Iteration   2: 322.394 ns/op
-Iteration   1: 320.923 ns/op
-Iteration   2: 320.044 ns/op
+# Warmup Iteration   1: 393.471 ns/op
+# Warmup Iteration   2: 255.265 ns/op
+Iteration   1: 256.655 ns/op
+Iteration   2: 256.144 ns/op
 
 
 Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
-  315.603 ±(99.9%) 36.496 ns/op [Average]
-  (min, avg, max) = (310.563, 315.603, 320.923), stdev = 5.648
-  CI (99.9%): [279.108, 352.099] (assumes normal distribution)
+  259.847 ±(99.9%) 25.773 ns/op [Average]
+  (min, avg, max) = (256.144, 259.847, 263.447), stdev = 3.988
+  CI (99.9%): [234.075, 285.620] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1316,28 +1316,28 @@ Result "io.github.benchjava.bench.NumericsBenchmark.VersionParse":
 
 # Run progress: 54.93% complete, ETA 00:04:38
 # Fork: 1 of 2
-# Warmup Iteration   1: 326.107 ns/op
-# Warmup Iteration   2: 313.639 ns/op
-Iteration   1: 340.270 ns/op
-Iteration   2: 340.606 ns/op
+# Warmup Iteration   1: 360.394 ns/op
+# Warmup Iteration   2: 354.238 ns/op
+Iteration   1: 377.820 ns/op
+Iteration   2: 378.417 ns/op
 
-# Run progress: 55.63% complete, ETA 00:04:34
+# Run progress: 55.63% complete, ETA 00:04:33
 # Fork: 2 of 2
-# Warmup Iteration   1: 326.888 ns/op
-# Warmup Iteration   2: 318.330 ns/op
-Iteration   1: 350.627 ns/op
-Iteration   2: 348.248 ns/op
+# Warmup Iteration   1: 365.113 ns/op
+# Warmup Iteration   2: 341.223 ns/op
+Iteration   1: 378.499 ns/op
+Iteration   2: 378.126 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  344.938 ±(99.9%) 34.169 ns/op [Average]
-  (min, avg, max) = (340.270, 344.938, 350.627), stdev = 5.288
-  CI (99.9%): [310.769, 379.107] (assumes normal distribution)
+  378.216 ±(99.9%) 1.995 ns/op [Average]
+  (min, avg, max) = (377.820, 378.216, 378.499), stdev = 0.309
+  CI (99.9%): [376.220, 380.211] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1350,28 +1350,28 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 
 # Run progress: 56.34% complete, ETA 00:04:29
 # Fork: 1 of 2
-# Warmup Iteration   1: 2834.049 ns/op
-# Warmup Iteration   2: 2747.224 ns/op
-Iteration   1: 2881.717 ns/op
-Iteration   2: 2900.503 ns/op
+# Warmup Iteration   1: 3092.856 ns/op
+# Warmup Iteration   2: 2949.511 ns/op
+Iteration   1: 3222.476 ns/op
+Iteration   2: 3222.278 ns/op
 
 # Run progress: 57.04% complete, ETA 00:04:25
 # Fork: 2 of 2
-# Warmup Iteration   1: 2904.263 ns/op
-# Warmup Iteration   2: 2731.998 ns/op
-Iteration   1: 2871.789 ns/op
-Iteration   2: 2869.114 ns/op
+# Warmup Iteration   1: 3263.586 ns/op
+# Warmup Iteration   2: 3134.826 ns/op
+Iteration   1: 3604.859 ns/op
+Iteration   2: 3610.168 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  2880.781 ±(99.9%) 91.902 ns/op [Average]
-  (min, avg, max) = (2869.114, 2880.781, 2900.503), stdev = 14.222
-  CI (99.9%): [2788.878, 2972.683] (assumes normal distribution)
+  3414.945 ±(99.9%) 1436.949 ns/op [Average]
+  (min, avg, max) = (3222.278, 3414.945, 3610.168), stdev = 222.369
+  CI (99.9%): [1977.996, 4851.894] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1384,28 +1384,28 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 
 # Run progress: 57.75% complete, ETA 00:04:20
 # Fork: 1 of 2
-# Warmup Iteration   1: 33075.767 ns/op
-# Warmup Iteration   2: 31075.115 ns/op
-Iteration   1: 29746.352 ns/op
-Iteration   2: 29368.261 ns/op
+# Warmup Iteration   1: 30954.261 ns/op
+# Warmup Iteration   2: 29749.101 ns/op
+Iteration   1: 29619.552 ns/op
+Iteration   2: 29227.475 ns/op
 
 # Run progress: 58.45% complete, ETA 00:04:16
 # Fork: 2 of 2
-# Warmup Iteration   1: 32505.538 ns/op
-# Warmup Iteration   2: 31059.172 ns/op
-Iteration   1: 29793.624 ns/op
-Iteration   2: 29424.616 ns/op
+# Warmup Iteration   1: 30692.601 ns/op
+# Warmup Iteration   2: 29724.435 ns/op
+Iteration   1: 29467.206 ns/op
+Iteration   2: 29043.606 ns/op
 
 
 Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
-  29583.213 ±(99.9%) 1407.094 ns/op [Average]
-  (min, avg, max) = (29368.261, 29583.213, 29793.624), stdev = 217.749
-  CI (99.9%): [28176.119, 30990.308] (assumes normal distribution)
+  29339.459 ±(99.9%) 1646.817 ns/op [Average]
+  (min, avg, max) = (29043.606, 29339.459, 29619.552), stdev = 254.847
+  CI (99.9%): [27692.642, 30986.277] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1418,28 +1418,28 @@ Result "io.github.benchjava.bench.OtherCollectionsBenchmark.Get":
 
 # Run progress: 59.15% complete, ETA 00:04:11
 # Fork: 1 of 2
-# Warmup Iteration   1: 26.349 ns/op
-# Warmup Iteration   2: 26.077 ns/op
-Iteration   1: 27.482 ns/op
-Iteration   2: 27.414 ns/op
+# Warmup Iteration   1: 27.787 ns/op
+# Warmup Iteration   2: 27.943 ns/op
+Iteration   1: 27.126 ns/op
+Iteration   2: 27.174 ns/op
 
 # Run progress: 59.86% complete, ETA 00:04:07
 # Fork: 2 of 2
-# Warmup Iteration   1: 26.518 ns/op
-# Warmup Iteration   2: 26.049 ns/op
-Iteration   1: 28.485 ns/op
-Iteration   2: 28.457 ns/op
+# Warmup Iteration   1: 27.824 ns/op
+# Warmup Iteration   2: 28.128 ns/op
+Iteration   1: 27.166 ns/op
+Iteration   2: 27.152 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  27.960 ±(99.9%) 3.822 ns/op [Average]
-  (min, avg, max) = (27.414, 27.960, 28.485), stdev = 0.592
-  CI (99.9%): [24.137, 31.782] (assumes normal distribution)
+  27.154 ±(99.9%) 0.136 ns/op [Average]
+  (min, avg, max) = (27.126, 27.154, 27.174), stdev = 0.021
+  CI (99.9%): [27.019, 27.290] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1450,30 +1450,30 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8
 # Parameters: (bytesLen = 32)
 
-# Run progress: 60.56% complete, ETA 00:04:03
+# Run progress: 60.56% complete, ETA 00:04:02
 # Fork: 1 of 2
-# Warmup Iteration   1: 48.696 ns/op
-# Warmup Iteration   2: 48.168 ns/op
-Iteration   1: 46.675 ns/op
-Iteration   2: 46.574 ns/op
+# Warmup Iteration   1: 51.336 ns/op
+# Warmup Iteration   2: 52.569 ns/op
+Iteration   1: 50.284 ns/op
+Iteration   2: 50.371 ns/op
 
 # Run progress: 61.27% complete, ETA 00:03:58
 # Fork: 2 of 2
-# Warmup Iteration   1: 48.506 ns/op
-# Warmup Iteration   2: 48.159 ns/op
-Iteration   1: 49.109 ns/op
-Iteration   2: 49.168 ns/op
+# Warmup Iteration   1: 51.422 ns/op
+# Warmup Iteration   2: 52.839 ns/op
+Iteration   1: 49.957 ns/op
+Iteration   2: 49.988 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  47.881 ±(99.9%) 9.384 ns/op [Average]
-  (min, avg, max) = (46.574, 47.881, 49.168), stdev = 1.452
-  CI (99.9%): [38.497, 57.266] (assumes normal distribution)
+  50.150 ±(99.9%) 1.346 ns/op [Average]
+  (min, avg, max) = (49.957, 50.150, 50.371), stdev = 0.208
+  CI (99.9%): [48.804, 51.496] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1486,28 +1486,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 
 # Run progress: 61.97% complete, ETA 00:03:54
 # Fork: 1 of 2
-# Warmup Iteration   1: 94.204 ns/op
-# Warmup Iteration   2: 92.316 ns/op
-Iteration   1: 92.775 ns/op
-Iteration   2: 92.714 ns/op
+# Warmup Iteration   1: 98.707 ns/op
+# Warmup Iteration   2: 98.665 ns/op
+Iteration   1: 102.148 ns/op
+Iteration   2: 101.671 ns/op
 
 # Run progress: 62.68% complete, ETA 00:03:49
 # Fork: 2 of 2
-# Warmup Iteration   1: 93.949 ns/op
-# Warmup Iteration   2: 92.857 ns/op
-Iteration   1: 94.387 ns/op
-Iteration   2: 95.944 ns/op
+# Warmup Iteration   1: 98.722 ns/op
+# Warmup Iteration   2: 98.334 ns/op
+Iteration   1: 96.277 ns/op
+Iteration   2: 97.443 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
-  93.955 ±(99.9%) 9.923 ns/op [Average]
-  (min, avg, max) = (92.714, 93.955, 95.944), stdev = 1.536
-  CI (99.9%): [84.032, 103.878] (assumes normal distribution)
+  99.385 ±(99.9%) 19.129 ns/op [Average]
+  (min, avg, max) = (96.277, 99.385, 102.148), stdev = 2.960
+  CI (99.9%): [80.256, 118.514] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1520,28 +1520,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.FromHexStringUtf8":
 
 # Run progress: 63.38% complete, ETA 00:03:45
 # Fork: 1 of 2
-# Warmup Iteration   1: 257.326 ns/op
-# Warmup Iteration   2: 244.383 ns/op
-Iteration   1: 237.048 ns/op
-Iteration   2: 244.140 ns/op
+# Warmup Iteration   1: 277.226 ns/op
+# Warmup Iteration   2: 268.160 ns/op
+Iteration   1: 257.872 ns/op
+Iteration   2: 259.822 ns/op
 
-# Run progress: 64.08% complete, ETA 00:03:41
+# Run progress: 64.08% complete, ETA 00:03:40
 # Fork: 2 of 2
-# Warmup Iteration   1: 261.139 ns/op
-# Warmup Iteration   2: 246.232 ns/op
-Iteration   1: 243.735 ns/op
-Iteration   2: 241.687 ns/op
+# Warmup Iteration   1: 280.912 ns/op
+# Warmup Iteration   2: 263.100 ns/op
+Iteration   1: 261.822 ns/op
+Iteration   2: 272.477 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  241.652 ±(99.9%) 21.014 ns/op [Average]
-  (min, avg, max) = (237.048, 241.652, 244.140), stdev = 3.252
-  CI (99.9%): [220.638, 262.667] (assumes normal distribution)
+  262.998 ±(99.9%) 42.145 ns/op [Average]
+  (min, avg, max) = (257.872, 262.998, 272.477), stdev = 6.522
+  CI (99.9%): [220.853, 305.143] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1554,28 +1554,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 
 # Run progress: 64.79% complete, ETA 00:03:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 267.056 ns/op
-# Warmup Iteration   2: 237.182 ns/op
-Iteration   1: 210.110 ns/op
-Iteration   2: 237.651 ns/op
+# Warmup Iteration   1: 273.155 ns/op
+# Warmup Iteration   2: 226.264 ns/op
+Iteration   1: 288.709 ns/op
+Iteration   2: 282.057 ns/op
 
 # Run progress: 65.49% complete, ETA 00:03:32
 # Fork: 2 of 2
-# Warmup Iteration   1: 256.623 ns/op
-# Warmup Iteration   2: 242.613 ns/op
-Iteration   1: 237.006 ns/op
-Iteration   2: 237.338 ns/op
+# Warmup Iteration   1: 274.383 ns/op
+# Warmup Iteration   2: 261.682 ns/op
+Iteration   1: 262.575 ns/op
+Iteration   2: 263.500 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  230.526 ±(99.9%) 87.972 ns/op [Average]
-  (min, avg, max) = (210.110, 230.526, 237.651), stdev = 13.614
-  CI (99.9%): [142.555, 318.498] (assumes normal distribution)
+  274.210 ±(99.9%) 85.230 ns/op [Average]
+  (min, avg, max) = (262.575, 274.210, 288.709), stdev = 13.189
+  CI (99.9%): [188.980, 359.440] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1588,28 +1588,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 
 # Run progress: 66.20% complete, ETA 00:03:28
 # Fork: 1 of 2
-# Warmup Iteration   1: 253.920 ns/op
-# Warmup Iteration   2: 252.703 ns/op
-Iteration   1: 231.316 ns/op
-Iteration   2: 242.924 ns/op
+# Warmup Iteration   1: 282.057 ns/op
+# Warmup Iteration   2: 226.874 ns/op
+Iteration   1: 290.968 ns/op
+Iteration   2: 265.165 ns/op
 
-# Run progress: 66.90% complete, ETA 00:03:24
+# Run progress: 66.90% complete, ETA 00:03:23
 # Fork: 2 of 2
-# Warmup Iteration   1: 260.910 ns/op
-# Warmup Iteration   2: 240.554 ns/op
-Iteration   1: 218.687 ns/op
-Iteration   2: 275.975 ns/op
+# Warmup Iteration   1: 273.879 ns/op
+# Warmup Iteration   2: 240.104 ns/op
+Iteration   1: 287.355 ns/op
+Iteration   2: 269.210 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
-  242.225 ±(99.9%) 158.840 ns/op [Average]
-  (min, avg, max) = (218.687, 242.225, 275.975), stdev = 24.581
-  CI (99.9%): [83.386, 401.065] (assumes normal distribution)
+  278.175 ±(99.9%) 83.221 ns/op [Average]
+  (min, avg, max) = (265.165, 278.175, 290.968), stdev = 12.879
+  CI (99.9%): [194.953, 361.396] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1622,28 +1622,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.New":
 
 # Run progress: 67.61% complete, ETA 00:03:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.949 ns/op
-# Warmup Iteration   2: 4.159 ns/op
-Iteration   1: 3.749 ns/op
-Iteration   2: 3.735 ns/op
+# Warmup Iteration   1: 5.092 ns/op
+# Warmup Iteration   2: 4.884 ns/op
+Iteration   1: 3.905 ns/op
+Iteration   2: 3.869 ns/op
 
 # Run progress: 68.31% complete, ETA 00:03:15
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.791 ns/op
-# Warmup Iteration   2: 4.160 ns/op
-Iteration   1: 3.754 ns/op
-Iteration   2: 3.748 ns/op
+# Warmup Iteration   1: 5.091 ns/op
+# Warmup Iteration   2: 4.895 ns/op
+Iteration   1: 3.916 ns/op
+Iteration   2: 3.925 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.746 ±(99.9%) 0.052 ns/op [Average]
-  (min, avg, max) = (3.735, 3.746, 3.754), stdev = 0.008
-  CI (99.9%): [3.694, 3.798] (assumes normal distribution)
+  3.904 ±(99.9%) 0.158 ns/op [Average]
+  (min, avg, max) = (3.869, 3.904, 3.925), stdev = 0.024
+  CI (99.9%): [3.746, 4.061] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1656,28 +1656,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 
 # Run progress: 69.01% complete, ETA 00:03:10
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.874 ns/op
-# Warmup Iteration   2: 4.218 ns/op
-Iteration   1: 3.769 ns/op
-Iteration   2: 3.760 ns/op
+# Warmup Iteration   1: 5.217 ns/op
+# Warmup Iteration   2: 4.889 ns/op
+Iteration   1: 3.901 ns/op
+Iteration   2: 3.932 ns/op
 
 # Run progress: 69.72% complete, ETA 00:03:06
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.809 ns/op
-# Warmup Iteration   2: 4.184 ns/op
-Iteration   1: 3.740 ns/op
-Iteration   2: 3.736 ns/op
+# Warmup Iteration   1: 5.355 ns/op
+# Warmup Iteration   2: 4.946 ns/op
+Iteration   1: 3.968 ns/op
+Iteration   2: 3.926 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.751 ±(99.9%) 0.103 ns/op [Average]
-  (min, avg, max) = (3.736, 3.751, 3.769), stdev = 0.016
-  CI (99.9%): [3.648, 3.854] (assumes normal distribution)
+  3.931 ±(99.9%) 0.178 ns/op [Average]
+  (min, avg, max) = (3.901, 3.931, 3.968), stdev = 0.028
+  CI (99.9%): [3.753, 4.109] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1688,30 +1688,30 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 # Benchmark: io.github.benchjava.bench.PeanutButterBenchmark.Old
 # Parameters: (bytesLen = 64)
 
-# Run progress: 70.42% complete, ETA 00:03:02
+# Run progress: 70.42% complete, ETA 00:03:01
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.828 ns/op
-# Warmup Iteration   2: 4.180 ns/op
-Iteration   1: 3.768 ns/op
-Iteration   2: 3.760 ns/op
+# Warmup Iteration   1: 5.877 ns/op
+# Warmup Iteration   2: 5.106 ns/op
+Iteration   1: 3.919 ns/op
+Iteration   2: 3.948 ns/op
 
 # Run progress: 71.13% complete, ETA 00:02:57
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.969 ns/op
-# Warmup Iteration   2: 4.180 ns/op
-Iteration   1: 3.746 ns/op
-Iteration   2: 3.747 ns/op
+# Warmup Iteration   1: 5.220 ns/op
+# Warmup Iteration   2: 4.912 ns/op
+Iteration   1: 3.847 ns/op
+Iteration   2: 3.840 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
-  3.755 ±(99.9%) 0.070 ns/op [Average]
-  (min, avg, max) = (3.746, 3.755, 3.768), stdev = 0.011
-  CI (99.9%): [3.686, 3.825] (assumes normal distribution)
+  3.888 ±(99.9%) 0.345 ns/op [Average]
+  (min, avg, max) = (3.840, 3.888, 3.948), stdev = 0.053
+  CI (99.9%): [3.543, 4.234] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1724,28 +1724,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.Old":
 
 # Run progress: 71.83% complete, ETA 00:02:53
 # Fork: 1 of 2
-# Warmup Iteration   1: 20.103 ns/op
-# Warmup Iteration   2: 20.267 ns/op
-Iteration   1: 19.743 ns/op
-Iteration   2: 19.688 ns/op
+# Warmup Iteration   1: 21.877 ns/op
+# Warmup Iteration   2: 21.876 ns/op
+Iteration   1: 21.783 ns/op
+Iteration   2: 21.728 ns/op
 
-# Run progress: 72.54% complete, ETA 00:02:49
+# Run progress: 72.54% complete, ETA 00:02:48
 # Fork: 2 of 2
-# Warmup Iteration   1: 20.179 ns/op
-# Warmup Iteration   2: 20.173 ns/op
-Iteration   1: 19.665 ns/op
-Iteration   2: 19.738 ns/op
+# Warmup Iteration   1: 22.158 ns/op
+# Warmup Iteration   2: 21.776 ns/op
+Iteration   1: 21.744 ns/op
+Iteration   2: 21.739 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  19.709 ±(99.9%) 0.247 ns/op [Average]
-  (min, avg, max) = (19.665, 19.709, 19.743), stdev = 0.038
-  CI (99.9%): [19.462, 19.955] (assumes normal distribution)
+  21.748 ±(99.9%) 0.156 ns/op [Average]
+  (min, avg, max) = (21.728, 21.748, 21.783), stdev = 0.024
+  CI (99.9%): [21.592, 21.904] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1758,28 +1758,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 
 # Run progress: 73.24% complete, ETA 00:02:44
 # Fork: 1 of 2
-# Warmup Iteration   1: 36.320 ns/op
-# Warmup Iteration   2: 35.380 ns/op
-Iteration   1: 35.375 ns/op
-Iteration   2: 35.422 ns/op
+# Warmup Iteration   1: 37.754 ns/op
+# Warmup Iteration   2: 38.452 ns/op
+Iteration   1: 37.501 ns/op
+Iteration   2: 37.522 ns/op
 
 # Run progress: 73.94% complete, ETA 00:02:40
 # Fork: 2 of 2
-# Warmup Iteration   1: 36.944 ns/op
-# Warmup Iteration   2: 35.372 ns/op
-Iteration   1: 35.306 ns/op
-Iteration   2: 35.341 ns/op
+# Warmup Iteration   1: 37.821 ns/op
+# Warmup Iteration   2: 38.478 ns/op
+Iteration   1: 37.527 ns/op
+Iteration   2: 37.466 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  35.361 ±(99.9%) 0.321 ns/op [Average]
-  (min, avg, max) = (35.306, 35.361, 35.422), stdev = 0.050
-  CI (99.9%): [35.040, 35.682] (assumes normal distribution)
+  37.504 ±(99.9%) 0.180 ns/op [Average]
+  (min, avg, max) = (37.466, 37.504, 37.527), stdev = 0.028
+  CI (99.9%): [37.324, 37.683] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1792,28 +1792,28 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 
 # Run progress: 74.65% complete, ETA 00:02:35
 # Fork: 1 of 2
-# Warmup Iteration   1: 66.695 ns/op
-# Warmup Iteration   2: 65.486 ns/op
-Iteration   1: 65.899 ns/op
-Iteration   2: 65.027 ns/op
+# Warmup Iteration   1: 71.232 ns/op
+# Warmup Iteration   2: 70.812 ns/op
+Iteration   1: 70.447 ns/op
+Iteration   2: 70.387 ns/op
 
 # Run progress: 75.35% complete, ETA 00:02:31
 # Fork: 2 of 2
-# Warmup Iteration   1: 66.785 ns/op
-# Warmup Iteration   2: 65.273 ns/op
-Iteration   1: 65.189 ns/op
-Iteration   2: 65.300 ns/op
+# Warmup Iteration   1: 71.536 ns/op
+# Warmup Iteration   2: 70.711 ns/op
+Iteration   1: 70.339 ns/op
+Iteration   2: 70.362 ns/op
 
 
 Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
-  65.354 ±(99.9%) 2.458 ns/op [Average]
-  (min, avg, max) = (65.027, 65.354, 65.899), stdev = 0.380
-  CI (99.9%): [62.896, 67.811] (assumes normal distribution)
+  70.384 ±(99.9%) 0.303 ns/op [Average]
+  (min, avg, max) = (70.339, 70.384, 70.447), stdev = 0.047
+  CI (99.9%): [70.081, 70.686] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1823,30 +1823,30 @@ Result "io.github.benchjava.bench.PeanutButterBenchmark.ToHexStringLowerUtf8":
 # Benchmark mode: Average time, time/op
 # Benchmark: io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName
 
-# Run progress: 76.06% complete, ETA 00:02:27
+# Run progress: 76.06% complete, ETA 00:02:26
 # Fork: 1 of 2
-# Warmup Iteration   1: 28.034 ns/op
-# Warmup Iteration   2: 26.412 ns/op
-Iteration   1: 25.637 ns/op
-Iteration   2: 25.791 ns/op
+# Warmup Iteration   1: 33.800 ns/op
+# Warmup Iteration   2: 28.010 ns/op
+Iteration   1: 28.515 ns/op
+Iteration   2: 28.533 ns/op
 
 # Run progress: 76.76% complete, ETA 00:02:22
 # Fork: 2 of 2
-# Warmup Iteration   1: 29.629 ns/op
-# Warmup Iteration   2: 26.263 ns/op
-Iteration   1: 25.548 ns/op
-Iteration   2: 25.552 ns/op
+# Warmup Iteration   1: 30.423 ns/op
+# Warmup Iteration   2: 28.101 ns/op
+Iteration   1: 28.591 ns/op
+Iteration   2: 28.586 ns/op
 
 
 Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
-  25.632 ±(99.9%) 0.734 ns/op [Average]
-  (min, avg, max) = (25.548, 25.632, 25.791), stdev = 0.114
-  CI (99.9%): [24.898, 26.366] (assumes normal distribution)
+  28.556 ±(99.9%) 0.245 ns/op [Average]
+  (min, avg, max) = (28.515, 28.556, 28.591), stdev = 0.038
+  CI (99.9%): [28.311, 28.801] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1859,28 +1859,28 @@ Result "io.github.benchjava.bench.ReflectionBenchmark.ParseAndGetName":
 
 # Run progress: 77.46% complete, ETA 00:02:18
 # Fork: 1 of 2
-# Warmup Iteration   1: 411.403 ns/op
-# Warmup Iteration   2: 389.705 ns/op
-Iteration   1: 388.900 ns/op
-Iteration   2: 389.389 ns/op
+# Warmup Iteration   1: 433.464 ns/op
+# Warmup Iteration   2: 412.786 ns/op
+Iteration   1: 412.658 ns/op
+Iteration   2: 412.342 ns/op
 
-# Run progress: 78.17% complete, ETA 00:02:14
+# Run progress: 78.17% complete, ETA 00:02:13
 # Fork: 2 of 2
-# Warmup Iteration   1: 410.991 ns/op
-# Warmup Iteration   2: 388.458 ns/op
-Iteration   1: 387.238 ns/op
-Iteration   2: 395.710 ns/op
+# Warmup Iteration   1: 438.415 ns/op
+# Warmup Iteration   2: 422.668 ns/op
+Iteration   1: 417.646 ns/op
+Iteration   2: 417.516 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  390.309 ±(99.9%) 24.017 ns/op [Average]
-  (min, avg, max) = (387.238, 390.309, 395.710), stdev = 3.717
-  CI (99.9%): [366.292, 414.326] (assumes normal distribution)
+  415.040 ±(99.9%) 18.977 ns/op [Average]
+  (min, avg, max) = (412.342, 415.040, 417.646), stdev = 2.937
+  CI (99.9%): [396.063, 434.018] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1893,28 +1893,28 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 
 # Run progress: 78.87% complete, ETA 00:02:09
 # Fork: 1 of 2
-# Warmup Iteration   1: 2203.797 ns/op
-# Warmup Iteration   2: 2119.695 ns/op
-Iteration   1: 2107.515 ns/op
-Iteration   2: 2100.934 ns/op
+# Warmup Iteration   1: 2049.433 ns/op
+# Warmup Iteration   2: 1970.865 ns/op
+Iteration   1: 1958.881 ns/op
+Iteration   2: 1953.964 ns/op
 
 # Run progress: 79.58% complete, ETA 00:02:05
 # Fork: 2 of 2
-# Warmup Iteration   1: 2208.660 ns/op
-# Warmup Iteration   2: 2133.742 ns/op
-Iteration   1: 2097.998 ns/op
-Iteration   2: 2111.836 ns/op
+# Warmup Iteration   1: 2062.342 ns/op
+# Warmup Iteration   2: 1977.513 ns/op
+Iteration   1: 1954.130 ns/op
+Iteration   2: 1954.567 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  2104.571 ±(99.9%) 40.508 ns/op [Average]
-  (min, avg, max) = (2097.998, 2104.571, 2111.836), stdev = 6.269
-  CI (99.9%): [2064.062, 2145.079] (assumes normal distribution)
+  1955.385 ±(99.9%) 15.147 ns/op [Average]
+  (min, avg, max) = (1953.964, 1955.385, 1958.881), stdev = 2.344
+  CI (99.9%): [1940.238, 1970.532] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1925,30 +1925,30 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 # Benchmark: io.github.benchjava.bench.RegexAndStringBenchmark.Count
 # Parameters: (len = 8192)
 
-# Run progress: 80.28% complete, ETA 00:02:01
+# Run progress: 80.28% complete, ETA 00:02:00
 # Fork: 1 of 2
-# Warmup Iteration   1: 16194.562 ns/op
-# Warmup Iteration   2: 16173.261 ns/op
-Iteration   1: 15523.069 ns/op
-Iteration   2: 15528.010 ns/op
+# Warmup Iteration   1: 44620.653 ns/op
+# Warmup Iteration   2: 42364.895 ns/op
+Iteration   1: 42705.542 ns/op
+Iteration   2: 42458.152 ns/op
 
 # Run progress: 80.99% complete, ETA 00:01:56
 # Fork: 2 of 2
-# Warmup Iteration   1: 16191.790 ns/op
-# Warmup Iteration   2: 16365.763 ns/op
-Iteration   1: 15500.399 ns/op
-Iteration   2: 15509.304 ns/op
+# Warmup Iteration   1: 16131.663 ns/op
+# Warmup Iteration   2: 15704.920 ns/op
+Iteration   1: 16300.978 ns/op
+Iteration   2: 16289.113 ns/op
 
 
 Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
-  15515.196 ±(99.9%) 81.725 ns/op [Average]
-  (min, avg, max) = (15500.399, 15515.196, 15528.010), stdev = 12.647
-  CI (99.9%): [15433.470, 15596.921] (assumes normal distribution)
+  29438.446 ±(99.9%) 98073.798 ns/op [Average]
+  (min, avg, max) = (16289.113, 29438.446, 42705.542), stdev = 15177.029
+  CI (99.9%): [≈ 0, 127512.245] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1960,28 +1960,28 @@ Result "io.github.benchjava.bench.RegexAndStringBenchmark.Count":
 
 # Run progress: 81.69% complete, ETA 00:01:52
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.097 ns/op
-# Warmup Iteration   2: 3.448 ns/op
-Iteration   1: 3.537 ns/op
-Iteration   2: 3.547 ns/op
+# Warmup Iteration   1: 3.990 ns/op
+# Warmup Iteration   2: 3.818 ns/op
+Iteration   1: 3.651 ns/op
+Iteration   2: 3.656 ns/op
 
 # Run progress: 82.39% complete, ETA 00:01:47
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.100 ns/op
-# Warmup Iteration   2: 3.455 ns/op
-Iteration   1: 3.535 ns/op
-Iteration   2: 3.537 ns/op
+# Warmup Iteration   1: 3.989 ns/op
+# Warmup Iteration   2: 3.823 ns/op
+Iteration   1: 3.650 ns/op
+Iteration   2: 3.700 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
-  3.539 ±(99.9%) 0.034 ns/op [Average]
-  (min, avg, max) = (3.535, 3.539, 3.547), stdev = 0.005
-  CI (99.9%): [3.505, 3.573] (assumes normal distribution)
+  3.664 ±(99.9%) 0.156 ns/op [Average]
+  (min, avg, max) = (3.650, 3.664, 3.700), stdev = 0.024
+  CI (99.9%): [3.508, 3.821] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -1993,28 +1993,28 @@ Result "io.github.benchjava.bench.SearchValuesBenchmark.ContainsAny":
 
 # Run progress: 83.10% complete, ETA 00:01:43
 # Fork: 1 of 2
-# Warmup Iteration   1: 4.101 ns/op
-# Warmup Iteration   2: 3.664 ns/op
-Iteration   1: 4.046 ns/op
-Iteration   2: 4.047 ns/op
+# Warmup Iteration   1: 3.915 ns/op
+# Warmup Iteration   2: 3.589 ns/op
+Iteration   1: 3.589 ns/op
+Iteration   2: 3.585 ns/op
 
 # Run progress: 83.80% complete, ETA 00:01:39
 # Fork: 2 of 2
-# Warmup Iteration   1: 4.105 ns/op
-# Warmup Iteration   2: 3.685 ns/op
-Iteration   1: 4.050 ns/op
-Iteration   2: 4.049 ns/op
+# Warmup Iteration   1: 3.921 ns/op
+# Warmup Iteration   2: 3.579 ns/op
+Iteration   1: 3.593 ns/op
+Iteration   2: 3.589 ns/op
 
 
 Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
-  4.048 ±(99.9%) 0.010 ns/op [Average]
-  (min, avg, max) = (4.046, 4.048, 4.050), stdev = 0.002
-  CI (99.9%): [4.038, 4.059] (assumes normal distribution)
+  3.589 ±(99.9%) 0.023 ns/op [Average]
+  (min, avg, max) = (3.585, 3.589, 3.593), stdev = 0.004
+  CI (99.9%): [3.566, 3.612] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2027,28 +2027,28 @@ Result "io.github.benchjava.bench.SearchValuesBenchmark.IndexOfAny":
 
 # Run progress: 84.51% complete, ETA 00:01:34
 # Fork: 1 of 2
-# Warmup Iteration   1: 1553.854 ns/op
-# Warmup Iteration   2: 1294.723 ns/op
-Iteration   1: 1293.907 ns/op
-Iteration   2: 1293.688 ns/op
+# Warmup Iteration   1: 1751.773 ns/op
+# Warmup Iteration   2: 1623.986 ns/op
+Iteration   1: 1452.179 ns/op
+Iteration   2: 1531.442 ns/op
 
 # Run progress: 85.21% complete, ETA 00:01:30
 # Fork: 2 of 2
-# Warmup Iteration   1: 1345.024 ns/op
-# Warmup Iteration   2: 1249.024 ns/op
-Iteration   1: 1357.255 ns/op
-Iteration   2: 1356.602 ns/op
+# Warmup Iteration   1: 1695.000 ns/op
+# Warmup Iteration   2: 1613.449 ns/op
+Iteration   1: 1409.286 ns/op
+Iteration   2: 1410.286 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  1325.363 ±(99.9%) 235.540 ns/op [Average]
-  (min, avg, max) = (1293.688, 1325.363, 1357.255), stdev = 36.450
-  CI (99.9%): [1089.823, 1560.903] (assumes normal distribution)
+  1450.798 ±(99.9%) 370.645 ns/op [Average]
+  (min, avg, max) = (1409.286, 1450.798, 1531.442), stdev = 57.358
+  CI (99.9%): [1080.153, 1821.444] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2061,28 +2061,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 
 # Run progress: 85.92% complete, ETA 00:01:26
 # Fork: 1 of 2
-# Warmup Iteration   1: 11148.765 ns/op
-# Warmup Iteration   2: 12896.204 ns/op
-Iteration   1: 14074.116 ns/op
-Iteration   2: 14019.921 ns/op
+# Warmup Iteration   1: 12519.939 ns/op
+# Warmup Iteration   2: 15060.522 ns/op
+Iteration   1: 18050.086 ns/op
+Iteration   2: 18095.669 ns/op
 
 # Run progress: 86.62% complete, ETA 00:01:21
 # Fork: 2 of 2
-# Warmup Iteration   1: 12273.962 ns/op
-# Warmup Iteration   2: 12934.672 ns/op
-Iteration   1: 14135.446 ns/op
-Iteration   2: 14513.826 ns/op
+# Warmup Iteration   1: 12812.163 ns/op
+# Warmup Iteration   2: 13529.571 ns/op
+Iteration   1: 14573.525 ns/op
+Iteration   2: 14587.706 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  14185.827 ±(99.9%) 1445.549 ns/op [Average]
-  (min, avg, max) = (14019.921, 14185.827, 14513.826), stdev = 223.700
-  CI (99.9%): [12740.278, 15631.376] (assumes normal distribution)
+  16326.746 ±(99.9%) 13029.649 ns/op [Average]
+  (min, avg, max) = (14573.525, 16326.746, 18095.669), stdev = 2016.353
+  CI (99.9%): [3297.097, 29356.396] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2095,28 +2095,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 
 # Run progress: 87.32% complete, ETA 00:01:17
 # Fork: 1 of 2
-# Warmup Iteration   1: 121868.062 ns/op
-# Warmup Iteration   2: 114308.447 ns/op
-Iteration   1: 113001.439 ns/op
-Iteration   2: 113034.419 ns/op
+# Warmup Iteration   1: 138112.988 ns/op
+# Warmup Iteration   2: 125143.481 ns/op
+Iteration   1: 124671.954 ns/op
+Iteration   2: 124982.297 ns/op
 
 # Run progress: 88.03% complete, ETA 00:01:13
 # Fork: 2 of 2
-# Warmup Iteration   1: 127288.097 ns/op
-# Warmup Iteration   2: 119844.069 ns/op
-Iteration   1: 118805.714 ns/op
-Iteration   2: 118630.171 ns/op
+# Warmup Iteration   1: 138932.326 ns/op
+# Warmup Iteration   2: 126150.964 ns/op
+Iteration   1: 126329.949 ns/op
+Iteration   2: 125681.303 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
-  115867.936 ±(99.9%) 21271.008 ns/op [Average]
-  (min, avg, max) = (113001.439, 115867.936, 118805.714), stdev = 3291.712
-  CI (99.9%): [94596.928, 137138.943] (assumes normal distribution)
+  125416.376 ±(99.9%) 4788.551 ns/op [Average]
+  (min, avg, max) = (124671.954, 125416.376, 126329.949), stdev = 741.034
+  CI (99.9%): [120627.825, 130204.927] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2129,28 +2129,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.LeftJoin_Linq":
 
 # Run progress: 88.73% complete, ETA 00:01:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 819.287 ns/op
-# Warmup Iteration   2: 852.624 ns/op
-Iteration   1: 800.224 ns/op
-Iteration   2: 799.526 ns/op
+# Warmup Iteration   1: 894.231 ns/op
+# Warmup Iteration   2: 848.417 ns/op
+Iteration   1: 848.220 ns/op
+Iteration   2: 858.490 ns/op
 
 # Run progress: 89.44% complete, ETA 00:01:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 817.671 ns/op
-# Warmup Iteration   2: 808.794 ns/op
-Iteration   1: 788.198 ns/op
-Iteration   2: 787.690 ns/op
+# Warmup Iteration   1: 891.888 ns/op
+# Warmup Iteration   2: 853.022 ns/op
+Iteration   1: 852.841 ns/op
+Iteration   2: 852.641 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  793.910 ±(99.9%) 44.571 ns/op [Average]
-  (min, avg, max) = (787.690, 793.910, 800.224), stdev = 6.897
-  CI (99.9%): [749.338, 838.481] (assumes normal distribution)
+  853.048 ±(99.9%) 27.195 ns/op [Average]
+  (min, avg, max) = (848.220, 853.048, 858.490), stdev = 4.208
+  CI (99.9%): [825.853, 880.243] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2163,28 +2163,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 
 # Run progress: 90.14% complete, ETA 00:01:00
 # Fork: 1 of 2
-# Warmup Iteration   1: 8277.911 ns/op
-# Warmup Iteration   2: 7851.652 ns/op
-Iteration   1: 7604.765 ns/op
-Iteration   2: 7609.108 ns/op
+# Warmup Iteration   1: 9046.758 ns/op
+# Warmup Iteration   2: 8342.889 ns/op
+Iteration   1: 8070.034 ns/op
+Iteration   2: 8082.715 ns/op
 
-# Run progress: 90.85% complete, ETA 00:00:56
+# Run progress: 90.85% complete, ETA 00:00:55
 # Fork: 2 of 2
-# Warmup Iteration   1: 8232.892 ns/op
-# Warmup Iteration   2: 7866.332 ns/op
-Iteration   1: 7572.605 ns/op
-Iteration   2: 7633.365 ns/op
+# Warmup Iteration   1: 9220.752 ns/op
+# Warmup Iteration   2: 8238.444 ns/op
+Iteration   1: 8110.307 ns/op
+Iteration   2: 8110.492 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  7604.961 ±(99.9%) 161.373 ns/op [Average]
-  (min, avg, max) = (7572.605, 7604.961, 7633.365), stdev = 24.973
-  CI (99.9%): [7443.588, 7766.334] (assumes normal distribution)
+  8093.387 ±(99.9%) 131.275 ns/op [Average]
+  (min, avg, max) = (8070.034, 8093.387, 8110.492), stdev = 20.315
+  CI (99.9%): [7962.112, 8224.662] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2197,28 +2197,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 
 # Run progress: 91.55% complete, ETA 00:00:51
 # Fork: 1 of 2
-# Warmup Iteration   1: 83428.526 ns/op
-# Warmup Iteration   2: 79492.711 ns/op
-Iteration   1: 78965.911 ns/op
-Iteration   2: 79287.619 ns/op
+# Warmup Iteration   1: 92415.789 ns/op
+# Warmup Iteration   2: 85802.200 ns/op
+Iteration   1: 85600.189 ns/op
+Iteration   2: 85529.127 ns/op
 
 # Run progress: 92.25% complete, ETA 00:00:47
 # Fork: 2 of 2
-# Warmup Iteration   1: 84854.470 ns/op
-# Warmup Iteration   2: 80389.583 ns/op
-Iteration   1: 80580.368 ns/op
-Iteration   2: 81709.228 ns/op
+# Warmup Iteration   1: 90862.345 ns/op
+# Warmup Iteration   2: 82474.971 ns/op
+Iteration   1: 82428.062 ns/op
+Iteration   2: 82618.538 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
-  80135.782 ±(99.9%) 8140.883 ns/op [Average]
-  (min, avg, max) = (78965.911, 80135.782, 81709.228), stdev = 1259.811
-  CI (99.9%): [71994.899, 88276.665] (assumes normal distribution)
+  84043.979 ±(99.9%) 11359.462 ns/op [Average]
+  (min, avg, max) = (82428.062, 84043.979, 85600.189), stdev = 1757.889
+  CI (99.9%): [72684.517, 95403.441] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2231,28 +2231,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeContainsLinq":
 
 # Run progress: 92.96% complete, ETA 00:00:43
 # Fork: 1 of 2
-# Warmup Iteration   1: 821.332 ns/op
-# Warmup Iteration   2: 804.045 ns/op
-Iteration   1: 802.643 ns/op
-Iteration   2: 803.362 ns/op
+# Warmup Iteration   1: 897.602 ns/op
+# Warmup Iteration   2: 861.851 ns/op
+Iteration   1: 857.577 ns/op
+Iteration   2: 854.925 ns/op
 
 # Run progress: 93.66% complete, ETA 00:00:38
 # Fork: 2 of 2
-# Warmup Iteration   1: 834.649 ns/op
-# Warmup Iteration   2: 813.894 ns/op
-Iteration   1: 807.997 ns/op
-Iteration   2: 808.820 ns/op
+# Warmup Iteration   1: 899.092 ns/op
+# Warmup Iteration   2: 867.632 ns/op
+Iteration   1: 851.016 ns/op
+Iteration   2: 852.089 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  805.706 ±(99.9%) 20.376 ns/op [Average]
-  (min, avg, max) = (802.643, 805.706, 808.820), stdev = 3.153
-  CI (99.9%): [785.330, 826.082] (assumes normal distribution)
+  853.902 ±(99.9%) 19.086 ns/op [Average]
+  (min, avg, max) = (851.016, 853.902, 857.577), stdev = 2.954
+  CI (99.9%): [834.816, 872.988] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2265,28 +2265,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 
 # Run progress: 94.37% complete, ETA 00:00:34
 # Fork: 1 of 2
-# Warmup Iteration   1: 10639.552 ns/op
-# Warmup Iteration   2: 10064.250 ns/op
-Iteration   1: 7930.353 ns/op
-Iteration   2: 8077.248 ns/op
+# Warmup Iteration   1: 9162.995 ns/op
+# Warmup Iteration   2: 9608.592 ns/op
+Iteration   1: 8671.648 ns/op
+Iteration   2: 8681.182 ns/op
 
 # Run progress: 95.07% complete, ETA 00:00:30
 # Fork: 2 of 2
-# Warmup Iteration   1: 10807.190 ns/op
-# Warmup Iteration   2: 9386.992 ns/op
-Iteration   1: 7865.127 ns/op
-Iteration   2: 7844.617 ns/op
+# Warmup Iteration   1: 9235.060 ns/op
+# Warmup Iteration   2: 9272.656 ns/op
+Iteration   1: 8843.274 ns/op
+Iteration   2: 8715.505 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  7929.336 ±(99.9%) 679.576 ns/op [Average]
-  (min, avg, max) = (7844.617, 7929.336, 8077.248), stdev = 105.165
-  CI (99.9%): [7249.761, 8608.912] (assumes normal distribution)
+  8727.902 ±(99.9%) 511.703 ns/op [Average]
+  (min, avg, max) = (8671.648, 8727.902, 8843.274), stdev = 79.187
+  CI (99.9%): [8216.199, 9239.605] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2299,28 +2299,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 
 # Run progress: 95.77% complete, ETA 00:00:25
 # Fork: 1 of 2
-# Warmup Iteration   1: 106056.458 ns/op
-# Warmup Iteration   2: 133592.245 ns/op
-Iteration   1: 133839.309 ns/op
-Iteration   2: 132787.008 ns/op
+# Warmup Iteration   1: 105471.757 ns/op
+# Warmup Iteration   2: 115152.244 ns/op
+Iteration   1: 115307.530 ns/op
+Iteration   2: 115991.665 ns/op
 
 # Run progress: 96.48% complete, ETA 00:00:21
 # Fork: 2 of 2
-# Warmup Iteration   1: 101037.934 ns/op
-# Warmup Iteration   2: 132951.491 ns/op
-Iteration   1: 133926.439 ns/op
-Iteration   2: 134056.492 ns/op
+# Warmup Iteration   1: 103960.005 ns/op
+# Warmup Iteration   2: 114657.828 ns/op
+Iteration   1: 114317.028 ns/op
+Iteration   2: 113858.925 ns/op
 
 
 Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
-  133652.312 ±(99.9%) 3772.063 ns/op [Average]
-  (min, avg, max) = (132787.008, 133652.312, 134056.492), stdev = 583.731
-  CI (99.9%): [129880.249, 137424.375] (assumes normal distribution)
+  114868.787 ±(99.9%) 6217.862 ns/op [Average]
+  (min, avg, max) = (113858.925, 114868.787, 115991.665), stdev = 962.221
+  CI (99.9%): [108650.924, 121086.649] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2332,28 +2332,28 @@ Result "io.github.benchjava.bench.StreamsBenchmark.ShuffleTakeLinq":
 
 # Run progress: 97.18% complete, ETA 00:00:17
 # Fork: 1 of 2
-# Warmup Iteration   1: 30.733 ns/op
-# Warmup Iteration   2: 28.062 ns/op
-Iteration   1: 27.497 ns/op
-Iteration   2: 27.482 ns/op
+# Warmup Iteration   1: 33.244 ns/op
+# Warmup Iteration   2: 31.833 ns/op
+Iteration   1: 32.453 ns/op
+Iteration   2: 33.157 ns/op
 
 # Run progress: 97.89% complete, ETA 00:00:12
 # Fork: 2 of 2
-# Warmup Iteration   1: 29.818 ns/op
-# Warmup Iteration   2: 28.058 ns/op
-Iteration   1: 27.471 ns/op
-Iteration   2: 27.469 ns/op
+# Warmup Iteration   1: 33.474 ns/op
+# Warmup Iteration   2: 31.847 ns/op
+Iteration   1: 32.298 ns/op
+Iteration   2: 32.100 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
-  27.480 ±(99.9%) 0.083 ns/op [Average]
-  (min, avg, max) = (27.469, 27.480, 27.497), stdev = 0.013
-  CI (99.9%): [27.396, 27.563] (assumes normal distribution)
+  32.502 ±(99.9%) 2.972 ns/op [Average]
+  (min, avg, max) = (32.100, 32.502, 33.157), stdev = 0.460
+  CI (99.9%): [29.530, 35.474] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7-LTS
-# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.10/x64/bin/java
+# VM version: JDK 17.0.18, OpenJDK 64-Bit Server VM, 17.0.18+8-LTS
+# VM invoker: /opt/hostedtoolcache/Java_Microsoft_jdk/17.0.18/x64/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 1 s each
@@ -2365,26 +2365,26 @@ Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_One":
 
 # Run progress: 98.59% complete, ETA 00:00:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 32.346 ns/op
-# Warmup Iteration   2: 30.321 ns/op
-Iteration   1: 29.671 ns/op
-Iteration   2: 29.657 ns/op
+# Warmup Iteration   1: 37.381 ns/op
+# Warmup Iteration   2: 35.175 ns/op
+Iteration   1: 34.252 ns/op
+Iteration   2: 34.268 ns/op
 
 # Run progress: 99.30% complete, ETA 00:00:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 35.005 ns/op
-# Warmup Iteration   2: 31.569 ns/op
-Iteration   1: 30.948 ns/op
-Iteration   2: 30.940 ns/op
+# Warmup Iteration   1: 37.804 ns/op
+# Warmup Iteration   2: 35.983 ns/op
+Iteration   1: 35.197 ns/op
+Iteration   2: 35.200 ns/op
 
 
 Result "io.github.benchjava.bench.ThreadingBenchmark.WhenAllAlloc_Two":
-  30.304 ±(99.9%) 4.777 ns/op [Average]
-  (min, avg, max) = (29.657, 30.304, 30.948), stdev = 0.739
-  CI (99.9%): [25.527, 35.081] (assumes normal distribution)
+  34.729 ±(99.9%) 3.500 ns/op [Average]
+  (min, avg, max) = (34.252, 34.729, 35.200), stdev = 0.542
+  CI (99.9%): [31.229, 38.229] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:10:10
+# Run complete. Total time: 00:10:09
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -2398,77 +2398,77 @@ works, and factor in a small probability of new VM bugs. Additionally, while com
 different JVMs are already problematic, the performance difference caused by different Blackhole
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                                                     (bytesLen)  (count)  (itemsCount)  (len)  (size)                    (url)  Mode  Cnt         Score          Error  Units
-BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       148.263 ±       69.604  ns/op
-BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4      2070.874 ±      612.940  ns/op
-BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        32.459 ±        0.803  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                      N/A  avgt    4     58471.218 ±    33690.866  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                      N/A  avgt    4    688253.720 ±  1307585.555  ns/op
-CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                      N/A  avgt    4   1038153.612 ±   160774.280  ns/op
-CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       719.930 ±       15.088  ns/op
-DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         1.867 ±        0.009  ns/op
-DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.819 ±        0.086  ns/op
-DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        60.531 ±        3.219  ns/op
-DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.809 ±        0.071  ns/op
-DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        57.813 ±        0.252  ns/op
-IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4   3841199.712 ±  2191613.960  ns/op
-IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4    406556.762 ±   247542.670  ns/op
-IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4  29631258.324 ±   454919.706  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                      N/A  avgt    4       931.160 ±      339.765  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                      N/A  avgt    4      3124.424 ±     1491.876  ns/op
-JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                      N/A  avgt    4     14060.711 ±      575.185  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                      N/A  avgt    4      1935.799 ±      450.123  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                      N/A  avgt    4      5899.610 ±     1145.486  ns/op
-JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                      N/A  avgt    4     29375.228 ±     9037.806  ns/op
-NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       503.970 ±      128.999  ns/op
-NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       404.096 ±      168.089  ns/op
-NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       440.551 ±       25.912  ns/op
-NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       526.963 ±       34.408  ns/op
-NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  57318138.604 ± 26120099.687  ns/op
-NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  56715325.890 ± 52058306.036  ns/op
-NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  51035980.547 ±  6830962.187  ns/op
-NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        41.119 ±        0.085  ns/op
-NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        41.103 ±        0.113  ns/op
-NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        97.595 ±        2.497  ns/op
-NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        40.100 ±        0.056  ns/op
-NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.787 ±        0.192  ns/op
-NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        73.289 ±        8.472  ns/op
-NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.469 ±        1.368  ns/op
-NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       335.822 ±        6.874  ns/op
-NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.992 ±        0.809  ns/op
-NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.477 ±        1.223  ns/op
-NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       315.603 ±       36.496  ns/op
-OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                      N/A  avgt    4       344.938 ±       34.169  ns/op
-OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                      N/A  avgt    4      2880.781 ±       91.902  ns/op
-OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                      N/A  avgt    4     29583.213 ±     1407.094  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                      N/A  avgt    4        27.960 ±        3.822  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                      N/A  avgt    4        47.881 ±        9.384  ns/op
-PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                      N/A  avgt    4        93.955 ±        9.923  ns/op
-PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4       241.652 ±       21.014  ns/op
-PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4       230.526 ±       87.972  ns/op
-PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4       242.225 ±      158.840  ns/op
-PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.746 ±        0.052  ns/op
-PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.751 ±        0.103  ns/op
-PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.755 ±        0.070  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                      N/A  avgt    4        19.709 ±        0.247  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                      N/A  avgt    4        35.361 ±        0.321  ns/op
-PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                      N/A  avgt    4        65.354 ±        2.458  ns/op
-ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.632 ±        0.734  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                      N/A  avgt    4       390.309 ±       24.017  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                      N/A  avgt    4      2104.571 ±       40.508  ns/op
-RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                      N/A  avgt    4     15515.196 ±       81.725  ns/op
-SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.539 ±        0.034  ns/op
-SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         4.048 ±        0.010  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                      N/A  avgt    4      1325.363 ±      235.540  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                      N/A  avgt    4     14185.827 ±     1445.549  ns/op
-StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    115867.936 ±    21271.008  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                      N/A  avgt    4       793.910 ±       44.571  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      7604.961 ±      161.373  ns/op
-StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                      N/A  avgt    4     80135.782 ±     8140.883  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                      N/A  avgt    4       805.706 ±       20.376  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      7929.336 ±      679.576  ns/op
-StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    133652.312 ±     3772.063  ns/op
-ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        27.480 ±        0.083  ns/op
-ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        30.304 ±        4.777  ns/op
+Benchmark                                                     (bytesLen)  (count)  (itemsCount)  (len)  (size)                    (url)  Mode  Cnt         Score         Error  Units
+BitArrayBenchmark.ByteCtor                                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       151.378 ±      10.648  ns/op
+BitArrayBenchmark.HammingDistanceManual                              N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4      2201.043 ±     118.623  ns/op
+BitArrayBenchmark.HammingDistanceTensorPrimitives                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        38.825 ±       0.170  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A       4                      N/A  avgt    4     75969.023 ±   65070.927  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      16                      N/A  avgt    4    313690.145 ± 1467896.156  ns/op
+CollectionsBenchmark.InsertRange                                     N/A      N/A           N/A    N/A      64                      N/A  avgt    4   1191068.705 ± 1535074.627  ns/op
+CryptoBenchmark.Hash                                                 N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       806.230 ±      11.567  ns/op
+DiagnosticsBenchmark.AssemblyQualifiedName                           N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         1.760 ±       0.007  ns/op
+DiagnosticsBenchmark.Interpolate                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         4.591 ±       3.101  ns/op
+DiagnosticsBenchmark.Oops                                            N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        63.301 ±       3.538  ns/op
+DiagnosticsBenchmark.WithGetTimestamp                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        62.255 ±       0.458  ns/op
+DiagnosticsBenchmark.WithStartNew                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        62.380 ±       1.530  ns/op
+IOBenchmark.FSW                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4   4289768.902 ±  791276.828  ns/op
+IOBenchmark.MMF                                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4    464533.139 ±  269723.812  ns/op
+IOBenchmark.WriteByte                                                N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4  33763841.558 ±  278699.540  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A             5    N/A     N/A                      N/A  avgt    4       892.536 ±      92.596  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A            20    N/A     N/A                      N/A  avgt    4      2968.195 ±     220.581  ns/op
+JsonBenchmark.Serialize                                              N/A      N/A           100    N/A     N/A                      N/A  avgt    4     14506.553 ±     453.992  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A             5    N/A     N/A                      N/A  avgt    4      1670.369 ±      99.375  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A            20    N/A     N/A                      N/A  avgt    4      5548.696 ±    1956.523  ns/op
+JsonBenchmark.WithDeserialize                                        N/A      N/A           100    N/A     N/A                      N/A  avgt    4     25531.011 ±    7052.871  ns/op
+NetworkingBenchmark.Add                                              N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       404.029 ±     115.319  ns/op
+NetworkingBenchmark.Ctor                                             N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       395.417 ±      68.486  ns/op
+NetworkingBenchmark.CtorHost                                         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       439.596 ±       5.439  ns/op
+NetworkingBenchmark.GetValues                                        N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4       421.557 ±     116.408  ns/op
+NetworkingBenchmark.HttpGetSmall                                     N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  43677620.045 ± 2126146.529  ns/op
+NetworkingBenchmark.ResponseContentRead_ReadAsByteArrayAsync         N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  43492789.190 ± 9477740.068  ns/op
+NetworkingBenchmark.ResponseHeadersRead_ReadAsStringAsync            N/A      N/A           N/A    N/A     N/A  https://www.google.com/  avgt    4  43190164.317 ± 3476403.259  ns/op
+NumericsBenchmark.DecrementManual                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        46.634 ±       1.667  ns/op
+NumericsBenchmark.DecrementTP                                        N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        46.940 ±       3.123  ns/op
+NumericsBenchmark.Divide                                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        85.810 ±       2.580  ns/op
+NumericsBenchmark.GetFutureTime                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        43.710 ±       1.159  ns/op
+NumericsBenchmark.GuidParse                                          N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        28.356 ±       0.411  ns/op
+NumericsBenchmark.ParseInt32Min                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        83.264 ±      29.336  ns/op
+NumericsBenchmark.TranscodeParse                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        37.922 ±       0.442  ns/op
+NumericsBenchmark.TranscodeParse_Version                             N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       281.245 ±      84.520  ns/op
+NumericsBenchmark.TryWriteBytes                                      N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        25.810 ±       3.093  ns/op
+NumericsBenchmark.Utf8ParserParse                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        37.852 ±       0.616  ns/op
+NumericsBenchmark.VersionParse                                       N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4       259.847 ±      25.773  ns/op
+OtherCollectionsBenchmark.Get                                        N/A       16           N/A    N/A     N/A                      N/A  avgt    4       378.216 ±       1.995  ns/op
+OtherCollectionsBenchmark.Get                                        N/A      128           N/A    N/A     N/A                      N/A  avgt    4      3414.945 ±    1436.949  ns/op
+OtherCollectionsBenchmark.Get                                        N/A     1024           N/A    N/A     N/A                      N/A  avgt    4     29339.459 ±    1646.817  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               16      N/A           N/A    N/A     N/A                      N/A  avgt    4        27.154 ±       0.136  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               32      N/A           N/A    N/A     N/A                      N/A  avgt    4        50.150 ±       1.346  ns/op
+PeanutButterBenchmark.FromHexStringUtf8                               64      N/A           N/A    N/A     N/A                      N/A  avgt    4        99.385 ±      19.129  ns/op
+PeanutButterBenchmark.New                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4       262.998 ±      42.145  ns/op
+PeanutButterBenchmark.New                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4       274.210 ±      85.230  ns/op
+PeanutButterBenchmark.New                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4       278.175 ±      83.221  ns/op
+PeanutButterBenchmark.Old                                             16      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.904 ±       0.158  ns/op
+PeanutButterBenchmark.Old                                             32      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.931 ±       0.178  ns/op
+PeanutButterBenchmark.Old                                             64      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.888 ±       0.345  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            16      N/A           N/A    N/A     N/A                      N/A  avgt    4        21.748 ±       0.156  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            32      N/A           N/A    N/A     N/A                      N/A  avgt    4        37.504 ±       0.180  ns/op
+PeanutButterBenchmark.ToHexStringLowerUtf8                            64      N/A           N/A    N/A     N/A                      N/A  avgt    4        70.384 ±       0.303  ns/op
+ReflectionBenchmark.ParseAndGetName                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        28.556 ±       0.245  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A    128     N/A                      N/A  avgt    4       415.040 ±      18.977  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   1024     N/A                      N/A  avgt    4      1955.385 ±      15.147  ns/op
+RegexAndStringBenchmark.Count                                        N/A      N/A           N/A   8192     N/A                      N/A  avgt    4     29438.446 ±   98073.798  ns/op
+SearchValuesBenchmark.ContainsAny                                    N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.664 ±       0.156  ns/op
+SearchValuesBenchmark.IndexOfAny                                     N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4         3.589 ±       0.023  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A     100                      N/A  avgt    4      1450.798 ±     370.645  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A    1000                      N/A  avgt    4     16326.746 ±   13029.649  ns/op
+StreamsBenchmark.LeftJoin_Linq                                       N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    125416.376 ±    4788.551  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A     100                      N/A  avgt    4       853.048 ±      27.195  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      8093.387 ±     131.275  ns/op
+StreamsBenchmark.ShuffleTakeContainsLinq                             N/A      N/A           N/A    N/A   10000                      N/A  avgt    4     84043.979 ±   11359.462  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A     100                      N/A  avgt    4       853.902 ±      19.086  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A    1000                      N/A  avgt    4      8727.902 ±     511.703  ns/op
+StreamsBenchmark.ShuffleTakeLinq                                     N/A      N/A           N/A    N/A   10000                      N/A  avgt    4    114868.787 ±    6217.862  ns/op
+ThreadingBenchmark.WhenAllAlloc_One                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        32.502 ±       2.972  ns/op
+ThreadingBenchmark.WhenAllAlloc_Two                                  N/A      N/A           N/A    N/A     N/A                      N/A  avgt    4        34.729 ±       3.500  ns/op
 
 Benchmark result is saved to /home/runner/work/java-benchmarks/java-benchmarks/java-in-time/results/microsoft-17.json
