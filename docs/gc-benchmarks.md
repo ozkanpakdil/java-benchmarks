@@ -3,13 +3,13 @@ Comparison of throughput between G1 and ZGC collectors. Higher scores (ops/s) ar
 
 | Benchmark | G1 Score | ZGC Score | Ratio (ZGC/G1) | Winner | Improvement |
 |---|---|---|---|---|---|
-| allocateLargeObjects (listSize:1000) | 9817.914 ops/s | 9461.231 ops/s | 0.964x | **G1** | +3.770% |
-| allocateLargeObjects (listSize:10000) | 9987.585 ops/s | 9719.426 ops/s | 0.973x | **G1** | +2.759% |
-| allocateShortLived (listSize:1000) | 95660.123 ops/s | 95228.884 ops/s | 0.995x | **G1** | +0.453% |
-| allocateShortLived (listSize:10000) | 8837.170 ops/s | 9309.619 ops/s | 1.053x | **ZGC** | +5.346% |
+| allocateLargeObjects (listSize:1000) | 9325.745 ops/s | 8194.523 ops/s | 0.879x | **G1** | +13.805% |
+| allocateLargeObjects (listSize:10000) | 9360.419 ops/s | 8131.340 ops/s | 0.869x | **G1** | +15.115% |
+| allocateShortLived (listSize:1000) | 140546.882 ops/s | 119722.264 ops/s | 0.852x | **G1** | +17.394% |
+| allocateShortLived (listSize:10000) | 11897.845 ops/s | 10490.538 ops/s | 0.882x | **G1** | +13.415% |
 
 ## Summary
-Overall, **G1** performed better in this suite, winning 3 out of 4 tests.
+Overall, **G1** performed better in this suite, winning 4 out of 4 tests.
 
 ### Key Differences
 - **G1 GC**: Traditional generational collector, balanced throughput and latency. Default in most JDKs.
