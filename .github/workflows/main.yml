@@ -3,26 +3,27 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+
 on:
-  push:
+  schedule:
+    # The ONLY automatic full test suite run: native builds + "latest"
+    # release + gatling + k6 + mastodon, on the 5th of each month at
+    # 10:00 UTC (11:00 UK). PR builds are disabled entirely (no pull_request
+    # trigger in native-build.yml): renovate PRs auto-merge without a CI
+    # gate and any breakage is caught and fixed at the next monthly run.
+    # Also runnable manually at any time.
+    - cron: '0 10 5 * *'
   workflow_dispatch:
-    inputs:
-      baseline_label:
-        description: Label to use as baseline for comparison (e.g., temurin-24)
-        required: false
-        type: string
-      candidate_label:
-        description: Label to use as candidate for comparison (e.g., temurin-25)
-        required: false
-        type: string
-      bench_include:
-        description: JMH regex to include specific benchmarks (e.g., "Regex.*|Json.*")
-        required: false
-        type: string
-      jmh_opts:
-        description: Extra JMH options (e.g., "-wi 5 -i 10 -bm avgt -tu ns")
-        required: false
-        type: string
+permissions:
+  contents: write
+  id-token: write
+  pages: write
+  pull-requests: write
+  deployments: write
+  statuses: write
+  checks: write
+  packages: write
+  repository-projects: write
 
 jobs:
   run-benchmarks:
